@@ -3,3 +3,6 @@ description: "The official website for the Shout IRC client."
 baseurl: ""
 markdown: redcarpet
 permalink: pretty
+collections:
+  docs:
+    output: true

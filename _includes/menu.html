@@ -1,0 +1,12 @@
+<div id="menu">
+	<a href="/docs/">Shout</a>
+	{% for page in site.docs %}
+		{% if c != page.category %}
+			{% assign c = page.category %}
+			<strong>{{ page.category }}</strong>
+		{% endif %}
+		<a href="{{ site.baseurl }}{{ page.url }}">
+			{{ page.title }}
+		</a>
+	{% endfor %}
+</div>
