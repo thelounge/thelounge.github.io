@@ -1,4 +1,5 @@
 title: Shout IRC client
 description: "The official website for the Shout IRC client."
-permalink: /:title
+baseurl: ""
 markdown: redcarpet
+permalink: pretty

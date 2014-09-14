@@ -9,8 +9,8 @@
 	<title>{{ site.title }}</title>
 	<meta name="description" content="{{ site.description }}">
 
-	<link rel="stylesheet" href="/css/bootstrap.css">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
 
 	</head>
 	<body>
@@ -42,6 +42,9 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+	<script src="{{ site.baseurl }}/js/main.js"></script>
 
 	</body>
 </html>

@@ -2,7 +2,7 @@
 	http://fonts.googleapis.com/css?family=Open+Sans:300,400,700
 );
 body {
-	background: #505d70;
+	background: #455164;
 	color: #bcc4d3;
 	font: 15px "Open Sans", sans-serif;
 	margin: 0;
@@ -16,12 +16,21 @@ a:focus {
 	text-decoration: none;
 	outline: 0;
 }
+h2 {
+	font-size: 28px;
+}
 h3 {
 	font-size: 16px;
 	font-weight: normal;
 }
 p {
 	line-height: 1.4;
+}
+p a {
+	color: #84ce88;
+}
+p a:hover {
+	color: #77ca7b;
 }
 .container {
 	max-width: 780px;
@@ -70,6 +79,10 @@ p {
 	font-weight: 300;
 	margin: 0;
 }
+#splash p {
+	margin-top: 18px;
+	color: #bcc4d3;
+}
 #splash .row {
 	padding: 20px 0;
 }
@@ -94,6 +107,11 @@ p {
 }
 #features {
 	padding: 80px 0;
+}
+#features h2 {
+	font-weight: 300;
+	margin-bottom: 60px;
+	text-align: center;
 }
 #features h3 {
 	color: #fff;
