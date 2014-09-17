@@ -105,11 +105,14 @@ p a:hover {
 	display: block;
 	font-size: 17px;
 }
-#splash .button small {
-	opacity: .7;
-}
 #splash .button:hover {
 	background: #77ca7b;
+}
+#splash #version {
+	opacity: 0;
+}
+#splash #version.show {
+	opacity: .7;
 }
 #features {
 	padding: 50px 0 80px;
@@ -124,7 +127,6 @@ p a:hover {
 #features .feature {
 	padding-bottom: 20px;
 }
-
 #docs img {
 	border: 4px solid #f1f1f1;
 }
@@ -133,7 +135,7 @@ p a:hover {
 	margin-top: 0;
 }
 #docs h1 a {
-	color: #bbb;
+	color: #ddd;
 }
 #docs h1 a:before {
 	content: "\f006";
@@ -143,7 +145,7 @@ p a:hover {
 	position: absolute;
 }
 #docs h1 a:hover {
-	color: #888;
+	color: #bbb;
 }
 #docs .header {
 	background: #e4eaee;
