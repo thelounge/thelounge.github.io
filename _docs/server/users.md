@@ -1,11 +1,11 @@
 ---
 layout: documentation
-title: Install
+title: Users
 description: Add your description here
-category: Getting Started
-order: 1.1
+category: Server
+order: 2.2
 ---
 
 # {{ page.title }}
 
-This is `getting_started/install.md`.
+This is `server/users.md`.

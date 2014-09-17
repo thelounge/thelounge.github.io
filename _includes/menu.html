@@ -1,6 +1,7 @@
 <div id="menu">
 	<a href="/docs/">Shout</a>
-	{% for page in site.docs %}
+	{% assign docs = (site.docs | sort: "order" ) %}
+	{% for page in docs %}
 		{% if c != page.category %}
 			{% assign c = page.category %}
 			<strong>{{ page.category }}</strong>

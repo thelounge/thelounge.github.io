@@ -20,10 +20,6 @@ h2 {
 	font-size: 32px;
 	font-weight: 300;
 }
-h3 {
-	font-size: 16px;
-	font-weight: normal;
-}
 p {
 	line-height: 1.4;
 }
@@ -79,6 +75,7 @@ p a:hover {
 }
 #splash h1 {
 	font-size: 40px;
+	font-weight: 700;
 	margin: 0;
 }
 #splash h2 {

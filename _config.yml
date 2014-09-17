@@ -2,6 +2,8 @@ title: Shout IRC client
 description: "The official website for the Shout IRC client."
 baseurl: ""
 markdown: redcarpet
+redcarpet:
+  extensions: ["smart", "tables", "autolink"]
 permalink: pretty
 collections:
   docs:

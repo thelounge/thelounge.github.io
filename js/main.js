@@ -1,4 +1,4 @@
 $(function() {
 	var url = location.pathname;
-  $("#menu a[href='" + url + "']").addClass("active");
+	$("#menu a[href='" + url + "']").addClass("active");
 });

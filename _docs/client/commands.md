@@ -1,11 +1,11 @@
 ---
 layout: documentation
-title: Install
+title: Commands
 description: Add your description here
-category: Getting Started
-order: 1.1
+category: Client
+order: 3.1
 ---
 
 # {{ page.title }}
 
-This is `getting_started/install.md`.
+This is `client/commands.md`.
