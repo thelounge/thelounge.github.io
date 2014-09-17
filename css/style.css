@@ -202,7 +202,10 @@ p a:hover {
 	}
 }
 @media (max-width: 480px) {
-	#nav .logo {
+	#nav .right a:first-child {
 		display: none;
+	}
+	#splash .row {
+		padding-top: 0;
 	}
 }
