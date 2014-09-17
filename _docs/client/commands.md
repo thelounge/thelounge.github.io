@@ -6,6 +6,6 @@ category: Client
 order: 3.1
 ---
 
-# {{ page.title }}
+# Commands
 
 This is `client/commands.md`.

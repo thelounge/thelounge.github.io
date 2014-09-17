@@ -6,6 +6,6 @@ category: Getting Started
 order: 1.1
 ---
 
-# {{ page.title }}
+# Install
 
 This is `getting_started/install.md`.

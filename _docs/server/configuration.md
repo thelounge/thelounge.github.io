@@ -6,6 +6,6 @@ category: Server
 order: 2.1
 ---
 
-# {{ page.title }}
+# Configuration
 
 This is `server/configuration.md`.

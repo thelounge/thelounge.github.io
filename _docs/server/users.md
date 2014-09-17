@@ -6,6 +6,6 @@ category: Server
 order: 2.2
 ---
 
-# {{ page.title }}
+# Users
 
 This is `server/users.md`.

@@ -30,6 +30,10 @@ p a {
 p a:hover {
 	color: #77ca7b;
 }
+pre {
+	font-size: 13px;
+	line-height: 1.2;
+}
 .container {
 	max-width: 780px;
 	padding: 0 30px;

@@ -6,6 +6,6 @@ category: Getting Started
 order: 1.2
 ---
 
-# {{ page.title }}
+# Usage
 
 This is `getting_started/usage.md`.
