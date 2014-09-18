@@ -16,8 +16,6 @@ shout --help
 
 This will give you an overiew of the commands you can use.
 
-# Commands
-
 ## `start`
 
 _Start the Shout server._ 
