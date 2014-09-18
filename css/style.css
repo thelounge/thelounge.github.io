@@ -17,6 +17,10 @@ a:focus {
 	text-decoration: none;
 	outline: 0;
 }
+h2 {
+	font-size: 32px;
+	font-weight: 300;
+}
 p {
 	line-height: 1.5;
 }
@@ -32,13 +36,13 @@ li {
 code {
 	background: #f5f5f5;
 	border-radius: 3px;
-	font-size: inherit;
+	font-size: 0.8em;
 	padding: 2px 4px;
 }
 pre {
 	background: #f5f5f5;
 	border-radius: 3px;
-	font-size: 13px;
+	font-size: 1em;
 	line-height: 1.4;
 	padding: 6px 10px;
 }
@@ -130,6 +134,33 @@ pre code {
 #splash #version.show {
 	opacity: .7;
 }
+#subscribe {
+	background: #e4eaee;
+	padding: 40px 0 60px;
+}
+#subscribe h2 {
+	text-align: center;
+}
+#subscribe form {
+	margin: 0 auto;
+	max-width: 380px;
+	position: relative;
+}
+#subscribe input {
+	background: none;
+	border: 2px solid rgba(0, 0, 0, .05);
+	border-radius: 3px;
+	padding: 10px 13px;
+	width: 100%;
+}
+#subscribe button {
+	border: 0;
+	background: none;
+	position: absolute;
+	padding: 0;
+	right: 15px;
+	top: 12px;
+}
 #features {
 	padding: 50px 0 80px;
 }
@@ -155,13 +186,14 @@ pre code {
 	padding: 40px 0;
 	margin-bottom: 40px;
 }
-#docs .header h2 {
-	font-size: 32px;
-	font-weight: 300;
-}
 #docs-content h1,
+#docs-content h2,
+#docs-content h3 {
+	margin: 1em 0 .5em;
+}
 #docs-content h2 {
-	margin-top: 1.4em;
+	font-size: 24px;
+	font-weight: bold;
 }
 #docs-content h2 code {
 	background: none;
