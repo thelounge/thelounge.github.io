@@ -8,4 +8,4 @@ order: 5.1
 
 # Contributing
 
-This is `about/contributing.md`.
+Coming soon.

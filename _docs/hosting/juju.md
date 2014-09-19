@@ -8,4 +8,4 @@ order: 4.3
 
 # Juju
 
-This is `hosting/juju.md`.
+Coming soon.

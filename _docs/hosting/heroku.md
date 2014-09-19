@@ -8,4 +8,4 @@ order: 4.2
 
 # Heroku
 
-This is `hosting/heroku.md`.
+Coming soon.

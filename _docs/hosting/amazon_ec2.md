@@ -8,4 +8,4 @@ order: 4.1
 
 # Amazon EC2
 
-This is `hosting/amazon_ec2.md`.
+Coming soon.

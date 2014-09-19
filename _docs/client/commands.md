@@ -8,4 +8,4 @@ order: 3.1
 
 # Commands
 
-This is `client/commands.md`.
+Coming soon.
