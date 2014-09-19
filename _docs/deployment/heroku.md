@@ -1,11 +1,11 @@
 ---
 layout: documentation
-title: Juju
+title: Heroku
 description: Add your description here
-category: Hosting
+category: Deployment
 order: 4.3
 ---
 
-# Juju
+# Heroku
 
 Coming soon.

@@ -1,11 +1,11 @@
 ---
 layout: documentation
-title: Amazon EC2
+title: EC2
 description: Add your description here
-category: Hosting
-order: 4.1
+category: Deployment
+order: 4.2
 ---
 
-# Amazon EC2
+# EC2
 
 Coming soon.

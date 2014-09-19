@@ -15,7 +15,7 @@ When you start Shout in "private" mode it will load every user found in your `us
 - All your IRC connections are kept alive
 - Login and chat from multiple devices simultaneously
 
-## Add users
+## Add user
 
 To add a new user, run this command:
 
@@ -27,7 +27,7 @@ This will create a new user in your `users/` folder.
 
 _Note: By default, users are stored in the `~/.shout/users/` folder. You can change this location by changing the `home` setting (see [Configuration](/docs/server/configuration.html))._
 
-## Edit users
+## Edit user
 
 Open the `user.json` for the specified user:
 
@@ -35,7 +35,7 @@ Open the `user.json` for the specified user:
 shout edit <name>
 ```
 
-## Remove users
+## Remove user
 
 Simply run:
 
