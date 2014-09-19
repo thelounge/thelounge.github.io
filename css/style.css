@@ -119,7 +119,8 @@ pre code {
 	padding: 20px 0;
 }
 #splash .logo {
-	max-width: 240px;
+	width: 240px;
+	height: 240px;
 }
 #splash .button {
 	background: #84ce88;
