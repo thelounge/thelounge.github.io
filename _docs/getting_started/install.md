@@ -6,7 +6,15 @@ category: Getting Started
 order: 1.1
 ---
 
-# Install
+# Installation
+
+Decide whether to continue with or without Docker and follow the specific instructions bellow.
+
+With Docker:
+
+[Docker installation instructions](/docs/getting_started/docker.html)
+
+Without Docker:
 
 Shout requires [nodejs](http://nodejs.org/) and [npm](https://www.npmjs.org/). If you already have them installed on your system, go ahead and install Shout:
 
