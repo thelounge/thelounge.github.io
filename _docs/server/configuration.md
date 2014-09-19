@@ -13,7 +13,7 @@ This part of the documentation will focus on the configuration of your Shout ser
 To quickly open the config:
 
 ```
-shout config
+$ shout config
 ```
 
 ## public
@@ -46,10 +46,9 @@ Change how the logs will be stored. Remember that logging has to be turned on pe
 - format
 - timezone
 
-
 ## defaults
 
-These are the placeholder values displayed in the `Connect` form:
+These are the placeholder values displayed in the __Connect__ form:
 
 - name
 - host

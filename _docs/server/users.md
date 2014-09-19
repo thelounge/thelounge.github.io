@@ -20,7 +20,7 @@ When you start Shout in "private" mode it will load every user found in your `us
 To add a new user, run this command:
 
 ```
-shout add <name>
+$ shout add <name>
 ```
 
 This will create a new user in your `users/` folder.
@@ -32,7 +32,7 @@ _Note: By default, users are stored in the `~/.shout/users/` folder. You can cha
 Open the `user.json` for the specified user:
 
 ```
-shout edit <name>
+$ shout edit <name>
 ```
 
 ## Remove user
@@ -40,7 +40,7 @@ shout edit <name>
 Simply run:
 
 ```
-shout remove <name>
+$ shout remove <name>
 ```
 
 ## List users
@@ -48,7 +48,7 @@ shout remove <name>
 This command will print a list of all your existing users:
 
 ```
-shout list
+$ shout list
 ```
 
 # User configuration

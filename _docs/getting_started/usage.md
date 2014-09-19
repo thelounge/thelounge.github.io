@@ -11,24 +11,24 @@ order: 1.2
 Once you've installed Shout, go ahead and run:
 
 ```
-shout --help
+$ shout --help
 ```
 
 This will give you an overiew of the commands you can use.
 
 ## `start`
 
-_Start the Shout server._ 
+_Start the Shout server._
 
 Example:
 
 ```
-shout start --port 80 --private
+$ shout start --port 80 --private
 ```
 
 Options:
 
-- `-p, --port`  
+- `-p, --port`
 - `-h, --host`
 - `--public`
 - `--private`
@@ -40,37 +40,37 @@ _Opens the configuration file._
 Example user:
 
 ```
-shout config
+$ shout config
 ```
 
 ## `list`
 
-_List all existing users._ 
+_List all existing users._
 
 Example:
 
 ```
-shout list
+$ shout list
 ```
 
 ## `add <name> [<password>]`
 
-_Add a new user._ 
+_Add a new user._
 
 Example:
 
 ```
-shout add john
+$ shout add john
 ```
 
 ## `remove <name>`
 
-_Remove an existing user._ 
+_Remove an existing user._
 
 Example:
 
 ```
-shout remove john
+$ shout remove john
 ```
 
 ## `reset <name>`
@@ -80,17 +80,17 @@ _Reset user password._
 Example:
 
 ```
-shout reset john
+$ shout reset john
 ```
 
 ## `edit <name>`
 
-_Edit user configuration file._ 
+_Edit user configuration file._
 
 Example:
 
 ```
-shout edit john
+$ shout edit john
 ```
 
 # Options
@@ -102,15 +102,15 @@ _Output usage information._
 Example:
 
 ```
-shout --help
+$ shout --help
 ```
 
 ## `--version`
 
-_Output the version number._ 
+_Output the version number._
 
 Example:
 
 ```
-shout --version
+$ shout --version
 ```

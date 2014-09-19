@@ -6,20 +6,12 @@ category: Getting Started
 order: 1.1
 ---
 
-# Installation
-
-Decide whether to continue with or without Docker and follow the specific instructions bellow.
-
-With Docker:
-
-[Docker installation instructions](/docs/getting_started/docker.html)
-
-Without Docker:
+# Installing Shout
 
 Shout requires [nodejs](http://nodejs.org/) and [npm](https://www.npmjs.org/). If you already have them installed on your system, go ahead and install Shout:
 
 ```
-sudo npm -g install shout
+$ sudo npm -g install shout
 ```
 
 And if you don't &mdash; pick your operating system below:
@@ -31,7 +23,7 @@ And if you don't &mdash; pick your operating system below:
 Install the requirements using apt-get:
 
 ```
-sudo apt-get -y install nodejs-legacy npm
+$ sudo apt-get -y install nodejs-legacy npm
 ```
 
 ### Step 2:
@@ -39,7 +31,7 @@ sudo apt-get -y install nodejs-legacy npm
 Install Shout:
 
 ```
-sudo npm -g install shout
+$ sudo npm -g install shout
 ```
 
 ## Mac OSX
@@ -59,7 +51,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 Install [nodejs](http://nodejs.org):
 
 ```
-brew install nodejs
+$ brew install nodejs
 ```
 
 ### Step 3:
@@ -67,7 +59,7 @@ brew install nodejs
 Install Shout:
 
 ```
-sudo npm -g install shout
+$ sudo npm -g install shout
 ```
 
 # Install complete
