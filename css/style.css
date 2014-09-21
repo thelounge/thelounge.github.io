@@ -24,10 +24,12 @@ h2 {
 p {
 	line-height: 1.5;
 }
+li a,
 p a {
 	color: #84ce88;
 	font-weight: bold;
 }
+li a:hover,
 p a:hover {
 	color: #77ca7b;
 }
@@ -214,9 +216,12 @@ pre code {
 #docs-content h3 {
 	margin-bottom: 13px;
 }
+#menu,
+#docs-content .content {
+	margin-bottom: 60px;
+}
 #menu {
 	line-height: 2;
-	margin-bottom: 3em;
 }
 #menu a,
 #menu strong {

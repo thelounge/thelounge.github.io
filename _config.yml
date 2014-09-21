@@ -3,7 +3,7 @@ description: "The official website for the Shout IRC client."
 baseurl: ""
 markdown: redcarpet
 redcarpet:
-  extensions: ["smart", "tables", "autolink"]
+  extensions: ["smart", "tables", "autolink", "with_toc_data"]
 permalink: pretty
 collections:
   docs:
