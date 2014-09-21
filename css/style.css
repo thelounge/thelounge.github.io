@@ -216,7 +216,7 @@ pre code {
 }
 #menu {
 	line-height: 2;
-	margin-bottom: 2em;
+	margin-bottom: 3em;
 }
 #menu a,
 #menu strong {
@@ -236,9 +236,32 @@ pre code {
 	margin-top: 0;
 }
 #footer {
-	display: none;
-	color: #bcc4d3;
-	text-align: center;
+	color: #ccc;
+	font-size: 12px;
+}
+#footer p {
+	margin: 0;
+}
+#footer hr {
+	margin: 0 15px 10px;
+}
+#footer .inner {
+	border-top: 1px solid #eee;
+	padding: 8px 0 6px;
+}
+#share {
+	text-align: right;
+}
+#share .twitter-share {
+	display: inline-block;
+	overflow: hidden;
+	width: 88px;
+	margin-right: -4px;
+}
+#share .github-stars {
+	display: inline-block;
+	overflow: hidden;
+	width: 93px;
 }
 
 @media (max-width: 768px) {
