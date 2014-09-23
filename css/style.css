@@ -95,10 +95,9 @@ pre code {
 	background: #455164;
 	color: #fff;
 	text-align: center;
-	padding-bottom: 50px;
 }
 #splash hgroup {
-	margin: 30px 0 60px;
+	margin: 60px 0;
 }
 #splash h1 {
 	font-size: 40px;
@@ -119,8 +118,9 @@ pre code {
 	padding: 20px 0;
 }
 #splash .logo {
-	width: 240px;
-	height: 240px;
+	display: none;
+	width: 160px;
+	height: 160px;
 }
 #splash .button {
 	background: #84ce88;
@@ -140,6 +140,19 @@ pre code {
 }
 #splash #version.show {
 	opacity: .7;
+}
+#browser {
+	padding-top: 30px;
+}
+#browser .wrap {
+	border-bottom: 1px solid #e4eaee;
+	height: 290px;
+	overflow: hidden;
+	width: 730px;
+	margin: 0 auto;
+}
+#browser .mobile {
+	display: none;
 }
 #subscribe {
 	background: #e4eaee;
@@ -297,6 +310,15 @@ pre code {
 	#splash .button strong {
 		font-size: 16px;
 	}
+	#browser .wrap {
+		width: 310px;
+	}
+	#browser .desktop {
+		display: none;
+	}
+	#browser .mobile {
+		display: inline;
+	}
 	#features .feature {
 		text-align: center;
 		margin: 0 auto;
@@ -304,6 +326,7 @@ pre code {
 	}
 }
 @media (max-width: 480px) {
+
 	#nav .right a:first-child {
 		display: none;
 	}
