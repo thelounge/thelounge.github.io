@@ -57,8 +57,8 @@ pre code {
 	padding: 0;
 }
 .container {
-	max-width: 780px;
-	padding: 0 30px;
+	max-width: 750px;
+	padding: 0 20px;
 }
 #nav {
 	background: #455164;
@@ -314,9 +314,15 @@ pre code {
 		margin: 0 auto;
 		max-width: 320px;
 	}
+	#footer,
+	#share {
+		text-align: center;
+	}
+	#share {
+		padding-top: 10px;
+	}
 }
 @media (max-width: 480px) {
-
 	#nav .right a:first-child {
 		display: none;
 	}
