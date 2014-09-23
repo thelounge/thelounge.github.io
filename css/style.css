@@ -144,13 +144,6 @@ pre code {
 #browser {
 	padding-top: 30px;
 }
-#browser .wrap {
-	border-bottom: 1px solid #e4eaee;
-	height: 290px;
-	overflow: hidden;
-	width: 730px;
-	margin: 0 auto;
-}
 #browser .mobile {
 	display: none;
 }
@@ -309,9 +302,6 @@ pre code {
 	}
 	#splash .button strong {
 		font-size: 16px;
-	}
-	#browser .wrap {
-		width: 310px;
 	}
 	#browser .desktop {
 		display: none;
