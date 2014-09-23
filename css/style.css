@@ -96,9 +96,6 @@ pre code {
 	color: #fff;
 	text-align: center;
 }
-#splash hgroup {
-	margin: 60px 0;
-}
 #splash h1 {
 	font-size: 40px;
 	font-weight: 700;
@@ -121,6 +118,9 @@ pre code {
 	display: none;
 	width: 160px;
 	height: 160px;
+}
+#splash .hgroup {
+	margin: 60px 0;
 }
 #splash .button {
 	background: #84ce88;
