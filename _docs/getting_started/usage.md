@@ -35,9 +35,9 @@ Options:
 
 ## `config`
 
-_Opens the configuration file._
+_Open the configuration file._
 
-Example user:
+Example:
 
 ```
 $ shout config
