@@ -28,7 +28,7 @@ Listen to connections only from this host. Default `0.0.0.0` will allow connecti
 
 The port to listen on.
 
-You can override this setting by starting Shout like this:
+You can override this setting by starting Shout like this:  
 `shout start --port 80`
 
 ## theme
