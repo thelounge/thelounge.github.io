@@ -6,8 +6,6 @@ layout: documentation
 
 Welcome to the documentation. __It's currently a work in progress.__
 
-Here's the repository: [erming/shout-website](http://github.com/erming/shout-website)
-
 ## Help needed
 
 I want your help!
