@@ -95,6 +95,17 @@ $ shout edit john
 
 # Options
 
+## `--home`
+
+_Set the home path. This is the location where Shout will look for the `config.js` and the `users/` folder._
+
+Example:
+
+```
+$ shout --home /app add <user>  # add user to /app/users
+$ shout --home /app             # start server with /app/config.js
+```
+
 ## `--help`
 
 _Output usage information._
