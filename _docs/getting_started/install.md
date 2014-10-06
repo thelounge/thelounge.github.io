@@ -31,14 +31,14 @@ $ sudo apt-get -y install nodejs-legacy npm
 Install Shout:
 
 ```
-$ sudo npm -g install shout
+$ sudo npm install -g shout
 ```
 
 ## Mac OSX
 
 ### Step 1:
 
-Install [Homebrew](http://brew.sh/):
+Install [Homebrew](http://brew.sh/).
 
 Copy and paste this snippet into your terminal:
 
@@ -60,6 +60,32 @@ Install Shout:
 
 ```
 $ sudo npm -g install shout
+```
+
+## Windows
+
+### Step 1:
+
+Install [Chocolatey](https://chocolatey.org/).
+
+### Step 2:
+
+Open the Command Prompt as __administrator__ and run this command:
+
+```
+choco install nodejs.install
+```
+
+### Step 3:
+
+Now close your Command Prompt and open the `Node.js Command Prompt` that was just installed on your computer.
+
+### Step 4:
+
+Install Shout:
+
+```
+npm install -g shout
 ```
 
 # Install complete
