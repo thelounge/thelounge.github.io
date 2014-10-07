@@ -8,13 +8,15 @@ order: 3.1
 
 # Commands
 
-## clear
+Shout implements most of the IRC commands you may be familiar with. Here's a list of commands you can use:
+
+## /clear
 
 Clear the current screen.
 
 Example: `/clear`
 
-## close
+## /close
 
 Close the current window.
 
@@ -22,10 +24,10 @@ Example: `/close`
 
 Aliases:
 
-- [leave](#leave)
-- [part](#part)
+- [/leave](#leave)
+- [/part](#part)
 
-## connect
+## /connect
 
 Connect to a new network.
 
@@ -33,45 +35,45 @@ Example: `/connect irc.freenode.org`
 
 Aliases:
 
-- [server](#server)
+- [/server](#server)
 
-## deop
+## /deop
 
 Remove op (-o) from a user in the current channel.
 
 Example: `/deop john`
 
-## devoice
+## /devoice
 
 Remove voice (-v) from a user in the current channel.
 
 Example: `/devoice john`
 
-## disconnect
+## /disconnect
 
 Disconnect from the current network.
 
 Example: `/disconnect`
 
-## invite
+## /invite
 
 Invite a user to the specified channel.
 
 Example: `/invite john #chan`
 
-## join
+## /join
 
 Join a channel.
 
 Example: `/join #chan`
 
-## kick
+## /kick
 
 Kick a user from the specified channel.
 
 Example: `/kick john`
 
-## leave
+## /leave
 
 Leave the current channel or query.
 
@@ -79,73 +81,73 @@ Example: `/leave`
 
 Aliases:
 
-- [close](#close)
-- [part](#part)
+- [/close](#close)
+- [/part](#part)
 
-## me
+## /me
 
 Send an `ACTION` message to the current channel.
 
 Example: `/me likes chocolate`
 
-## mode
+## /mode
 
 Set the user mode in the current channel.
 
 Example: `/mode +o john`
 
-## msg
+## /msg
 
 Send a message to the specified channel.
 
 Example: `/msg #chan Hello!`
 
-## nick
+## /nick
 
 Change your nickname on the current network.
 
 Example: `/nick john`
 
-## notice
+## /notice
 
 Sends a notice message to the specified user.
 
 Example: `/notice john Hello!`
 
-## op
+## /op
 
 Make user op (+o) in the current channel.
 
 Example: `/op john`
 
-## part
+## /part
 
 Leave the current channel.
 
 Example: `/part`
 
-## query
+## /query
 
 Send a private message to the specified user.
 
 Example: `/query john Hello!`
 
-## quit
+## /quit
 
 Disconnect from the current network.
 
 Example: `/quit`
 
-## quote
+## /quote
 
 Example: `/quote`
 
 Aliases:
 
-- [raw](#raw)
-- [send](#send)
+- [/raw](#raw)
+- [/send](#send)
 
-## raw
+## /raw
 
 Send a raw message to the current IRC network.
 
@@ -153,25 +155,25 @@ Example: `/raw`
 
 Aliases:
 
-- [raw](#raw)
-- [send](#send)
+- [/raw](#raw)
+- [/send](#send)
 
-## say
+## /say
 
 Send a message to the current channel.
 
 Example: `/say Hello!`
 
-## send
+## /send
 
 Example: `/send`
 
 Aliases:
 
-- [quote](#quote)
-- [raw](#raw)
+- [/quote](#quote)
+- [/raw](#raw)
 
-## server
+## /server
 
 Connect to a new network.
 
@@ -179,27 +181,27 @@ Example: `/server irc.freenode.org`
 
 Aliases:
 
-- [connect](#connect)
+- [/connect](#connect)
 
-## slap
+## /slap
 
 Slap someone in the current channel. With a trout!
 
 Example: `/slap john`
 
-## topic
+## /topic
 
 Set the topic in the current channel.
 
 Example: `/topic Hello!`
 
-## voice
+## /voice
 
 Give a user voice (+v) in the current channel.
 
 Example: `/voice john`
 
-## whois
+## /whois
 
 Whois a user on the current network.
 
