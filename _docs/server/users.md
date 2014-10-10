@@ -12,8 +12,8 @@ Once you've set up your Shout server, it's time to add your first users. Open yo
 
 When you start Shout in "private" mode it will load every user found in your `users/` folder. Here's some of the features users get:
 
-- All your IRC connections are kept alive
-- Login and chat from multiple devices simultaneously
+- Stay online on IRC even when you log out
+- Lets you chat from multiple devices simultaneously
 
 ## Add user
 
@@ -25,7 +25,7 @@ $ shout add <name>
 
 This will create a new user in your `users/` folder.
 
-_Note: By default, users are stored in the `~/.shout/users/` folder. You can change this location by changing the `home` setting (see [Configuration](/docs/server/configuration.html))._
+_Note: By default, users are stored in the `~/.shout/users/` folder. You can change this location by using the `--home <path>` setting (see [Usage](/docs/getting_started/usage.html#--home))._
 
 ## Edit user
 
