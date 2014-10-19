@@ -10,6 +10,20 @@ order: 4.3
 
 This document will explain how to install Shout on Heroku. If you want to learn about Heroku you should read their [documentation](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction).
 
+<div class="alert alert-warning" role="alert">
+  <p>
+    Please be aware that Heroku automatically kills unpaid apps after 1 hour of inactivity, and then spins them back up the next time a request comes in.
+    This does not apply to paid accounts.
+    If you scale up to two servers and pay for the second one, you get two always-on servers.
+    <a href="https://devcenter.heroku.com/articles/dynos\#dyno-sleeping">Read more</a>
+  </p>
+
+  <p>
+    When heroku kills shout, you need to connect to servers and channels again from scratch.
+    In practice, you get no always-on functionality with an unpaid heroku account.
+  </p>
+</div>
+
 Okay, let's get down to business:
 
 ### Step 1:
