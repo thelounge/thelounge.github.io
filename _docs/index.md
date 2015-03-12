@@ -11,7 +11,7 @@ Welcome to the documentation. __It's currently a work in progress.__
 I want your help!
 
 This documentation is being hosted on GitHub via gh-pages and uses [Jekyll](http://jekyllrb.com/).
-It's simply a collection Markdown files.
+It's simply a collection of Markdown files.
 
 You can edit the content directly from the GitHub file editor.
 
