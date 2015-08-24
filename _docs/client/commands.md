@@ -155,7 +155,7 @@ Example: `/raw`
 
 Aliases:
 
-- [/raw](#raw)
+- [/quote](#quote)
 - [/send](#send)
 
 ## /say
