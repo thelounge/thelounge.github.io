@@ -280,7 +280,7 @@ pre code {
 	display: inline-block;
 	overflow: hidden;
 	width: 88px;
-	margin-right: -4px;
+	margin-right: 5px;
 }
 #share .github-stars {
 	display: inline-block;
