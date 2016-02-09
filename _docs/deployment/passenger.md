@@ -57,7 +57,7 @@ server {
 
 Or Apache:
 
-```apache
+```conf
 <VirtualHost *:80>
     ServerName irc.me.com
     DocumentRoot <directory you cloned The Lounge to>
