@@ -8,12 +8,12 @@ order: 2.1
 
 # Configuration
 
-This part of the documentation will focus on the configuration of your Shout server. Start by locating the `config.js` file in the Shout folder.
+This part of the documentation will focus on the configuration of the server. Start by locating the `config.js` file in the `lounge` folder.
 
 To quickly open the config:
 
 ```
-$ shout config
+$ lounge config
 ```
 
 ## public
@@ -28,16 +28,16 @@ Listen to connections only from this host. Default `0.0.0.0` will allow connecti
 
 The port to listen on.
 
-You can override this setting by starting Shout like this:  
-`shout start --port 80`
+You can override this setting by starting The Lounge like this:  
+`lounge start --port 80`
 
 ## theme
 
-This setting should point to a stylesheet in your Shout folder. If you want to create your own theme, it's recommended that you add your own stylesheet to `shout/client/themes/`.
+This setting should point to a stylesheet in your `lounge` folder. If you want to create your own theme, it's recommended that you add your own stylesheet to `lounge/client/themes/`.
 
 ## home
 
-Use this setting to override the default `HOME` location. The home folder is where Shout will locate the `users/` and `cache/` folder. Leaving this field empty will default to `~/.shout/`.
+Use this setting to override the default `HOME` location. The home folder is where The Lounge will locate the `users/` and `cache/` folder. Leaving this field empty will default to `~/.lounge/`.
 
 ## logs
 
