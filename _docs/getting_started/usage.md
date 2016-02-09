@@ -8,22 +8,22 @@ order: 1.2
 
 # Usage
 
-Once you've installed Shout, go ahead and run:
+Once you've installed The Lounge, go ahead and run:
 
 ```
-$ shout --help
+$ lounge --help
 ```
 
-This will give you an overiew of the commands you can use.
+This will give you an overview of the commands you can use.
 
 ## `start`
 
-_Start the Shout server._
+_Start the server._
 
 Example:
 
 ```
-$ shout start --port 80 --private
+$ lounge start --port 80 --private
 ```
 
 Options:
@@ -40,7 +40,7 @@ _Open the configuration file._
 Example:
 
 ```
-$ shout config
+$ lounge config
 ```
 
 ## `list`
@@ -50,7 +50,7 @@ _List all existing users._
 Example:
 
 ```
-$ shout list
+$ lounge list
 ```
 
 ## `add <name> [<password>]`
@@ -60,7 +60,7 @@ _Add a new user._
 Example:
 
 ```
-$ shout add john
+$ lounge add john
 ```
 
 ## `remove <name>`
@@ -70,7 +70,7 @@ _Remove an existing user._
 Example:
 
 ```
-$ shout remove john
+$ lounge remove john
 ```
 
 ## `reset <name>`
@@ -80,7 +80,7 @@ _Reset user password._
 Example:
 
 ```
-$ shout reset john
+$ lounge reset john
 ```
 
 ## `edit <name>`
@@ -90,20 +90,20 @@ _Edit user configuration file._
 Example:
 
 ```
-$ shout edit john
+$ lounge edit john
 ```
 
 # Options
 
 ## `--home`
 
-_Set the home path. This is the location where Shout will look for the `config.js` and the `users/` folder._
+_Set the home path. This is the location where The Lounge will look for the `config.js` and the `users/` folder._
 
 Example:
 
 ```
-$ shout --home /app add <user>  # add user to /app/users
-$ shout --home /app             # start server with /app/config.js
+$ lounge --home /app add <user>  # add user to /app/users
+$ lounge --home /app             # start server with /app/config.js
 ```
 
 ## `--help`
@@ -113,7 +113,7 @@ _Output usage information._
 Example:
 
 ```
-$ shout --help
+$ lounge --help
 ```
 
 ## `--version`
@@ -123,5 +123,5 @@ _Output the version number._
 Example:
 
 ```
-$ shout --version
+$ lounge --version
 ```
