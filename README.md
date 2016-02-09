@@ -11,7 +11,7 @@ You need to install [Jekyll](http://jekyllrb.com/):
 
 ```
 sudo apt-get install ruby1.9.3 build-essential nodejs-legacy
-sudo gem install jekyll
+sudo gem install jekyll redcarpet
 ```
 
 Now go ahead and clone:
