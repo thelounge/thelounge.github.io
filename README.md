@@ -24,7 +24,7 @@ cd thelounge.github.io/
 Run Jekyll:
 
 ```
-jekyll serve --watch
+jekyll serve --watch --safe
 ```
 
 ## License
