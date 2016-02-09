@@ -17,8 +17,8 @@ sudo gem install jekyll
 Now go ahead and clone:
 
 ```
-git clone http://github.com/erming/shout-website
-cd shout-website/
+git clone https://github.com/thelounge/thelounge.github.io
+cd thelounge.github.io/
 ```
 
 Run Jekyll:
@@ -29,4 +29,4 @@ jekyll serve --watch
 
 ## License
 
-Available under [the MIT license](http://mths.be/mit).
+Available under [the MIT license](https://opensource.org/licenses/MIT).
