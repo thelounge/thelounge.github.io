@@ -7,7 +7,7 @@ https://github.com/thelounge/lounge.
 
 ## Development
 
-You need to install [Jekyll](http://jekyllrb.com/):
+You need to install [Jekyll](https://jekyllrb.com/):
 
 ```
 sudo apt-get install ruby1.9.3 build-essential nodejs-legacy
