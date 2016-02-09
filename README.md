@@ -24,7 +24,7 @@ cd shout-website/
 Run Jekyll:
 
 ```
-jekyll serve --watch
+jekyll serve --watch --safe
 ```
 
 ## License
