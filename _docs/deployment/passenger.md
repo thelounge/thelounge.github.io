@@ -8,7 +8,7 @@ order: 4.4
 
 # Passenger
 
-This document will explain how to install Shout on Phusion Passenger. You can find out more about Passenger at [their website](https://www.phusionpassenger.com/).
+This document will explain how to install The Lounge on Phusion Passenger. You can find out more about Passenger at [their website](https://www.phusionpassenger.com/).
 
 ### Step 1:
 
@@ -19,8 +19,8 @@ This document will explain how to install Shout on Phusion Passenger. You can fi
 Clone and run the `npm install`:
 
 ```
-$ git clone http://github.com/erming/shout
-$ cd shout
+$ git clone https://github.com/thelounge/lounge
+$ cd lounge
 $ npm install
 ```
 
@@ -41,15 +41,15 @@ server {
         listen 80;
         listen 443 ssl;
         server_name irc.me.com;
-        root <directory you cloned Shout to>;
+        root <directory you cloned The Lounge to>;
 
         ssl_certificate <SSL cert>;
         ssl_certificate_key <SSL key>;
 
         passenger_enabled on;
 
-        passenger_user shout;
-        passenger_group shout;
+        passenger_user lounge;
+        passenger_group lounge;
         passenger_nodejs /usr/bin/node;
         passenger_app_root <same as root>;
 }
@@ -60,10 +60,10 @@ Or Apache:
 ```apache
 <VirtualHost *:80>
     ServerName irc.me.com
-    DocumentRoot <directory you cloned Shout to>
-    PassengerRoot <directory you cloned Shout to>
-    PassengerUser shout
-    PassengerGroup shout
+    DocumentRoot <directory you cloned The Lounge to>
+    PassengerRoot <directory you cloned The Lounge to>
+    PassengerUser lounge
+    PassengerGroup lounge
     PassengerAppRoot <same as previous>
 </VirtualHost>
 ```

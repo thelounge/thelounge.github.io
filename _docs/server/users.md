@@ -8,9 +8,9 @@ order: 2.2
 
 # Users
 
-Once you've set up your Shout server, it's time to add your first users. Open your `config.js` and set `public` to `false`. This will enable user login.
+Once you've set up The Lounge, it's time to add your first users. Open your `config.js` and set `public` to `false`. This will enable user login.
 
-When you start Shout in "private" mode it will load every user found in your `users/` folder. Here's some of the features users get:
+When you start The Lounge in "private" mode it will load every user found in your `users/` folder. Here's some of the features users get:
 
 - Stay online on IRC even when you log out
 - Lets you chat from multiple devices simultaneously
@@ -20,19 +20,19 @@ When you start Shout in "private" mode it will load every user found in your `us
 To add a new user, run this command:
 
 ```
-$ shout add <name>
+$ lounge add <name>
 ```
 
 This will create a new user in your `users/` folder.
 
-_Note: By default, users are stored in the `~/.shout/users/` folder. You can change this location by using the `--home <path>` setting (see [Usage](/docs/getting_started/usage.html#--home))._
+_Note: By default, users are stored in the `~/.lounge/users/` folder. You can change this location by using the `--home <path>` setting (see [Usage](/docs/getting_started/usage.html#--home))._
 
 ## Edit user
 
 Open the `user.json` for the specified user:
 
 ```
-$ shout edit <name>
+$ lounge edit <name>
 ```
 
 ## Remove user
@@ -40,7 +40,7 @@ $ shout edit <name>
 Simply run:
 
 ```
-$ shout remove <name>
+$ lounge remove <name>
 ```
 
 ## List users
@@ -48,12 +48,12 @@ $ shout remove <name>
 This command will print a list of all your existing users:
 
 ```
-$ shout list
+$ lounge list
 ```
 
 # User configuration
 
-If you run `shout edit <name>`, the `user.json` file will open.
+If you run `lounge edit <name>`, the `user.json` file will open.
 
 The user configuration is loaded upon server start. Here's an example of what a `user.json` file might look like:
 

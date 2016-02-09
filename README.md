@@ -1,13 +1,13 @@
-This is the http://shout-irc.com/ website.
+This is the website of [The Lounge](https://thelounge.github.io/).
 
-## What is Shout?
+## What is The Lounge?
 
-Shout is a web IRC client. More information can be found here:
-https://github.com/erming/shout
+The Lounge is a web IRC client. More information can be found at
+https://github.com/thelounge/lounge.
 
 ## Development
 
-You need to install [Jekyll](http://jekyllrb.com/):
+You need to install [Jekyll](https://jekyllrb.com/):
 
 ```
 sudo apt-get install ruby1.9.3 build-essential nodejs-legacy
@@ -17,8 +17,8 @@ sudo gem install jekyll redcarpet
 Now go ahead and clone:
 
 ```
-git clone http://github.com/erming/shout-website
-cd shout-website/
+git clone https://github.com/thelounge/thelounge.github.io
+cd thelounge.github.io/
 ```
 
 Run Jekyll:
@@ -29,4 +29,4 @@ jekyll serve --watch --safe
 
 ## License
 
-Available under [the MIT license](http://mths.be/mit).
+Available under [the MIT license](https://opensource.org/licenses/MIT).

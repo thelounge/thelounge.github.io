@@ -6,12 +6,12 @@ category: Getting Started
 order: 1.1
 ---
 
-# Installing Shout
+# Installing The Lounge
 
-Shout requires [nodejs](http://nodejs.org/) and [npm](https://www.npmjs.org/). If you already have them installed on your system, go ahead and install Shout:
+The Lounge requires [nodejs](https://nodejs.org/) and [npm](https://www.npmjs.org/). If you already have them installed on your system, go ahead and install The Lounge:
 
 ```
-$ sudo npm -g install shout
+$ sudo npm -g install thelounge
 ```
 
 And if you don't &mdash; pick your operating system below:
@@ -28,10 +28,10 @@ $ sudo apt-get -y install nodejs-legacy npm
 
 ### Step 2:
 
-Install Shout:
+Install The Lounge:
 
 ```
-$ sudo npm install -g shout
+$ sudo npm install -g thelounge
 ```
 
 ## Mac OSX
@@ -48,7 +48,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 ### Step 2:
 
-Install [nodejs](http://nodejs.org):
+Install [nodejs](https://nodejs.org):
 
 ```
 $ brew install nodejs
@@ -56,10 +56,10 @@ $ brew install nodejs
 
 ### Step 3:
 
-Install Shout:
+Install The Lounge:
 
 ```
-$ sudo npm -g install shout
+$ sudo npm -g install thelounge
 ```
 
 ## Windows
@@ -82,12 +82,12 @@ Now close your Command Prompt and open the `Node.js Command Prompt` that was jus
 
 ### Step 4:
 
-Install Shout:
+Install The Lounge:
 
 ```
-npm install -g shout
+npm install -g thelounge
 ```
 
 # Install complete
 
-When you're done installing Shout, go ahead to [the next section](/docs/getting_started/usage.html)
+When you're done installing The Lounge, go ahead to [the next section](/docs/getting_started/usage.html)
