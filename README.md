@@ -1,9 +1,9 @@
-This is the http://shout-irc.com/ website.
+This is the website of [The Lounge](https://thelounge.github.io/).
 
-## What is Shout?
+## What is The Lounge?
 
-Shout is a web IRC client. More information can be found here:
-https://github.com/erming/shout
+The Lounge is a web IRC client. More information can be found at
+https://github.com/thelounge/lounge.
 
 ## Development
 
