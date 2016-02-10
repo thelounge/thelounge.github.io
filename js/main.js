@@ -14,7 +14,7 @@ function fetchVersion() {
 	if (!version.length) {
 		return;
 	}
-	$.getJSON("https://api.github.com/repos/erming/shout/tags", function(json) {
+	$.getJSON("https://api.github.com/repos/thelounge/lounge/tags", function(json) {
 		var first = json.shift();
 		if (first.name) {
 			version.html("version " + first.name);

@@ -8,7 +8,7 @@ order: 3.1
 
 # Commands
 
-Shout implements most of the IRC commands you may be familiar with. Here's a list of commands you can use:
+The Lounge implements most of the IRC commands you may be familiar with. Here's a list of commands you can use:
 
 ## /clear
 

@@ -8,7 +8,7 @@ order: 4.3
 
 # Heroku
 
-This document will explain how to install Shout on Heroku. If you want to learn about Heroku you should read their [documentation](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction).
+This document will explain how to install The Lounge on Heroku. If you want to learn about Heroku you should read their [documentation](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction).
 
 <div class="alert alert-warning" role="alert">
   <p>
@@ -19,7 +19,7 @@ This document will explain how to install Shout on Heroku. If you want to learn 
   </p>
 
   <p>
-    When heroku kills shout, you need to connect to servers and channels again from scratch.
+    When heroku kills The Lounge, you need to connect to servers and channels again from scratch.
     In practice, you get no always-on functionality with an unpaid heroku account.
   </p>
 </div>
@@ -39,14 +39,14 @@ $ heroku login
 Clone and run the `npm install`:
 
 ```
-$ git clone http://github.com/erming/shout
-$ cd shout
+$ git clone https://github.com/thelounge/lounge
+$ cd lounge
 $ npm install
 ```
 
 ### Step 3:
 
-While standing in the `shout/` directory, run:
+While standing in the `lounge/` directory, run:
 
 ```
 heroku create
@@ -54,7 +54,7 @@ heroku create
 
 ### Step 4: (optional)
 
-_This step is only useful if you want to run Shout with users accounts._
+_This step is only useful if you want to run The Lounge with users accounts._
 
 Create a `Procfile` and edit the content to look like this:
 
@@ -64,7 +64,7 @@ web: node index --private --home /app
 
 _You can read more about Procfiles [here](https://devcenter.heroku.com/articles/procfile)._
 
-To create users, stand in the `shout/` directory and call this:
+To create users, stand in the `lounge/` directory and call this:
 
 ```
 $ ./index.js --home . add <username>
