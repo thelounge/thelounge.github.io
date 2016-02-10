@@ -4,7 +4,6 @@ baseurl: ""
 markdown: redcarpet
 redcarpet:
   extensions: ["smart", "tables", "autolink", "with_toc_data"]
-permalink: pretty
 collections:
   docs:
     output: true
