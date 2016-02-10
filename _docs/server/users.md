@@ -25,7 +25,7 @@ $ lounge add <name>
 
 This will create a new user in your `users/` folder.
 
-_Note: By default, users are stored in the `~/.lounge/users/` folder. You can change this location by using the `--home <path>` setting (see [Usage](/docs/getting_started/usage.html#--home))._
+_Note: By default, users are stored in the `~/.lounge/users/` folder. You can change this location by using the `--home <path>` setting (see [Usage](/docs/getting_started/usage.html#home))._
 
 ## Edit user
 
