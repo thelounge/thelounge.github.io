@@ -33,7 +33,28 @@ You can override this setting by starting The Lounge like this:
 
 ## theme
 
-This setting should point to a stylesheet in your `lounge` folder. If you want to create your own theme, it's recommended that you add your own stylesheet to `lounge/client/themes/`.
+This setting should point to a stylesheet in your `lounge` folder.
+If you want to create your own theme, it's recommended that you add
+your own stylesheet to `lounge/client/themes/`.
+
+
+```javascript
+//
+// Set the default theme.
+//
+// @type     string
+// @default  "themes/example.css"
+//
+theme: "themes/example.css",
+```
+
+The Lounge ships with 4 themes.
+
+[![Example Theme][example_thumb]][example]
+[![Crypto Theme][crypto_thumb]][crypto]
+
+[![Morning Theme][morning_thumb]][morning]
+[![Zenburn Theme][zenburn_thumb]][zenburn]
 
 ## home
 
@@ -58,3 +79,13 @@ These are the placeholder values displayed in the __Connect__ form:
 - nick
 - realname
 - join
+
+[example]: /img/screenshots/example_css.png
+[example_thumb]: /img/screenshots/example_thumbnail.png (Example CSS)
+[crypto]: /img/screenshots/crypto_css.png
+[crypto_thumb]: /img/screenshots/crypto_thumbnail.png (Crypto CSS)
+[morning]: /img/screenshots/morning_css.png
+[morning_thumb]: /img/screenshots/morning_thumbnail.png (Morning CSS)
+[zenburn]: /img/screenshots/zenburn_css.png
+[zenburn_thumb]: /img/screenshots/zenburn_thumbnail.png (Zenburn CSS)
+
