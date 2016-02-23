@@ -4,7 +4,7 @@ layout: documentation
 
 # FAQ -- Frequently Asked Questions
 
-## Why forking?
+## Why the fork?
 
 We felt that the original [Shout](https://github.com/erming/shout) project
 "stagnated" a little because its original author wanted it to remain his pet
