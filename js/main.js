@@ -10,7 +10,7 @@ function highlight() {
 }
 
 function fetchVersion() {
-	var version = $("#version");
+	var version = $("small#version");
 	if (!version.length) {
 		return;
 	}
