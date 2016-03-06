@@ -16,7 +16,7 @@ $ sudo npm -g install thelounge
 
 And if you don't &mdash; pick your operating system below:
 
-## Linux
+## Ubuntu / Debian
 
 ### Step 1:
 
