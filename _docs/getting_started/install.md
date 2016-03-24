@@ -34,6 +34,25 @@ Install The Lounge:
 $ sudo npm install -g thelounge
 ```
 
+## CentOS / Fedora / RHEL
+
+### Step 1:
+
+Install the requirements using yum (Newer version of Fedora, please use dnf instead):
+
+```
+$ sudo yum install epel-release
+$ sudo yum install nodejs npm
+```
+
+### Step 2:
+
+Install The Lounge:
+
+```
+$ sudo npm install -g thelounge
+```
+
 ## Mac OSX
 
 ### Step 1:
