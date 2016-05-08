@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Introduction
+order: 0.0
 ---
 
 # The Lounge
