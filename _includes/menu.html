@@ -1,13 +1,12 @@
 <div id="menu">
-	<a href="/docs/">The Lounge</a>
 	{% assign docs = (site.docs | sort: "order" ) %}
-	{% for page in docs %}
-		{% if c != page.category %}
-			{% assign c = page.category %}
-			<strong>{{ page.category }}</strong>
+	{% for node in docs %}
+		{% if c != node.category %}
+			{% assign c = node.category %}
+			<strong>{{ node.category }}</strong>
 		{% endif %}
-		<a href="{{ site.baseurl }}{{ page.url }}">
-			{{ page.title }}
+		<a href="{{ site.baseurl }}{{ node.url }}"{% if page.url == node.url %} class="active"{% endif %}>
+			{{ node.title }}
 		</a>
 	{% endfor %}
 </div>
