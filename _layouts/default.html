@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>{{ site.title }}</title>
+	<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
 	<meta name="description" content="{{ site.description }}">
 
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.css">

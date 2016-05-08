@@ -188,10 +188,8 @@ pre code {
 #features .feature {
 	padding-bottom: 20px;
 }
-#content .header {
-	background: #e4eaee;
-	padding: 40px 0;
-	margin-bottom: 40px;
+#docs {
+	padding-top: 40px;
 }
 #main h1:first-child,
 #main p {
