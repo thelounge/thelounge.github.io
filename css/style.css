@@ -142,39 +142,6 @@ pre code {
 #splash #version.version_shown {
 	opacity: .7;
 }
-#browser {
-	padding-top: 30px;
-}
-#browser .mobile {
-	display: none;
-}
-#subscribe {
-	background: #e4eaee;
-	padding: 40px 0 60px;
-}
-#subscribe h2 {
-	text-align: center;
-}
-#subscribe form {
-	margin: 0 auto;
-	max-width: 380px;
-	position: relative;
-}
-#subscribe input {
-	background: none;
-	border: 2px solid rgba(0, 0, 0, .05);
-	border-radius: 3px;
-	padding: 10px 13px;
-	width: 100%;
-}
-#subscribe button {
-	border: 0;
-	background: none;
-	position: absolute;
-	padding: 0;
-	right: 15px;
-	top: 12px;
-}
 #features {
 	padding: 50px 0 80px;
 }
@@ -301,12 +268,6 @@ pre code {
 	}
 	#splash .button strong {
 		font-size: 16px;
-	}
-	#browser .desktop {
-		display: none;
-	}
-	#browser .mobile {
-		display: inline;
 	}
 	#features .feature {
 		text-align: center;
