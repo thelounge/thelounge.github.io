@@ -18,7 +18,7 @@ function fetchVersion() {
 		var first = json.shift();
 		if (first.name) {
 			version.html("version " + first.name.substr(1)); // Strip `v` in `vX.Y.Z`
-			version.addClass("show");
+			version.addClass("version_shown");
 		}
 	});
 }

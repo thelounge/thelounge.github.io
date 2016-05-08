@@ -137,8 +137,9 @@ pre code {
 }
 #splash #version {
 	opacity: 0;
+	transition: opacity .2s ease-in;
 }
-#splash #version.show {
+#splash #version.version_shown {
 	opacity: .7;
 }
 #browser {
