@@ -131,6 +131,7 @@ pre code {
 #splash .button strong {
 	display: block;
 	font-size: 17px;
+	font-family: monospace;
 }
 #splash .button:hover {
 	background: #77ca7b;
