@@ -99,11 +99,14 @@ $ lounge edit john
 
 _Set the home path. This is the location where The Lounge will look for the `config.js` and the `users/` folder._
 
+_*Also configurable through the environment variable `LOUNGE_HOME`.*_
+
 Example:
 
 ```
 $ lounge --home /app add <user>  # add user to /app/users
 $ lounge --home /app             # start server with /app/config.js
+$ LOUNGE_HOME=/app lounge        # start server with /app/config.js
 ```
 
 ## `--help`
