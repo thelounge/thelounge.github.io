@@ -122,26 +122,25 @@ pre code {
 #splash .hgroup {
 	margin: 60px 0;
 }
-#splash .button {
+#splash .card {
 	background: #84ce88;
 	border-radius: 3px;
 	display: inline-block;
-	padding: 15px 50px;
+	padding: 15px;
+	margin: 5px;
+	min-width: 330px;
 }
-#splash .button strong {
+#splash .card strong {
 	display: block;
 	font-size: 17px;
 	font-family: monospace;
 }
-#splash .button:hover {
-	background: #77ca7b;
-}
-#splash #version {
-	opacity: 0;
-	transition: opacity .2s ease-in;
-}
-#splash #version.version_shown {
+#splash #stable_version,
+#splash #prerelease_version {
 	opacity: .7;
+}
+#splash #prerelease_card.hidden {
+	display: none;
 }
 #features {
 	padding: 50px 0 80px;
