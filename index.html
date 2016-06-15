@@ -11,11 +11,20 @@ layout: default
 					<h1>The self-hosted web IRC client</h1>
 					<h2>Always connected.</h2>
 				</div>
-				<a href="https://www.npmjs.org/package/thelounge" class="button">
+
+				<p>Install <a href="https://www.npmjs.org/package/thelounge">The Lounge from npm</a>:</p>
+
+				<div class="card">
 					<strong>npm -g install thelounge</strong>
-					<small id="version">version 0.0.0</small>
-				</a>
-				<p>				
+					<small id="stable_version"></small>
+				</div>
+
+				<div id="prerelease_card" class="card hidden">
+					<strong>npm -g install thelounge@next</strong>
+					<small id="prerelease_version"></small>
+				</div>
+
+				<p>
 					Or try the
 					<a href="https://avatar.playat.ch:1000" target="_blank">demo</a>.
 				</p>
