@@ -9,81 +9,63 @@ order: 4.1
 # Docker
 
 This part of the documentation will guide you through an installation of The Lounge using Docker.
+For more information about the Docker setup itself, see the documentation on [DockerHub](https://hub.docker.com/r/thelounge/lounge/).
 
-Please follow these [instructions](https://docs.docker.com/installation/#installation) on how to install Docker (or [boot2docker](https://github.com/boot2docker/boot2docker)) on your system. Then follow the steps below:
+Please follow these [instructions](https://docs.docker.com/installation/#installation) on how to install Docker.
+
+## Official images
+
+The Lounge automatically releases Docker images of thelounge for every new release on [DockerHub](https://hub.docker.com/r/thelounge/lounge/).
+These images are available under the name `thelounge/lounge`. Older releases are made available through tags, e.g. `thelounge/lounge:1.5.0`.
+
+To run a container using an official image, follow the steps below;
 
 ### Step 1:
 
-Clone the repository of The Lounge:
+Start the container:
 
 ```
-$ git clone https://github.com/thelounge/lounge.git
-$ cd lounge
+$ docker run --name=thelounge --publish=9000:9000 --detach thelounge/lounge
 ```
 
 ### Step 2:
 
-Build a Docker image according to our [Dockerfile](#!) and name it `lounge-img`:
+The Lounge should now be running on [`http://localhost:9000/`](http://localhost:9000/).
+
+_If you're running the Docker host in a VM (common on Windows & Mac) you need to find out the IP address of your Docker host manually._
+
+## Manually building
+
+Manually building a Docker image of The Lounge is useful if you want to modify stuff like build arguments.
+To manually build a Docker image, follow the steps below;
+
+### Step 1:
+
+Clone the Docker repository of The Lounge:
 
 ```
-$ docker build --tag=lounge-img .
+$ git clone https://github.com/lounge/docker-lounge.git
+$ cd docker-lounge
+```
+
+### Step 2:
+
+Build a Docker image according to our [Dockerfile](https://hub.docker.com/r/lounge/lounge/~/dockerfile/) and name it `lounge`:
+
+```
+$ docker build --tag=lounge .
 ```
 
 ### Step 3:
 
-Verify that the image has been created:
+Create a new container named `thelounge` from the `lounge` image and run the app in it:
 
 ```
-$ docker images
-REPOSITORY         TAG        IMAGE ID         CREATED          VIRTUAL SIZE
-lounge-img         latest     95da6797223b     9 minutes ago    833.1 M
+$ docker run --name=thelounge --publish=9000:9000 --detach lounge
 ```
 
 ### Step 4:
 
-Create a new container named `lounge` from the `lounge-img` image and run the app in it:
+The Lounge should now be running on [`http://localhost:9000/`](http://localhost:9000/).
 
-```
-$ docker run --name=lounge --publish=9000:9000 --detach --tty lounge-img
-```
-
-### Step 5:
-
-Verify that the container is running:
-
-```
-$ docker ps
-CONTAINER ID     IMAGE               COMMAND             CREATED         STATUS         PORTS                    NAMES
-bf0a83b7cc07     lounge-img:latest   /bin/sh -c lounge   42 minutes ago  Up 42 minutes  0.0.0.0:9000->9000/tcp   lounge
-```
-
-### Step 6:
-
-The Lounge should now be running on `http://localhost:9000/`.
-
-_If you're using [boot2docker](https://github.com/boot2docker/boot2docker), run `$ boot2docker ip` to find out which address it's using._
-
-## Usage
-
-To __stop__ the Docker container:
-
-```
-$ docker stop lounge
-```
-
-.. and to __start__ it again:
-
-```
-$ docker start lounge
-```
-
-## Uninstall
-
-If you've want to remove your Docker container:
-
-```
-$ docker stop lounge
-$ docker rm lounge
-```
-
-_Note: This will remove the container and all your users inside._
+_If you're running the Docker host in a VM (common on Windows & Mac) you need to find out the IP address of your Docker host manually._
