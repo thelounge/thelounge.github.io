@@ -15,7 +15,7 @@ Please follow these [instructions](https://docs.docker.com/installation/#install
 
 ## Official images
 
-The Lounge automatically releases Docker images of thelounge for every new release on [DockerHub](https://hub.docker.com/r/thelounge/lounge/).
+The Lounge automatically releases Docker images of The Lounge for every new release on [DockerHub](https://hub.docker.com/r/thelounge/lounge/).
 These images are available under the name `thelounge/lounge`. Older releases are made available through tags, e.g. `thelounge/lounge:1.5.0`.
 
 To run a container using an official image, follow the steps below;
@@ -50,7 +50,7 @@ $ cd docker-lounge
 
 ### Step 2:
 
-Build a Docker image according to our [Dockerfile](https://hub.docker.com/r/lounge/lounge/~/dockerfile/) and name it `lounge`:
+Build a Docker image according to our [Dockerfile](https://hub.docker.com/r/thelounge/lounge/~/dockerfile/) and name it `lounge`:
 
 ```
 $ docker build --tag=lounge .
