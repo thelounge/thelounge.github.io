@@ -44,7 +44,7 @@ To manually build a Docker image, follow the steps below;
 Clone the Docker repository of The Lounge:
 
 ```
-$ git clone https://github.com/lounge/docker-lounge.git
+$ git clone https://github.com/thelounge/docker-lounge.git
 $ cd docker-lounge
 ```
 
