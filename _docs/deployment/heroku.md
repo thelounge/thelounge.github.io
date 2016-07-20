@@ -59,7 +59,7 @@ _This step is only useful if you want to run The Lounge with users accounts._
 Create a `Procfile` and edit the content to look like this:
 
 ```
-web: node index --private --home /app
+web: node index --private --home /app --port $PORT
 ```
 
 _You can read more about Procfiles [here](https://devcenter.heroku.com/articles/procfile)._
