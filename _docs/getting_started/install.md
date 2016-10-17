@@ -107,6 +107,24 @@ Install The Lounge:
 npm install -g thelounge
 ```
 
+## OpenBSD
+
+### Step 1:
+
+Install [nodejs](https://nodejs.org):
+
+```
+# pkg_add node
+```
+
+### Step 2:
+
+Install The Lounge:
+
+```
+# npm -g install thelounge
+```
+
 # Install complete
 
 When you're done installing The Lounge, go ahead to [the next section](/docs/getting_started/usage.html)
