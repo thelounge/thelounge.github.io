@@ -34,6 +34,42 @@ Install The Lounge:
 $ sudo npm install -g thelounge
 ```
 
+## Ubuntu / Debian with no root access
+
+On shell servers you may have node and npm available, but no root/sudo access. You may still install and use The Lounge there.
+
+### Step 1:
+
+Create a folder for your install:
+
+```
+$ mkdir thelounge
+```
+
+### Step 2:
+
+Change current directory:
+
+```
+$ cd thelounge
+```
+
+### Step 3:
+
+Install The Lounge:
+
+```
+$ npm install thelounge
+```
+
+### Step 4:
+
+To run commands listed on `Usage` page use following instead of just `lounge`:
+
+```
+$ ./node_modules/.bin/lounge (parameters here)
+```
+
 ## CentOS / Fedora / RHEL
 
 ### Step 1:
