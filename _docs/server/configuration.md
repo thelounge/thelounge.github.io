@@ -97,16 +97,6 @@ The Lounge ships with 4 themes.
 [zenburn]: /img/screenshots/zenburn_css.png
 [zenburn_thumb]: /img/screenshots/zenburn_thumbnail.png (Zenburn CSS)
 
-## autoload
-
-Use this settings to enable user folder monitoring. This allows 
-dynamic user modifications while the server is running. Default to `true`.
-
-Example :
-```javascript
-autoload: true,
-```
-
 ## prefetch
 
 This settings allows loading of user posted elements like thumbnails 
