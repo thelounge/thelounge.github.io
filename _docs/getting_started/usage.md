@@ -53,7 +53,7 @@ Example:
 $ lounge list
 ```
 
-## `add <name> [<password>]`
+## `add <name>`
 
 _Add a new user._
 
