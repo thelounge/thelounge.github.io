@@ -12,39 +12,71 @@ This part of the documentation will focus on the configuration of the server. St
 
 To quickly open the config:
 
-```
+```shell
 $ lounge config
 ```
 
 ## public
 
-This setting can be either `true` or `false`. Public servers require no authentication. This is the default mode. Set to `false` to enable user login.
+This setting can be either `true` or `false`. Public servers require 
+no authentication. 
+This is the default mode. Set to `false` to enable user login.
+
+Example :
+```javascript
+public: true,
+```
 
 ## host
 
-Listen to connections only from this host. Default `0.0.0.0` will allow connections from anyone.
+Listen to connections only from this host. Default `undefined` will allow 
+connections from anyone (similar to `0.0.0.0`). 
+
+Examples :
+```javascript
+host: "127.0.0.1",
+host: undefined,
+```
 
 ## port
 
-The port to listen on.
+The port to listen on. Default to `9000`.
 
 You can override this setting by starting The Lounge like this:  
-`lounge start --port 80`
+`lounge start -- --port 80`
+
+Example :
+```javascript
+port: 80,
+```
+
+## bind
+
+Local IP to use for outgoing connection. Default to undefined.
+
+Example:
+```javascript
+bind: "192.168.0.1",
+bind: undefined,
+```
+
+## reverseProxy
+
+This setting allow you to specify if the server is behind a reverse proxy. 
+Default to `false`.
+
+Example :
+```javascript
+reverseProxy: false,
+```
 
 ## theme
 
 This setting should point to a stylesheet in your `lounge` folder.
 If you want to create your own theme, it's recommended that you add
 your own stylesheet to `lounge/client/themes/`.
-
-
+Example:
 ```javascript
-//
-// Set the default theme.
-//
-// @type     string
-// @default  "themes/example.css"
-//
 theme: "themes/example.css",
 ```
 
@@ -56,16 +88,92 @@ The Lounge ships with 4 themes.
 [![Morning Theme][morning_thumb]][morning]
 [![Zenburn Theme][zenburn_thumb]][zenburn]
 
+[example]: /img/screenshots/example_css.png
+[example_thumb]: /img/screenshots/example_thumbnail.png (Example CSS)
+[crypto]: /img/screenshots/crypto_css.png
+[crypto_thumb]: /img/screenshots/crypto_thumbnail.png (Crypto CSS)
+[morning]: /img/screenshots/morning_css.png
+[morning_thumb]: /img/screenshots/morning_thumbnail.png (Morning CSS)
+[zenburn]: /img/screenshots/zenburn_css.png
+[zenburn_thumb]: /img/screenshots/zenburn_thumbnail.png (Zenburn CSS)
+
+## prefetch
+
+This settings allows loading of user posted elements like thumbnails 
+and site description from URLs posted in channels. Default to `false`
+
+Example :
+```javascript
+prefetch: true,
+```
+
+## prefetchMaxImageSize
+
+This setting requires `prefetch` to be enabled. It fixes the 
+maximum size for the content to be displayed. Default to `512` (kB).
+
+Example :
+```javascript
+prefetchMaxImageSize: 1024,
+```
+
+## displayNetwork
+
+Allows the display of the network settings in the login form. 
+Default to `true`.
+
+Example :
+```javascript
+displayNetwork: false,
+```
+
+## lockNetwork
+
+This setting lock changes on the network settings and prevent 
+users from adding new networks. Default to `false`.
+
+Example :
+```javascript
+lockNetwork: false,
+```
+
+## webirc
+
+Used for the WEBIRC support in The Lounge. Default to `null`.
+The Lounge then sends the connecting user's host and IP to the IRC server.
+This requires to have a password from the IRC network used.
+
 ## home
 
-Use this setting to override the default `HOME` location. The home folder is where The Lounge will locate the `users/` and `cache/` folder. Leaving this field empty will default to `~/.lounge/`.
+Use this setting to override the default `HOME` location. 
+The home folder is where The Lounge will locate the `users/` and `cache/` folder. 
+Leaving this field empty will default to `~/.lounge/`.
 
 ## logs
 
-Change how the logs will be stored. Remember that logging has to be turned on per user, in their own `user.json`.
+Change how the logs will be stored. Remember that logging has to be 
+turned on per user, in their own `user.json`. 
 
 - format
 - timezone
+
+Example :
+```javascript
+logs: {
+                format: "YYYY_MM_DD HHmmss",
+                timezone: "UTC+02:00"
+},
+```
+
+## maxHistory
+
+Defines the maximum number of history lines to keep per channel/query. 
+A negative value means unlimited history. Default to `-1`.
+
+Example :
+```javascript
+maxHistory: 1000,
+```
 
 ## defaults
 
@@ -80,12 +188,96 @@ These are the placeholder values displayed in the __Connect__ form:
 - realname
 - join
 
-[example]: /img/screenshots/example_css.png
-[example_thumb]: /img/screenshots/example_thumbnail.png (Example CSS)
-[crypto]: /img/screenshots/crypto_css.png
-[crypto_thumb]: /img/screenshots/crypto_thumbnail.png (Crypto CSS)
-[morning]: /img/screenshots/morning_css.png
-[morning_thumb]: /img/screenshots/morning_thumbnail.png (Morning CSS)
-[zenburn]: /img/screenshots/zenburn_css.png
-[zenburn_thumb]: /img/screenshots/zenburn_thumbnail.png (Zenburn CSS)
+Example (for Freenode network) :
+```javascript
+defaults: {
+		name: "Freenode",
+		host: "chat.freenode.net",
+		port: 6697,
+		password: "",
+		tls: true,
+		nick: "lounge-user",
+		username: "lounge-user",
+		realname: "The Lounge User",
+		join: "#thelounge"
+},
 
+```
+
+## transports
+
+This setting is for the socket.io transport. Default to `["polling", "websocket"]`
+
+Example :
+```javascript
+transports: ["polling", "websocket"],
+```
+
+## https
+
+These three settings are used to setup SSL on the server side.
+
+- enable 
+- key
+- certificate
+
+Example
+```javascript
+https: {
+		enable: true, 
+		key: "/path/to/my/certs/key.pem",
+		certificate: "/path/to/my/certs/fullchainpluscert.pem"
+},
+```
+
+## identd
+
+This setting enables the identd support of The Lounge.
+
+- enable
+- port
+
+Example :
+```javascript
+identd: {
+    enable: true,
+    port: 113
+},
+```
+
+## oidentd
+
+This setting enables the support of oidentd through a specific file. Default to `null`.
+
+Example :
+```javascript
+oidentd: "~/.oidentd.conf",
+```
+
+## ldap
+
+LDAP authentication settings. This settings are used only when public is set to `false`.
+
+- enable
+- url
+- baseDN
+- primaryKey
+
+Example :
+```javascript
+ldap: {
+    enable: true,
+    url: "ldaps://example.com",
+    baseDN: "ou=accounts,dc=example,dc=com",
+    primaryKey: "uid"
+},
+```
+
+## debug
+
+This settings gives extra output information for debug purposes. Default to `false`.
+
+Example :
+```javascript
+debug: true,
+```
