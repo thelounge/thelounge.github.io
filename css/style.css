@@ -238,19 +238,11 @@ pre code {
 	border-top: 1px solid #eee;
 	padding: 8px 0 6px;
 }
-#share {
+#github-stars {
 	text-align: right;
-}
-#share .twitter-share {
 	display: inline-block;
 	overflow: hidden;
-	width: 88px;
-	margin-right: 5px;
-}
-#share .github-stars {
-	display: inline-block;
-	overflow: hidden;
-	width: 93px;
+	border: 0;
 }
 
 @media (max-width: 768px) {
@@ -275,10 +267,10 @@ pre code {
 		max-width: 320px;
 	}
 	#footer,
-	#share {
+	#github-stars {
 		text-align: center;
 	}
-	#share {
+	#github-stars {
 		padding-top: 10px;
 	}
 }
