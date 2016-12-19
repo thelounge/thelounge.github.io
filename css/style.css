@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,700);
 
+html {
+	overflow: scroll;
+}
 body {
 	background: #fff;
 	color: #455164;
