@@ -18,21 +18,23 @@ $ lounge config
 
 ## public
 
-This setting can be either `true` or `false`. Public servers require 
-no authentication. 
+This setting can be either `true` or `false`. Public servers require
+no authentication.
 This is the default mode. Set to `false` to enable user login.
 
-Example :
+Example:
+
 ```javascript
 public: true,
 ```
 
 ## host
 
-Listen to connections only from this host. Default `undefined` will allow 
-connections from anyone (similar to `0.0.0.0`). 
+Listen to connections only from this host. Default `undefined` will allow
+connections from anyone (similar to `0.0.0.0`).
 
-Examples :
+Examples:
+
 ```javascript
 host: "127.0.0.1",
 host: undefined,
@@ -45,7 +47,8 @@ The port to listen on. Default to `9000`.
 You can override this setting by starting The Lounge like this:  
 `lounge start -- --port 80`
 
-Example :
+Example:
+
 ```javascript
 port: 80,
 ```
@@ -55,6 +58,7 @@ port: 80,
 Local IP to use for outgoing connection. Default to undefined.
 
 Example:
+
 ```javascript
 bind: "192.168.0.1",
 bind: undefined,
@@ -62,10 +66,11 @@ bind: undefined,
 
 ## reverseProxy
 
-This setting allow you to specify if the server is behind a reverse proxy. 
+This setting allow you to specify if the server is behind a reverse proxy.
 Default to `false`.
 
-Example :
+Example:
+
 ```javascript
 reverseProxy: false,
 ```
@@ -75,7 +80,9 @@ reverseProxy: false,
 This setting should point to a stylesheet in your `lounge` folder.
 If you want to create your own theme, it's recommended that you add
 your own stylesheet to `lounge/client/themes/`.
+
 Example:
+
 ```javascript
 theme: "themes/example.css",
 ```
@@ -99,40 +106,44 @@ The Lounge ships with 4 themes.
 
 ## prefetch
 
-This settings allows loading of user posted elements like thumbnails 
+This settings allows loading of user posted elements like thumbnails
 and site description from URLs posted in channels. Default to `false`
 
-Example :
+Example:
+
 ```javascript
 prefetch: true,
 ```
 
 ## prefetchMaxImageSize
 
-This setting requires `prefetch` to be enabled. It fixes the 
+This setting requires `prefetch` to be enabled. It fixes the
 maximum size for the content to be displayed. Default to `512` (kB).
 
-Example :
+Example:
+
 ```javascript
 prefetchMaxImageSize: 1024,
 ```
 
 ## displayNetwork
 
-Allows the display of the network settings in the login form. 
+Allows the display of the network settings in the login form.
 Default to `true`.
 
-Example :
+Example:
+
 ```javascript
 displayNetwork: false,
 ```
 
 ## lockNetwork
 
-This setting lock changes on the network settings and prevent 
+This setting lock changes on the network settings and prevent
 users from adding new networks. Default to `false`.
 
-Example :
+Example:
+
 ```javascript
 lockNetwork: false,
 ```
@@ -145,32 +156,34 @@ This requires to have a password from the IRC network used.
 
 ## home
 
-Use this setting to override the default `HOME` location. 
-The home folder is where The Lounge will locate the `users/` and `cache/` folder. 
+Use this setting to override the default `HOME` location.
+The home folder is where The Lounge will locate the `users/` and `cache/` folder.
 Leaving this field empty will default to `~/.lounge/`.
 
 ## logs
 
-Change how the logs will be stored. Remember that logging has to be 
-turned on per user, in their own `user.json`. 
+Change how the logs will be stored. Remember that logging has to be
+turned on per user, in their own `user.json`.
 
 - format
 - timezone
 
-Example :
+Example:
+
 ```javascript
 logs: {
-                format: "YYYY_MM_DD HHmmss",
-                timezone: "UTC+02:00"
+	format: "YYYY_MM_DD HHmmss",
+	timezone: "UTC+02:00"
 },
 ```
 
 ## maxHistory
 
-Defines the maximum number of history lines to keep per channel/query. 
+Defines the maximum number of history lines to keep per channel/query.
 A negative value means unlimited history. Default to `-1`.
 
-Example :
+Example:
+
 ```javascript
 maxHistory: 1000,
 ```
@@ -188,27 +201,28 @@ These are the placeholder values displayed in the __Connect__ form:
 - realname
 - join
 
-Example (for Freenode network) :
+Example (for Freenode network):
+
 ```javascript
 defaults: {
-		name: "Freenode",
-		host: "chat.freenode.net",
-		port: 6697,
-		password: "",
-		tls: true,
-		nick: "lounge-user",
-		username: "lounge-user",
-		realname: "The Lounge User",
-		join: "#thelounge"
+	name: "Freenode",
+	host: "chat.freenode.net",
+	port: 6697,
+	password: "",
+	tls: true,
+	nick: "lounge-user",
+	username: "lounge-user",
+	realname: "The Lounge User",
+	join: "#thelounge"
 },
-
 ```
 
 ## transports
 
 This setting is for the socket.io transport. Default to `["polling", "websocket"]`
 
-Example :
+Example:
+
 ```javascript
 transports: ["polling", "websocket"],
 ```
@@ -217,16 +231,17 @@ transports: ["polling", "websocket"],
 
 These three settings are used to setup SSL on the server side.
 
-- enable 
+- enable
 - key
 - certificate
 
 Example
+
 ```javascript
 https: {
-		enable: true, 
-		key: "/path/to/my/certs/key.pem",
-		certificate: "/path/to/my/certs/fullchainpluscert.pem"
+	enable: true,
+	key: "/path/to/my/certs/key.pem",
+	certificate: "/path/to/my/certs/fullchainpluscert.pem"
 },
 ```
 
@@ -237,11 +252,12 @@ This setting enables the identd support of The Lounge.
 - enable
 - port
 
-Example :
+Example:
+
 ```javascript
 identd: {
-    enable: true,
-    port: 113
+	enable: true,
+	port: 113
 },
 ```
 
@@ -249,7 +265,8 @@ identd: {
 
 This setting enables the support of oidentd through a specific file. Default to `null`.
 
-Example :
+Example:
+
 ```javascript
 oidentd: "~/.oidentd.conf",
 ```
@@ -263,13 +280,14 @@ LDAP authentication settings. This settings are used only when public is set to 
 - baseDN
 - primaryKey
 
-Example :
+Example:
+
 ```javascript
 ldap: {
-    enable: true,
-    url: "ldaps://example.com",
-    baseDN: "ou=accounts,dc=example,dc=com",
-    primaryKey: "uid"
+	enable: true,
+	url: "ldaps://example.com",
+	baseDN: "ou=accounts,dc=example,dc=com",
+	primaryKey: "uid"
 },
 ```
 
@@ -277,7 +295,8 @@ ldap: {
 
 This settings gives extra output information for debug purposes. Default to `false`.
 
-Example :
+Example:
+
 ```javascript
 debug: true,
 ```
