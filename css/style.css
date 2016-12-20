@@ -114,11 +114,6 @@ pre code {
 #splash .row {
 	padding: 20px 0;
 }
-#splash .logo {
-	display: none;
-	width: 160px;
-	height: 160px;
-}
 #splash .hgroup {
 	margin: 60px 0;
 }
@@ -234,10 +229,6 @@ pre code {
 #footer hr {
 	margin: 0 15px 10px;
 }
-#footer .inner {
-	border-top: 1px solid #eee;
-	padding: 8px 0 6px;
-}
 #share {
 	text-align: right;
 }
@@ -261,12 +252,6 @@ pre code {
 		font-size: 22px;
 	}
 	#splash h2 {
-		font-size: 16px;
-	}
-	#splash .logo {
-		max-width: 140px;
-	}
-	#splash .button strong {
 		font-size: 16px;
 	}
 	#features .feature {
