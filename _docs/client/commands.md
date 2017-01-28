@@ -10,6 +10,18 @@ order: 3.1
 
 The Lounge implements most of the IRC commands you may be familiar with. Here's a list of commands you can use:
 
+## /away
+
+Mark yourself as away and set your away message. If you omit the message, an empty one is used.
+
+Example: `/away Making quiche`
+
+## /back
+
+Remove your away status (after `/away [<message>]`).
+
+Example: `/back`
+
 ## /clear
 
 Clear the current screen.
