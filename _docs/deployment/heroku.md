@@ -1,12 +1,15 @@
 ---
 layout: documentation
 title: Heroku
-description: Add your description here
 category: Deployment
 order: 4.3
 ---
 
 # Heroku
+
+<div class="alert alert-danger" role="alert">
+  <strong>As of February 2017, this document is deprecated. It will not be maintained anymore and will soon be removed.</strong>
+</div>
 
 This document will explain how to install The Lounge on Heroku. If you want to learn about Heroku you should read their [documentation](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction).
 
@@ -19,34 +22,33 @@ This document will explain how to install The Lounge on Heroku. If you want to l
   </p>
 
   <p>
-    When heroku kills The Lounge, you need to connect to servers and channels again from scratch.
-    In practice, you get no always-on functionality with an unpaid heroku account.
+    When Heroku kills The Lounge, you need to connect to servers and channels again from scratch.
+    In practice, you get no always-on functionality with an unpaid Heroku account.
   </p>
 </div>
-
-Okay, let's get down to business:
 
 ### Step 1:
 
 Begin by logging in with the [Heroku toolbelt](https://toolbelt.heroku.com/):
 
 ```
-$ heroku login
+heroku login
 ```
 
 ### Step 2:
 
-Clone and run the `npm install`:
+Clone the repository and install The Lounge from source:
 
 ```
-$ git clone https://github.com/thelounge/lounge
-$ cd lounge
-$ npm install
+git clone https://github.com/thelounge/lounge
+cd lounge
+npm install
+NODE_ENV=production npm run build
 ```
 
 ### Step 3:
 
-While standing in the `lounge/` directory, run:
+In the `lounge/` directory, run:
 
 ```
 heroku create
@@ -64,10 +66,10 @@ web: node index --private --home /app
 
 _You can read more about Procfiles [here](https://devcenter.heroku.com/articles/procfile)._
 
-To create users, stand in the `lounge/` directory and call this:
+To create users, run the following in the `lounge/` directory:
 
 ```
-$ ./index.js --home . add <username>
+./index.js --home . add <username>
 ```
 
 ### Step 5:
@@ -77,12 +79,12 @@ Time to publish to Heroku!
 If you've made any changes to the repository (like adding users or the Profile), don't forget to save the changes with `git`:
 
 ```
-$ git add .
-$ git commit -m "Added Heroku files"
+git add .
+git commit -m "Added Heroku files"
 ```
 
 And with that done, lets go ahead and push to Heroku:
 
 ```
-$ git push heroku
+git push heroku
 ```

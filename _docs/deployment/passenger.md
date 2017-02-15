@@ -1,12 +1,15 @@
 ---
 layout: documentation
 title: Passenger
-description: Add your description here
 category: Deployment
 order: 4.4
 ---
 
 # Passenger
+
+<div class="alert alert-danger" role="alert">
+  <strong>As of February 2017, this document is deprecated. It will not be maintained anymore and will soon be removed.</strong>
+</div>
 
 This document will explain how to install The Lounge on Phusion Passenger. You can find out more about Passenger at [their website](https://www.phusionpassenger.com/).
 
@@ -16,12 +19,13 @@ This document will explain how to install The Lounge on Phusion Passenger. You c
 
 ### Step 2:
 
-Clone and run the `npm install`:
+Clone the repository and install The Lounge from source:
 
 ```
-$ git clone https://github.com/thelounge/lounge
-$ cd lounge
-$ npm install
+git clone https://github.com/thelounge/lounge
+cd lounge
+npm install
+NODE_ENV=production npm run build
 ```
 
 ### Step 3:

@@ -287,6 +287,11 @@ pre code {
 	background-color: #fcf8e3;
 	border-color: #faebcc;
 }
+.alert-danger {
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
 .alert p:last-child {
 	margin-bottom: 0;
 }
