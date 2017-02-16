@@ -2,6 +2,8 @@
 layout: documentation
 title: Install and upgrade
 order: 2
+redirect_from:
+  - /docs/getting_started/install.html
 ---
 
 # Install and upgrade
