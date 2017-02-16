@@ -80,7 +80,7 @@ Then install The Lounge using:
 [sudo] npm --global install thelounge
 ```
 
-{: .alert.alert-warning role="alert"}
+{: .alert.alert-info role="alert"}
 Note that installing from npm does not daemonize nor autostart The Lounge.
 
 Start the server manually using:
@@ -99,3 +99,49 @@ private mode and configure The Lounge, go to
 [the configuration section](/docs/server/configuration.html).
 
 To update The Lounge, simply re-run the `install` command above, and restart it.
+
+## Running from source
+
+Running The Lounge from source ensures you are running the most recent codebase.
+
+{: .alert.alert-warning role="alert"}
+While running The Lounge from source allows you to test the latest features, it
+may be unstable or insecure. This is not production-ready, so use at your own
+risk!<br>
+It is also not recommended to run this as a `root` user.
+
+First, make sure [Node.js](https://nodejs.org/) v4 or more recent is installed
+with `node --version`, as well as. If not, follow the instructions given on the
+[official documentation](https://nodejs.org/en/download/package-manager/) by
+choosing your distribution in the list.
+
+The following commands install the development version of The Lounge:
+
+```sh
+git clone https://github.com/thelounge/lounge
+cd lounge
+npm install
+NODE_ENV=production npm run build
+npm link
+```
+
+{: .alert.alert-info role="alert"}
+Note that installing from source does not daemonize nor autostart The Lounge.
+
+Start the server manually using:
+
+```sh
+lounge start
+```
+
+The Lounge is now up and running **in public mode** at <http://localhost:9000>.
+
+Read more about how to use The Lounge from the command line in
+[the CLI usage section](/docs/server/cli_usage.html).
+
+Its configuration file is located at `~/.lounge/config.js`. To enable
+private mode and configure The Lounge, go to
+[the configuration section](/docs/server/configuration.html).
+
+To update The Lounge, simply `git pull` the repository, re-run the `install` and
+`build` commands above, and restart it.
