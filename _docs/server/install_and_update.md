@@ -9,6 +9,35 @@ redirect_from:
 
 # Installing and updating The Lounge
 
+## Debian and Ubuntu based distributions
+
+First, make sure [Node.js](https://nodejs.org/) v4 or more recent is installed
+with `node --version`. If not, follow the instructions given on the
+[official documentation](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions).
+
+Then download `lounge.deb` located at the bottom of
+[the latest release](https://github.com/thelounge/lounge/releases/latest).
+
+Finally, open a terminal and install the downloaded package using:
+
+```sh
+sudo dpkg --install lounge.deb
+```
+
+This also sets up a `systemd` service, enabled during the install, that you can
+control with `systemctl status|start|restart|stop|...`.
+
+The Lounge is now up and running **in public mode** at <http://localhost:9000>.
+
+Its configuration file is located at `/etc/lounge/config.js`. To enable
+private mode and configure The Lounge, go to
+[the configuration section](/docs/server/configuration.html).
+
+To update The Lounge, simply follow these steps again after downloading a new
+`lounge.deb` file, and restart the service.
+
+## From npm releases
+
 Installing the [npm package](https://www.npmjs.com/package/thelounge) directly
 allows you to use stable releases on systems where we do not provide native
 packages.
