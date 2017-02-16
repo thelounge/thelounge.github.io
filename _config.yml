@@ -1,9 +1,7 @@
 title: The Lounge &mdash; Self-hosted web IRC client
 description: "The official website for The Lounge, the self-hosted web IRC client."
 baseurl: ""
-markdown: redcarpet
-redcarpet:
-  extensions: ["smart", "tables", "autolink", "with_toc_data"]
+markdown: kramdown
 gems:
   - jekyll-redirect-from # https://github.com/jekyll/jekyll-redirect-from#jekyllredirectfrom
   - jekyll-sitemap
