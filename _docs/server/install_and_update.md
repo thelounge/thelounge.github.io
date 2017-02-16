@@ -9,16 +9,38 @@ redirect_from:
 
 # Installing and updating The Lounge
 
-The Lounge requires [Node.js](https://nodejs.org/) v4 or more recent, and [npm](https://www.npmjs.org/).
+Installing the [npm package](https://www.npmjs.com/package/thelounge) directly
+allows you to use stable releases on systems where we do not provide native
+packages.
 
-If you need to install these, follow instructions given on the [official documentation](https://nodejs.org/en/download/package-manager/) by choosing your distribution in the list.
+First, make sure [Node.js](https://nodejs.org/) v4 or more recent is installed
+with `node --version`, as well as [npm](https://www.npmjs.org/). If not, follow
+the instructions given on the
+[official documentation](https://nodejs.org/en/download/package-manager/) by
+choosing your distribution in the list.
 
-You can then install The Lounge using:
+Then install The Lounge using:
 
 ```sh
-$ [sudo] npm -g install thelounge
+[sudo] npm --global install thelounge
 ```
 
-## Install complete
+{: .alert.alert-warning role="alert"}
+Note that installing from npm does not daemonize nor autostart The Lounge.
 
-When you're done installing The Lounge, go to [the next section](/docs/getting_started/usage.html)
+Start the server manually using:
+
+```sh
+lounge start
+```
+
+The Lounge is now up and running **in public mode** at <http://localhost:9000>.
+
+Read more about how to use The Lounge from the command line in
+[the CLI usage section](/docs/server/cli_usage.html).
+
+Its configuration file is located at `~/.lounge/config.js`. To enable
+private mode and configure The Lounge, go to
+[the configuration section](/docs/server/configuration.html).
+
+To update The Lounge, simply re-run the `install` command above, and restart it.
