@@ -1,12 +1,10 @@
 ---
 layout: documentation
-title: Install
-description: Add your description here
-category: Getting Started
-order: 1.1
+title: Install and upgrade
+order: 2
 ---
 
-# Installing The Lounge
+# Install and upgrade
 
 The Lounge requires [Node.js](https://nodejs.org/) v4 or more recent, and [npm](https://www.npmjs.org/).
 
