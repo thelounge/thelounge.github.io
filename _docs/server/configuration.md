@@ -3,7 +3,7 @@ layout: documentation
 title: Configuration
 description: Add your description here
 category: Server
-order: 2.1
+order: 2.2
 ---
 
 # Configuration
@@ -189,7 +189,7 @@ logs: {
 Defines the maximum number of history lines that will be kept in
 memory per channel/query, in order to reduce the memory usage of
 the server. Setting this to -1 will keep unlimited amount.
-Default to `10000`. 
+Default to `10000`.
 
 Example:
 
