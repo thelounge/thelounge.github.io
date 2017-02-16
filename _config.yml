@@ -5,6 +5,7 @@ markdown: redcarpet
 redcarpet:
   extensions: ["smart", "tables", "autolink", "with_toc_data"]
 gems:
+  - jekyll-redirect-from # https://github.com/jekyll/jekyll-redirect-from#jekyllredirectfrom
   - jekyll-sitemap
 collections:
   docs:

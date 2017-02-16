@@ -3,6 +3,8 @@ layout: documentation
 title: Install and update
 category: Server
 order: 2.1
+redirect_from:
+  - /docs/getting_started/install.html
 ---
 
 # Installing and updating The Lounge
