@@ -36,6 +36,32 @@ private mode and configure The Lounge, go to
 To update The Lounge, simply follow these steps again after downloading a new
 `lounge.deb` file, and restart the service.
 
+## Arch Linux
+
+The Lounge is [available in the AUR](https://aur.archlinux.org/packages/thelounge/).
+
+Please follow the
+[Arch Linux documentation](https://wiki.archlinux.org/index.php/Arch_User_Repository)
+to install this package from the AUR. For example, to install it using an AUR
+helper:
+
+```sh
+pacaur -aS thelounge
+yaourt -aS thelounge
+```
+
+Then enable and start the `thelounge.service` unit using:
+
+```sh
+systemctl enable --now thelounge.service
+```
+
+The Lounge is now up and running **in public mode** at <http://localhost:9000>.
+
+Its configuration file is located at `/etc/thelounge/config.js`. To enable
+private mode and configure The Lounge, go to
+[the configuration section](/docs/server/configuration.html).
+
 ## From npm releases
 
 Installing the [npm package](https://www.npmjs.com/package/thelounge) directly
