@@ -295,3 +295,17 @@ pre code {
 .alert p:last-child {
 	margin-bottom: 0;
 }
+
+.app-stores {
+	text-align: center;
+}
+.app-stores a {
+	display: inline-block;
+	height: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.app-stores a img {
+	max-height: 100%;
+	max-width: 100%;
+}

@@ -145,3 +145,17 @@ private mode and configure The Lounge, go to
 
 To update The Lounge, simply `git pull` the repository, re-run the `install` and
 `build` commands above, and restart it.
+
+## Services packaging The Lounge
+
+These services offer The Lounge as part of their app stores. We do not have any
+control or responsibility over them, but they usually require little
+configuration to get up and running:
+
+{:.app-stores}
+[![Bytesized Hosting logo](/img/bytesized-hosting-logo.png)](https://bytesized-hosting.com/ "Bytesized Hosting")
+[![Cloudron logo](/img/cloudron-logo.png)](https://cloudron.io/ "Cloudron")
+[![Cozy logo](/img/cozy-logo.png)](https://cozy.io/en/ "Cozy")
+
+Please contact these service providers directly if you have any questions or
+encounter any issues on these platforms.
