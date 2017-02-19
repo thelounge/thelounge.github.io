@@ -2,8 +2,10 @@
   function displaySearchResults(results, store) {
     var searchResults = document.getElementById('search-results');
 
+    $("#search-results").show();
+
     if (results.length) { // Are there any results?
-      var appendString = '';
+      var appendString = '<div class="container"><ul>';
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
@@ -11,9 +13,11 @@
         appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
       }
 
+      appendString += "</ul></div>";
+
       searchResults.innerHTML = appendString;
     } else {
-      searchResults.innerHTML = '<li>No results found</li>';
+      searchResults.innerHTML = '<div class="container">No results found</div>';
     }
   }
 
@@ -30,30 +34,36 @@
     }
   }
 
-  var searchTerm = getQueryVariable('search');
+  $("#search-input").keyup(function() {
+    var searchTerm = $(this).val();
 
-  if (searchTerm) {
-    document.getElementById('search-input').setAttribute("value", searchTerm);
+    if (searchTerm) {
+      $("#content").hide();
+      // document.getElementById('search-input').setAttribute("value", searchTerm);
 
-    // Initalize lunr with the fields it will be searching on. I've given title
-    // a boost of 10 to indicate matches on this field are more important.
-    var idx = lunr(function () {
-      this.field('id');
-      this.field('title', { boost: 10 });
-      this.field('category');
-      this.field('content');
-    });
-
-    for (var key in window.store) { // Add the data to lunr
-      idx.add({
-        'id': key,
-        'title': window.store[key].title,
-        'category': window.store[key].category,
-        'content': window.store[key].content
+      // Initalize lunr with the fields it will be searching on. I've given title
+      // a boost of 10 to indicate matches on this field are more important.
+      var idx = lunr(function () {
+        this.field('id');
+        this.field('title', { boost: 10 });
+        this.field('category');
+        this.field('content');
       });
 
-      var results = idx.search(searchTerm); // Get lunr to perform a search
-      displaySearchResults(results, window.store); // We'll write this in the next section
+      for (var key in window.store) { // Add the data to lunr
+        idx.add({
+          'id': key,
+          'title': window.store[key].title,
+          'category': window.store[key].category,
+          'content': window.store[key].content
+        });
+
+        var results = idx.search(searchTerm); // Get lunr to perform a search
+        displaySearchResults(results, window.store); // We'll write this in the next section
+      }
+    } else {
+      $("#search-results").hide();
+      $("#content").show();
     }
-  }
+  });
 })();
