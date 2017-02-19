@@ -62,34 +62,37 @@ pre code {
 #nav {
 	background: #455164;
 	color: #bcc4d3;
-	padding: 10px 0;
+}
+#nav ul.nav-links {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+#nav ul.nav-links li {
+	float: left;
+	list-style: none;
+	margin: 0;
 }
 #nav a {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 10px;
 	font-weight: 700;
+	color: inherit;
+}
+#nav a i.fa {
+	line-height: 50px;
 }
 #nav a:hover {
-	border-color: #fff;
 	color: #fff;
-}
-#nav a + a {
-	margin-left: 26px;
-}
-#nav .row {
-	padding: 20px 0;
 }
 #nav .logo {
 	color: #fff;
 	font-size: 22px;
-	line-height: 19px;
+	margin-left: -10px;
 }
-#nav .right {
-	text-align: right;
-}
-#nav .github {
-	border: 2px solid #bcc4d3;
-	border-radius: 3px;
-	padding: 6px 12px;
-}
+
 #splash {
 	background: #455164;
 	color: #fff;
