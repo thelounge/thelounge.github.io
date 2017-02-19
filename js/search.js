@@ -5,19 +5,18 @@
     $("#search-results").show();
 
     if (results.length) { // Are there any results?
-      var appendString = '<div class="container"><ul>';
+      var appendString = '<div class="container"><h1>Search results</h1><ul>';
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
         appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
-        appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
       }
 
       appendString += "</ul></div>";
 
       searchResults.innerHTML = appendString;
     } else {
-      searchResults.innerHTML = '<div class="container">No results found</div>';
+      searchResults.innerHTML = '<div class="container"><h1>Search results</h1><p>No results found</p></div>';
     }
   }
 
