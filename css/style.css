@@ -73,7 +73,16 @@ pre code {
 	list-style: none;
 	margin: 0;
 }
-#nav a {
+#nav input,
+#nav button {
+	background: transparent;
+	border-radius: 0;
+	-webkit-appearance: none;
+	outline: none;
+	border: 0;
+}
+#nav a,
+#nav button {
 	display: inline-block;
 	height: 50px;
 	line-height: 50px;
@@ -81,16 +90,28 @@ pre code {
 	font-weight: 700;
 	color: inherit;
 }
-#nav a i.fa {
+#nav a i.fa-2x {
 	line-height: 50px;
 }
-#nav a:hover {
+#nav a:hover,
+#nav button:hover {
 	color: #fff;
 }
 #nav .logo {
 	color: #fff;
 	font-size: 22px;
 	margin-left: -10px;
+}
+#nav .search input {
+	border-bottom: 1px solid white;
+	width: 0;
+	opacity: 0;
+	transition: width .2s, opacity .2s;
+}
+#nav .search input.active {
+	border-bottom: 1px solid white;
+	width: 200px;
+	opacity: 1;
 }
 
 #splash {
