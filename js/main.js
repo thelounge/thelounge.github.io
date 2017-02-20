@@ -52,4 +52,29 @@
 			event.preventDefault();
 		}
 	});
+
+	$(document).keydown(function (event) {
+		if (event.which === 13) { // "Enter" key
+			document.querySelector("#search-results .selected a").click();
+			event.preventDefault();
+		}
+	});
+
+	$(document).keyup(function (event) {
+		if (event.which === 40) { // "Down" key
+			var selected = $("#search-results .selected");
+			if (selected.next().length) {
+				selected.removeClass("selected");
+				selected.next().addClass("selected");
+			}
+			event.preventDefault();
+		} else if (event.which === 38) { // "Up" key
+			var selected = $("#search-results .selected");
+			if (selected.prev().length) {
+				selected.removeClass("selected");
+				selected.prev().addClass("selected");
+			}
+			event.preventDefault();
+		}
+	});
 }());

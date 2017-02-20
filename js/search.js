@@ -5,9 +5,9 @@
 
 		if (results.length) { // Are there any results?
 			resultContent += "<ul>";
-			results.forEach(function (result) {
+			results.forEach(function (result, index) {
 				var item = store[result.ref];
-				resultContent += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
+				resultContent += '<li ' + (index === 0 ? 'class="selected"': '') + '><a href="' + item.url + '">' + item.title + '</a>';
 			});
 			resultContent += "</ul>";
 		} else {
@@ -19,6 +19,10 @@
 	}
 
 	$("#search-input").keyup(function() {
+		if (event.which === 38 || event.which === 40) {
+			return;
+		}
+
 		var searchTerm = $(this).val();
 
 		if (searchTerm) {
