@@ -82,7 +82,7 @@ pre code {
 	border: 0;
 }
 #nav a,
-#nav button {
+#nav li button {
 	display: inline-block;
 	height: 50px;
 	line-height: 50px;
@@ -105,50 +105,41 @@ pre code {
 #nav .container {
 	position: relative;
 }
-#nav .search > div {
+#nav .nav-search-overlay {
 	position: absolute;
 	width: calc(75% - 2 * 20px);
 	top: 0;
 	bottom: 0;
 	right: 20px;
-	/*background: purple;*/
 	background: #455164;
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity .2s, visibility .2s;
 }
-#nav .search > div > div {
+#nav .nav-search-overlay.opened {
+	opacity: 1;
+	visibility: visible;
+}
+#nav .search-input-group {
 	position: relative;
 	margin-top: 10px;
-
 	height: 30px;
 	width: 100%;
-	/*background: rgba(0, 255, 0, .5);*/
 }
-/*#nav .search div input,*/
-#nav .search div button {
+#nav .search-input-group button {
 	position: absolute;
-	right: 0;
 	top: 0;
 	bottom: 0;
-	/*background: red;*/
+	right: 0;
 	height: 30px;
-	padding: 0;
-	width: 20px;
 	text-align: center;
-	line-height: normal;
 }
-#nav .search input {
+#nav .search-input-group input {
 	border-bottom: 1px solid white;
-	/*background: blue;*/
 	padding: 0;
 	padding-right: 20px;
 	width: calc(100% - 20px);
 	height: 100%;
-}
-#nav .search div.active {
-	opacity: 1;
-	visibility: visible;
 }
 
 #splash {

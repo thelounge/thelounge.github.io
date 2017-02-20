@@ -22,27 +22,27 @@
 	<nav id="nav">
 		<div class="container">
 			<a href="/" class="logo">The Lounge</a>
+
 			<ul class="nav-links">
 				<li><a href="/docs">Documentation</a></li>
 				<li><a href="https://github.com/thelounge" class="GitHub Organization for The Lounge">
 					<i class="fa fa-github fa-2x" aria-hidden="true"></i>
 				</a></li>
 				<li>
-					<form class="search" action="/search.html" method="get">
-						<div class="">
-							<div>
-								<input id="search-input" name="search" type="search" placeholder="Search" autocomplete="off" autocapitalize="off" spellcheck="false">
-								<button id="cancel-btn">
-									<i class="fa fa-times-circle" aria-hidden="true"></i>
-								</button>
-							</div>
-						</div>
-						<button id="search-btn">
-							<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-						</button>
-					</form>
+					<button id="search-btn">
+						<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+					</button>
 				</li>
 			</ul>
+
+			<div class="nav-search-overlay">
+				<div class="search-input-group">
+					<input id="search-input" name="search" type="search" placeholder="Search" autocomplete="off" autocapitalize="off" spellcheck="false">
+					<button id="search-close-btn">
+						<i class="fa fa-times-circle" aria-hidden="true"></i>
+					</button>
+				</div>
+			</div>
 		</div>
 	</nav>
 
