@@ -28,6 +28,7 @@
 			.one("transitionend webkitTransitionEnd oTransitionEnd", function () {
 				$("#search-input").focus();
 			});
+		$("#search-input").focus();
 		event.preventDefault();
 	});
 
@@ -38,12 +39,6 @@
 				$("#search-input").val("").trigger("keyup");
 			});
 		event.preventDefault();
-	});
-
-	$(document).keypress(function (event) {
-		if (!$(event.target).is('input') && event.which === 115) { // "S" key
-			$("#search-btn").click();
-		}
 	});
 
 	$("#search-input").keydown(function (event) {
@@ -61,7 +56,9 @@
 	});
 
 	$(document).keyup(function (event) {
-		if (event.which === 40) { // "Down" key
+		if (event.which === 83 && !$(event.target).is('input')) { // "S" key and not currently on an input
+			$("#search-btn").click();
+		} else if (event.which === 40) { // "Down" key
 			var selected = $("#search-results .selected");
 			if (selected.next().length) {
 				selected.removeClass("selected");
