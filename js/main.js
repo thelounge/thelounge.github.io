@@ -42,4 +42,16 @@
 
 		event.preventDefault();
 	});
+
+	$(document).keypress(function (e) {
+		if (e.which === 115) { // "S" key
+			$("#search-btn").click();
+		}
+	});
+
+	$("#search-input").keydown(function (e) {
+		if (e.which === 27) { // "Escape" key
+			$("#cancel-btn").click();
+		}
+	});
 }());
