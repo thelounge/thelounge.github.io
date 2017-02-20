@@ -105,7 +105,7 @@ pre code {
 #nav .container {
 	position: relative;
 }
-#nav .search div {
+#nav .search > div {
 	position: absolute;
 	width: calc(75% - 2 * 20px);
 	top: 0;
@@ -115,15 +115,36 @@ pre code {
 	background: #455164;
 	opacity: 0;
 	visibility: hidden;
-	transition: opacity .2s;
+	transition: opacity .2s, visibility .2s;
+}
+#nav .search > div > div {
+	position: relative;
+	margin-top: 10px;
+
+	height: 30px;
+	width: 100%;
+	/*background: rgba(0, 255, 0, .5);*/
+}
+/*#nav .search div input,*/
+#nav .search div button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	/*background: red;*/
+	height: 30px;
+	padding: 0;
+	width: 20px;
+	text-align: center;
+	line-height: normal;
 }
 #nav .search input {
 	border-bottom: 1px solid white;
-	width: 100%;
-	margin-top: 10px;
-	height: 30px;
 	/*background: blue;*/
 	padding: 0;
+	padding-right: 20px;
+	width: calc(100% - 20px);
+	height: 100%;
 }
 #nav .search div.active {
 	opacity: 1;

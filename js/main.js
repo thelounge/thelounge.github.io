@@ -24,9 +24,22 @@
 
 	$("#search-btn").click(function(event) {
 		if (!$("#search-input").hasClass("active")) {
-			$(".search div").addClass("active");
-			$("#search-input").focus();
+			$(".search > div").addClass("active");
+			$(".search > div").one("transitionend webkitTransitionEnd oTransitionEnd", function () {
+				console.log('transitionend');
+				$("#search-input").focus();
+			});
 			event.preventDefault();
 		}
+	});
+
+	$("#cancel-btn").click(function(event) {
+		$(".search > div").removeClass("active");
+		$(".search > div").one("transitionend webkitTransitionEnd oTransitionEnd", function () {
+			$("#search-input").val("");
+			$("#search-input").trigger("keyup");
+		});
+
+		event.preventDefault();
 	});
 }());
