@@ -24,7 +24,7 @@
 
 	$("#search-btn").click(function(event) {
 		if (!$("#search-input").hasClass("active")) {
-			$("#search-input").toggleClass("active");
+			$(".search div").addClass("active");
 			$("#search-input").focus();
 			event.preventDefault();
 		}

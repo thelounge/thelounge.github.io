@@ -102,16 +102,32 @@ pre code {
 	font-size: 22px;
 	margin-left: -10px;
 }
+#nav .container {
+	position: relative;
+}
+#nav .search div {
+	position: absolute;
+	width: calc(75% - 2 * 20px);
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	/*background: purple;*/
+	background: #455164;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .2s;
+}
 #nav .search input {
 	border-bottom: 1px solid white;
-	width: 0;
-	opacity: 0;
-	transition: width .2s, opacity .2s;
+	width: 100%;
+	margin-top: 10px;
+	height: 30px;
+	/*background: blue;*/
+	padding: 0;
 }
-#nav .search input.active {
-	border-bottom: 1px solid white;
-	width: 200px;
+#nav .search div.active {
 	opacity: 1;
+	visibility: visible;
 }
 
 #splash {
