@@ -18,8 +18,8 @@
 		searchResults.show();
 	}
 
-	$("#search-input").keyup(function() {
-		if (event.which === 38 || event.which === 40) {
+	$("#search-input").keyup(function(event) {
+		if (event.which === 38 || event.which === 40 || event.which === 13) {
 			return;
 		}
 
