@@ -150,6 +150,9 @@ pre code {
 	height: 100%;
 }
 
+#search-results {
+	display: none;
+}
 #search-results ul {
 	list-style: none;
 	margin-left: 0;
