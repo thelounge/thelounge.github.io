@@ -46,7 +46,10 @@
 		</div>
 	</nav>
 
-	<div id="search-results"></div>
+	<div id="search-results" class="container">
+		<h1>Search results</h1>
+		<div id="results-placeholder"></div>
+	</div>
 
 	<div id="content">
 		{{ content }}
@@ -76,11 +79,10 @@
 	<script>
 	  window.store = {
 	    {% for document in site.documents %}
-	      "{{ document.url | slugify }}": {
+	      "{{ document.url }}": {
 	        "title": "{{ document.title | xml_escape }}",
 	        "category": "{{ document.category | xml_escape }}",
-	        "content": {{ document.content | strip_html | strip_newlines | jsonify }},
-	        "url": "{{ document.url | xml_escape }}"
+	        "content": {{ document.content | strip_html | strip_newlines | jsonify }}
 	      }
 	      {% unless forloop.last %},{% endunless %}
 	    {% endfor %}
