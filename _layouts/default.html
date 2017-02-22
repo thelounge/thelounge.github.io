@@ -29,7 +29,7 @@
 					<i class="fa fa-github fa-2x" aria-hidden="true"></i>
 				</a></li>
 				<li>
-					<button id="search-btn">
+					<button id="search-btn" title="Search this website">
 						<i class="fa fa-search fa-lg" aria-hidden="true"></i>
 					</button>
 				</li>
@@ -37,8 +37,8 @@
 
 			<div class="nav-search-overlay">
 				<div class="search-input-group">
-					<input id="search-input" name="search" type="search" placeholder="Search" autocomplete="off" autocapitalize="off" spellcheck="false">
-					<button id="search-close-btn">
+					<input id="search-input" name="search" type="search" role="searchbox" placeholder="Search" autocomplete="off" autocapitalize="off" spellcheck="false">
+					<button id="search-close-btn" title="Close this search field and clear results (Esc)" aria-keyshortcuts="Escape">
 						<i class="fa fa-times-circle" aria-hidden="true"></i>
 					</button>
 				</div>
@@ -48,7 +48,7 @@
 
 	<div id="search-results" class="container">
 		<h1>Search results</h1>
-		<div id="results-placeholder"></div>
+		<div id="results-placeholder" aria-live="polite"></div>
 	</div>
 
 	<div id="content">

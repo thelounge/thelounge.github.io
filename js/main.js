@@ -64,11 +64,14 @@
 			var resultsContent;
 
 			if (results.length) {
-				resultsContent = "<ul>";
-				results.forEach(function (result, index) {
+				resultsContent = '<p class="sr-only">';
+				resultsContent += "Results are displayed below. Focus on the first result with Enter then cycle through them with Tab.";
+				resultsContent += "</p>";
+				resultsContent += "<ul>";
+				results.forEach(function (result) {
 					var url = result.ref;
 					var item = window.store[url];
-					resultsContent += '<li ' + (index === 0 ? 'class="selected"': '') + '>';
+					resultsContent += '<li>';
 					resultsContent += '<a href="' + url + '">' + item.title + '</a>';
 					resultsContent += "</li>";
 				});
@@ -91,33 +94,7 @@
 	// emitted on non-printable characters (also differs across browsers) and
 	// `keyup` arrives too late.
 	$(document).keydown(function (event) {
-		if (event.which === 83 && !$(event.target).is('input')) {
-			// "S" key and not currently on an input, to avoid swallowing it.
-			$("#search-btn").click();
-			return false;
-		} else if (event.which === 40) {
-			// "Down" key, cycle downward through the search results.
-			var selected = $("#search-results .selected");
-			if (selected.next().length) {
-				selected.removeClass("selected");
-				selected.next().addClass("selected");
-			}
-			return false;
-		} else if (event.which === 38) {
-			// "Up" key, cycle upward through the search results.
-			var selected = $("#search-results .selected");
-			if (selected.prev().length) {
-				selected.removeClass("selected");
-				selected.prev().addClass("selected");
-			}
-			return false;
-		} else if (event.which === 13) {
-			// "Enter" key, visit the currently selected result. Must use
-			// `querySelector` instead of jQuery as jQuery's `click` will trigger
-			// click event handlers instead of actually clicking on the link.
-			document.querySelector("#search-results .selected a").click();
-			return false;
-		} else if (event.which === 27) {
+		if (event.which === 27) {
 			// "Escape" key, cancels current search. This cannot be on keyup as inputs
 			// are being cleared by default on Escape keydown.
 			$("#search-close-btn").click();
@@ -130,6 +107,10 @@
 			// Do not clear input when pressing "Escape" but let it bubble up to
 			// `document.keydown` handler.
 			event.preventDefault();
+		} else if (event.which === 13) {
+			// "Enter" key to focus on the first available result
+			$("#search-results li:first-child a").focus();
+			return false;
 		}
 	});
 

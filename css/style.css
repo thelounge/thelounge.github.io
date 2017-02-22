@@ -150,17 +150,6 @@ pre code {
 	margin-left: 0;
 	padding-left: 0;
 }
-#search-results li {
-	margin-left: 15px;
-}
-#search-results li.selected {
-	margin-left: 0;
-}
-#search-results li.selected:before {
-	display: inline-block;
-	content: '›';
-	width: 15px;
-}
 
 #splash {
 	background: #455164;
