@@ -54,6 +54,7 @@
 		var searchTerm = $(this).val();
 		var resultsElement = $("#search-results");
 		var contentElement = $("#content");
+		var accessibleElement = $("#accessible-search-summary");
 
 		// When the search field is not empty, run lunrjs and wrap all results in a
 		// list or report that no results were found.
@@ -62,12 +63,10 @@
 		if (searchTerm) {
 			var results = lunrIndex.search(searchTerm);
 			var resultsContent;
+			var accessibleSummaryContent;
 
 			if (results.length) {
-				resultsContent = '<p class="sr-only">';
-				resultsContent += "Results are displayed below. Focus on the first result with Enter then cycle through them with Tab.";
-				resultsContent += "</p>";
-				resultsContent += "<ul>";
+				resultsContent = "<ul>";
 				results.forEach(function (result) {
 					var url = result.ref;
 					var item = window.store[url];
@@ -76,17 +75,21 @@
 					resultsContent += "</li>";
 				});
 				resultsContent += "</ul>";
+				accessibleSummaryContent = results.length + " results found. Focus on the first result with Enter then cycle through them with Tab.";
 			} else {
 				resultsContent = "<p>No results found.</p>";
+				accessibleSummaryContent = "No results found."
 			}
 			$("#results-placeholder").html(resultsContent);
 			resultsElement.show();
 			contentElement.hide();
+			accessibleElement.html(accessibleSummaryContent);
 		} else {
 			// When the search input is empty, hide the result page and display the
-			// current page.
+			// current page. Also clear the accessibility notification area.
 			resultsElement.hide();
 			contentElement.show();
+			accessibleElement.empty();
 		}
 	});
 
@@ -137,6 +140,7 @@
 				// Then trigger `input` event to clear results and bring back content.
 				$("#search-input").val("").trigger("input");
 			});
+			$("#accessible-search-summary").empty();
 		return false;
 	});
 })();
