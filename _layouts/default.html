@@ -36,8 +36,8 @@
 			</ul>
 
 			<div class="nav-search-overlay">
-				<div class="search-input-group">
-					<input id="search-input" name="search" type="search" role="searchbox" placeholder="Search" autocomplete="off" autocapitalize="off" spellcheck="false">
+				<div class="search-input-group" role="search">
+					<input id="search-input" name="search" type="search" placeholder="Search" autocomplete="off" autocapitalize="off" spellcheck="false">
 					<button id="search-close-btn" title="Close this search field and clear results (Esc)" aria-keyshortcuts="Escape">
 						<i class="fa fa-times-circle" aria-hidden="true"></i>
 					</button>
@@ -49,7 +49,7 @@
 	<div id="search-results" class="container">
 		<h1>Search results</h1>
 		<div id="results-placeholder"></div>
-		<div id="accessible-search-summary" aria-live="polite" class="sr-only"></div>
+		<div id="accessible-search-summary" aria-live="assertive" class="sr-only"></div>
 	</div>
 
 
