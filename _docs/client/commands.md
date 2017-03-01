@@ -1,12 +1,15 @@
 ---
 layout: documentation
 title: Commands
-description: Add your description here
 category: Client
 order: 3.1
 ---
 
 # Commands
+
+<div class="alert alert-danger" role="alert">
+  <strong>As of The Lounge v2.2.2, information presented below has been moved to the Help section of the application. This page will be removed soon.</strong>
+</div>
 
 The Lounge implements most of the IRC commands you may be familiar with. Here's a list of commands you can use:
 
