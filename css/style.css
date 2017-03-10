@@ -63,9 +63,7 @@ pre code {
 	background: #455164;
 	color: #bcc4d3;
 	padding: 10px 0;
-}
-#nav a {
-	font-weight: 700;
+	text-shadow: 1px 1px #222;
 }
 #nav a:hover {
 	border-color: #fff;
@@ -95,10 +93,11 @@ pre code {
 	color: #fff;
 	text-align: center;
 	padding-bottom: 50px;
+	text-shadow: 1px 1px #222;
 }
 #splash h1 {
 	font-size: 40px;
-	font-weight: 700;
+	font-weight: 300;
 	margin: 0;
 }
 #splash h2 {
@@ -124,6 +123,7 @@ pre code {
 	padding: 15px;
 	margin: 5px;
 	min-width: 45%;
+	text-shadow: 1px 1px #666;
 }
 #splash .card strong {
 	display: block;
