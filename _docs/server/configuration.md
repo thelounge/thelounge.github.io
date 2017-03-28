@@ -96,13 +96,20 @@ The Lounge ships with 4 themes.
 [![Zenburn Theme][zenburn_thumb]][zenburn]
 
 [example]: /img/screenshots/example_css.png
-[example_thumb]: /img/screenshots/example_thumbnail.png (Example CSS)
+
+[example_thumb]: /img/screenshots/example_thumbnail.png "Example CSS"
+
 [crypto]: /img/screenshots/crypto_css.png
-[crypto_thumb]: /img/screenshots/crypto_thumbnail.png (Crypto CSS)
+
+[crypto_thumb]: /img/screenshots/crypto_thumbnail.png "Crypto CSS"
+
 [morning]: /img/screenshots/morning_css.png
-[morning_thumb]: /img/screenshots/morning_thumbnail.png (Morning CSS)
+
+[morning_thumb]: /img/screenshots/morning_thumbnail.png "Morning CSS"
+
 [zenburn]: /img/screenshots/zenburn_css.png
-[zenburn_thumb]: /img/screenshots/zenburn_thumbnail.png (Zenburn CSS)
+
+[zenburn_thumb]: /img/screenshots/zenburn_thumbnail.png "Zenburn CSS"
 
 ## prefetch
 
@@ -165,8 +172,8 @@ Leaving this field empty will default to `~/.lounge/`.
 Change how the logs will be stored. Remember that logging has to be
 turned on per user, in their own `user.json`.
 
-- format
-- timezone
+-   format
+-   timezone
 
 Example:
 
@@ -192,16 +199,16 @@ maxHistory: 1000,
 
 ## defaults
 
-These are the placeholder values displayed in the __Connect__ form:
+These are the placeholder values displayed in the **Connect** form:
 
-- name
-- host
-- port
-- password
-- tls
-- nick
-- realname
-- join
+-   name
+-   host
+-   port
+-   password
+-   tls
+-   nick
+-   realname
+-   join
 
 Example (for Freenode network):
 
@@ -233,9 +240,9 @@ transports: ["polling", "websocket"],
 
 These three settings are used to setup SSL on the server side.
 
-- enable
-- key
-- certificate
+-   enable
+-   key
+-   certificate
 
 Example
 
@@ -251,8 +258,8 @@ https: {
 
 This setting enables the identd support of The Lounge.
 
-- enable
-- port
+-   enable
+-   port
 
 Example:
 
@@ -277,10 +284,10 @@ oidentd: "~/.oidentd.conf",
 
 LDAP authentication settings. This settings are used only when public is set to `false`.
 
-- enable
-- url
-- baseDN
-- primaryKey
+-   enable
+-   url
+-   baseDN
+-   primaryKey
 
 Example:
 

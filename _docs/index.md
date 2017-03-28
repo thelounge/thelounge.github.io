@@ -6,7 +6,7 @@ order: 0.0
 
 # The Lounge
 
-Welcome to the documentation. __It's currently a work in progress.__
+Welcome to the documentation. **It's currently a work in progress.**
 
 ## Help needed
 
@@ -17,11 +17,11 @@ It's simply a collection of Markdown files.
 
 You can edit the content directly from the GitHub file editor.
 
-__Edit on GitHub:__
-__[Click here](https://github.com/thelounge/thelounge.github.io/tree/master/_docs)__
+**Edit on GitHub:**
+**[Click here](https://github.com/thelounge/thelounge.github.io/tree/master/_docs)**
 
 It would be really awesome if people could help us make this documentation the best!
 
 Thank you.
 
-&mdash; [The Lounge](https://github.com/thelounge)
+— [The Lounge](https://github.com/thelounge)

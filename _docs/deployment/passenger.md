@@ -21,20 +21,16 @@ This document will explain how to install The Lounge on Phusion Passenger. You c
 
 Clone the repository and install The Lounge from source:
 
-```
-git clone https://github.com/thelounge/lounge
-cd lounge
-npm install
-NODE_ENV=production npm run build
-```
+    git clone https://github.com/thelounge/lounge
+    cd lounge
+    npm install
+    NODE_ENV=production npm run build
 
 ### Step 3:
 
 Add a link from `index.js` to `app.js` (Passenger requires an `app.js` file):
 
-```
-ln index.js app.js
-```
+    ln index.js app.js
 
 ### Step 4:
 

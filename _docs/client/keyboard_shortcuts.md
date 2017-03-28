@@ -15,19 +15,15 @@ order: 3.2
 
 To quickly jump between channels:
 
-__WIN / LINUX:__
+**WIN / LINUX:**
 
-```
-CTRL + UP ARROW       # Move up one channel
-CTRL + DOWN ARROW     # Move down
-```
+    CTRL + UP ARROW       # Move up one channel
+    CTRL + DOWN ARROW     # Move down
 
-__OS X:__
+**OS X:**
 
-```
-COMMAND + UP ARROW    # Move up one channel
-COMMAND + DOWN ARROW  # Move down
-```
+    COMMAND + UP ARROW    # Move up one channel
+    COMMAND + DOWN ARROW  # Move down
 
 ## Clear buffer
 
@@ -35,14 +31,10 @@ Quickly hides all the messages in the current channel.
 
 _This is the same as `/clear`._
 
-__WIN / LINUX:__
+**WIN / LINUX:**
 
-```
-CTRL + SHIFT + L
-```
+    CTRL + SHIFT + L
 
-__OS X:__
+**OS X:**
 
-```
-COMMAND + K
-```
+    COMMAND + K

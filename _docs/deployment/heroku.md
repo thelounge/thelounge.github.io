@@ -31,28 +31,22 @@ This document will explain how to install The Lounge on Heroku. If you want to l
 
 Begin by logging in with the [Heroku toolbelt](https://toolbelt.heroku.com/):
 
-```
-heroku login
-```
+    heroku login
 
 ### Step 2:
 
 Clone the repository and install The Lounge from source:
 
-```
-git clone https://github.com/thelounge/lounge
-cd lounge
-npm install
-NODE_ENV=production npm run build
-```
+    git clone https://github.com/thelounge/lounge
+    cd lounge
+    npm install
+    NODE_ENV=production npm run build
 
 ### Step 3:
 
 In the `lounge/` directory, run:
 
-```
-heroku create
-```
+    heroku create
 
 ### Step 4: (optional)
 
@@ -60,17 +54,13 @@ _This step is only useful if you want to run The Lounge with users accounts._
 
 Create a `Procfile` and edit the content to look like this:
 
-```
-web: node index --private --home /app
-```
+    web: node index --private --home /app
 
 _You can read more about Procfiles [here](https://devcenter.heroku.com/articles/procfile)._
 
 To create users, run the following in the `lounge/` directory:
 
-```
-./index.js --home . add <username>
-```
+    ./index.js --home . add <username>
 
 ### Step 5:
 
@@ -78,13 +68,9 @@ Time to publish to Heroku!
 
 If you've made any changes to the repository (like adding users or the Profile), don't forget to save the changes with `git`:
 
-```
-git add .
-git commit -m "Added Heroku files"
-```
+    git add .
+    git commit -m "Added Heroku files"
 
 And with that done, lets go ahead and push to Heroku:
 
-```
-git push heroku
-```
+    git push heroku
