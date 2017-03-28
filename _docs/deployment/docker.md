@@ -24,9 +24,7 @@ To run a container using an official image, follow the steps below;
 
 Start the container:
 
-```
-$ docker run --name=thelounge --publish=9000:9000 --detach thelounge/lounge
-```
+    $ docker run --name=thelounge --publish=9000:9000 --detach thelounge/lounge
 
 ### Step 2:
 
@@ -43,26 +41,20 @@ To manually build a Docker image, follow the steps below;
 
 Clone the Docker repository of The Lounge:
 
-```
-$ git clone https://github.com/thelounge/docker-lounge.git
-$ cd docker-lounge
-```
+    $ git clone https://github.com/thelounge/docker-lounge.git
+    $ cd docker-lounge
 
 ### Step 2:
 
 Build a Docker image according to our [Dockerfile](https://hub.docker.com/r/thelounge/lounge/~/dockerfile/) and name it `lounge`:
 
-```
-$ docker build --tag=lounge .
-```
+    $ docker build --tag=lounge .
 
 ### Step 3:
 
 Create a new container named `thelounge` from the `lounge` image and run the app in it:
 
-```
-$ docker run --name=thelounge --publish=9000:9000 --detach lounge
-```
+    $ docker run --name=thelounge --publish=9000:9000 --detach lounge
 
 ### Step 4:
 

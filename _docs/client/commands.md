@@ -39,8 +39,8 @@ Example: `/close`
 
 Aliases:
 
-- [/leave](#leave)
-- [/part](#part)
+-   [/leave](#leave)
+-   [/part](#part)
 
 ## /connect
 
@@ -50,7 +50,7 @@ Example: `/connect irc.freenode.org`
 
 Aliases:
 
-- [/server](#server)
+-   [/server](#server)
 
 ## /deop
 
@@ -96,8 +96,8 @@ Example: `/leave`
 
 Aliases:
 
-- [/close](#close)
-- [/part](#part)
+-   [/close](#close)
+-   [/part](#part)
 
 ## /me
 
@@ -159,8 +159,8 @@ Example: `/quote`
 
 Aliases:
 
-- [/raw](#raw)
-- [/send](#send)
+-   [/raw](#raw)
+-   [/send](#send)
 
 ## /raw
 
@@ -170,8 +170,8 @@ Example: `/raw`
 
 Aliases:
 
-- [/quote](#quote)
-- [/send](#send)
+-   [/quote](#quote)
+-   [/send](#send)
 
 ## /say
 
@@ -185,8 +185,8 @@ Example: `/send`
 
 Aliases:
 
-- [/quote](#quote)
-- [/raw](#raw)
+-   [/quote](#quote)
+-   [/raw](#raw)
 
 ## /server
 
@@ -196,7 +196,7 @@ Example: `/server irc.freenode.org`
 
 Aliases:
 
-- [/connect](#connect)
+-   [/connect](#connect)
 
 ## /slap
 

@@ -13,3 +13,5 @@ site/_site/
 coverage
 .ruby-version
 .sass-cache
+node_modules/
+npm-debug.log

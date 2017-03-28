@@ -1,0 +1,25 @@
+{
+  "name": "thelounge.github.io",
+  "version": "1.0.0",
+  "description": "The official website for The Lounge",
+  "scripts": {
+    "lint": "remark ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thelounge/thelounge.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thelounge/thelounge.github.io/issues"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended"
+    ]
+  },
+  "dependencies": {
+    "remark-cli": "^3.0.0",
+    "remark-lint": "^6.0.0",
+    "remark-preset-lint-recommended": "^2.0.0"
+  }
+}
