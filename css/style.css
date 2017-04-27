@@ -257,24 +257,6 @@ pre code {
 #menu strong:first-child {
 	margin-top: 0;
 }
-#blog h1 {
-	margin-bottom: 5px;
-	font-size: 28px;
-}
-#blog .content h2 {
-	font-size: 22px;
-}
-#blog .post {
-	padding: 40px 0 0;
-}
-#blog .post-date {
-	color: #999;
-	font-size: .8em;
-	margin-bottom: 20px;
-}
-#blog .post-comments {
-	margin-top: 60px;
-}
 #footer {
 	color: #ccc;
 	font-size: 12px;
