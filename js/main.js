@@ -144,3 +144,11 @@
 		return false;
 	});
 })();
+
+// Add an anchor link to the page headers to create a shareable URL
+(function() {
+	$("h2, h3").each(function() {
+		var slug = $(this).attr("id");
+		$(this).prepend($('<a class="link-anchor" href="#' + slug + '"><i class="fa fa-link" aria-hidden="true"></i></a>'));
+	})
+}());

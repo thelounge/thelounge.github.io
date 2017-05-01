@@ -339,6 +339,23 @@ pre code {
 	margin-bottom: 0;
 }
 
+h2 a.link-anchor,
+h3 a.link-anchor {
+	opacity: 0;
+	transition: opacity .2s;
+}
+
+h2:hover a.link-anchor,
+h3:hover a.link-anchor {
+	opacity: .7;
+}
+
+a.link-anchor {
+	padding-right: 25px;
+	position: absolute;
+	margin-left: -25px;
+}
+
 .app-stores {
 	text-align: center;
 }
