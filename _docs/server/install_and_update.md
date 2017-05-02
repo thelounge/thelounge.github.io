@@ -7,7 +7,7 @@ redirect_from:
   - /docs/getting_started/install.html
 ---
 
-# Installing and updating The Lounge
+# Install and update
 
 ## Debian and Ubuntu based distributions
 
