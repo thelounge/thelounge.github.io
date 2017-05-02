@@ -146,6 +146,10 @@ private mode and configure The Lounge, go to
 To update The Lounge, simply `git pull` the repository, re-run the `install` and
 `build` commands above, and restart it.
 
+## Unofficial install methods
+
+- Deploy The Lounge on [Heroku](/docs/unofficial-install-methods/heroku.html)
+
 ## Services packaging The Lounge
 
 These services offer The Lounge as part of their app stores. We do not have any
