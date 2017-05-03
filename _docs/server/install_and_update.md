@@ -100,6 +100,34 @@ private mode and configure The Lounge, go to
 
 To update The Lounge, simply re-run the `install` command above, and restart it.
 
+## Docker
+
+Official Docker images of The Lounge are made available for every new release on
+[DockerHub](https://hub.docker.com/r/thelounge/lounge/).
+
+To run a container using [Docker Compose](https://docs.docker.com/compose/),
+use [this example `docker-compose.yml`
+file](https://github.com/thelounge/docker-lounge/blob/master/docker-compose.yml)
+and run:
+
+```
+docker-compose up --detach
+```
+
+Otherwise, run:
+
+```
+docker run --detach \
+	--name lounge \
+	--publish 9000:9000 \
+	--volume ~/.lounge:/home/lounge/data \
+	--restart always \
+	thelounge/lounge:latest
+```
+
+For more details about using The Lounge with Docker, refer to
+[the official repository](https://github.com/thelounge/docker-lounge#docker-lounge).
+
 ## Running from source
 
 Running The Lounge from source ensures you are running the most recent codebase.
