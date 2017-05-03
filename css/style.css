@@ -142,6 +142,21 @@ pre code {
 	height: 100%;
 }
 
+#nav .search-input-group input::-moz-placeholder {
+	color: #bcc4d3;
+	opacity: .5;
+}
+
+#nav .search-input-group input::-webkit-input-placeholder {
+	color: #bcc4d3;
+	opacity: .5;
+}
+
+#nav .search-input-group input:-ms-input-placeholder {
+	color: #bcc4d3;
+	opacity: .5;
+}
+
 #search-results {
 	display: none;
 }
