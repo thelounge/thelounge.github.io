@@ -154,12 +154,6 @@ Used for the WEBIRC support in The Lounge. Default to `null`.
 The Lounge then sends the connecting user's host and IP to the IRC server.
 This requires to have a password from the IRC network used.
 
-## home
-
-Use this setting to override the default `HOME` location.
-The home folder is where The Lounge will locate the `users/` and `cache/` folder.
-Leaving this field empty will default to `~/.lounge/`.
-
 ## logs
 
 Change how the logs will be stored. Remember that logging has to be
