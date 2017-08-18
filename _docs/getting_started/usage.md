@@ -97,6 +97,10 @@ $ lounge edit john
 
 ## `--home`
 
+<div class="alert alert-danger" role="alert">
+    <strong>As of The Lounge v2.5.0, <code>--home</code> is deprecated. Use the <code>LOUNGE_HOME</code> environment variable instead.</strong>
+</div>
+
 _Set the home path. This is the location where The Lounge will look for the `config.js` and the `users/` folder._
 
 *Also configurable through the environment variable `LOUNGE_HOME`.*
@@ -104,9 +108,7 @@ _Set the home path. This is the location where The Lounge will look for the `con
 Example:
 
 ```
-$ lounge --home /app add <user>  # add user to /app/users
-$ lounge --home /app             # start server with /app/config.js
-$ LOUNGE_HOME=/app lounge        # start server with /app/config.js
+$ LOUNGE_HOME=/tmp lounge start # start server with configuration at /tmp/config.js
 ```
 
 ## `--help`
