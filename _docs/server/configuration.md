@@ -115,6 +115,17 @@ Example:
 prefetch: true,
 ```
 
+## prefetchStorage
+
+This setting requires `prefetch` to be enabled. Store and proxy prefetched images and thumbnails.  
+This improves security and privacy by not exposing client IP address, and always loading images from The Lounge instance and making all assets secure, which in result fixes mixed content warnings.  
+If storage is enabled, The Lounge will fetch and store images and thumbnails in the `${LOUNGE_HOME}/storage` folder.  
+Images are deleted when they are no longer referenced by any message (controlled by maxHistory), and the folder is cleaned up on every The Lounge restart. Default to `false`
+
+```javascript
+prefetchStorage: true,
+```
+
 ## prefetchMaxImageSize
 
 This setting requires `prefetch` to be enabled. It fixes the
