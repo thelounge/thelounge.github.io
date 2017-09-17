@@ -122,6 +122,8 @@ This improves security and privacy by not exposing client IP address, and always
 If storage is enabled, The Lounge will fetch and store images and thumbnails in the `${LOUNGE_HOME}/storage` folder.  
 Images are deleted when they are no longer referenced by any message (controlled by maxHistory), and the folder is cleaned up on every The Lounge restart. Default to `false`
 
+Example:
+
 ```javascript
 prefetchStorage: true,
 ```
