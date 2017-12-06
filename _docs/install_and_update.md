@@ -1,8 +1,7 @@
 ---
 layout: documentation
 title: Install and update
-category: Server
-order: 2.1
+order: 2
 redirect_from:
   - /docs/getting_started/install.html
 ---
@@ -31,7 +30,7 @@ The Lounge is now up and running **in public mode** at <http://localhost:9000>.
 
 Its configuration file is located at `/etc/lounge/config.js`. To enable
 private mode and configure The Lounge, go to
-[the configuration section](/docs/server/configuration.html).
+[the configuration section](/docs/configuration.html).
 
 To update The Lounge, simply follow these steps again after downloading a new
 `lounge.deb` file, and restart the service.
@@ -60,7 +59,7 @@ The Lounge is now up and running **in public mode** at <http://localhost:9000>.
 
 Its configuration file is located at `/etc/thelounge/config.js`. To enable
 private mode and configure The Lounge, go to
-[the configuration section](/docs/server/configuration.html).
+[the configuration section](/docs/configuration.html).
 
 ## From npm releases
 
@@ -92,11 +91,11 @@ lounge start
 The Lounge is now up and running **in public mode** at <http://localhost:9000>.
 
 Read more about how to use The Lounge from the command line in
-[the CLI usage section](/docs/server/cli_usage.html).
+[the CLI usage section](/docs/cli_usage.html).
 
 Its configuration file is located at `~/.lounge/config.js`. To enable
 private mode and configure The Lounge, go to
-[the configuration section](/docs/server/configuration.html).
+[the configuration section](/docs/configuration.html).
 
 To update The Lounge, simply re-run the `install` command above, and restart it.
 
@@ -165,11 +164,11 @@ lounge start
 The Lounge is now up and running **in public mode** at <http://localhost:9000>.
 
 Read more about how to use The Lounge from the command line in
-[the CLI usage section](/docs/server/cli_usage.html).
+[the CLI usage section](/docs/cli_usage.html).
 
 Its configuration file is located at `~/.lounge/config.js`. To enable
 private mode and configure The Lounge, go to
-[the configuration section](/docs/server/configuration.html).
+[the configuration section](/docs/configuration.html).
 
 To update The Lounge, simply `git pull` the repository, re-run the `install` and
 `build` commands above, and restart it.

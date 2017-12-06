@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Getting started
-order: 0.0
+order: 1
 ---
 
 # Getting started

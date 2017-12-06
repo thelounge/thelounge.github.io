@@ -1,8 +1,9 @@
 ---
 layout: documentation
 title: Configuration
-category: Server
-order: 2.2
+order: 4
+redirect_from:
+  - /docs/server/configuration.html
 ---
 
 # Configuration
@@ -10,7 +11,7 @@ order: 2.2
 This part of the documentation focuses on the configuration of the server.
 
 Start by locating the `config.js` file in the configuration folder, which
-depends on how you [installed The Lounge](/docs/server/install_and_update.html).
+depends on how you [installed The Lounge](/docs/install_and_update.html).
 
 To quickly open the config:
 

@@ -1,9 +1,9 @@
 ---
 layout: documentation
 title: Usage
-description: Add your description here
-category: Getting Started
-order: 1.2
+order: 3
+redirect_from:
+  - /docs/getting_started/install.html
 ---
 
 # Usage
