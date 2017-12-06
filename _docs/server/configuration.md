@@ -13,7 +13,7 @@ This part of the documentation will focus on the configuration of the server. St
 To quickly open the config:
 
 ```shell
-$ lounge config
+$ thelounge config
 ```
 
 ## public
