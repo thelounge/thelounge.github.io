@@ -11,7 +11,7 @@ redirect_from:
 Once you've installed The Lounge, go ahead and run:
 
 ```
-$ lounge --help
+$ thelounge --help
 ```
 
 This will give you an overview of the commands you can use.
@@ -23,7 +23,7 @@ _Start the server._
 Example:
 
 ```
-$ lounge start --port 80 --private
+$ thelounge start --port 80 --private
 ```
 
 Options:
@@ -40,7 +40,7 @@ _Open the configuration file._
 Example:
 
 ```
-$ lounge config
+$ thelounge config
 ```
 
 ## `list`
@@ -50,7 +50,7 @@ _List all existing users._
 Example:
 
 ```
-$ lounge list
+$ thelounge list
 ```
 
 ## `add <name>`
@@ -60,7 +60,7 @@ _Add a new user._
 Example:
 
 ```
-$ lounge add john
+$ thelounge add john
 ```
 
 ## `remove <name>`
@@ -70,7 +70,7 @@ _Remove an existing user._
 Example:
 
 ```
-$ lounge remove john
+$ thelounge remove john
 ```
 
 ## `reset <name>`
@@ -80,7 +80,7 @@ _Reset user password._
 Example:
 
 ```
-$ lounge reset john
+$ thelounge reset john
 ```
 
 ## `edit <name>`
@@ -90,7 +90,7 @@ _Edit user configuration file._
 Example:
 
 ```
-$ lounge edit john
+$ thelounge edit john
 ```
 
 # Options
@@ -108,7 +108,7 @@ _Set the home path. This is the location where The Lounge will look for the `con
 Example:
 
 ```
-$ LOUNGE_HOME=/tmp lounge start # start server with configuration at /tmp/config.js
+$ LOUNGE_HOME=/tmp thelounge start # start server with configuration at /tmp/config.js
 ```
 
 ## `--help`
@@ -118,7 +118,7 @@ _Output usage information._
 Example:
 
 ```
-$ lounge --help
+$ thelounge --help
 ```
 
 ## `--version`
@@ -128,5 +128,5 @@ _Output the version number._
 Example:
 
 ```
-$ lounge --version
+$ thelounge --version
 ```

@@ -20,19 +20,19 @@ When you start The Lounge in "private" mode it will load every user found in you
 To add a new user, run this command:
 
 ```
-$ lounge add <name>
+$ thelounge add <name>
 ```
 
 This will create a new user in your `users/` folder.
 
-_Note: By default, users are stored in the `~/.lounge/users/` folder. You can change this location by using the `--home <path>` setting (see [Usage](/docs/usage.html#home))._
+_Note: By default, users are stored in the `~/.thelounge/users/` folder. You can change this location by using the `--home <path>` setting (see [Usage](/docs/usage.html#home))._
 
 ## Edit user
 
 Open the `user.json` for the specified user:
 
 ```
-$ lounge edit <name>
+$ thelounge edit <name>
 ```
 
 ## Remove user
@@ -40,7 +40,7 @@ $ lounge edit <name>
 Simply run:
 
 ```
-$ lounge remove <name>
+$ thelounge remove <name>
 ```
 
 ## List users
@@ -48,12 +48,12 @@ $ lounge remove <name>
 This command will print a list of all your existing users:
 
 ```
-$ lounge list
+$ thelounge list
 ```
 
 # User configuration
 
-If you run `lounge edit <name>`, the `user.json` file will open.
+If you run `thelounge edit <name>`, the `user.json` file will open.
 
 The user configuration is loaded upon server start. Here's an example of what a `user.json` file might look like:
 

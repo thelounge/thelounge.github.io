@@ -16,7 +16,7 @@ depends on how you [installed The Lounge](/docs/install_and_update.html).
 To quickly open the config:
 
 ```sh
-lounge config
+thelounge config
 ```
 
 <!--

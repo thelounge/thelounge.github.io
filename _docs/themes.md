@@ -16,7 +16,7 @@ find a list by
 
 To install theme `thelounge-theme-custom`:
 
-* `lounge install thelounge-theme-custom`
+* `thelounge install thelounge-theme-custom`
 * Restart The Lounge
 * Select theme in options
 

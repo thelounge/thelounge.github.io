@@ -14,13 +14,13 @@ First, make sure [Node.js](https://nodejs.org/) v4 or more recent is installed
 with `node --version`. If not, follow the instructions given on the
 [official documentation](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions).
 
-Then download `lounge.deb` located at the bottom of
+Then download `thelounge.deb` located at the bottom of
 [the latest release](https://github.com/thelounge/lounge/releases/latest).
 
 Finally, open a terminal and install the downloaded package using:
 
 ```sh
-sudo dpkg --install lounge.deb
+sudo dpkg --install thelounge.deb
 ```
 
 This also sets up a `systemd` service, enabled during the install, that you can
@@ -28,12 +28,12 @@ control with `systemctl status|start|restart|stop|...`.
 
 The Lounge is now up and running **in public mode** at <http://localhost:9000>.
 
-Its configuration file is located at `/etc/lounge/config.js`. To enable
+Its configuration file is located at `/etc/thelounge/config.js`. To enable
 private mode and configure The Lounge, go to
 [the configuration section](/docs/configuration.html).
 
 To update The Lounge, simply follow these steps again after downloading a new
-`lounge.deb` file, and restart the service.
+`thelounge.deb` file, and restart the service.
 
 ## Arch Linux
 
@@ -85,7 +85,7 @@ Note that installing from npm does not daemonize nor autostart The Lounge.
 Start the server manually using:
 
 ```sh
-lounge start
+thelounge start
 ```
 
 The Lounge is now up and running **in public mode** at <http://localhost:9000>.
@@ -93,7 +93,7 @@ The Lounge is now up and running **in public mode** at <http://localhost:9000>.
 Read more about how to use The Lounge from the command line in
 [the CLI usage section](/docs/cli_usage.html).
 
-Its configuration file is located at `~/.lounge/config.js`. To enable
+Its configuration file is located at `~/.thelounge/config.js`. To enable
 private mode and configure The Lounge, go to
 [the configuration section](/docs/configuration.html).
 
@@ -117,11 +117,11 @@ Otherwise, run:
 
 ```
 docker run --detach \
-	--name lounge \
+	--name thelounge \
 	--publish 9000:9000 \
-	--volume ~/.lounge:/home/lounge/data \
+	--volume ~/.thelounge:/home/thelounge/data \
 	--restart always \
-	thelounge/lounge:latest
+	thelounge/thelounge:latest
 ```
 
 For more details about using The Lounge with Docker, refer to
@@ -158,7 +158,7 @@ Note that installing from source does not daemonize nor autostart The Lounge.
 Start the server manually using:
 
 ```sh
-lounge start
+thelounge start
 ```
 
 The Lounge is now up and running **in public mode** at <http://localhost:9000>.
@@ -166,7 +166,7 @@ The Lounge is now up and running **in public mode** at <http://localhost:9000>.
 Read more about how to use The Lounge from the command line in
 [the CLI usage section](/docs/cli_usage.html).
 
-Its configuration file is located at `~/.lounge/config.js`. To enable
+Its configuration file is located at `~/.thelounge/config.js`. To enable
 private mode and configure The Lounge, go to
 [the configuration section](/docs/configuration.html).
 
