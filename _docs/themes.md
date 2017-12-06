@@ -1,8 +1,8 @@
 ---
 layout: documentation
 title: Themes
-category: Plugins
-order: 5.1
+redirect_from:
+  - /docs/plugins/themes.html
 ---
 
 # Finding Themes

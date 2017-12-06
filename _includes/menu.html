@@ -1,10 +1,6 @@
 <div id="menu">
 	{% assign docs = (site.docs | sort: "order" ) %}
 	{% for node in docs %}
-		{% if c != node.category %}
-			{% assign c = node.category %}
-			<strong>{{ node.category }}</strong>
-		{% endif %}
 		<a href="{{ site.baseurl }}{{ node.url }}"{% if page.url == node.url %} class="active"{% endif %}>
 			{{ node.title }}
 		</a>
