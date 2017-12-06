@@ -16,7 +16,9 @@ $ thelounge --help
 
 This will give you an overview of the commands you can use.
 
-## `start`
+## Commands
+
+### `start`
 
 _Start the server._
 
@@ -33,7 +35,7 @@ Options:
 - `--public`
 - `--private`
 
-## `config`
+### `config`
 
 _Open the configuration file._
 
@@ -43,7 +45,7 @@ Example:
 $ thelounge config
 ```
 
-## `list`
+### `list`
 
 _List all existing users._
 
@@ -53,7 +55,7 @@ Example:
 $ thelounge list
 ```
 
-## `add <name>`
+### `add <name>`
 
 _Add a new user._
 
@@ -63,7 +65,7 @@ Example:
 $ thelounge add john
 ```
 
-## `remove <name>`
+### `remove <name>`
 
 _Remove an existing user._
 
@@ -73,7 +75,7 @@ Example:
 $ thelounge remove john
 ```
 
-## `reset <name>`
+### `reset <name>`
 
 _Reset user password._
 
@@ -83,7 +85,7 @@ Example:
 $ thelounge reset john
 ```
 
-## `edit <name>`
+### `edit <name>`
 
 _Edit user configuration file._
 
@@ -93,25 +95,9 @@ Example:
 $ thelounge edit john
 ```
 
-# Options
+## Options
 
-## `--home`
-
-<div class="alert alert-danger" role="alert">
-    <strong>As of The Lounge v2.5.0, <code>--home</code> is deprecated. Use the <code>LOUNGE_HOME</code> environment variable instead.</strong>
-</div>
-
-_Set the home path. This is the location where The Lounge will look for the `config.js` and the `users/` folder._
-
-*Also configurable through the environment variable `LOUNGE_HOME`.*
-
-Example:
-
-```
-$ LOUNGE_HOME=/tmp thelounge start # start server with configuration at /tmp/config.js
-```
-
-## `--help`
+### `--help`
 
 _Output usage information._
 
@@ -121,7 +107,7 @@ Example:
 $ thelounge --help
 ```
 
-## `--version`
+### `--version`
 
 _Output the version number._
 
@@ -129,4 +115,17 @@ Example:
 
 ```
 $ thelounge --version
+```
+
+## Environment variables
+
+
+### `THELOUNGE_HOME`
+
+_Set the home path. This is the location where The Lounge will look for the `config.js` and the `users/` folder._
+
+Example:
+
+```
+$ THELOUNGE_HOME=/tmp thelounge start # start server with configuration at /tmp/config.js
 ```

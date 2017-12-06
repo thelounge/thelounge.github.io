@@ -25,7 +25,7 @@ $ thelounge add <name>
 
 This will create a new user in your `users/` folder.
 
-_Note: By default, users are stored in the `~/.thelounge/users/` folder. You can change this location by using the `--home <path>` setting (see [Usage](/docs/usage.html#home))._
+_Note: By default, users are stored in the `~/.thelounge/users/` folder. You can change this location by using the `THELOUNGE_HOME` environment variable (see [Usage](/docs/usage.html#thelounge_home))._
 
 ## Edit user
 
