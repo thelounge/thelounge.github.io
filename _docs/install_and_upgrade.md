@@ -1,12 +1,12 @@
 ---
 layout: documentation
-title: Install and update
+title: Install and upgrade
 order: 2
 redirect_from:
   - /docs/getting_started/install.html
 ---
 
-# Install and update
+# Install and upgrade
 
 ## Debian and Ubuntu based distributions
 
@@ -32,7 +32,7 @@ Its configuration file is located at `/etc/thelounge/config.js`. To enable
 private mode and configure The Lounge, go to
 [the configuration section](/docs/configuration.html).
 
-To update The Lounge, simply follow these steps again after downloading a new
+To upgrade The Lounge, simply follow these steps again after downloading a new
 `thelounge.deb` file, and restart the service.
 
 ## Arch Linux
@@ -97,7 +97,7 @@ Its configuration file is located at `~/.thelounge/config.js`. To enable
 private mode and configure The Lounge, go to
 [the configuration section](/docs/configuration.html).
 
-To update The Lounge, simply re-run the `install` command above, and restart it.
+To upgrade The Lounge, simply re-run the `install` command above, and restart it.
 
 ## Docker
 
@@ -170,7 +170,7 @@ Its configuration file is located at `~/.thelounge/config.js`. To enable
 private mode and configure The Lounge, go to
 [the configuration section](/docs/configuration.html).
 
-To update The Lounge, simply `git pull` the repository, re-run the `install` and
+To upgrade The Lounge, simply `git pull` the repository, re-run the `install` and
 `build` commands above, and restart it.
 
 ## Unofficial install methods
