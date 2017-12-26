@@ -393,3 +393,34 @@ a.link-anchor {
 	line-height: 60px;
 	font-size: .9em;
 }
+
+/* Terminal windows-style, to present CLI outputs and such */
+
+.terminal {
+	background-color: black;
+	border-radius: 5px;
+	color: #c7c7c7;
+	font-family: monospace;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.terminal-log-info::before {
+	color: #5f5f5f;
+	content: "2017-12-08 12:34:56 ";
+}
+
+.terminal-log-info::after {
+	color: #0224c8;
+	content: "[INFO]";
+}
+
+.terminal-green {
+	color: #05ba00;
+}
+
+.terminal-bold {
+	color: white;
+	font-weight: bold;
+}
