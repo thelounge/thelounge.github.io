@@ -67,7 +67,7 @@ This tells us a few things:
 
 - Since it is the first time The Lounge runs, a configuration file was created.
   Its location depends on how The Lounge was installed (see
-  [the installation page](/docs/install_and_upgrade.html)).
+  [the installation page](/docs/install-and-upgrade.html)).
 - The Lounge can now be accessed at <http://localhost:9000/>.
 - It has started in **private** mode, which means only users who
   have an account can log in. There is no guest access.
