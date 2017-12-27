@@ -6,8 +6,6 @@ redirect_from:
   - /docs/getting_started/install.html
 ---
 
-# Usage
-
 Once The Lounge is installed, a program called `thelounge` is now available.
 
 ## Command line help

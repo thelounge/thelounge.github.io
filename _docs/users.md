@@ -6,8 +6,6 @@ redirect_from:
   - /docs/server/configuration.html
 ---
 
-# Users
-
 In [private mode](/docs/configuration.html#public), only authorized users can
 access and use The Lounge.
 
