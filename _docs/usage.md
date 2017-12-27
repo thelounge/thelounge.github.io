@@ -4,8 +4,6 @@ title: Usage
 order: 3
 ---
 
-# Usage
-
 Once you've installed The Lounge, go ahead and run:
 
 ```

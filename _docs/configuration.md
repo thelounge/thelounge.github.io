@@ -4,8 +4,6 @@ title: Configuration
 order: 4
 ---
 
-# Configuration
-
 This part of the documentation focuses on the configuration of the server.
 
 Start by locating the `config.js` file in the configuration folder, which

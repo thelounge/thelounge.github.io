@@ -4,8 +4,6 @@ title: Introduction
 order: 1
 ---
 
-# The Lounge
-
 Welcome to the documentation. __It's currently a work in progress.__
 
 ## Help needed

@@ -4,8 +4,6 @@ title: Users
 order: 5
 ---
 
-# Users
-
 Once you've set up The Lounge, it's time to add your first users. Open your `config.js` and set `public` to `false`. This will enable user login.
 
 When you start The Lounge in "private" mode it will load every user found in your `users/` folder. Here's some of the features users get:

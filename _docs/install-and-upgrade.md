@@ -4,8 +4,6 @@ title: Install and upgrade
 order: 2
 ---
 
-# Install and upgrade
-
 ## Debian and Ubuntu based distributions
 
 First, make sure [Node.js](https://nodejs.org/) v6.13.0 or more recent is installed
