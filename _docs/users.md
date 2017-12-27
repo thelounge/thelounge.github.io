@@ -8,73 +8,118 @@ redirect_from:
 
 # Users
 
-Once you've set up The Lounge, it's time to add your first users. Open your `config.js` and set `public` to `false`. This will enable user login.
+In [private mode](/docs/configuration.html#public), only authorized users can
+access and use The Lounge.
 
-When you start The Lounge in "private" mode it will load every user found in your `users/` folder. Here's some of the features users get:
+All user configurations are stored in the `${THELOUNGE_HOME}/users/` folder, in
+the shape of a JSON file. These are being read upon server startup to connect
+users to their IRC networks and channels.
 
-- Stay online on IRC even when you log out
-- Lets you chat from multiple devices simultaneously
+By default, those files are stored in the `~/.thelounge/users/` folder. This
+location can be changed by setting the `THELOUNGE_HOME` environment variable
+(see [Usage](/docs/usage.html#thelounge_home)).
 
-## Add user
+Note: In public mode, none of the commands listed below are available.
 
-To add a new user, run this command:
+## Listing all users
 
-```
-$ thelounge add <name>
-```
+To get a list of all existing users, use the `list` command:
 
-This will create a new user in your `users/` folder.
-
-_Note: By default, users are stored in the `~/.thelounge/users/` folder. You can change this location by using the `THELOUNGE_HOME` environment variable (see [Usage](/docs/usage.html#thelounge_home))._
-
-## Edit user
-
-Open the `user.json` for the specified user:
-
-```
-$ thelounge edit <name>
+```sh
+thelounge list
 ```
 
-## Remove user
+If you run it right after installation, you will get the following message
+because no users are created by default:
 
-Simply run:
+<div class="terminal">
+  <span class="terminal-log-info"></span>
+  There are currently no users. Create one with <span class="terminal-bold">thelounge add &lt;name&gt;</span>.
+</div>
 
+## Adding a user
+
+To add a new user, use the `add` command:
+
+```sh
+thelounge add <name>
 ```
-$ thelounge remove <name>
+
+This will ask for a few details:
+
+- **Password:** Along with `<name>`, this will be used to authenticate the user
+  on the login page. Note that when typing it, characters will not appear on the
+  screen for security and privacy reasons. Once created, users can change their
+  passwords directly from the UI.
+- **Logs:** By default, user logs are stored at `${THELOUNGE_HOME}/users/`. You
+  can disable this by entering `no`.
+
+Once the user is created, `thelounge list` should now report it correctly:
+
+<div class="terminal">
+  <span class="terminal-log-info"></span>
+  Users:<br>
+
+  <span class="terminal-log-info"></span>
+  1. <span class="terminal-bold">alice</span>
+</div>
+
+If The Lounge is currently running, the new user will be directly available
+without having to restart. In fact, this is reported as such in the output of
+`thelounge start`:
+
+<div class="terminal">
+  <span class="terminal-log-info"></span>
+  User <span class="terminal-bold">alice</span> loaded
+</div>
+
+## Removing a user
+
+Similarly, the following command deletes the configuration of a given user:
+
+```sh
+thelounge remove <name>
 ```
 
-## List users
+This takes effect immediately. If The Lounge is already running, its output will
+report:
 
-This command will print a list of all your existing users:
+<div class="terminal">
+  <span class="terminal-log-info"></span>
+  User <span class="terminal-bold">alice</span> disconnected and removed.
+</div>
 
+Note that this does not delete the logs for this user.
+
+## Resetting a user's password
+
+If a user loses their password, you can reset it with the `reset` command:
+
+```sh
+thelounge reset <name>
 ```
-$ thelounge list
+
+This will interactively ask you for a new password, similarly to the `add`
+command. The previous password is not required. The new password will take
+effect immediately, without having to restart the server, and any running
+instance of The Lounge will report:
+
+<div class="terminal">
+  <span class="terminal-log-info"></span>
+  Password for user <span class="terminal-bold">alice</span> was reset.
+</div>
+
+## Editing a user configuration file
+
+The `edit` command opens `vi` (or whatever program you set in your `$EDITOR`
+environment variable if any) with the configuration file of a given user:
+
+```sh
+thelounge edit <name>
 ```
 
-# User configuration
+You can of course directly edit it by opening the corresponding
+`${THELOUNGE_HOME}/users/<name>.json` file.
 
-If you run `thelounge edit <name>`, the `user.json` file will open.
-
-The user configuration is loaded upon server start. Here's an example of what a `user.json` file might look like:
-
-```
-{
-  "user": "example",
-  "password": "password",
-  "log": false,
-  "networks": [{
-    "name": "Freenode",
-    "host": "irc.freenode.net",
-    "port": 6697,
-    "tls": true,
-    "password": "serverpw",
-    "nick": "john",
-    "realname": "John Doe",
-    "commands": [
-      "/msg NickServ identify password",
-      "/msg ChanServ op #chan"
-    ],
-    "join": "#foo, #bar"
-	}]
-}
-```
+Note that apart from the password field, all changes to the configuration file
+will require a server restart to take effect.
