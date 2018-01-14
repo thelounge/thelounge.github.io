@@ -217,6 +217,7 @@ configuration to get up and running:
 [![Bytesized Hosting logo](/img/bytesized-hosting-logo.png)](https://bytesized-hosting.com/ "Bytesized Hosting")
 [![Cloudron logo](/img/cloudron-logo.png)](https://cloudron.io/ "Cloudron")
 [![Cozy logo](/img/cozy-logo.png)](https://cozy.io/en/ "Cozy")
+[![Rambox logo](/img/rambox-logo.png)](http://rambox.pro/ "Rambox")
 
 Please contact these service providers directly if you have any questions or
 encounter any issues on these platforms.
