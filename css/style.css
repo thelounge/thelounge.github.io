@@ -55,6 +55,11 @@ pre code {
 	background: none;
 	padding: 0;
 }
+
+img {
+	max-width: 100%; /* Make sure images never go outside of their container */
+}
+
 .container {
 	max-width: 750px;
 	padding: 0 20px;
