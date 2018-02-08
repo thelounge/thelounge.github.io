@@ -216,7 +216,7 @@ configuration to get up and running:
 {:.app-stores}
 [![Bytesized Hosting logo](/img/bytesized-hosting-logo.png)](https://bytesized-hosting.com/ "Bytesized Hosting")
 [![Cloudron logo](/img/cloudron-logo.png)](https://cloudron.io/ "Cloudron")
-[![Cozy logo](/img/cozy-logo.png)](https://cozy.io/en/ "Cozy")
+[![Franz logo](/img/franz-logo.png)](https://meetfranz.com/ "Franz")
 [![Rambox logo](/img/rambox-logo.png)](http://rambox.pro/ "Rambox")
 
 Please contact these service providers directly if you have any questions or
