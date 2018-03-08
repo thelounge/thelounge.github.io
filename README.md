@@ -7,24 +7,18 @@ https://github.com/thelounge/lounge.
 
 ## Development
 
-You need to install [Jekyll](https://jekyllrb.com/):
+This website is built using [Jekyll](https://jekyllrb.com/). After cloning this
+repository, install the dependencies with:
 
-```
-sudo apt-get install ruby1.9.3 build-essential nodejs-legacy
-sudo gem install jekyll redcarpet
-```
-
-Now go ahead and clone:
-
-```
-git clone https://github.com/thelounge/thelounge.github.io
-cd thelounge.github.io/
+```sh
+gem install bundler
+bundle install
 ```
 
-Run Jekyll:
+To build and serve this website locally, run:
 
-```
-jekyll serve --watch --safe
+```sh
+jekyll serve --safe
 ```
 
 ## License
