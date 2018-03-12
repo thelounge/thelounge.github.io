@@ -61,7 +61,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.8.4)
   jekyll-sitemap (= 1.2.0)
-  kramdown (= 1.17.0)
 
 BUNDLED WITH
    1.16.1
