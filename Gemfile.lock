@@ -64,7 +64,6 @@ DEPENDENCIES
   jekyll (~> 3)
   jekyll-redirect-from (~> 0.13.0)
   jekyll-sitemap (~> 1)
-  kramdown (~> 1)
 
 BUNDLED WITH
    1.16.1
