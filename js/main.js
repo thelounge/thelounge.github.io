@@ -27,7 +27,7 @@
 }());
 
 // Real-time client-side search using https://github.com/olivernn/lunr.js
-// Open search field with "S" / search icon, close it with "Escape" / the close
+// Open search field with the search icon, close it with "Escape" / the close
 // icon, cycle through results with "Up" and "Down" and visit selected result
 // with "Enter".
 (function() {
