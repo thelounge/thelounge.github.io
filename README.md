@@ -18,7 +18,7 @@ bundle install
 To build and serve this website locally, run:
 
 ```sh
-jekyll serve --safe
+jekyll serve
 ```
 
 ## License
