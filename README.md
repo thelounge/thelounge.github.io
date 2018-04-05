@@ -1,4 +1,4 @@
-This is the website of [The Lounge](https://thelounge.github.io/).
+This is the website of [The Lounge](https://thelounge.chat/).
 
 ## What is The Lounge?
 
