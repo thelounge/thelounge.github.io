@@ -15,7 +15,7 @@
 /docs/deployment/heroku          /docs/unofficial-install-methods/heroku
 /docs/deployment/passenger       /docs/guides/reverse-proxies
 
-/docs/plugins/themes             /docs/guides/authoring-themes
+/docs/plugins/themes             /docs/guides/theme-creation
 
 ## Netlify URL redirects
 
