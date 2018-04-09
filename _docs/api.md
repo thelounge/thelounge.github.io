@@ -6,4 +6,10 @@ redirect_from:
   - /docs/server/configuration.html
 ---
 
-Coming soon...
+## Server APIs
+
+{% include apis.md type="server" %}
+
+## Client APIs
+
+{% include apis.md type="client" %}
