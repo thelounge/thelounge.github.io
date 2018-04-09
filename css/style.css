@@ -412,12 +412,12 @@ a.link-anchor {
 }
 
 .terminal-log-info::before {
-	color: #5f5f5f;
+	color: #757575;
 	content: "2017-12-08 12:34:56 ";
 }
 
 .terminal-log-info::after {
-	color: #0224c8;
+	color: #4565fd;
 	content: "[INFO]";
 }
 
