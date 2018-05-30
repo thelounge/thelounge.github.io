@@ -118,7 +118,7 @@ Disable Apps
 First, install redbird:
 
 ```sh
-npm install redbird
+yarn add redbird
 ```
 
 Then, create a `proxy.js` file and edit it with:
