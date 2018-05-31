@@ -6,22 +6,9 @@ redirect_from:
   - /docs/getting_started/install.html
 ---
 
-## Installation Methods
-
-* [Debian/Ubuntu-based distros](#debian-and-ubuntu-based-distributions)
-* [Arch Linux](#arch-linux)
-* [NPM Releases](#from-npm-releases)
-* [Docker](#docker)
-* [Running from source](#running-from-source)
-* [Unofficial Install Methods](#unofficial-install-methods)
-* [Services packaging The Lounge](#services-packaging-the-lounge)
-
----
-
-
 ## Debian and Ubuntu based distributions
 
-First, make sure [Node.js](https://nodejs.org/) v6 or more recent is installed
+First, make sure [Node.js](https://nodejs.org/) v6.13.0 or more recent is installed
 with `node --version`. If not, follow the instructions given on the
 [official documentation](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions).
 
@@ -95,7 +82,7 @@ Installing the [npm package](https://www.npmjs.com/package/thelounge) directly
 allows you to use stable releases on systems where we do not provide native
 packages.
 
-First, make sure [Node.js](https://nodejs.org/) v6 or more recent is installed
+First, make sure [Node.js](https://nodejs.org/) v6.13.0 or more recent is installed
 with `node --version`, as well as [yarn](https://yarnpkg.com/). If not, follow
 the instructions given on the
 [official documentation](https://nodejs.org/en/download/package-manager/) by
@@ -119,7 +106,7 @@ thelounge start
 The Lounge is now up and running **in private mode** at <http://localhost:9000>.
 
 Read more about how to use The Lounge from the command line in
-[the usage section](/docs/usage.html).
+[the CLI usage section](/docs/usage.html).
 
 Its configuration file is located at `~/.thelounge/config.js`. To configure The
 Lounge, go to [the configuration section](/docs/configuration.html).
@@ -168,7 +155,7 @@ may be unstable or insecure. This is not production-ready, so use at your own
 risk!<br>
 It is also not recommended to run this as a `root` user.
 
-First, make sure [Node.js](https://nodejs.org/) v6 or more recent is installed
+First, make sure [Node.js](https://nodejs.org/) v6.13.0 or more recent is installed
 with `node --version`, as well as [yarn](https://yarnpkg.com). If not, follow the instructions given on the
 [official documentation](https://nodejs.org/en/download/package-manager/) by
 choosing your distribution in the list.
@@ -180,6 +167,7 @@ git clone https://github.com/thelounge/thelounge
 cd thelounge
 yarn install
 NODE_ENV=production yarn build
+yarn link
 ```
 
 {: .alert.alert-info role="alert"}
@@ -188,13 +176,13 @@ Note that installing from source does not daemonize nor autostart The Lounge.
 Start the server manually using:
 
 ```sh
-node index.js start
+thelounge start
 ```
 
 The Lounge is now up and running **in private mode** at <http://localhost:9000>.
 
 Read more about how to use The Lounge from the command line in
-[the usage section](/docs/usage.html).
+[the CLI usage section](/docs/usage.html).
 
 Its configuration file is located at `~/.thelounge/config.js`. To configure The
 Lounge, go to [the configuration section](/docs/configuration.html).

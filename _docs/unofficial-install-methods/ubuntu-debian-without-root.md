@@ -12,7 +12,6 @@ First, create a dedicated folder and install The Lounge locally:
 mkdir thelounge
 cd thelounge
 yarn add thelounge
-# npm install thelounge
 ```
 
 To run commands listed on the main documentation, you need to prefix `thelounge`
