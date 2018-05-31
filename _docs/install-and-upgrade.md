@@ -88,6 +88,9 @@ the instructions given on the
 [official documentation](https://nodejs.org/en/download/package-manager/) by
 choosing your distribution in the list.
 
+{: .alert.alert-info role="alert"}
+If you are not able to install yarn and need to use [npm](https://npmjs.com), be sure to add the `--unsafe-perm` flag when running `npm install --global --unsafe-perm thelounge`.
+
 Then install The Lounge using:
 
 ```sh
@@ -102,6 +105,9 @@ Start the server manually using:
 ```sh
 thelounge start
 ```
+
+{: .alert.alert-info role="alert"}
+If `thelounge` is not found by your shell, you will need to add the output of `yarn global bin` to your PATH.
 
 The Lounge is now up and running **in private mode** at <http://localhost:9000>.
 
@@ -178,6 +184,9 @@ Start the server manually using:
 ```sh
 thelounge start
 ```
+
+{: .alert.alert-info role="alert"}
+`yarn link` adds a symlink to the source version of thelounge into yarn's global bin directory. You will need to add the output of `yarn global bin` to your PATH.
 
 The Lounge is now up and running **in private mode** at <http://localhost:9000>.
 

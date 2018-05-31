@@ -14,6 +14,9 @@ cd thelounge
 yarn add thelounge
 ```
 
+{: .alert.alert-info role="alert"}
+If you are not able to install yarn and need to use [npm](https://npmjs.com), be sure to add the `--unsafe-perm` flag when running `npm install --unsafe-perm thelounge`.
+
 To run commands listed on the main documentation, you need to prefix `thelounge`
 with the location of the local executable. For example, to start a server, run:
 
