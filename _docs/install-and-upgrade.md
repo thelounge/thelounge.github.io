@@ -21,6 +21,9 @@ Finally, open a terminal and install the downloaded package using:
 sudo dpkg --install thelounge.deb
 ```
 
+{: .alert.alert-info role="alert"}
+If you don't have root access, you'll need to [run an npm release](#from-npm-releases). Yarn installs global binaries to your user directory by default, which doesn't require root.
+
 This also sets up a `systemd` service, enabled during the install, that you can
 control with `systemctl status|start|restart|stop|...`.
 
@@ -94,7 +97,7 @@ If you are not able to install yarn and need to use [npm](https://npmjs.com), be
 Then install The Lounge using:
 
 ```sh
-[sudo] yarn global add thelounge
+yarn global add thelounge
 ```
 
 {: .alert.alert-info role="alert"}
@@ -210,7 +213,6 @@ setups and platforms, with different tooling, etc. These are not officially
 supported (even when hosted on this website), so use them at your own risk:
 
 - [Install on Heroku](/docs/unofficial-install-methods/heroku.html)
-- [Install on Ubuntu / Debian without root access](/docs/unofficial-install-methods/ubuntu-debian-without-root.html)
 - [OpenShift Online recipe](https://github.com/pacbard/openshift-thelounge)
 - [Ansible role using Supervisor](https://github.com/astorije/ansible-lounge)
 - [ARMHF Docker images](https://hub.docker.com/r/lsioarmhf/thelounge/)
