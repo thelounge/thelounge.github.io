@@ -3,7 +3,7 @@ This is the website of [The Lounge](https://thelounge.chat/).
 ## What is The Lounge?
 
 The Lounge is a web IRC client. More information can be found at
-https://github.com/thelounge/lounge.
+https://github.com/thelounge/thelounge.
 
 ## Development
 

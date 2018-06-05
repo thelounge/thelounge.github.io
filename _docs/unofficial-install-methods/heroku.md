@@ -40,15 +40,15 @@ heroku login
 Clone the repository and install The Lounge from source:
 
 ```
-git clone https://github.com/thelounge/lounge
-cd lounge
-npm install
-NODE_ENV=production npm run build
+git clone https://github.com/thelounge/thelounge
+cd thelounge
+yarn install
+NODE_ENV=production yarn build
 ```
 
 ## Create the Heroku app
 
-In the `lounge/` directory, run:
+In the `thelounge/` directory, run:
 
 ```
 heroku create
@@ -66,7 +66,7 @@ web: THELOUNGE_HOME=/app node index --private
 
 _You can read more about Procfiles [here](https://devcenter.heroku.com/articles/procfile)._
 
-To create users, run the following in the `lounge/` directory:
+To create users, run the following in the `thelounge/` directory:
 
 ```
 THELOUNGE_HOME=. ./index.js add <username>
