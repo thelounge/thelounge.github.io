@@ -10,18 +10,21 @@ redirect_from:
 
 ## Debian and Ubuntu based distributions
 
-First, make sure [Node.js](https://nodejs.org/) v4 or more recent is installed
+First, make sure [Node.js](https://nodejs.org/) v6.13.0 or more recent is installed
 with `node --version`. If not, follow the instructions given on the
 [official documentation](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions).
 
 Then download `thelounge.deb` located at the bottom of
-[the latest release](https://github.com/thelounge/lounge/releases/latest).
+[the latest release](https://github.com/thelounge/thelounge/releases/latest).
 
 Finally, open a terminal and install the downloaded package using:
 
 ```sh
 sudo dpkg --install thelounge.deb
 ```
+
+{: .alert.alert-info role="alert"}
+If you don't have root access, you'll need to [run an npm release](#from-npm-releases). Yarn installs global binaries to your user directory by default, which doesn't require root.
 
 This also sets up a `systemd` service, enabled during the install, that you can
 control with `systemctl status|start|restart|stop|...`.
@@ -69,7 +72,7 @@ service:
   `/etc/thelounge/config.js`and runs as `thelounge` user.
 - **[User](https://wiki.archlinux.org/index.php/Systemd/User):**
   `systemctl --user start thelounge.service`. The configuration is stored in
-  your home directory in `~/.lounge/config.js`.
+  your home directory in `~/.thelounge/config.js`.
 
 To configure The Lounge, go to
 [the configuration section](/docs/server/configuration.html).
@@ -84,16 +87,19 @@ Installing the [npm package](https://www.npmjs.com/package/thelounge) directly
 allows you to use stable releases on systems where we do not provide native
 packages.
 
-First, make sure [Node.js](https://nodejs.org/) v4 or more recent is installed
-with `node --version`, as well as [npm](https://www.npmjs.org/). If not, follow
+First, make sure [Node.js](https://nodejs.org/) v6.13.0 or more recent is installed
+with `node --version`, as well as [yarn](https://yarnpkg.com/). If not, follow
 the instructions given on the
 [official documentation](https://nodejs.org/en/download/package-manager/) by
 choosing your distribution in the list.
 
+{: .alert.alert-info role="alert"}
+If you are not able to install yarn and need to use [npm](https://npmjs.com), be sure to add the `--unsafe-perm` flag when running `npm install --global --unsafe-perm thelounge`.
+
 Then install The Lounge using:
 
 ```sh
-[sudo] npm --global install thelounge
+yarn global add thelounge
 ```
 
 {: .alert.alert-info role="alert"}
@@ -104,6 +110,9 @@ Start the server manually using:
 ```sh
 thelounge start
 ```
+
+{: .alert.alert-info role="alert"}
+If `thelounge` is not found by your shell, you will need to add the output of `yarn global bin` to your PATH.
 
 The Lounge is now up and running **in private mode** at <http://localhost:9000>.
 
@@ -157,19 +166,19 @@ may be unstable or insecure. This is not production-ready, so use at your own
 risk!<br>
 It is also not recommended to run this as a `root` user.
 
-First, make sure [Node.js](https://nodejs.org/) v4 or more recent is installed
-with `node --version`, as well as. If not, follow the instructions given on the
+First, make sure [Node.js](https://nodejs.org/) v6.13.0 or more recent is installed
+with `node --version`, as well as [yarn](https://yarnpkg.com). If not, follow the instructions given on the
 [official documentation](https://nodejs.org/en/download/package-manager/) by
 choosing your distribution in the list.
 
 The following commands install the development version of The Lounge:
 
 ```sh
-git clone https://github.com/thelounge/lounge
-cd lounge
-npm install
-NODE_ENV=production npm run build
-npm link
+git clone https://github.com/thelounge/thelounge
+cd thelounge
+yarn install
+NODE_ENV=production yarn build
+yarn link
 ```
 
 {: .alert.alert-info role="alert"}
@@ -180,6 +189,9 @@ Start the server manually using:
 ```sh
 thelounge start
 ```
+
+{: .alert.alert-info role="alert"}
+`yarn link` adds a symlink to the source version of thelounge into yarn's global bin directory. You will need to add the output of `yarn global bin` to your PATH.
 
 The Lounge is now up and running **in private mode** at <http://localhost:9000>.
 
@@ -203,7 +215,6 @@ setups and platforms, with different tooling, etc. These are not officially
 supported (even when hosted on this website), so use them at your own risk:
 
 - [Install on Heroku](/docs/unofficial-install-methods/heroku.html)
-- [Install on Ubuntu / Debian without root access](/docs/unofficial-install-methods/ubuntu-debian-without-root.html)
 - [OpenShift Online recipe](https://github.com/pacbard/openshift-thelounge)
 - [Ansible role using Supervisor](https://github.com/astorije/ansible-lounge)
 - [ARMHF Docker images](https://hub.docker.com/r/lsioarmhf/thelounge/)
