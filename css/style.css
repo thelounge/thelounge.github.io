@@ -88,9 +88,13 @@ pre code {
 	color: #fff;
 }
 #nav .logo {
-	color: #fff;
-	font-size: 22px;
+	line-height: 1;
 	margin-left: -10px;
+}
+
+#nav .logo img {
+	height: 100%;
+	padding: 5px 0;
 }
 
 #splash {
