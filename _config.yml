@@ -4,6 +4,8 @@ baseurl: ""
 include:
   - _headers
   - _redirects
+kramdown:
+  toc_levels: "2"
 plugins:
   - jekyll-sitemap
 collections:
