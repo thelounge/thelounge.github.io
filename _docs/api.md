@@ -8,8 +8,8 @@ redirect_from:
 
 ## Server APIs
 
-{% include apis.md type="server" %}
+{% include api.md type="server" %}
 
 ## Client APIs
 
-{% include apis.md type="client" %}
+{% include api.md type="client" %}

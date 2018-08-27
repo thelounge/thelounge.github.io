@@ -9,7 +9,7 @@ plugins:
 collections:
   docs:
     output: true
-  apis:
+  api:
     output: true
     permalink: /docs/:collection/:path:output_ext
   guides:
