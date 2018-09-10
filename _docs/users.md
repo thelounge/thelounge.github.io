@@ -4,7 +4,7 @@ title: Users
 order: 5
 ---
 
-In [private mode](/docs/configuration.html#public), only authorized users can access and use The Lounge.
+In [private mode](/docs/configuration#public), only authorized users can access and use The Lounge.
 
 All user configurations are stored as JSON files in the `${THELOUNGE_HOME}/users/` folder. These are being read upon server startup to connect users to their IRC networks and channels.
 

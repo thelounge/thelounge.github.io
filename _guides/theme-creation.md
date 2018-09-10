@@ -46,5 +46,5 @@ module.exports = {
     name: "Theme Name",
     type: "theme"
   }
-}
+};
 ```

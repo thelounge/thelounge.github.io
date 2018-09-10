@@ -67,12 +67,12 @@ This tells us a few things:
 
 - Since it is the first time The Lounge runs, a configuration file was created.
   Its location depends on how The Lounge was installed (see
-  [the installation page](/docs/install-and-upgrade.html)).
+  [the installation page](/docs/install-and-upgrade)).
 - The Lounge can now be accessed at <http://localhost:9000/>.
 - It has started in **private** mode, which means only users who
   have an account can log in. There is no guest access.
 - There are no user accounts as of yet, so in fact, no one can log in for now
-  (see the [user management](http://localhost:4000/docs/users.html) page).
+  (see the [user management](/docs/users) page).
 
 The process can be stopped at any time by hitting <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 This will effectively close all connections to remote IRC servers that users are
@@ -105,7 +105,7 @@ thelounge install thelounge-theme-solarized
 
 After restarting The Lounge, the theme will now be available in the client settings.
 
-Additionally, any theme can be used as the default one for all clients. See [the `theme` section on the configuration page](/docs/configuration.html) for more information.
+Additionally, any theme can be used as the default one for all clients. See [the `theme` section on the configuration page](/docs/configuration) for more information.
 
 ## Configuring The Lounge
 
@@ -135,7 +135,7 @@ thelounge start -c port=9001 -c public=true
 
 However, `--config` is not limited to setting the port or mode. In fact, any
 option available in the configuration file can be passed using `--config`.
-See the [configuration page](/docs/configuration.html) for a full list.
+See the [configuration page](/docs/configuration) for a full list.
 
 A few rules apply to the `--config` option:
 

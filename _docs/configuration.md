@@ -7,7 +7,7 @@ order: 4
 This part of the documentation focuses on the configuration of the server.
 
 Start by locating the `config.js` file in the configuration folder, which
-depends on how you [installed The Lounge](/docs/install-and-upgrade.html).
+depends on how you [installed The Lounge](/docs/install-and-upgrade).
 
 {% include toc.md %}
 
