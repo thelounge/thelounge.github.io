@@ -241,25 +241,36 @@ img {
 #splash .hgroup {
 	margin: 60px 0;
 }
-#splash .card {
-	background: #84ce88;
+.btn {
+	border: 2px solid #84ce88;
 	border-radius: 3px;
+	color: #84ce88;
 	display: inline-block;
-	padding: 15px;
-	margin: 5px;
-	min-width: 45%;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	padding: 9px 17px;
+	text-transform: uppercase;
+	transition: background 0.2s, border-color 0.2s, color 0.2s;
+	word-spacing: 3px;
+	cursor: pointer; /* This is useful for `<button>` elements */
 }
-#splash .card strong {
-	display: block;
-	font-size: 17px;
+
+.btn:disabled,
+.btn:hover,
+.btn:focus {
+	background: #84ce88;
+	color: #fff;
+	opacity: 1;
+	text-decoration: none;
 }
-#splash #stable_version,
-#splash #prerelease_version {
-	opacity: .7;
+
+.btn:active {
+	box-shadow: none;
+	opacity: 0.8;
 }
-#splash #prerelease_card.hidden {
-	display: none;
-}
+
 #features {
 	padding: 50px 0 80px;
 }
@@ -271,7 +282,12 @@ img {
 	font-weight: bold;
 }
 #features .feature {
+	text-align: center;
 	padding-bottom: 20px;
+}
+#features .screenshot {
+	box-shadow: 0 0 25px rgba(65, 83, 100, 0.5);
+	border-radius: 5px;
 }
 #main h1,
 #main h2,

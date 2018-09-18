@@ -1,33 +1,3 @@
-// Retrieval of latest version number(s) (from GitHub releases) to display
-// it/them on the homepage. If there are no current pre-releases, only display
-// latest stable version.
-(function() {
-	const stableVersion = $("#stable_version");
-
-	if (stableVersion.length) {
-		$.getJSON("https://api.github.com/repos/thelounge/lounge/releases", function(json) {
-			var latest = json[0];
-			var stable;
-			var prerelease;
-
-			if (latest.prerelease) {
-				prerelease = latest;
-				stable = json.find(function (release) { return !release.prerelease; });
-			} else {
-				stable = latest;
-			}
-
-			// `.substr(1)` strips `v` in `vX.Y.Z`
-			stableVersion.text("version " + stable.tag_name.substr(1) + (prerelease ? " (stable)" : ""));
-
-			if (prerelease) {
-				$("#prerelease_version").text("version " + prerelease.tag_name.substr(1) + " (pre-release)");
-				$("#prerelease_card").removeClass("hidden");
-			}
-		});
-	}
-}());
-
 // Real-time client-side search using https://github.com/olivernn/lunr.js
 // Open search field with the search icon, close it with "Escape" / the close
 // icon, cycle through results with "Up" and "Down" and visit selected result
