@@ -289,3 +289,5 @@ This is useful to silence bots that automatically fetch URL previews, already be
 	white-space: initial;
 }
 ```
+
+{% include abbreviations.md %}

@@ -54,7 +54,4 @@ In addition to the items listed in this guide, you may want to enable or configu
 - To navigate through windows in the channel list from your keyboard, you must now use <kbd>alt</kbd>+<kbd>↓</kbd> / <kbd>alt</kbd>+<kbd>↑</kbd> in lieu of <kbd>ctrl</kbd>+<kbd>↓</kbd> / <kbd>ctrl</kbd>+<kbd>↑</kbd>, more often used in other chat clients.
 - We have updated our build pipeline to better reflect our browser support. The Lounge now supports [browsers released less than a year ago](http://browserl.ist/?q=last+1+year%2C+firefox+esr) (and [Firefox ESR](https://www.mozilla.org/en-US/firefox/organizations/)), while we used to support the [last 2 versions of all browsers](http://browserl.ist/?q=last+2+versions). In practice, this drops support for some of the least used browsers on mobile (QQ browser, UC browser, Android Browser, Baidu Browser, Blackberry Browser, IE Mobile, Opera Mini, and Opera Mobile), and IE 10/11 on desktop. It however gives slightly more support flexibility for earlier versions of Chrome (62+), Firefox (56+ and ESR), and Opera (48+).
 
-*[CLI]: Command Line Interface
-*[ESR]: Extended Support Release
-*[LTS]: Long-Term Support
-*[TLS]: Transport Layer Security
+{% include abbreviations.md %}
