@@ -44,19 +44,16 @@ abbr[title] {
 
 body {
 	background: #fff;
-	color: #455164;
+	color: #415364;
 	font: 15px Muli, sans-serif;
 	margin: 0;
 	margin-bottom: 100px;
 }
-a {
-	color: #84ce88;
-	font-weight: bold;
-}
+a,
 a:hover,
 a:focus {
-	color: #84ce88;
-	outline: 0;
+	font-weight: bold;
+	color: #50a656;
 }
 h2 {
 	font-size: 32px;
@@ -106,8 +103,8 @@ img {
 	padding: 0 20px;
 }
 #nav {
-	background: #455164;
-	color: #bcc4d3;
+	background: #415364;
+	color: #b7c5d1;
 }
 #nav ul.nav-links {
 	float: right;
@@ -155,7 +152,7 @@ img {
 	top: 0;
 	bottom: 0;
 	right: 20px;
-	background: #455164;
+	background: #415364;
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity .2s, visibility .2s;
@@ -187,17 +184,17 @@ img {
 }
 
 #nav .search-input-group input::-moz-placeholder {
-	color: #bcc4d3;
+	color: #b7c5d1;
 	opacity: .5;
 }
 
 #nav .search-input-group input::-webkit-input-placeholder {
-	color: #bcc4d3;
+	color: #b7c5d1;
 	opacity: .5;
 }
 
 #nav .search-input-group input:-ms-input-placeholder {
-	color: #bcc4d3;
+	color: #b7c5d1;
 	opacity: .5;
 }
 
@@ -216,7 +213,7 @@ img {
 }
 
 #splash {
-	background: #455164;
+	background: #415364;
 	color: #fff;
 	text-align: center;
 	padding-bottom: 50px;
@@ -227,19 +224,22 @@ img {
 	margin: 0;
 }
 #splash h2 {
-	color: #bcc4d3;
+	color: #b7c5d1;
 	font-size: 18px;
 	margin: 0;
 }
 #splash p {
 	margin-top: 18px;
-	color: #bcc4d3;
+	color: #b7c5d1;
 }
 #splash .row {
 	padding: 20px 0;
 }
 #splash .hgroup {
 	margin: 60px 0;
+}
+#splash a:not(.btn) {
+	color: #84ce88;
 }
 .btn {
 	border: 2px solid #84ce88;
@@ -319,7 +319,7 @@ img {
 }
 #menu a:hover,
 #menu a.active {
-	color: #84ce88;
+	color: #50a656;
 }
 #menu a.active {
 	font-weight: bold;
