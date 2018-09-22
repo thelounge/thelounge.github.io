@@ -11,26 +11,26 @@ Once The Lounge is installed, a program called `thelounge` is now available.
 To get general information about the program and an overview of the available
 commands, use the `--help` (or `-h`) option:
 
-```sh
+```
 thelounge --help
 ```
 
 To get specific help for a given command, run:
 
-```sh
+```
 thelounge <command> --help
 ```
 
 For example, to know how to use `thelounge start` and the options available,
 run:
 
-```sh
+```
 thelounge start --help
 ```
 
 If you need to check which version of The Lounge is installed, use:
 
-```sh
+```
 thelounge version
 ```
 
@@ -38,7 +38,7 @@ thelounge version
 
 To start the server, run the following command:
 
-```sh
+```
 thelounge start
 ```
 
@@ -89,7 +89,7 @@ users, etc.
 For example, to start a server with a configuration located at `/tmp/config.js`,
 run:
 
-```sh
+```
 THELOUNGE_HOME=/tmp thelounge start
 ```
 
@@ -114,20 +114,20 @@ To change the mode or port quickly, the `--config` (or `-c`) option can be used.
 
 For example, to start The Lounge on port **9001**, run:
 
-```sh
+```
 thelounge start --config port=9001
 ```
 
 Similarly, to start it in **public** mode, run:
 
-```sh
+```
 thelounge start --config public=true
 ```
 
 This option can be specified multiple times to match the requested
 configuration:
 
-```sh
+```
 thelounge start -c port=9001 -c public=true
 ```
 
@@ -138,14 +138,14 @@ See the [configuration page](/docs/configuration.html) for a full list.
 A few rules apply to the `--config` option:
 
 - Nested objects require using a dot-notation. For example:
-  ```sh
+  ```
   thelounge -c debug.raw=true
   ```
 - Lists of values must be wrapped with `[]`. For example:
-  ```sh
+  ```
   thelounge -c transports=[websocket,polling]
   ```
 - If a value has a whitespace, it must be wrapped in quotes. For example:
-  ```sh
+  ```
   thelounge -c logs.format="DD MMMM YYYY HH:mm:ss"
   ```

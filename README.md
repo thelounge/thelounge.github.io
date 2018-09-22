@@ -10,14 +10,14 @@ https://github.com/thelounge/thelounge.
 This website is built using [Jekyll](https://jekyllrb.com/). After cloning this
 repository, install the dependencies with:
 
-```sh
+```
 gem install bundler
 bundle install
 ```
 
 To build and serve this website locally, run:
 
-```sh
+```
 jekyll serve
 ```
 
