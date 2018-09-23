@@ -30,7 +30,7 @@
 	$("#main h2, #main h3").each(function() {
 		$(this).prepend($(
 			`<a class="link-anchor" href="#${$(this).attr("id")}">` +
-				'<i class="fa fa-link" aria-hidden="true"></i>' +
+				'<i class="fas fa-link" aria-hidden="true"></i>' +
 			'</a>'
 		));
 	});
