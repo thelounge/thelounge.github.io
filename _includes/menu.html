@@ -1,14 +1,14 @@
-<div id="menu">
-	{% assign docs = (site.docs | sort: "order" ) %}
-	{% for node in docs %}
-		{% assign level = (node.relative_path | split: '/' | size) %}
-		{% if level == 2 # Not a subfolder %}
+{% assign docs = (site.docs | sort: "order" ) %}
+{% for node in docs %}
+	{% assign level = (node.relative_path | split: '/' | size) %}
+	{% if level == 2 # Not a subfolder %}
+		<li>
 			<a
 				href="{{ site.baseurl }}{{ node.url | remove: "/index" }}"
 				{% if page.url == node.url %}class="active"{% endif %}
 			>
 				{{ node.title }}
 			</a>
-		{% endif %}
-	{% endfor %}
-</div>
+		</li>
+	{% endif %}
+{% endfor %}

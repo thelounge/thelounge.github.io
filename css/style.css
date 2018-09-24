@@ -100,7 +100,6 @@ img {
 
 .container {
 	max-width: 750px;
-	padding: 0 20px;
 }
 #nav {
 	background: #415364;
@@ -145,13 +144,16 @@ img {
 }
 #nav .container {
 	position: relative;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 #nav .nav-search-overlay {
 	position: absolute;
-	width: calc(75% - 2 * 20px);
 	top: 0;
 	bottom: 0;
-	right: 20px;
+	left: 0;
+	right: 0;
+	padding: 0 10px;
 	background: #415364;
 	opacity: 0;
 	visibility: hidden;
@@ -308,27 +310,28 @@ img {
 #main {
 	margin-bottom: 60px;
 }
-#menu {
-	margin-top: 35px;
-	line-height: 2;
+#desktop-menu {
+	margin-top: 20px;
 }
-#menu a {
+.menu {
+	padding-left: 0;
+	list-style: none;
+}
+.menu li {
+	margin: 0;
+}
+.menu a {
 	color: inherit;
 	font-weight: normal;
 	display: block;
+	padding: 5px 0;
 }
-#menu a:hover,
-#menu a.active {
+.menu a:hover,
+.menu a.active {
 	color: #50a656;
 }
-#menu a.active {
+.menu a.active {
 	font-weight: bold;
-}
-#menu strong {
-	margin-top: 1em;
-}
-#menu strong:first-child {
-	margin-top: 0;
 }
 #footer {
 	color: #ccc;

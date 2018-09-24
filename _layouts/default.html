@@ -25,14 +25,24 @@
 			</a>
 
 			<ul class="nav-links">
-				<li><a href="/docs">Documentation</a></li>
-				<li><a href="https://www.npmjs.com/search?q=keywords%3Athelounge-theme">Themes</a></li>
+				<li class="hidden-xs">
+					<a href="/docs" {% if page.url contains "/docs" %}class="active"{% endif %}>Documentation</a>
+				</li>
+				<li class="hidden-xs">
+					<a href="https://www.npmjs.com/search?q=keywords%3Athelounge-theme">Themes</a>
+				</li>
 				<li><a href="https://github.com/thelounge" title="GitHub Organization for The Lounge">
 					<i class="fab fa-github fa-lg" aria-hidden="true"></i>
 				</a></li>
 				<li>
 					<button id="search-btn" title="Search this website">
 						<i class="fas fa-search fa-lg" aria-hidden="true"></i>
+					</button>
+				</li>
+				<li class="hidden-sm hidden-md hidden-lg">
+					<button id="menu-btn" title="Menu" class="collapsed" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false">
+						<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+						<span class="sr-only">Toggle navigation</span>
 					</button>
 				</li>
 			</ul>
@@ -52,6 +62,14 @@
 		<h1>Search results</h1>
 		<div id="results-placeholder"></div>
 		<div id="accessible-search-summary" aria-live="assertive" class="sr-only"></div>
+	</div>
+
+	<div id="mobile-menu" class="container collapse">
+		<ul class="menu">
+			<li><a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
+			{% include menu.html %}
+			<li><a href="https://www.npmjs.com/search?q=keywords%3Athelounge-theme">Themes</a></li>
+		</ul>
 	</div>
 
 	<div id="content">
