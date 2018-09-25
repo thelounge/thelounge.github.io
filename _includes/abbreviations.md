@@ -7,3 +7,4 @@
 *[LTS]: Long-Term Support
 *[TLS]: Transport Layer Security
 *[URL]: Uniform Resource Locator
+*[UTC]: Coordinated Universal Time

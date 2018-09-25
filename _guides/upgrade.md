@@ -20,10 +20,11 @@ In addition to the items listed in this guide, you may want to enable or configu
 
 ## Environment
 
-- The Lounge v3.0.0 now requires Node.js v6.13.0 or more to run. However, we recommend using the latest Node.js v8.x, current LTS version at the time of writing this guide.
+- The Lounge v3.0.0 now requires Node.js v6.13.0 or more recent to run. However, we recommend using the latest Node.js v8.x, current LTS version at the time of writing this guide. [Node.js v7 and v9 have reached End-of-Life](https://github.com/nodejs/Release) and are therefore not supported.
 - The environment variable `$LOUNGE_HOME` that can be used to point The Lounge to a specific home directory (housing configuration file, packages, user settings, etc.) is now called `$THELOUNGE_HOME`. More details [here](/docs/usage#specifying-a-different-configuration-file).
 - In situations where The Lounge has been installed [from the `npmjs.com` registry](https://www.npmjs.com/package/thelounge) or [from source](https://github.com/thelounge/thelounge), we now recommend using the [`yarn` package manager](https://yarnpkg.com/) in lieu of the `npm`. More details [here](/docs/install-and-upgrade).
 - User log files, located `~/.thelounge/logs/<user>/` by default, have changed. Server directories are now named after their name in The Lounge plus a randomized identifier to avoid duplicates (see [#2366](https://github.com/thelounge/thelounge/pull/2366)). Changes were also made to the logging format itself (see [#2501](https://github.com/thelounge/thelounge/pull/2501)). If you are using tools or scripts relying on log format, you will need to update them accordingly.
+- The Docker image has been renamed into [`thelounge/thelounge`](https://hub.docker.com/r/thelounge/thelounge/) on DockerHub. The base image does not come with `vim` nor `nano`, and the `slim` flavor was removed. The default data path was changed from `/home/lounge/data` to `/var/opt/thelounge`.
 
 ## CLI
 
@@ -46,7 +47,7 @@ In addition to the items listed in this guide, you may want to enable or configu
 - The `theme` setting has referred to a theme name since v2.5.0, while it used to be a path to the CSS file for that theme. The fallback to the previous format has now been removed. To use the `theme` setting, either specify themes shipped with The Lounge (`default` or `morning`) or installed from the npm registry (using the `thelounge install`).
 - The default theme referred to by the `theme` setting has been renamed from `example` to `default`. As a side note, the default theme in The Lounge v3.0.0 is now substantially different. You can restore the previous look of The Lounge by installing the theme [`thelounge-theme-classic`](https://github.com/thelounge/thelounge-theme-classic). This theme is currently looking for maintainers.
 - Two themes that previously shipped with The Lounge, `crypto` and `zenburn`, have now been extracted into external themes at [`thelounge-theme-crypto`](https://github.com/thelounge/thelounge-theme-crypto) and [`thelounge-theme-zenburn`](https://github.com/thelounge/thelounge-theme-zenburn). If you were using them in the `theme` setting, you need to install them and update the setting accordingly. These themes are now looking for maintainers.
-- The `logs.format` and `logs.timezone` settings have been removed. The Lounge now logs timestamps using a format of `YYYY-MM-DD HH:mm:ss` (which used to be the default value) and the timezone of the server it is installed on.
+- The `logs.format` and `logs.timezone` settings have been removed. The Lounge now logs timestamps using a format of `YYYY-MM-DD HH:mm:ss` (which used to be the default value) in UTC timezone.
 
 ## Client
 
