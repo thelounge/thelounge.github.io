@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#415364;}
+	.st1{fill:#FF9E18;}
+</style>
+<g>
+	<path class="st1" d="M12.1,5.7l0,4.6c0,0,0,0.1-0.1,0.1l-3.9,2.3c0,0-0.1,0-0.1,0l-4-2.3c0,0-0.1-0.1-0.1-0.1l0-4
+		c0,0,0-0.1-0.1-0.1L2.8,5.5c-0.1,0-0.2,0-0.2,0.1v5.1c0,0.2,0.1,0.5,0.3,0.6L7.7,14c0.2,0.1,0.5,0.1,0.7,0l4.7-2.7
+		c0.2-0.1,0.3-0.3,0.3-0.6V5.3c0-0.2-0.1-0.5-0.3-0.6L8.3,2C8.1,1.9,7.9,1.9,7.7,2L5.5,3.3c-0.1,0-0.1,0.1,0,0.2l1.1,0.6
+		c0,0,0.1,0,0.1,0L8,3.3c0,0,0.1,0,0.1,0L12.1,5.7C12,5.6,12.1,5.7,12.1,5.7z"/>
+	<circle class="st0" cx="10.2" cy="8" r="0.7"/>
+	<circle class="st0" cx="7.9" cy="8" r="0.7"/>
+</g>
+</svg>
