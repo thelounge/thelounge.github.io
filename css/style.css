@@ -39,7 +39,7 @@ li {
 code {
 	background: #f5f5f5;
 	border-radius: 3px;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	padding: 2px 4px;
 }
 pre {
@@ -168,11 +168,6 @@ pre code {
 #main h2 {
 	font-size: 24px;
 	font-weight: bold;
-}
-#main h2 code {
-	background: none;
-	font: inherit;
-	padding: 0;
 }
 #main h3 {
 	margin-bottom: 13px;
