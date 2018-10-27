@@ -1,6 +1,6 @@
 ---
 ---
-window.store = {
+window.search_data = {
   {%- assign documents = site.documents | concat: site.pages %}
   {%- for document in documents %}
   {%- unless document.title %}{% continue %}{% endunless %}

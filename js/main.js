@@ -33,19 +33,19 @@
 // icon, cycle through results with "Up" and "Down" and visit selected result
 // with "Enter".
 (function() {
-	// Preparing lunrjs index based on store located in HTML pages
+	// Preparing lunrjs index based on data store located in HTML pages
 	var lunrIndex = lunr(function () {
 		this.field('id');
 		this.field('title', { boost: 10 });
 		this.field('category');
 		this.field('content', { boost: 5 });
 	});
-	for (var key in window.store) {
+	for (var key in window.search_data) {
 		lunrIndex.add({
 			'id': key,
-			'title': window.store[key].title,
-			'category': window.store[key].category,
-			'content': window.store[key].content
+			'title': window.search_data[key].title,
+			'category': window.search_data[key].category,
+			'content': window.search_data[key].content
 		});
 	}
 
@@ -71,7 +71,7 @@
 				resultsContent = "<ul>";
 				results.forEach(function (result) {
 					var url = result.ref;
-					var item = window.store[url];
+					var item = window.search_data[url];
 					resultsContent += '<li>';
 					resultsContent += '<a href="' + url + '">' + item.title + '</a>';
 					resultsContent += "</li>";
