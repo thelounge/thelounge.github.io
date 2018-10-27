@@ -103,7 +103,9 @@ pre code {
 	color: inherit;
 }
 #nav a:hover,
-#nav button:hover {
+#nav a:focus,
+#nav button:hover,
+#nav button:focus {
 	color: #fff;
 }
 #nav .logo {
