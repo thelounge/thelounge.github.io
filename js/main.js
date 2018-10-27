@@ -34,20 +34,21 @@
 // with "Enter".
 (function() {
 	// Preparing lunrjs index based on data store located in HTML pages
-	var lunrIndex = lunr(function () {
-		this.field('id');
+	const lunrIndex = lunr(function () {
+		this.ref('id');
 		this.field('title', { boost: 10 });
 		this.field('category');
 		this.field('content', { boost: 5 });
+
+		for (var key in window.search_data) {
+			this.add({
+				id: key,
+				title: window.search_data[key].title,
+				category: window.search_data[key].category,
+				content: window.search_data[key].content,
+			});
+		}
 	});
-	for (var key in window.search_data) {
-		lunrIndex.add({
-			'id': key,
-			'title': window.search_data[key].title,
-			'category': window.search_data[key].category,
-			'content': window.search_data[key].content
-		});
-	}
 
 	// Run the search every time the search input value changes.
 	// Use "input" event instead of `keydown`/`keypress`/`keyup` to focus on
