@@ -285,7 +285,6 @@ img {
 #docs {
 	padding-top: 40px;
 }
-#main h1:first-child,
 #main p {
 	margin-top: 0;
 }
@@ -295,6 +294,7 @@ img {
 	margin: 1.3em 0 .5em;
 }
 #main h1 {
+	margin-top: 0;
 	font-size: 2.5em;
 }
 #main h2 {
@@ -475,6 +475,15 @@ a.link-anchor {
 .terminal-bold {
 	color: white;
 	font-weight: bold;
+}
+
+/* "Edit on GitHub" button */
+
+.edit-page-btn {
+	float: right;
+	margin-top: 20px;
+	line-height: 60px;
+	font-size: .9em;
 }
 
 /* Rouge syntax highlighting - Igorpro theme */
