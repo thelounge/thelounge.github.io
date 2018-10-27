@@ -1,9 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,700);
-
 body {
 	background: #fff;
 	color: #455164;
-	font: 15px "Open Sans", sans-serif;
+	font: 16px -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	margin: 0;
 	margin-bottom: 100px;
 }
