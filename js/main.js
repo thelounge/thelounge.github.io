@@ -1,24 +1,37 @@
 (function() {
-	$.getJSON("https://api.github.com/repos/thelounge/lounge/releases", function(json) {
-		var latest = json[0];
-		var stable;
-		var prerelease;
+	const stableVersion = $("#stable_version");
 
-		if (latest.prerelease) {
-			prerelease = latest;
-			stable = json.find(function (release) { return !release.prerelease; });
-		} else {
-			stable = latest;
-		}
+	if (stableVersion.length) {
+		$.getJSON("https://api.github.com/repos/thelounge/lounge/releases", function(json) {
+			var latest = json[0];
+			var stable;
+			var prerelease;
 
-		var stable_version = document.getElementById("stable_version");
-		// `.substr(1)` strips `v` in `vX.Y.Z`
-		stable_version.textContent = "version " + stable.tag_name + (prerelease ? " (stable)" : "");
+			if (latest.prerelease) {
+				prerelease = latest;
+				stable = json.find(function (release) { return !release.prerelease; });
+			} else {
+				stable = latest;
+			}
 
-		if (prerelease) {
-			var prerelease_version = document.getElementById("prerelease_version");
-			prerelease_version.textContent = "version " + prerelease.tag_name.substr(1) + " (pre-release)";
-			document.getElementById("prerelease_card").className = "card";
-		}
+			// `.substr(1)` strips `v` in `vX.Y.Z`
+			stableVersion.text("version " + stable.tag_name.substr(1) + (prerelease ? " (stable)" : ""));
+
+			if (prerelease) {
+				$("#prerelease_version").text("version " + prerelease.tag_name.substr(1) + " (pre-release)");
+				$("#prerelease_card").removeClass("hidden");
+			}
+		});
+	}
+})();
+
+// Add an anchor link to the page headers to create a shareable URL
+(function() {
+	$("#main h2, #main h3").each(function() {
+		$(this).prepend($(
+			`<a class="link-anchor" href="#${$(this).attr("id")}">` +
+				'<i class="fa fa-link" aria-hidden="true"></i>' +
+			'</a>'
+		));
 	});
-}());
+})();
