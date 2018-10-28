@@ -85,7 +85,16 @@ pre code {
 	list-style: none;
 	margin: 0;
 }
-#nav a {
+#nav input,
+#nav button {
+	background: transparent;
+	border-radius: 0;
+	-webkit-appearance: none;
+	outline: none;
+	border: 0;
+}
+#nav a,
+#nav li button {
 	display: inline-block;
 	height: 50px;
 	line-height: 50px;
@@ -93,12 +102,78 @@ pre code {
 	font-weight: 700;
 	color: inherit;
 }
-#nav a:hover {
+#nav a:hover,
+#nav a:focus,
+#nav button:hover,
+#nav button:focus {
 	color: #fff;
 }
 #nav .logo {
 	line-height: 1;
 	margin-left: -10px;
+}
+#nav .container {
+	position: relative;
+}
+#nav .nav-search-overlay {
+	position: absolute;
+	width: calc(75% - 2 * 20px);
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	background: #455164;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .2s, visibility .2s;
+}
+#nav .nav-search-overlay.opened {
+	opacity: 1;
+	visibility: visible;
+}
+#nav .search-input-group {
+	position: relative;
+	margin-top: 10px;
+	height: 30px;
+	width: 100%;
+}
+#nav .search-input-group button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 30px;
+	text-align: center;
+}
+#nav .search-input-group input {
+	border-bottom: 1px solid white;
+	padding: 0;
+	padding-right: 20px;
+	width: calc(100% - 20px);
+	height: 100%;
+}
+
+#nav .search-input-group input::-moz-placeholder {
+	color: #bcc4d3;
+	opacity: .5;
+}
+
+#nav .search-input-group input::-webkit-input-placeholder {
+	color: #bcc4d3;
+	opacity: .5;
+}
+
+#nav .search-input-group input:-ms-input-placeholder {
+	color: #bcc4d3;
+	opacity: .5;
+}
+
+#search-results {
+	display: none;
+}
+#search-results ul {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
 }
 
 #nav .logo img {

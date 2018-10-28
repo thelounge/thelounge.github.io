@@ -30,9 +30,31 @@
 				<li><a href="https://github.com/thelounge" title="GitHub Organization for The Lounge">
 					<i class="fab fa-github fa-lg" aria-hidden="true"></i>
 				</a></li>
+				<li>
+					<button id="search-btn" title="Search this website">
+						<i class="fas fa-search fa-lg" aria-hidden="true"></i>
+					</button>
+				</li>
 			</ul>
+
+			<div class="nav-search-overlay">
+				<div class="search-input-group" role="search">
+					<input id="search-input" name="search" type="search" placeholder="Search" autocomplete="off" autocapitalize="off" spellcheck="false">
+					<button id="search-close-btn" title="Close this search field and clear results (Esc)" aria-keyshortcuts="Escape">
+						<i class="fas fa-times-circle" aria-hidden="true"></i>
+					</button>
+				</div>
+			</div>
 		</div>
 	</nav>
+
+	<div id="search-results" class="container">
+		<h1>Search results</h1>
+		<div id="results-placeholder"></div>
+		<div id="accessible-search-summary" aria-live="assertive" class="sr-only"></div>
+	</div>
+
+
 	<div id="content">
 		{{ content }}
 	</div>
@@ -58,6 +80,8 @@
 
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/lunr.min.js"></script>
+	<script src="/js/search_data.js"></script>
 	<script src="/js/main.js"></script>
 
 	</body>
