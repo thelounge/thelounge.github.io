@@ -19,12 +19,12 @@ Then download `thelounge.deb` located at the bottom of
 
 Finally, open a terminal and install the downloaded package using:
 
-```sh
+```
 sudo dpkg --install thelounge.deb
 ```
 
 {: .alert.alert-info role="alert"}
-If you don't have root access, you'll need to [run an npm release](#from-npm-releases). Yarn installs global binaries to your user directory by default, which doesn't require root.
+This methods require root access. Install The Lounge using [Yarn from an npm release](#from-npm-releases) if you do cannot use `sudo`.
 
 This also sets up a `systemd` service, enabled during the install, that you can
 control with `systemctl status|start|restart|stop|...`.
@@ -50,14 +50,14 @@ Please follow the
 to install this package from the AUR. For example, to install it using an AUR
 helper:
 
-```sh
+```
 pacaur -aS thelounge
 yaourt -aS thelounge
 ```
 
 Then enable and start the `thelounge.service` unit using:
 
-```sh
+```
 systemctl enable --now thelounge.service
 ```
 
@@ -87,23 +87,19 @@ Installing the [npm package](https://www.npmjs.com/package/thelounge) directly
 allows you to use stable releases on systems where we do not provide native
 packages.
 
-First, make sure [Node.js](https://nodejs.org/) v6.13.0 or more recent is installed
-with `node --version`, as well as [yarn](https://yarnpkg.com/). If not, follow
-the instructions given on the
-[official documentation](https://nodejs.org/en/download/package-manager/) by
-choosing your distribution in the list.
+First, make sure [Node.js](https://nodejs.org/) v6.13.0 (or more recent) and [Yarn](https://yarnpkg.com/) are installed on your system. See [official instructions for Node.js](https://nodejs.org/en/download/package-manager/) and [official instructions for Yarn](https://yarnpkg.com/en/docs/install).
 
 {: .alert.alert-info role="alert"}
-If you are not able to install yarn and need to use [npm](https://npmjs.com), be sure to add the `--unsafe-perm` flag when running `npm install --global --unsafe-perm thelounge`.
+To run `thelounge` as a global command, you will need to set up the PATH environment variable in your terminal. To do this, add ``export PATH="$PATH:`yarn global bin`"`` to your profile.
 
 Then install The Lounge using:
 
-```sh
+```
 yarn global add thelounge
 ```
 
 {: .alert.alert-info role="alert"}
-Note that installing from npm does not daemonize nor autostart The Lounge.
+If you install The Lounge using the [npm](https://docs.npmjs.com/cli/npm) CLI instead, you will need the `--unsafe-perm` flag: `npm install --global --unsafe-perm thelounge`
 
 Start the server manually using:
 
@@ -112,7 +108,7 @@ thelounge start
 ```
 
 {: .alert.alert-info role="alert"}
-If `thelounge` is not found by your shell, you will need to add the output of `yarn global bin` to your PATH.
+Note that installing from npm does not daemonize nor autostart The Lounge.
 
 The Lounge is now up and running **in private mode** at <http://localhost:9000>.
 
@@ -166,14 +162,14 @@ may be unstable or insecure. This is not production-ready, so use at your own
 risk!<br>
 It is also not recommended to run this as a `root` user.
 
-First, make sure [Node.js](https://nodejs.org/) v6.13.0 or more recent is installed
-with `node --version`, as well as [yarn](https://yarnpkg.com). If not, follow the instructions given on the
-[official documentation](https://nodejs.org/en/download/package-manager/) by
-choosing your distribution in the list.
+First, make sure [Node.js](https://nodejs.org/) v6.13.0 (or more recent) and [Yarn](https://yarnpkg.com/) are installed on your system. See [official instructions for Node.js](https://nodejs.org/en/download/package-manager/) and [official instructions for Yarn](https://yarnpkg.com/en/docs/install).
+
+{: .alert.alert-info role="alert"}
+To run `thelounge` as a global command, you will need to set up the PATH environment variable in your terminal. To do this, add ``export PATH="$PATH:`yarn global bin`"`` to your profile.
 
 The following commands install the development version of The Lounge:
 
-```sh
+```
 git clone https://github.com/thelounge/thelounge
 cd thelounge
 yarn install
@@ -181,17 +177,14 @@ NODE_ENV=production yarn build
 yarn link
 ```
 
-{: .alert.alert-info role="alert"}
-Note that installing from source does not daemonize nor autostart The Lounge.
-
 Start the server manually using:
 
-```sh
+```
 thelounge start
 ```
 
 {: .alert.alert-info role="alert"}
-`yarn link` adds a symlink to the source version of thelounge into yarn's global bin directory. You will need to add the output of `yarn global bin` to your PATH.
+Note that installing from source does not daemonize nor autostart The Lounge.
 
 The Lounge is now up and running **in private mode** at <http://localhost:9000>.
 
