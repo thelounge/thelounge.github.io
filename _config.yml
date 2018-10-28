@@ -2,6 +2,7 @@ title: The Lounge &mdash; Self-hosted web IRC client
 description: "The official website for The Lounge, the self-hosted web IRC client."
 baseurl: ""
 include:
+  - _headers
   - _redirects
 plugins:
   - jekyll-sitemap
