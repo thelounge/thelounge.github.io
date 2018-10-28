@@ -1,5 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,700);
 
+/*
+ * From Normalize. See https://github.com/thelounge/thelounge/pull/1217
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
 body {
 	background: #fff;
 	color: #455164;
