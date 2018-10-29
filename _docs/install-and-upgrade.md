@@ -88,9 +88,6 @@ packages.
 
 First, make sure [Node.js](https://nodejs.org/) v6.13.0 (or more recent) and [Yarn](https://yarnpkg.com/) are installed on your system. See [official instructions for Node.js](https://nodejs.org/en/download/package-manager/) and [official instructions for Yarn](https://yarnpkg.com/en/docs/install).
 
-{: .alert.alert-info role="alert"}
-To run `thelounge` as a global command, you will need to set up the PATH environment variable in your terminal. To do this, add ``export PATH="$PATH:`yarn global bin`"`` to your profile.
-
 Then install The Lounge using:
 
 ```
@@ -162,9 +159,6 @@ risk!<br>
 It is also not recommended to run this as a `root` user.
 
 First, make sure [Node.js](https://nodejs.org/) v6.13.0 (or more recent) and [Yarn](https://yarnpkg.com/) are installed on your system. See [official instructions for Node.js](https://nodejs.org/en/download/package-manager/) and [official instructions for Yarn](https://yarnpkg.com/en/docs/install).
-
-{: .alert.alert-info role="alert"}
-To run `thelounge` as a global command, you will need to set up the PATH environment variable in your terminal. To do this, add ``export PATH="$PATH:`yarn global bin`"`` to your profile.
 
 The following commands install the development version of The Lounge:
 
