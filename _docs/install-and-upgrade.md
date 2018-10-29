@@ -48,11 +48,10 @@ The Lounge is [available in the AUR](https://aur.archlinux.org/packages/theloung
 Please follow the
 [Arch Linux documentation](https://wiki.archlinux.org/index.php/Arch_User_Repository)
 to install this package from the AUR. For example, to install it using an AUR
-helper:
+helper such as [Yay](https://github.com/Jguer/yay):
 
 ```
-pacaur -aS thelounge
-yaourt -aS thelounge
+yay -aS thelounge
 ```
 
 Then enable and start the `thelounge.service` unit using:
