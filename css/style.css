@@ -101,6 +101,13 @@ pre code {
 	background: none;
 	padding: 0;
 }
+code,
+kbd,
+pre,
+samp,
+#splash .card strong {
+	font-family: Consolas, Menlo, Monaco, "Lucida Console", "DejaVu Sans Mono", "Courier New", monospace;
+}
 .container {
 	max-width: 750px;
 	padding: 0 20px;
@@ -252,7 +259,6 @@ pre code {
 #splash .card strong {
 	display: block;
 	font-size: 17px;
-	font-family: monospace;
 }
 #splash #stable_version,
 #splash #prerelease_version {
