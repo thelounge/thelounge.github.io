@@ -10,12 +10,6 @@ order: 2.1
 
 This part of the documentation will focus on the configuration of the server. Start by locating the `config.js` file in the `lounge` folder.
 
-To quickly open the config:
-
-```shell
-$ lounge config
-```
-
 ## public
 
 This setting can be either `true` or `false`. Public servers require
