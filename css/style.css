@@ -1,4 +1,38 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,700);
+/*
+ * Muli is licensed under SIL OFL Version 1.1
+ * See /assets/logos/font/Muli/OFL.txt file for full information.
+ */
+@font-face {
+	font-family: Muli;
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('/assets/logos/font/Muli/Muli-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: Muli;
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	src: url('/assets/logos/font/Muli/Muli-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: Muli;
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+	src: url('/assets/logos/font/Muli/Muli-Italic.woff') format('woff');
+}
+
+@font-face {
+	font-family: Muli;
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+	src: url('/assets/logos/font/Muli/Muli-BoldItalic.woff') format('woff');
+}
 
 /*
  * From Normalize. See https://github.com/thelounge/thelounge/pull/1217
@@ -15,7 +49,7 @@ abbr[title] {
 body {
 	background: #fff;
 	color: #455164;
-	font: 15px "Open Sans", sans-serif;
+	font: 15px Muli, sans-serif;
 	margin: 0;
 	margin-bottom: 100px;
 }
@@ -30,7 +64,7 @@ a:focus {
 }
 h2 {
 	font-size: 32px;
-	font-weight: 300;
+	font-weight: normal;
 }
 p {
 	line-height: 1.5;
@@ -67,6 +101,13 @@ pre code {
 	background: none;
 	padding: 0;
 }
+code,
+kbd,
+pre,
+samp,
+#splash .card strong {
+	font-family: Consolas, Menlo, Monaco, "Lucida Console", "DejaVu Sans Mono", "Courier New", monospace;
+}
 .container {
 	max-width: 750px;
 	padding: 0 20px;
@@ -99,7 +140,7 @@ pre code {
 	height: 50px;
 	line-height: 50px;
 	padding: 0 10px;
-	font-weight: 700;
+	font-weight: bold;
 	color: inherit;
 }
 #nav a:hover,
@@ -189,13 +230,12 @@ pre code {
 }
 #splash h1 {
 	font-size: 40px;
-	font-weight: 700;
+	font-weight: bold;
 	margin: 0;
 }
 #splash h2 {
 	color: #bcc4d3;
 	font-size: 18px;
-	font-weight: 300;
 	margin: 0;
 }
 #splash p {
@@ -219,7 +259,6 @@ pre code {
 #splash .card strong {
 	display: block;
 	font-size: 17px;
-	font-family: monospace;
 }
 #splash #stable_version,
 #splash #prerelease_version {
@@ -236,7 +275,7 @@ pre code {
 	text-align: center;
 }
 #features h3 {
-	font-weight: 700;
+	font-weight: bold;
 }
 #features .feature {
 	padding-bottom: 20px;
