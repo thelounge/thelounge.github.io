@@ -32,7 +32,7 @@ control with `systemctl status|start|restart|stop|...`.
 The Lounge is now up and running **in private mode** at <http://localhost:9000>.
 
 Its configuration file is located at `/etc/thelounge/config.js`. To configure
-The Lounge, go to [the configuration section](/docs/server/configuration.html).
+The Lounge, go to [the configuration section](/docs/configuration.html).
 
 To upgrade The Lounge, simply follow these steps again after downloading a new
 `thelounge.deb` file, and restart the service.
@@ -74,7 +74,7 @@ service:
   your home directory in `~/.thelounge/config.js`.
 
 To configure The Lounge, go to
-[the configuration section](/docs/server/configuration.html).
+[the configuration section](/docs/configuration.html).
 
 You might want to serve The Lounge behind a reverse proxy such as Nginx. To know
 more about the benefits and steps, follow
@@ -112,7 +112,7 @@ Read more about how to use The Lounge from the command line in
 [the CLI usage section](/docs/server/usage.html).
 
 Its configuration file is located at `~/.thelounge/config.js`. To configure The
-Lounge, go to [the configuration section](/docs/server/configuration.html).
+Lounge, go to [the configuration section](/docs/configuration.html).
 
 To upgrade The Lounge, simply re-run the `install` command above, and restart it.
 
@@ -185,7 +185,7 @@ Read more about how to use The Lounge from the command line in
 [the CLI usage section](/docs/server/usage.html).
 
 Its configuration file is located at `~/.thelounge/config.js`. To configure The
-Lounge, go to [the configuration section](/docs/server/configuration.html).
+Lounge, go to [the configuration section](/docs/configuration.html).
 
 To upgrade The Lounge, simply `git pull` the repository, re-run the `install` and
 `build` commands above, and restart it.
