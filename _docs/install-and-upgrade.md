@@ -20,7 +20,7 @@ Then download `thelounge.deb` located at the bottom of
 Finally, open a terminal and install the downloaded package using:
 
 ```
-sudo dpkg --install thelounge.deb
+sudo apt install ./thelounge.deb
 ```
 
 {: .alert.alert-info role="alert"}
