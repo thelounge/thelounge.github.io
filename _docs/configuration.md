@@ -2,8 +2,6 @@
 layout: documentation
 title: Configuration
 order: 4
-redirect_from:
-  - /docs/server/configuration.html
 ---
 
 # Configuration

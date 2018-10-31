@@ -1,8 +1,6 @@
 ---
 layout: documentation
 title: Themes
-redirect_from:
-  - /docs/plugins/themes.html
 ---
 
 # Finding Themes

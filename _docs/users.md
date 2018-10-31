@@ -2,8 +2,6 @@
 layout: documentation
 title: Users
 order: 5
-redirect_from:
-  - /docs/server/users.html
 ---
 
 # Users

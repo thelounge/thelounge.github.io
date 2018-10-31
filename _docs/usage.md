@@ -2,8 +2,6 @@
 layout: documentation
 title: Usage
 order: 3
-redirect_from:
-  - /docs/getting_started/install.html
 ---
 
 # Usage
