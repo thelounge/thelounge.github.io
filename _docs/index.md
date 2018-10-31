@@ -1,10 +1,8 @@
 ---
 layout: documentation
 title: Introduction
-order: 0.0
+order: 1
 ---
-
-# The Lounge
 
 Welcome to the documentation. __It's currently a work in progress.__
 

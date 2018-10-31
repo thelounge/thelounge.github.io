@@ -1,17 +1,15 @@
 ---
 layout: documentation
 title: Themes
-category: Plugins
-order: 5.1
 ---
 
-# Finding Themes
+## Finding Themes
 
 Themes published on npm should have the keyword `thelounge-theme`, so you can
 find a list by
 [searching on npmjs.org](https://www.npmjs.com/search?q=keywords%3Athelounge-theme).
 
-# Installing Themes
+## Installing Themes
 
 To install theme `thelounge-theme-custom`:
 
@@ -19,7 +17,7 @@ To install theme `thelounge-theme-custom`:
 * Restart The Lounge
 * Select theme in options
 
-# Creating Themes
+## Creating Themes
 
 Create an npm package using the base `package.json` below, and publish to npm:
 

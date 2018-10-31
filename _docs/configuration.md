@@ -2,11 +2,7 @@
 layout: documentation
 title: Configuration
 order: 4
-redirect_from:
-  - /docs/server/configuration.html
 ---
-
-# Configuration
 
 This part of the documentation focuses on the configuration of the server.
 

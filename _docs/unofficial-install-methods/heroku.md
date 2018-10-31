@@ -3,8 +3,6 @@ layout: documentation
 title: Heroku
 ---
 
-# Heroku
-
 This document will explain how to install The Lounge on Heroku. To learn more
 about Heroku, read their
 [documentation](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction).

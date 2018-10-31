@@ -2,11 +2,7 @@
 layout: documentation
 title: Install and upgrade
 order: 2
-redirect_from:
-  - /docs/getting_started/install.html
 ---
-
-# Install and upgrade
 
 ## Debian and Ubuntu based distributions
 
@@ -109,7 +105,7 @@ Note that installing from npm does not daemonize nor autostart The Lounge.
 The Lounge is now up and running **in private mode** at <http://localhost:9000>.
 
 Read more about how to use The Lounge from the command line in
-[the CLI usage section](/docs/server/usage.html).
+[the CLI usage section](/docs/usage.html).
 
 Its configuration file is located at `~/.thelounge/config.js`. To configure The
 Lounge, go to [the configuration section](/docs/configuration.html).
@@ -182,7 +178,7 @@ Note that installing from source does not daemonize nor autostart The Lounge.
 The Lounge is now up and running **in private mode** at <http://localhost:9000>.
 
 Read more about how to use The Lounge from the command line in
-[the CLI usage section](/docs/server/usage.html).
+[the CLI usage section](/docs/usage.html).
 
 Its configuration file is located at `~/.thelounge/config.js`. To configure The
 Lounge, go to [the configuration section](/docs/configuration.html).

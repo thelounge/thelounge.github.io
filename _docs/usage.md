@@ -1,12 +1,8 @@
 ---
 layout: documentation
 title: Usage
-description: Add your description here
-category: Getting Started
-order: 1.2
+order: 3
 ---
-
-# Usage
 
 Once you've installed The Lounge, go ahead and run:
 

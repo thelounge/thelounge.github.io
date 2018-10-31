@@ -5,7 +5,6 @@ include:
   - _headers
   - _redirects
 plugins:
-  - jekyll-redirect-from
   - jekyll-sitemap
 collections:
   docs:

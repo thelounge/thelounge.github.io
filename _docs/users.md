@@ -1,12 +1,8 @@
 ---
 layout: documentation
 title: Users
-description: Add your description here
-category: Server
-order: 2.2
+order: 5
 ---
-
-# Users
 
 Once you've set up The Lounge, it's time to add your first users. Open your `config.js` and set `public` to `false`. This will enable user login.
 
@@ -25,7 +21,7 @@ $ thelounge add <name>
 
 This will create a new user in your `users/` folder.
 
-_Note: By default, users are stored in the `~/.thelounge/users/` folder. You can change this location by using the `--home <path>` setting (see [Usage](/docs/getting_started/usage.html#home))._
+_Note: By default, users are stored in the `~/.thelounge/users/` folder. You can change this location by using the `--home <path>` setting (see [Usage](/docs/usage.html#home))._
 
 ## Edit user
 
