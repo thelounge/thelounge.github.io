@@ -6,7 +6,6 @@
 	font-family: Muli;
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 	src: url('/assets/logos/font/Muli/Muli-Regular.woff') format('woff');
 }
 
@@ -14,7 +13,6 @@
 	font-family: Muli;
 	font-weight: bold;
 	font-style: normal;
-	font-display: swap;
 	src: url('/assets/logos/font/Muli/Muli-Bold.woff') format('woff');
 }
 
@@ -22,7 +20,6 @@
 	font-family: Muli;
 	font-weight: normal;
 	font-style: italic;
-	font-display: swap;
 	src: url('/assets/logos/font/Muli/Muli-Italic.woff') format('woff');
 }
 
@@ -30,7 +27,6 @@
 	font-family: Muli;
 	font-weight: bold;
 	font-style: italic;
-	font-display: swap;
 	src: url('/assets/logos/font/Muli/Muli-BoldItalic.woff') format('woff');
 }
 
