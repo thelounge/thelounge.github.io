@@ -101,6 +101,7 @@ code,
 kbd,
 pre,
 samp,
+.terminal,
 #splash .card strong {
 	font-family: Consolas, Menlo, Monaco, "Lucida Console", "DejaVu Sans Mono", "Courier New", monospace;
 }
@@ -438,4 +439,35 @@ a.link-anchor {
 .app-stores a img {
 	max-height: 100%;
 	max-width: 100%;
+}
+
+/* Terminal windows-style, to present CLI outputs and such */
+
+.terminal {
+	background-color: black;
+	border-radius: 5px;
+	color: #c7c7c7;
+	font-size: 0.9em;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.terminal-log-info::before {
+	color: #757575;
+	content: "2017-12-08 12:34:56 ";
+}
+
+.terminal-log-info::after {
+	color: #4565fd;
+	content: "[INFO]";
+}
+
+.terminal-green {
+	color: #05ba00;
+}
+
+.terminal-bold {
+	color: white;
+	font-weight: bold;
 }

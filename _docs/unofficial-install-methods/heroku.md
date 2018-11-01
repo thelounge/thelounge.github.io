@@ -61,7 +61,7 @@ _This step is only useful if you want to run The Lounge with users accounts._
 Create a `Procfile` and edit the content to look like this:
 
 ```
-web: node index --private --home /app
+web: THELOUNGE_HOME=/app node index --private
 ```
 
 _You can read more about Procfiles [here](https://devcenter.heroku.com/articles/procfile)._
@@ -69,7 +69,7 @@ _You can read more about Procfiles [here](https://devcenter.heroku.com/articles/
 To create users, run the following in the `thelounge/` directory:
 
 ```
-./index.js --home . add <username>
+THELOUNGE_HOME=. ./index.js add <username>
 ```
 
 ### Publish to Heroku
