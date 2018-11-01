@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+Sitemap: https://thelounge.chat/sitemap.xml
+Host: thelounge.chat
