@@ -1,4 +1,5 @@
 /*
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   Referrer-Policy: no-referrer-when-downgrade
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
