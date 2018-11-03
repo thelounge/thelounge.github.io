@@ -15,7 +15,7 @@ In **[public mode](/docs/configuration#public)**, none of the commands listed be
 
 To get a list of all existing users, use the `list` command:
 
-```sh
+```
 thelounge list
 ```
 
@@ -30,7 +30,7 @@ If you run it right after installation, you will get the following message becau
 
 To add a new user, use the `add` command:
 
-```sh
+```
 thelounge add <name>
 ```
 
@@ -60,7 +60,7 @@ If The Lounge is currently running, the new user will be directly available with
 
 Similarly, the following command deletes the configuration of a given user:
 
-```sh
+```
 thelounge remove <name>
 ```
 
@@ -77,7 +77,7 @@ Note that this does not delete the logs for this user.
 
 If a user loses their password, you can reset it with the `reset` command:
 
-```sh
+```
 thelounge reset <name>
 ```
 
@@ -92,7 +92,7 @@ This will interactively ask you for a new password, similarly to the `add` comma
 
 The `edit` command opens `vi` (or whatever program you set in your `$EDITOR` environment variable if any) with the configuration file of a given user:
 
-```sh
+```
 thelounge edit <name>
 ```
 

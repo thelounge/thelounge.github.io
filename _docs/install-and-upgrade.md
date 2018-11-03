@@ -95,7 +95,7 @@ If you install The Lounge using the [npm](https://docs.npmjs.com/cli/npm) CLI in
 
 Start the server manually using:
 
-```sh
+```
 thelounge start
 ```
 
