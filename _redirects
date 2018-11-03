@@ -16,3 +16,11 @@
 /docs/deployment/passenger       /docs/guides/reverse-proxies
 
 /docs/plugins/themes             /docs/guides/authoring-themes
+
+## Netlify URL redirects
+
+# Redirect default Netlify subdomain to primary domain
+https://thelounge.netlify.com/*         https://thelounge.chat/:splat 301!
+
+# Redirect master branch subdomain to primary domain
+https://master--thelounge.netlify.com/* https://thelounge.chat/:splat 301!
