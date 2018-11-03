@@ -50,12 +50,12 @@ body {
 	margin-bottom: 100px;
 }
 a {
-	color: inherit;
+	color: #84ce88;
+	font-weight: bold;
 }
 a:hover,
 a:focus {
-	color: inherit;
-	text-decoration: none;
+	color: #84ce88;
 	outline: 0;
 }
 h2 {
@@ -64,15 +64,6 @@ h2 {
 }
 p {
 	line-height: 1.5;
-}
-li a,
-p a {
-	color: #84ce88;
-	font-weight: bold;
-}
-li a:hover,
-p a:hover {
-	color: #77ca7b;
 }
 li {
 	line-height: 1.5;
@@ -282,19 +273,13 @@ img {
 #features .feature {
 	padding-bottom: 20px;
 }
-#docs {
-	padding-top: 40px;
-}
-#main h1:first-child,
-#main p {
-	margin-top: 0;
-}
 #main h1,
 #main h2,
 #main h3 {
 	margin: 1.3em 0 .5em;
 }
 #main h1 {
+	margin-top: 0;
 	font-size: 2.5em;
 }
 #main h2 {
@@ -304,15 +289,16 @@ img {
 #main h3 {
 	margin-bottom: 13px;
 }
-#menu,
-#main .content {
+#main {
 	margin-bottom: 60px;
 }
 #menu {
+	margin-top: 35px;
 	line-height: 2;
 }
-#menu a,
-#menu strong {
+#menu a {
+	color: inherit;
+	font-weight: normal;
 	display: block;
 }
 #menu a:hover,
@@ -409,6 +395,7 @@ img {
 
 h2 a.link-anchor,
 h3 a.link-anchor {
+	color: inherit;
 	opacity: 0;
 	transition: opacity .2s;
 }
@@ -475,6 +462,14 @@ a.link-anchor {
 .terminal-bold {
 	color: white;
 	font-weight: bold;
+}
+
+/* "Edit on GitHub" button */
+
+.edit-page-btn {
+	text-align: right;
+	margin-top: 15px;
+	font-size: .9em;
 }
 
 /* Rouge syntax highlighting - Igorpro theme */
