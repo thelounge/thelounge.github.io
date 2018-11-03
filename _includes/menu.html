@@ -3,7 +3,10 @@
 	{% for node in docs %}
 		{% assign level = (node.relative_path | split: '/' | size) %}
 		{% if level == 2 # Not a subfolder %}
-			<a href="{{ site.baseurl }}{{ node.url }}"{% if page.url == node.url %} class="active"{% endif %}>
+			<a
+				href="{{ site.baseurl }}{{ node.url | remove: "/index" }}"
+				{% if page.url == node.url %}class="active"{% endif %}
+			>
 				{{ node.title }}
 			</a>
 		{% endif %}
