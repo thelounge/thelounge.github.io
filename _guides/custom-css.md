@@ -13,9 +13,6 @@ Simply add your custom CSS, and the modifications will be applied when clicking 
 
 Note that The Lounge evolves rather quickly, and new versions often change the existing HTML and CSS files. This causes custom CSS snippets to often require changes as new versions get released. Use your [browser's developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools) when your trying to add or edit custom CSS.
 
-{: .alert.alert-warning role="alert"}
-Settings are not synced across devices at the moment, so any custom CSS you set will only apply to this specific instance of The Lounge.
-
 ## Oops, something has gone wrong
 
 It is not impossible to accidentally apply changes that cannot be reverted, for example by hiding the custom CSS field itself. The Lounge fortunately comes with a failsafe should this unlikely situation occurs.
