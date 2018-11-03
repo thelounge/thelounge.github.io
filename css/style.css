@@ -245,25 +245,23 @@ img {
 	color: #84ce88;
 }
 .btn {
-	border: 2px solid #84ce88;
 	border-radius: 3px;
-	color: #84ce88;
+	background: #84ce88;
+	color: #415364;
 	display: inline-block;
-	font-size: 12px;
 	font-weight: bold;
 	letter-spacing: 1px;
 	margin-bottom: 10px;
 	padding: 9px 17px;
-	text-transform: uppercase;
-	transition: background 0.2s, border-color 0.2s, color 0.2s;
-	word-spacing: 3px;
+	box-shadow: 0 2px 4px 0 rgba(14, 30, 37, .12);
+	transition: background 0.2s, color 0.2s;
 	cursor: pointer; /* This is useful for `<button>` elements */
 }
 
 .btn:disabled,
 .btn:hover,
 .btn:focus {
-	background: #84ce88;
+	background: #50a656;
 	color: #fff;
 	opacity: 1;
 	text-decoration: none;
