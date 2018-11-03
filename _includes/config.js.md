@@ -63,7 +63,7 @@ This value is set to `10000` by default.
 These settings are used to run The Lounge's web server using encrypted TLS.
 
 If you want more control over the webserver,
-[use a reverse proxy instead](https://thelounge.chat/docs/guides/reverse-proxies.html).
+[use a reverse proxy instead](https://thelounge.chat/docs/guides/reverse-proxies).
 
 The available keys for the `https` object are:
 
@@ -85,7 +85,7 @@ different one in their client settings among those available.
 
 The Lounge ships with two themes (`default` and `morning`) and can be
 extended by installing more themes. Read more about how to manage them
-[here](https://thelounge.chat/docs/plugins/themes.html).
+[here](https://thelounge.chat/docs/plugins/themes).
 
 This value needs to be the package name and not the display name. For
 example, the value for Morning would be `morning`, and the value for

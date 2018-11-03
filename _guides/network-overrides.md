@@ -20,7 +20,7 @@ The following URL parameters can be used to override the fields of the Connect f
 - `realname`
 - `join` or `channels`
 
-Note that when [the `lockNetwork` setting](/docs/configuration.html#locknetwork) is set to `true`, the keys `host`, `port`, and `rejectUnauthorized` have no effect. When [the `displayNetwork` setting](/docs/configuration.html#displaynetwork) is set to `false`, the `name` key has no effect.
+Note that when [the `lockNetwork` setting](/docs/configuration#locknetwork) is set to `true`, the keys `host`, `port`, and `rejectUnauthorized` have no effect. When [the `displayNetwork` setting](/docs/configuration#displaynetwork) is set to `false`, the `name` key has no effect.
 
 When using the comma-separated `join` or `channels` keys, alphanumeric sequences will be prefixed with `#`. For example, `?join=foo` fills the form field with
 `#foo`.

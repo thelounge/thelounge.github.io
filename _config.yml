@@ -11,9 +11,10 @@ plugins:
 collections:
   docs:
     output: true
+    permalink: /:collection/:path
   api:
     output: true
-    permalink: /docs/:collection/:path:output_ext
+    permalink: /docs/:collection/:path
   guides:
     output: true
-    permalink: /docs/:collection/:path:output_ext
+    permalink: /docs/:collection/:path

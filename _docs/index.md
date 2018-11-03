@@ -6,7 +6,7 @@ order: 1
 
 Welcome to The Lounge, a web-based [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat) client for the modern world! ❤️
 
-For an optimal experience, The Lounge must be installed on a server that runs 24/7. Once configured and started, users can access it from their browser or mobile device. Learn more about this in the [install and upgrade section](/docs/install-and-upgrade.html).
+For an optimal experience, The Lounge must be installed on a server that runs 24/7. Once configured and started, users can access it from their browser or mobile device. Learn more about this in the [install and upgrade section](/docs/install-and-upgrade).
 
 **In private mode**, The Lounge acts like a bouncer and a client combined, in order to offer an experience similar to other modern chat applications outside the IRC world. Users can then access and resume their session without being disconnected from their channels.
 
