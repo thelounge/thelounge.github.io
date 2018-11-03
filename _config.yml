@@ -9,6 +9,9 @@ plugins:
 collections:
   docs:
     output: true
+  api:
+    output: true
+    permalink: /docs/:collection/:path:output_ext
   guides:
     output: true
     permalink: /docs/:collection/:path:output_ext
