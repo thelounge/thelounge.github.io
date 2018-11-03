@@ -93,6 +93,18 @@ run:
 THELOUNGE_HOME=/tmp thelounge start
 ```
 
+## Installing additional themes
+
+A list of all available themes can be found [on the npm registry](https://www.npmjs.com/search?q=keywords%3Athelounge-theme) and installed with `thelounge install`. For example, to install a theme called `thelounge-theme-solarized`, run:
+
+```
+thelounge install thelounge-theme-solarized
+```
+
+After restarting The Lounge, the theme will now be available in the client settings.
+
+Additionally, any theme can be used as the default one for all clients. See [the `theme` section on the configuration page](/docs/configuration.html) for more information.
+
 ## Configuring The Lounge
 
 As shown above, The Lounge starts by default in **private** mode on port
