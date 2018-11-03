@@ -95,10 +95,10 @@ THELOUNGE_HOME=/tmp thelounge start
 
 ## Installing additional themes
 
-A list of all available themes can be found [on the npm registry](https://www.npmjs.com/search?q=keywords%3Athelounge-theme). To install a theme called `thelounge-theme-foo`, run:
+A list of all available themes can be found [on the npm registry](https://www.npmjs.com/search?q=keywords%3Athelounge-theme) and installed with `thelounge install`. For example, to install a theme called `thelounge-theme-solarized`, run:
 
 ```
-thelounge install thelounge-theme-foo
+thelounge install thelounge-theme-solarized
 ```
 
 After restarting The Lounge, the theme will now be available in the client settings.
