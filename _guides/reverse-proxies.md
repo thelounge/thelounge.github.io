@@ -55,6 +55,7 @@ This makes The Lounge available at `https://example.com/irc/`:
 
 ```apache
 RewriteEngine On
+RewriteRule ^/irc$ /irc/ [R]
 RewriteCond %{REQUEST_URI}  ^/irc/socket.io        [NC]
 RewriteCond %{QUERY_STRING} transport=websocket    [NC]
 RewriteRule /irc/(.*)       ws://127.0.0.1:9000/$1 [P,L]
