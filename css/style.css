@@ -44,19 +44,16 @@ abbr[title] {
 
 body {
 	background: #fff;
-	color: #455164;
+	color: #415364;
 	font: 15px Muli, sans-serif;
 	margin: 0;
 	margin-bottom: 100px;
 }
-a {
-	color: #84ce88;
-	font-weight: bold;
-}
+a,
 a:hover,
 a:focus {
-	color: #84ce88;
-	outline: 0;
+	font-weight: bold;
+	color: #50a656;
 }
 h2 {
 	font-size: 32px;
@@ -106,8 +103,8 @@ img {
 	padding: 0 20px;
 }
 #nav {
-	background: #455164;
-	color: #bcc4d3;
+	background: #415364;
+	color: #b7c5d1;
 }
 #nav ul.nav-links {
 	float: right;
@@ -155,7 +152,7 @@ img {
 	top: 0;
 	bottom: 0;
 	right: 20px;
-	background: #455164;
+	background: #415364;
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity .2s, visibility .2s;
@@ -187,17 +184,17 @@ img {
 }
 
 #nav .search-input-group input::-moz-placeholder {
-	color: #bcc4d3;
+	color: #b7c5d1;
 	opacity: .5;
 }
 
 #nav .search-input-group input::-webkit-input-placeholder {
-	color: #bcc4d3;
+	color: #b7c5d1;
 	opacity: .5;
 }
 
 #nav .search-input-group input:-ms-input-placeholder {
-	color: #bcc4d3;
+	color: #b7c5d1;
 	opacity: .5;
 }
 
@@ -216,7 +213,7 @@ img {
 }
 
 #splash {
-	background: #455164;
+	background: #415364;
 	color: #fff;
 	text-align: center;
 	padding-bottom: 50px;
@@ -227,13 +224,13 @@ img {
 	margin: 0;
 }
 #splash h2 {
-	color: #bcc4d3;
+	color: #b7c5d1;
 	font-size: 18px;
 	margin: 0;
 }
 #splash p {
 	margin-top: 18px;
-	color: #bcc4d3;
+	color: #b7c5d1;
 }
 #splash .row {
 	padding: 20px 0;
@@ -241,25 +238,39 @@ img {
 #splash .hgroup {
 	margin: 60px 0;
 }
-#splash .card {
-	background: #84ce88;
+#splash a:not(.btn) {
+	color: #84ce88;
+}
+.btn {
+	border: 2px solid #84ce88;
 	border-radius: 3px;
+	color: #84ce88;
 	display: inline-block;
-	padding: 15px;
-	margin: 5px;
-	min-width: 45%;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	padding: 9px 17px;
+	text-transform: uppercase;
+	transition: background 0.2s, border-color 0.2s, color 0.2s;
+	word-spacing: 3px;
+	cursor: pointer; /* This is useful for `<button>` elements */
 }
-#splash .card strong {
-	display: block;
-	font-size: 17px;
+
+.btn:disabled,
+.btn:hover,
+.btn:focus {
+	background: #84ce88;
+	color: #fff;
+	opacity: 1;
+	text-decoration: none;
 }
-#splash #stable_version,
-#splash #prerelease_version {
-	opacity: .7;
+
+.btn:active {
+	box-shadow: none;
+	opacity: 0.8;
 }
-#splash #prerelease_card.hidden {
-	display: none;
-}
+
 #features {
 	padding: 50px 0 80px;
 }
@@ -271,7 +282,12 @@ img {
 	font-weight: bold;
 }
 #features .feature {
+	text-align: center;
 	padding-bottom: 20px;
+}
+#features .screenshot {
+	box-shadow: 0 0 25px rgba(65, 83, 100, 0.5);
+	border-radius: 5px;
 }
 #main h1,
 #main h2,
@@ -303,7 +319,7 @@ img {
 }
 #menu a:hover,
 #menu a.active {
-	color: #84ce88;
+	color: #50a656;
 }
 #menu a.active {
 	font-weight: bold;
