@@ -18,4 +18,4 @@ The Lounge started as a fork of [Shout](https://github.com/erming/shout), author
 
 Enjoy The Lounge, and make sure to join us on our **official Freenode channel `#thelounge`**!
 
-*[IRC]: Internet Relay Chat
+{% include abbreviations.md %}

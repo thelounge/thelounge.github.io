@@ -22,5 +22,4 @@ When querying other users, know that their clients might inform them that you ar
 
 To learn more about CTCP, [this document](https://tools.ietf.org/id/draft-oakley-irc-ctcp-02.html) is a great reference, more technical and in-depth that this high-level guide.
 
-*[CTCP]: Client-to-client protocol
-*[DCC]: Direct Client-to-Client
+{% include abbreviations.md %}

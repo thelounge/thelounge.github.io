@@ -48,3 +48,5 @@ module.exports = {
   }
 };
 ```
+
+{% include abbreviations.md %}
