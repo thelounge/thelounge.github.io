@@ -1,9 +1,7 @@
 ---
 layout: documentation
-title: API Reference
+title: API reference
 order: 7
-redirect_from:
-  - /docs/server/configuration.html
 ---
 
 ## Server APIs

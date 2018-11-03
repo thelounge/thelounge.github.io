@@ -5,9 +5,7 @@ description: Manage commands that appear in the context menu
 type: client
 ---
 
-The Context Menu API lets you add commands to the context menu, accessible when
-right-clicking a user or channel. It is also accessible from the menu button
-located on the top-right corner of chat windows.
+The Context Menu API lets you add commands to the context menu, accessible when right-clicking a user or channel. It is also accessible from the menu button located on the top-right corner of chat windows.
 
 ## Methods
 
@@ -40,6 +38,6 @@ addContextMenuItem({
   className: "customItemName",
   data: (target) => target.data("name"),
   displayName: "Do something",
-  callback: (name) => console.log(name), // print the name of the user to console
+  callback: (name) => console.log(name), // Print the name of the user to console
 });
 ```
