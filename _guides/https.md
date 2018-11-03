@@ -5,6 +5,9 @@ title: Protect The Lounge with HTTPS
 
 In this guide, we will see how to easily configure The Lounge to be served over [HTTPS](https://en.wikipedia.org/wiki/HTTPS) for better security and privacy.
 
+{: .alert.alert-warning role="alert"}
+The Lounge only has basic HTTPS support, and will need to be manually to reload certificates on renewal. For advanced HTTPS support, consider [using a reverse proxy](/docs/guides/reverse-proxies.html).
+
 First, you need an HTTPS certificate. [Let's Encrypt](https://letsencrypt.org/) is a free, automated, and open Certificate Authority that provides completely free HTTPS certificates.
 
 Assuming you have a valid email address at `email@example.com`, and want to serve The Lounge at `https://thelounge.example.com`, run these commands on your server:
