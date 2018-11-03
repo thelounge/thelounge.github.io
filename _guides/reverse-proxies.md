@@ -52,7 +52,6 @@ ProxyVia On
 ProxyRequests Off
 ProxyPass /irc/ http://127.0.0.1:9000/
 ProxyPassReverse /irc/ http://127.0.0.1:9000/
-ProxyPreserveHost on
 
 # By default Apache times out connections after one minute
 ProxyTimeout 86400 # 1 day
