@@ -12,7 +12,7 @@ In addition to the items listed in this guide, you may want to enable or configu
 ## TL;DR
 
 - You need Node.js v6.13.0 or more recent.
-- Everything called `[something]lounge[something]` becomes `[something]thelounge[something]`.
+- Everything called `lounge` (such as commands, directories, etc.) becomes `thelounge`.
 - `thelounge start` does not have options other than `--config` anymore.
 - In the configuration file, `autoload` and `logs` settings can be removed, `themes` and `debug` settings have changed.
 - In the client, we warn when using insecure IRC servers, some shortcuts have changed, and the browser support list has changed.
