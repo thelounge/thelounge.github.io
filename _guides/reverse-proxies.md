@@ -21,10 +21,10 @@ This document assumes that your configuration of The Lounge binds to host `127.0
 
 ## [Nginx](https://nginx.org/en/)
 
-This makes The Lounge available at `https://example.com/irc/`:
+This makes The Lounge available at `http://example.com/irc/`:
 
 ```nginx
-location /irc/ {
+location ^~ /irc/ {
 	proxy_pass http://127.0.0.1:9000/;
 	proxy_http_version 1.1;
 	proxy_set_header Connection "upgrade";
@@ -34,6 +34,17 @@ location /irc/ {
 	# by default nginx times out connections in one minute
 	proxy_read_timeout 1d;
 }
+```
+
+If you do not have GZIP compression already configured in Nginx, you may add this configuration to compress proxied files:
+
+```nginx
+gzip on;
+gzip_vary on;
+gzip_proxied any;
+gzip_comp_level 5;
+gzip_min_length 1000;
+gzip_types application/javascript image/svg+xml text/css text/plain;
 ```
 
 ## [Apache](https://httpd.apache.org/)
