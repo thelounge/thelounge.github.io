@@ -334,6 +334,9 @@ img {
 	color: #757575;
 	font-size: 13px;
 }
+#footer a {
+	color: inherit;
+}
 #footer p {
 	margin: 0;
 }
