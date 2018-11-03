@@ -11,6 +11,8 @@ All user configurations are stored as JSON files in the `${THELOUNGE_HOME}/users
 {: .alert.alert-info role="alert"}
 In **[public mode](/docs/configuration#public)**, none of the commands listed below are available.
 
+{% include toc.md %}
+
 ## Listing all users
 
 To get a list of all existing users, use the `list` command:

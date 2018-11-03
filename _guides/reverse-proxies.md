@@ -3,6 +3,8 @@ layout: documentation
 title: Configure a reverse proxy for The Lounge
 ---
 
+{% include toc.md %}
+
 Serving The Lounge through a reverse proxy instead of the built-in HTTP server comes with a few benefits:
 
 - The Lounge needs to run as root in order to serve it on port 80 (or 443 for HTTPS), or you must always type the port number as part of the URL. Reverse proxies usually abstract this, take control of ports 80 and 443, then redirect traffic to The Lounge.
