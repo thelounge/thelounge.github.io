@@ -85,13 +85,10 @@ backend thelounge
 
 ## [Cloudflare](https://www.cloudflare.com/)
 
-The following page rules need to be added in order to use Cloudflare DNS with The Lounge:
+The following [page rules](https://support.cloudflare.com/hc/en-us/articles/218411427) need to be set in order to use the Cloudflare DNS with The Lounge:
 
-```
-Rocket Loader = off
-Browser Cache TTL = 4 hours
-Disable Apps
-```
+- `Rocket Loader` set to `Off`
+- `Disable Apps`
 
 ## HTTPS with [Redbird](https://www.npmjs.com/package/redbird) and [Let's Encrypt](https://letsencrypt.org/)
 
