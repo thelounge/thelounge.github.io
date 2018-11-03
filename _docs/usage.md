@@ -105,7 +105,7 @@ thelounge install thelounge-theme-solarized
 
 After restarting The Lounge, the theme will now be available in the client settings.
 
-Additionally, any theme can be used as the default one for all clients. See [the `theme` section on the configuration page](/docs/configuration) for more information.
+Additionally, any theme can be used as the default one for all clients. See [the `theme` section on the configuration page](/docs/configuration#theme) for more information.
 
 ## Configuring The Lounge
 
