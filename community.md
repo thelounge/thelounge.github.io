@@ -9,11 +9,14 @@ title: Community
 
 If you need help, or want to help others by answering questions they might have, `#thelounge` is our official IRC channel on [Freenode](https://freenode.net/) (`chat.freenode.net:6697` on a secure connection).
 
+{:.center}
+[Click here to join it using our demo](https://demo.thelounge.chat/?join=thelounge).
+
 Additionally, a few community-operated channels let you chat in a language you are more comfortable:
 
-- 🇩🇪 German: `#thelounge-de`
-- 🇫🇷 French: `#thelounge-fr`
-- 🇳🇱 Dutch: `#thelounge-nl`
+- 🇩🇪 German: [`#thelounge-de`](https://demo.thelounge.chat/?join=thelounge-de)
+- 🇫🇷 French: [`#thelounge-fr`](https://demo.thelounge.chat/?join=thelounge-fr)
+- 🇳🇱 Dutch: [`#thelounge-nl`](https://demo.thelounge.chat/?join=thelounge-nl)
 
 Let us know if you wish to help operating a language-specific channel!
 
