@@ -128,3 +128,23 @@
 		));
 	});
 })();
+
+// Collapsible menu on mobile
+(function() {
+	const menu = document.getElementById("mobile-menu");
+	const button = document.getElementById("menu-btn");
+
+	button.addEventListener("click", function(e) {
+		if (button.getAttribute("aria-expanded") === "true") {
+			menu.style.maxHeight = null;
+			button.setAttribute("aria-expanded", "false");
+		} else {
+			// because animating height changes is not trivial, max-height
+			// is used, but we don't want to hardcode the value in css
+			menu.style.maxHeight = menu.scrollHeight + "px";
+			button.setAttribute("aria-expanded", "true");
+		}
+
+		e.preventDefault();
+	}, false);
+})();

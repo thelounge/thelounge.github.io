@@ -47,9 +47,8 @@
 					</button>
 				</li>
 				<li class="hidden-sm hidden-md hidden-lg">
-					<button id="menu-btn" title="Menu" class="collapsed" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false">
+					<button id="menu-btn" title="Menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
 						<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-						<span class="sr-only">Toggle navigation</span>
 					</button>
 				</li>
 			</ul>
@@ -71,7 +70,7 @@
 		<div id="accessible-search-summary" aria-live="assertive" class="sr-only"></div>
 	</div>
 
-	<div id="mobile-menu" class="hidden-sm hidden-md hidden-lg container collapse">
+	<div id="mobile-menu" class="hidden-sm hidden-md hidden-lg container">
 		<ul class="menu">
 			<li><a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
 			{% include menu.html %}
@@ -100,7 +99,6 @@
 	</footer>
 
 	<script src="/js/jquery.min.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/lunr.min.js"></script>
 	<script src="/js/search_data.js"></script>
 	<script src="/js/main.js"></script>
