@@ -61,7 +61,7 @@ _This step is only useful if you want to run The Lounge with users accounts._
 Create a `Procfile` and edit the content to look like this:
 
 ```
-web: THELOUNGE_HOME=/app node index --private
+web: THELOUNGE_HOME=/app node index --config public=false
 ```
 
 _You can read more about Procfiles [here](https://devcenter.heroku.com/articles/procfile)._
