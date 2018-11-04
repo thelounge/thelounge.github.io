@@ -49,7 +49,11 @@ Security-related issues follow a dedicated process that is highlighted in our [R
 
 On 16 May 2018, [Al McKinlay](https://alistair.mckinlay.me/) and [Jérémie Astori](https://jeremie.astori.fr) presented The Lounge on [the 484th episode of FLOSS Weekly](https://twit.tv/shows/floss-weekly/episodes/484) (1h05). Here is a quick preview:
 
-<iframe class="center-block" width="480" height="270" src="https://www.youtube-nocookie.com/embed/6IF5-IsNCFw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="video-preview">
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/6IF5-IsNCFw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
 
 Some additional articles and tutorials:
 

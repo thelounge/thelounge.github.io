@@ -534,3 +534,10 @@ a.link-anchor {
 .highlight .nb, .highlight .bp {
   color: #C34E00;
 }
+
+/* Video embeds */
+.video-preview {
+	max-width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+}
