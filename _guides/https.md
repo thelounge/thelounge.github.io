@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: guides
 title: Protect The Lounge with HTTPS
 ---
 

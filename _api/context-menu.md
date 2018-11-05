@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: api
 title: Context Menu
 description: Manage commands that appear in the context menu
 type: client

@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: getting_started
 title: Getting started
 order: 1
 ---

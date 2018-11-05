@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: guides
 title: Guides
 order: 6
 ---

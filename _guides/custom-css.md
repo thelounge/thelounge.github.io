@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: guides
 title: Customize The Lounge on-the-fly using CSS
 ---
 

@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: configuration
 title: Configuration
 order: 4
 ---

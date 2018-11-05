@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: guides
 title: Override network defaults in the URL
 ---
 

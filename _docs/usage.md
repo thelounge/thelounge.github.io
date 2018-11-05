@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: usage
 title: Usage
 order: 3
 ---

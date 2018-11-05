@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: guides
 title: How to upgrade to The Lounge v3
 ---
 

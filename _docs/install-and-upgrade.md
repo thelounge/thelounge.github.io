@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: install-and-upgrade
 title: Install and upgrade
 order: 2
 ---

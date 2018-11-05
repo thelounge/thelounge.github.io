@@ -5,7 +5,7 @@
 		<li>
 			<a
 				href="{{ site.baseurl }}{{ node.url | remove: "/index" }}"
-				{% if page.url == node.url %}class="active"{% endif %}
+				{% if page.url == node.url or (node.category != nil and node.category == page.category) %}class="active"{% endif %}
 			>
 				{{ node.title }}
 			</a>

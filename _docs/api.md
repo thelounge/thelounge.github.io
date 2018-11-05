@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: api
 title: API reference
 order: 7
 ---

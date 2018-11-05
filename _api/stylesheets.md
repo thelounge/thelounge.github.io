@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: api
 title: Stylesheets
 description: Register CSS files to all clients
 type: server

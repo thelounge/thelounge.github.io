@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: guides
 title: Configure a reverse proxy for The Lounge
 ---
 

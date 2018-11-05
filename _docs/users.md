@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: users
 title: Users
 order: 5
 ---

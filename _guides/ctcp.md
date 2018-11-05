@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: guides
 title: Send CTCP commands with The Lounge
 ---
 

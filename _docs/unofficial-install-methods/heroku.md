@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: install-and-upgrade
 title: Heroku
 ---
 

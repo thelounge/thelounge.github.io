@@ -1,5 +1,6 @@
 ---
 layout: documentation
+category: guides
 title: Create a theme
 ---
 
