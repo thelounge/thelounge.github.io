@@ -4,10 +4,17 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
 	<meta name="description" content="{{ site.description }}">
+	<meta name="theme-color" content="#415364">
+	<meta property="twitter:card" content="summary">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="The Lounge">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:title" content="{{ page.title }}">
+	<meta property="og:description" content="{{ site.description }}">
+	<meta property="og:image" content="https://thelounge.chat/img/meta_image.png">
 
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/fontawesome/solid.min.css">
