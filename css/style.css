@@ -396,15 +396,24 @@ img {
 	background-color: #d9edf7;
 	border-color: #bce8f1;
 }
+.alert-info a {
+	color: #245269;
+}
 .alert-warning {
 	color: #8a6d3b;
 	background-color: #fcf8e3;
 	border-color: #faebcc;
 }
+.alert-warning a {
+	color: #66512c;
+}
 .alert-danger {
 	color: #a94442;
 	background-color: #f2dede;
 	border-color: #ebccd1;
+}
+.alert-danger a {
+	color: #843534;
 }
 .alert p:last-child {
 	margin-bottom: 0;
