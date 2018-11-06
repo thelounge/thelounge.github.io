@@ -1,11 +1,13 @@
+{% assign current_path = page.url | split: '/' %}
 {% assign docs = (site.docs | sort: "order" ) %}
 {% for node in docs %}
-	{% assign level = (node.relative_path | split: '/' | size) %}
-	{% if level == 2 # Not a subfolder %}
+	{% assign path = node.url | split: '/' %}
+	{% assign level = path | size %}
+	{% if level == 3 # Not a subfolder %}
 		<li>
 			<a
 				href="{{ site.baseurl }}{{ node.url | remove: "/index" }}"
-				{% if page.url == node.url %}class="active"{% endif %}
+				{% if page.url == node.url or current_path[2] == path[2] %}class="active"{% endif %}
 			>
 				{{ node.title }}
 			</a>
