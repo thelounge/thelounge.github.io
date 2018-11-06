@@ -356,6 +356,13 @@ img {
 	width: 93px;
 }
 
+#mobile-menu {
+	display: block;
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.35s ease;
+}
+
 @media (max-width: 768px) {
 	body {
 		margin-bottom: 60px;
