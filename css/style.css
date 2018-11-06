@@ -360,7 +360,7 @@ img {
 	display: block;
 	overflow: hidden;
 	max-height: 0;
-	transition: max-height 0.2s ease;
+	transition: max-height 0.35s ease;
 }
 
 @media (max-width: 768px) {
