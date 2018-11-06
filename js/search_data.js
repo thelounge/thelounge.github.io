@@ -1,6 +1,6 @@
 ---
 ---
-window.search_data = {
+window.search_data_loaded({
   {%- assign documents = site.documents | concat: site.pages %}
   {%- for document in documents %}
   {%- unless document.title %}{% continue %}{% endunless %}
@@ -11,4 +11,4 @@ window.search_data = {
   }
   {%- unless forloop.last -%},{%- endunless -%}
   {%- endfor %}
-};
+});

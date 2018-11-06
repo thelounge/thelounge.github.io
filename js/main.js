@@ -2,7 +2,7 @@
 // Open search field with the search icon, close it with "Escape" / the close
 // icon, cycle through results with "Up" and "Down" and visit selected result
 // with "Enter".
-(function() {
+window.search_data_loaded = function (search_data) {
 	// Preparing lunrjs index based on data store located in HTML pages
 	const lunrIndex = lunr(function () {
 		this.ref('id');
@@ -10,12 +10,12 @@
 		this.field('category');
 		this.field('content', { boost: 5 });
 
-		for (var key in window.search_data) {
+		for (var key in search_data) {
 			this.add({
 				id: key,
-				title: window.search_data[key].title,
-				category: window.search_data[key].category,
-				content: window.search_data[key].content,
+				title: search_data[key].title,
+				category: search_data[key].category,
+				content: search_data[key].content,
 			});
 		}
 	});
@@ -42,7 +42,7 @@
 				resultsContent = "<ul>";
 				results.forEach(function (result) {
 					var url = result.ref;
-					var item = window.search_data[url];
+					var item = search_data[url];
 					resultsContent += '<li>';
 					resultsContent += '<a href="' + url + '">' + item.title + '</a>';
 					resultsContent += "</li>";
@@ -116,7 +116,7 @@
 			$("#accessible-search-summary").empty();
 		return false;
 	});
-})();
+};
 
 // Add an anchor link to the page headers to create a shareable URL
 (function() {
