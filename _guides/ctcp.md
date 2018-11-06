@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Send CTCP commands with The Lounge
+description: What CTCP commands are and how to use them.
 ---
 
 [CTCP](https://en.wikipedia.org/wiki/Client-to-client_protocol) commands are special messages that can be sent to a channel or other clients. Servers do not interpret their content, as it is the role of the receiving client to do so.

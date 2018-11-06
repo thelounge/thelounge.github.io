@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Usage
+description: Using The Lounge CLI.
 order: 3
 ---
 

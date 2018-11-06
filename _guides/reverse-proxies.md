@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Configure a reverse proxy for The Lounge
+description: Configuring a reverse proxy for The Lounge.
 ---
 
 {% include toc.md %}

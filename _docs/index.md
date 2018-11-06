@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Getting started
+description: What is The Lounge?
 order: 1
 permalink: /docs
 ---

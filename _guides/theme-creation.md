@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Create a theme
+description: Creating a theme for The Lounge.
 ---
 
 Themes for The Lounge are CSS files bundled in packages hosted on [the npm registry](https://www.npmjs.com).

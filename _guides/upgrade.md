@@ -1,6 +1,7 @@
 ---
 layout: documentation
-title: How to upgrade to The Lounge v3
+title: Upgrade to The Lounge v3
+description: Upgrading to The Lounge v3 from an older version.
 ---
 
 This guide lists all breaking changes made between the releases of v2.7.1 and v3.0.0 that may require you taking actions before upgrading and running The Lounge.

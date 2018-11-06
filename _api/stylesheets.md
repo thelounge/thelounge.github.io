@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Stylesheets
-description: Register CSS files to all clients
+description: Register CSS files to all clients.
 type: server
 ---
 

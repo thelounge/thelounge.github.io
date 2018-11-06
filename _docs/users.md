@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Users
+description: Controlling user accounts in The Lounge.
 order: 5
 ---
 

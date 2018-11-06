@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Configuration
+description: Configuring The Lounge.
 order: 4
 ---
 

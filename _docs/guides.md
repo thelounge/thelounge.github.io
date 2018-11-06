@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Guides
+description: This page lists helpful guides.
 order: 6
 ---
 

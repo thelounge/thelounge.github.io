@@ -1,5 +1,5 @@
 title: The Lounge &mdash; Self-hosted web IRC client
-description: "The official website for The Lounge, the self-hosted web IRC client."
+description: "The Lounge is a self-hosted web IRC client for the modern world."
 include:
   - _headers
   - _redirects

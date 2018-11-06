@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Install and upgrade
+description: Installing and upgrading The Lounge.
 order: 2
 ---
 

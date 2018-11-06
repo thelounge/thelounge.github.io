@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Customize The Lounge on-the-fly using CSS
+description: Tweaking The Lounge interface on-the-fly.
 ---
 
 It is sometimes useful to tweak the interface to one's preferences. To do so without having to roll a full-fledged theme, or fork and maintain an existing theme, The Lounge offers an easy way to apply your own [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) snippets.

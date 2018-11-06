@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Context Menu
-description: Manage commands that appear in the context menu
+description: Manage commands that appear in the context menu.
 type: client
 ---
 
