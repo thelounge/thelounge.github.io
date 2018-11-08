@@ -23,4 +23,6 @@ jekyll serve
 
 ## License
 
-Available under [the MIT license](https://opensource.org/licenses/MIT).
+Available under [the MIT license](LICENSE).
+
+We use [Font Awesome](https://fontawesome.com/) free icons which are licensed under [CC BY 4.0](https://fontawesome.com/license/free).

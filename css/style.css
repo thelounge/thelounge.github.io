@@ -445,11 +445,18 @@ a.link-anchor {
 }
 
 /*
- * For some reason, Font Awesome 5 icons do not keep their expected weight,
- * which messes up with, for example, the GitHub icon.
+ * SVG icon styles
  */
-.fab, .fas {
-	font-weight: normal;
+.svg-inline {
+	display: inline-block;
+	font-size: inherit;
+	height: 1em;
+	width: 1em;
+	vertical-align: -.125em;
+}
+.svg-inline-large {
+	vertical-align: -.24em;
+	font-size: 1.4em;
 }
 
 .app-stores {
