@@ -211,10 +211,10 @@ control or responsibility over them, but they usually require little
 configuration to get up and running:
 
 {:.app-stores}
-[![Bytesized Hosting logo](/img/bytesized-hosting-logo.png)](https://bytesized-hosting.com/ "Bytesized Hosting")
-[![Cloudron logo](/img/cloudron-logo.png)](https://cloudron.io/ "Cloudron")
-[![Franz logo](/img/franz-logo.png)](https://meetfranz.com/ "Franz")
-[![Rambox logo](/img/rambox-logo.png)](http://rambox.pro/ "Rambox")
+[![Bytesized Hosting logo](/img/logos/bytesized-hosting.svg)](https://bytesized-hosting.com/ "Bytesized Hosting")
+[![Cloudron logo](/img/logos/cloudron.svg)](https://cloudron.io/button/io.github.thelounge.html "Cloudron")
+[![Franz logo](/img/logos/franz.svg)](https://meetfranz.com/ "Franz")
+[![Rambox logo](/img/logos/rambox.svg)](https://rambox.pro/ "Rambox")
 
 Please contact these service providers directly if you have any questions or
 encounter any issues on these platforms.
