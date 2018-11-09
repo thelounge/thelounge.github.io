@@ -10,7 +10,7 @@ title: Community
 If you need help, or want to help others by answering questions they might have, `#thelounge` is our official IRC channel on [Freenode](https://freenode.net/) (`chat.freenode.net:6697` on a secure connection).
 
 {:.center}
-[Click here to join it using our demo](https://demo.thelounge.chat/?join=thelounge).
+[Click here to join it using our demo](https://demo.thelounge.chat/?join=thelounge)
 
 Additionally, a few community-operated channels let you chat in a language you are more comfortable:
 
