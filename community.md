@@ -34,15 +34,7 @@ We thank our existing backers who have contributed various amounts of money in o
 
 ## Contribute to the project
 
-Our [contributing guide](https://github.com/thelounge/thelounge/blob/master/.github/CONTRIBUTING.md) contains all the details you need to report an issue or contribute to the code. We like to thank our contributors with free sticker packs, feel free to request yours [here](https://docs.google.com/forms/d/e/1FAIpQLSfv2K0o59Z5y09-ejZlVO8nPerylA8BXZ2tfpV6OJi8wCg2Vw/viewform)!
-
-{:.stickers}
-[
-  ![Horizontal sticker](/img/stickers/sticker-horizontal.png)
-  ![Square sticker with inverted colors](/img/stickers/sticker-square.png)
-  ![Vertical sticker](/img/stickers/sticker-vertical.png)
-  ![Magnet with inverted colors](/img/stickers/magnet.png)
-](https://docs.google.com/forms/d/e/1FAIpQLSfv2K0o59Z5y09-ejZlVO8nPerylA8BXZ2tfpV6OJi8wCg2Vw/viewform)
+Our [contributing guide](https://github.com/thelounge/thelounge/blob/master/.github/CONTRIBUTING.md) contains all the details you need to report an issue or contribute to the code.
 
 Make sure to browse [the other projects in our GitHub organization](https://github.com/thelounge) as well as [other related projects from the community](https://github.com/topics/thelounge) that might need your help.
 
@@ -68,7 +60,17 @@ Some additional articles and tutorials:
 - [The Lounge, self hosted web IRC client](https://freedif.org/the-lounge-self-hosted-web-irc-client) - 25 March 2017
 - [Enabling https SSL connection with The Lounge self-hosted IRC client](https://nertant.com/2016/03/12/enabling-https-ssl-connection-with-the-lounge-self-hosted-irc-client/) - 12 March 2016
 
-## T-shirts, mugs, and more
+## Stickers, T-shirts, mugs, and more
+
+Request a free sticker pack [here](https://docs.google.com/forms/d/e/1FAIpQLSfv2K0o59Z5y09-ejZlVO8nPerylA8BXZ2tfpV6OJi8wCg2Vw/viewform). They go on a first come, first served basis, so no promises!
+
+{:.stickers}
+[
+  ![Horizontal sticker](/img/stickers/sticker-horizontal.png)
+  ![Square sticker with inverted colors](/img/stickers/sticker-square.png)
+  ![Vertical sticker](/img/stickers/sticker-vertical.png)
+  ![Magnet with inverted colors](/img/stickers/magnet.png)
+](https://docs.google.com/forms/d/e/1FAIpQLSfv2K0o59Z5y09-ejZlVO8nPerylA8BXZ2tfpV6OJi8wCg2Vw/viewform)
 
 Check out our branded apparel and accessories available in [our shop on Threadless](https://thelounge.threadless.com/):
 
