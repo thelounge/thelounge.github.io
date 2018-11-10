@@ -28,7 +28,9 @@ You can financially help us by [donating to our collective](https://opencollecti
 
 We thank our existing backers who have contributed various amounts of money in order to help support The Lounge:
 
-<object class="center-block" type="image/svg+xml" data="https://opencollective.com/thelounge/backers.svg?avatarHeight=50"></object>
+<object class="center-block hidden-xs" type="image/svg+xml" data="https://opencollective.com/thelounge/backers.svg?avatarHeight=50&width=555"></object>
+
+<object class="center-block visible-xs-block" type="image/svg+xml" data="https://opencollective.com/thelounge/backers.svg?avatarHeight=50&width=280"></object>
 
 ## Contribute to the project
 
