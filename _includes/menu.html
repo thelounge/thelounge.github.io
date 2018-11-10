@@ -1,3 +1,5 @@
+<li><a href="/docs" {% if page.url == "/docs.html" %}class="active"{% endif %}>Getting started</a></li>
+
 {% assign current_path = page.url | split: '/' %}
 {% assign docs = (site.docs | sort: "order" ) %}
 {% for node in docs %}
@@ -6,7 +8,7 @@
 	{% if level == 3 # Not a subfolder %}
 		<li>
 			<a
-				href="{{ site.baseurl }}{{ node.url | remove: "/index" }}"
+				href="{{ node.url }}"
 				{% if page.url == node.url or current_path[2] == path[2] %}class="active"{% endif %}
 			>
 				{{ node.title }}
