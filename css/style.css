@@ -459,18 +459,31 @@ a.link-anchor {
 	font-size: 1.4em;
 }
 
-.app-stores {
+.center,
+.app-stores,
+.store-examples,
+.stickers {
 	text-align: center;
 }
-.app-stores a {
+.app-stores a,
+.store-examples a,
+.stickers a {
 	display: inline-block;
-	height: 50px;
 	padding-left: 10px;
 	padding-right: 10px;
 }
-.app-stores a img {
+.app-stores a img,
+.store-examples a img,
+.stickers a img {
 	max-height: 100%;
 	max-width: 100%;
+}
+.app-stores a,
+.stickers a {
+	height: 50px;
+}
+.store-examples a {
+	height: 100px;
 }
 
 /* Terminal windows-style, to present CLI outputs and such */
@@ -544,4 +557,11 @@ a.link-anchor {
 }
 .highlight .nb, .highlight .bp {
   color: #C34E00;
+}
+
+/* Video embeds */
+.video-preview {
+	max-width: 480px;
+	margin-left: auto;
+	margin-right: auto;
 }
