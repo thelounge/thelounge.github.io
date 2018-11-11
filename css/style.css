@@ -343,17 +343,22 @@ img {
 }
 #footer p {
 	margin: 0;
+	line-height: 20px;
 }
 #footer hr {
 	margin: 0 15px 10px;
 }
 #share {
 	text-align: right;
+	line-height: 0;
 }
 #share .github-stars {
 	display: inline-block;
 	overflow: hidden;
 	width: 93px;
+}
+#share iframe {
+	border: 0;
 }
 
 #mobile-menu {
