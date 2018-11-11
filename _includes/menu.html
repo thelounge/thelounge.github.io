@@ -3,7 +3,7 @@
 {% for node in docs %}
 	{% assign path = node.url | split: '/' %}
 	{% assign level = path | size %}
-	{% if level == 3 # Not a subfolder %}
+	{% if level <= 3 # Not a subfolder %}
 		<li>
 			<a
 				href="{{ node.url | remove: "/index" }}"
