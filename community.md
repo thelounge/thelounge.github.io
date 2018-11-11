@@ -15,8 +15,9 @@ If you need help, or want to help others by answering questions they might have,
 Additionally, a few community-operated channels let you chat in a language you are more comfortable:
 
 - 🇩🇪 German: [`#thelounge-de`](https://demo.thelounge.chat/?join=thelounge-de)
-- 🇫🇷 French: [`#thelounge-fr`](https://demo.thelounge.chat/?join=thelounge-fr)
+- 🇫🇷🇨🇦 French: [`#thelounge-fr`](https://demo.thelounge.chat/?join=thelounge-fr)
 - 🇳🇱 Dutch: [`#thelounge-nl`](https://demo.thelounge.chat/?join=thelounge-nl)
+- 🇩🇰🇳🇴🇸🇪 Danish / Norwegian / Swedish: [`#thelounge-scandinavia`](https://demo.thelounge.chat/?join=thelounge-scandinavia)
 
 Let us know if you wish to help operating a language-specific channel!
 
