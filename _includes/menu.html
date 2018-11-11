@@ -6,7 +6,7 @@
 	{% if level == 3 # Not a subfolder %}
 		<li>
 			<a
-				href="{{ site.baseurl }}{{ node.url | remove: "/index" }}"
+				href="{{ node.url | remove: "/index" }}"
 				{% if page.url == node.url or current_path[2] == path[2] %}class="active"{% endif %}
 			>
 				{{ node.title }}
