@@ -12,7 +12,6 @@
 /docs/client/keyboard_shortcuts  https://demo.thelounge.chat/#help  302
 
 /docs/deployment/docker          /docs/install-and-upgrade#docker
-/docs/deployment/heroku          /docs/unofficial-install-methods/heroku
 /docs/deployment/passenger       /docs/guides/reverse-proxies
 
 /docs/plugins/themes             /docs/guides/theme-creation
