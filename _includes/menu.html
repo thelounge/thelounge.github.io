@@ -7,7 +7,7 @@
 		<li>
 			<a
 				href="{{ node.url }}"
-				{% if page.url == node.url or current_path[2] == path[2] %}class="active"{% endif %}
+				{% if page.url == node.url or (level > 2 and current_path[2] == path[2]) %}class="active"{% endif %}
 			>
 				{{ node.title }}
 			</a>
