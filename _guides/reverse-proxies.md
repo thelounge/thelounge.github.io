@@ -52,7 +52,7 @@ gzip_types application/javascript image/svg+xml text/css text/plain;
 
 ## [Apache](https://httpd.apache.org/)
 
-Enable the necessary modules `a2enmod rewrite`, `a2enmod proxy`, `a2enmod proxy_http`, `a2enmod headers`, and `a2enmod proxy_wstunnel`.
+Enable the necessary modules `a2enmod rewrite`, `a2enmod proxy`, `a2enmod proxy_http`, and `a2enmod proxy_wstunnel`.
 
 This makes The Lounge available at `https://example.com/irc/`:
 
