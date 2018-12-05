@@ -32,6 +32,7 @@ location ^~ /irc/ {
 	proxy_set_header Connection "upgrade";
 	proxy_set_header Upgrade $http_upgrade;
 	proxy_set_header X-Forwarded-For $remote_addr;
+	proxy_set_header X-Forwarded-Proto $scheme;
 
 	# by default nginx times out connections in one minute
 	proxy_read_timeout 1d;
@@ -64,6 +65,7 @@ RewriteRule /irc/(.*)       ws://127.0.0.1:9000/$1 [P,L]
 
 ProxyVia On
 ProxyRequests Off
+ProxyAddHeaders On
 ProxyPass /irc/ http://127.0.0.1:9000/
 ProxyPassReverse /irc/ http://127.0.0.1:9000/
 
@@ -78,6 +80,7 @@ This makes The Lounge available at `https://example.com/irc/`:
 ```
 proxy /irc/ http://127.0.0.1:9000 {
 	header_upstream X-Forwarded-For {remote}
+	header_upstream X-Forwarded-Proto {scheme}
 	without /irc/
 	websocket
 }
@@ -90,6 +93,8 @@ This makes The Lounge available at https://thelounge.example.com:
 ```
 frontend  main
 	bind *:1000
+	option forwardfor
+	http-request set-header X-Forwarded-Proto https if { ssl_fc }
 	acl thelounge_site   hdr(host)  thelounge.example.com
 	use_backend thelounge       if thelounge_site
 
