@@ -141,13 +141,13 @@ A few rules apply to the `--config` option:
 
 - Nested objects require using a dot-notation. For example:
   ```
-  thelounge -c debug.raw=true
+  thelounge start -c debug.raw=true
   ```
 - Lists of values must be wrapped with `[]`. For example:
   ```
-  thelounge -c transports=[websocket,polling]
+  thelounge start -c transports=[websocket,polling]
   ```
 - If a value has a whitespace, it must be wrapped in quotes. For example:
   ```
-  thelounge -c logs.format="DD MMMM YYYY HH:mm:ss"
+  thelounge start -c logs.format="DD MMMM YYYY HH:mm:ss"
   ```
