@@ -149,5 +149,5 @@ A few rules apply to the `--config` option:
   ```
 - If a value has a whitespace, it must be wrapped in quotes. For example:
   ```
-  thelounge start -c logs.format="DD MMMM YYYY HH:mm:ss"
+  thelounge start -c defaults.name="Cool Network"
   ```
