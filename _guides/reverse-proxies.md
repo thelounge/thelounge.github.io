@@ -23,10 +23,8 @@ This document assumes that your configuration of The Lounge binds to host `127.0
 
 ## [Nginx](https://nginx.org/en/)
 
-This makes The Lounge available at `http://example.com/irc/`:
-
 ```nginx
-location ^~ /irc/ {
+location / {
 	proxy_pass http://127.0.0.1:9000/;
 	proxy_http_version 1.1;
 	proxy_set_header Connection "upgrade";
@@ -38,6 +36,8 @@ location ^~ /irc/ {
 	proxy_read_timeout 1d;
 }
 ```
+
+If you want to access The Lounge in a sub folder, change the first line to `location ^~ /irc/ {`
 
 If you do not have GZIP compression already configured in Nginx, you may add this configuration to compress proxied files:
 
@@ -54,7 +54,23 @@ gzip_types application/javascript image/svg+xml text/css text/plain;
 
 Enable the necessary modules `a2enmod rewrite`, `a2enmod proxy`, `a2enmod proxy_http`, and `a2enmod proxy_wstunnel`.
 
-This makes The Lounge available at `https://example.com/irc/`:
+```apache
+RewriteEngine On
+RewriteCond %{REQUEST_URI}  ^/socket.io            [NC]
+RewriteCond %{QUERY_STRING} transport=websocket    [NC]
+RewriteRule /(.*)           ws://127.0.0.1:9000/$1 [P,L]
+
+ProxyVia On
+ProxyRequests Off
+ProxyAddHeaders On
+ProxyPass / http://127.0.0.1:9000/
+ProxyPassReverse / http://127.0.0.1:9000/
+
+# By default Apache times out connections after one minute
+ProxyTimeout 86400 # 1 day
+```
+
+If you want to access The Lounge in a sub folder, use the following configuration:
 
 ```apache
 RewriteEngine On
@@ -75,20 +91,15 @@ ProxyTimeout 86400 # 1 day
 
 ## [Caddy](https://caddyserver.com/)
 
-This makes The Lounge available at `https://example.com/irc/`:
-
 ```
-proxy /irc/ http://127.0.0.1:9000 {
+proxy / http://127.0.0.1:9000 {
 	header_upstream X-Forwarded-For {remote}
 	header_upstream X-Forwarded-Proto {scheme}
-	without /irc/
 	websocket
 }
 ```
 
-## [HAProxy](http://www.haproxy.org/)
-
-This makes The Lounge available at https://thelounge.example.com:
+## [HAProxy](https://www.haproxy.org/)
 
 ```
 frontend  main
@@ -109,7 +120,7 @@ The following [page rules](https://support.cloudflare.com/hc/en-us/articles/2184
 - `Rocket Loader` set to `Off`
 - `Disable Apps`
 
-## HTTPS with [Redbird](https://www.npmjs.com/package/redbird) and [Let's Encrypt](https://letsencrypt.org/)
+## [Redbird](https://www.npmjs.com/package/redbird) with [Let's Encrypt](https://letsencrypt.org/)
 
 First, install Redbird:
 
@@ -140,4 +151,4 @@ redbird.register("example.com", "http://127.0.0.1:9000", {
 });
 ```
 
-You can then run it with `node proxy.js`. The Lounge should then be available at `https://example.com/`.
+You can then run it with `node proxy.js`.
