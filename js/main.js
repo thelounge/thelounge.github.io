@@ -148,3 +148,45 @@ window.search_data_loaded = function (search_data) {
 		e.preventDefault();
 	}, false);
 })();
+
+// Very miniminal Google Analytics reporting, which respects do not track, anonymous ip, and
+// basically just sends the page view, without any extra information like screen size, etc.
+(function(trackingId) {
+	if (navigator.doNotTrack === "1") {
+		return;
+	}
+
+	const serialize = (obj) => {
+		const str = [];
+
+		for (const p in obj) {
+			if (obj.hasOwnProperty(p)) {
+				if (obj[p] !== undefined) {
+					str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+				}
+			}
+		}
+
+		return str.join("&");
+	};
+
+	const url = "https://www.google-analytics.com/collect";
+	const data = serialize({
+		v: 1,
+		aip: 1,
+		tid: trackingId,
+		t: "pageview",
+		ds: "web",
+		dr: document.referrer || undefined,
+		dl: document.location.origin + document.location.pathname + document.location.search,
+		ul: (navigator.language || "").toLowerCase(),
+	});
+
+	if (navigator.sendBeacon) {
+		navigator.sendBeacon(url, data);
+	} else {
+		const xhr = new XMLHttpRequest();
+		xhr.open("POST", url, true);
+		xhr.send(data);
+	}
+})("UA-131399702-1");
