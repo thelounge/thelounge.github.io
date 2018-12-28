@@ -156,6 +156,31 @@ window.search_data_loaded = function (search_data) {
 		return;
 	}
 
+	function generateId() {
+		const ts = Math.round(Date.now() / 1000.0);
+		let rand;
+
+		try {
+			var uu32 = new Uint32Array(1);
+			rand = crypto.getRandomValues(uu32)[0];
+		} catch(e) {
+			rand = Math.round(Math.random() * 2147483647);
+		}
+
+		return [rand, ts].join(".");
+	}
+
+	function getId() {
+		let id = localStorage.getItem("clientId");
+		
+		if (!id) {
+			id = generateId();
+			localStorage.getItem("clientId", id);
+		}
+
+		return id;
+	}
+
 	const serialize = (obj) => {
 		const str = [];
 
@@ -177,6 +202,7 @@ window.search_data_loaded = function (search_data) {
 		tid: trackingId,
 		t: "pageview",
 		ds: "web",
+		cid: getId(),
 		dr: document.referrer || undefined,
 		dl: document.location.origin + document.location.pathname + document.location.search,
 		ul: (navigator.language || "").toLowerCase(),
