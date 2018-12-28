@@ -175,7 +175,7 @@ window.search_data_loaded = function (search_data) {
 		
 		if (!id) {
 			id = generateId();
-			localStorage.getItem("clientId", id);
+			localStorage.setItem("clientId", id);
 		}
 
 		return id;
