@@ -19,7 +19,7 @@ It however requires more configuration than just relying on the built-in server,
 
 When using The Lounge behind a reverse proxy, set the `reverseProxy` option to `true` in your configuration file. This will instruct The Lounge to use the `X-Forwarded-For` header passed by your reverse proxy.
 
-This document assumes that your configuration of The Lounge binds to host `127.0.0.1` and port `9000`.
+This document assumes that your The Lounge is available on host `127.0.0.1` and port `9000`.
 
 ## [Nginx](https://nginx.org/en/)
 
