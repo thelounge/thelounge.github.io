@@ -16,7 +16,7 @@
 	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 	<meta property="og:image" content="https://thelounge.chat/img/meta_image.png">
 
-	<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+	{% if page.url != "/404.html" %}<link rel="canonical" href="{{ site.url }}{{ page.url }}">{% endif %}
 
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/style.css">
