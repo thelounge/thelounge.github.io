@@ -22,7 +22,7 @@ sudo apt install ./thelounge.deb
 ```
 
 {: .alert.alert-info role="alert"}
-This methods require root access. Install The Lounge using [Yarn from an npm release](#from-npm-releases) if you cannot use `sudo`.
+This method requires root access. Install The Lounge using [Yarn from an npm release](#from-npm-releases) if you cannot use `sudo`.
 
 This also sets up a `systemd` service, enabled during the install, that you can
 control with `systemctl status|start|restart|stop|...`.
