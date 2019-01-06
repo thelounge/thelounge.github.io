@@ -38,6 +38,8 @@ user "thelounge" {
 }
 ```
 
+If you have changed `bind` config variable in The Lounge, you will need to change `127.0.0.1` to the same bind address in the oidentd config above.
+
 ## Using oidentd only
 
 {: .alert.alert-warning role="alert"}
