@@ -9,24 +9,44 @@ An ident server can read the ident file and send this ident back to the IRC serv
 ## Built-in identd server
 
 The identd option is a lightweight server implemented in The Lounge itself.
-On linux, this currently requires The Lounge to run as root to be able to bind to port 113.
+On Linux, this currently requires The Lounge to run as root to be able to bind to port 113.
 
 As such, this is not really recommended and `oidentd` is a better choice.
 The port is configurable, so this could be worked around with iptables if required.
 
 To enable, set `identd.enable` in [the configuration](/docs/configuration#identd-and-oidentd-support) to `true`.
 
-## oidentd
+## Using oidentd to forward requests to built-in server
 
-Alternatively, `oidentd` can be used, as The Lounge also supports writing user ident to a file which can be read by `oidentd`.
+If you have oidentd 2.3.0 or later available, you can use oidentd to forward requests to The Lounge's built-in ident server.
+
+In The Lounge config, set `identd.enable` to `true`, and `identd.port` to a port higher than 1024, for example 9001.
+
+Then, open `/etc/oidentd.conf` file in a text editor and add the following:
+
+```
+user "thelounge" {
+	default {
+		allow spoof
+
+		# Use this if The Lounge needs to spoof local user names
+		allow spoof_all
+
+		# 9001 is the port you set in The Lounge's config
+		force forward 127.0.0.1 9001
+	}
+}
+```
+
+## Using oidentd only
+
+{: .alert.alert-warning role="alert"}
+If you have oident 2.3.0 or later available, see the section above as it does not require changing file permissions.
+
+`oidentd` can be used, as The Lounge also supports writing user ident to a file which can be read by `oidentd`.
 To enable, set [`oidentd`](/docs/configuration#identd-and-oidentd-support) variable to `"~/.oidentd.conf"`
 
-If you are using pre-built The Lounge packages, you will need to create the home folder yourself:
-```sh
-mkdir /home/thelounge/
-touch /home/thelounge/.oidentd.conf
-chown -R thelounge:thelounge /home/thelounge
-```
+If you are using pre-built The Lounge packages, there is no home folder, so this method will not work.
 
 After that is done, you will need to configure `oidentd` to allow spoofing.
 
@@ -34,10 +54,10 @@ Open `/etc/oidentd.conf` file in a text editor and add the following:
 
 ```
 user "thelounge" {
-  default {
-    allow spoof
-    allow spoof_all
-  }
+	default {
+		allow spoof
+		allow spoof_all
+	}
 }
 ```
 
