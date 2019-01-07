@@ -14,7 +14,7 @@ On Linux, this currently requires The Lounge to run as root to be able to bind t
 As such, this is not really recommended and `oidentd` is a better choice.
 The port is configurable, so this could be worked around with iptables if required.
 
-To enable, set `identd.enable` in [the configuration](/docs/configuration#identd-and-oidentd-support) to `true`.
+To enable `identd` support, set `identd.enable` in [the configuration](/docs/configuration#identd-and-oidentd-support) to `true`.
 
 ## Using oidentd to forward requests to built-in server
 
@@ -38,7 +38,7 @@ user "thelounge" {
 }
 ```
 
-If you have changed `bind` config variable in The Lounge, you will need to change `127.0.0.1` to the same bind address in the oidentd config above.
+If you have set the [`bind` configuration property](/docs/configuration#bind), you will need to change `127.0.0.1` to the same bind address in the oidentd configuration above.
 
 ## Using oidentd only
 
@@ -46,7 +46,7 @@ If you have changed `bind` config variable in The Lounge, you will need to chang
 If you have oident 2.3.0 or later available, see the section above as it does not require changing file permissions.
 
 `oidentd` can be used, as The Lounge also supports writing user ident to a file which can be read by `oidentd`.
-To enable, set [`oidentd`](/docs/configuration#identd-and-oidentd-support) variable to `"~/.oidentd.conf"`
+To enable `oidentd` support, set the [`oidentd` configuration option](/docs/configuration#identd-and-oidentd-support) to `"~/.oidentd.conf"`
 
 If you are using pre-built The Lounge packages, there is no home folder, so this method will not work.
 
@@ -65,7 +65,7 @@ user "thelounge" {
 
 If your system has a user with the same name as one of the The Lounge users, the `spoof_all` capability is required.
 
-oidentd must be able to read your `~/.oidentd.conf` file. Therefore, the The Lounge user's home directory permissions should be at least 711.
+oidentd must be able to read your `~/.oidentd.conf` file. Therefore, the home directory permissions of user `thelounge` should be at least 711:
 
 ```bash
 chmod 711 /home/thelounge/
