@@ -3,16 +3,19 @@ layout: documentation
 title: Identify users with identd or oident
 ---
 
+In general, and in the context of IRC, ident is a method that can be used to prove that connections are valid.
+
 When the IRC server gets a connection request, it will query your system for the ident.
 An ident server can read the ident file and send this ident back to the IRC server.
+
+On most IRC networks, when the server fails to get an ident response, it falls back to the username given by client, but marks it as "not verified", usually by prefixing with a tilde; e.g. `~josh`.
 
 ## Built-in identd server
 
 The identd option is a lightweight server implemented in The Lounge itself.
 On Linux, this currently requires The Lounge to run as root to be able to bind to port 113.
 
-As such, this is not really recommended and `oidentd` is a better choice.
-The port is configurable, so this could be worked around with iptables if required.
+As such we recommend setting up the built-in server along side `oidentd` and configuring it to forward requests to the built-in server.
 
 To enable `identd` support, set `identd.enable` in [the configuration](/docs/configuration#identd-and-oidentd-support) to `true`.
 
@@ -43,12 +46,12 @@ If you have set the [`bind` configuration property](/docs/configuration#bind), y
 ## Using oidentd only
 
 {: .alert.alert-warning role="alert"}
-If you have oident 2.3.0 or later available, see the section above as it does not require changing file permissions.
+If you have oident 2.3.0 or later available, using oidentd along with built-in identd is preferred as it solves multiple issues including concurrency and file permission issues.
 
 `oidentd` can be used, as The Lounge also supports writing user ident to a file which can be read by `oidentd`.
 To enable `oidentd` support, set the [`oidentd` configuration option](/docs/configuration#identd-and-oidentd-support) to `"~/.oidentd.conf"`
 
-If you are using pre-built The Lounge packages, there is no home folder, so this method will not work.
+If you have installed The Lounge as a service (pre-built package), the service has no access to `/home` folder and thus this method will not work. [Refer to oidentd + built-in section above](#using-oidentd-to-forward-requests-to-built-in-server).
 
 After that is done, you will need to configure `oidentd` to allow spoofing.
 
