@@ -29,7 +29,7 @@ control with `systemctl status|start|restart|stop|...`.
 
 The Lounge is now up and running **in private mode** at <http://localhost:9000>.
 
-Its configuration file is located at `/etc/thelounge/config.js`. To configure
+Its configuration file is located at `/etc/lounge/config.js`. To configure
 The Lounge, go to [the configuration section](/docs/configuration).
 
 To upgrade The Lounge, simply follow these steps again after downloading a new
