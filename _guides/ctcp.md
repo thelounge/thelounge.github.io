@@ -20,6 +20,6 @@ The Lounge does not support all CTCP commands, such as [DCC](https://en.wikipedi
 {: .alert.alert-info role="alert"}
 When querying other users, know that their clients might inform them that you are requesting information about them, in the form of a notification or sound.
 
-To learn more about CTCP, [this document](https://tools.ietf.org/id/draft-oakley-irc-ctcp-02.html) is a great reference, more technical and in-depth that this high-level guide.
+To learn more about CTCP, [this document](https://tools.ietf.org/id/draft-oakley-irc-ctcp-02.html) is a great reference, more technical and in-depth than this high-level guide.
 
 {% include abbreviations.md %}
