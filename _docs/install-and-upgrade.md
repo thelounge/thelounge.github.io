@@ -199,7 +199,7 @@ setups and platforms, with different tooling, etc. These are not officially
 supported (even when hosted on this website), so use them at your own risk:
 
 - [OpenShift Online recipe](https://github.com/pacbard/openshift-thelounge)
-- [Ansible role using Supervisor](https://github.com/astorije/ansible-lounge)
+- [Ansible role using Supervisor](https://github.com/astorije/ansible-thelounge)
 - [ARMHF Docker images](https://hub.docker.com/r/lsioarmhf/thelounge/)
 - [YunoHost app](https://github.com/YunoHost-Apps/thelounge_ynh)
 
