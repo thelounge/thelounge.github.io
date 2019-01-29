@@ -93,8 +93,7 @@ ProxyTimeout 86400 # 1 day
 
 ```
 proxy / http://127.0.0.1:9000 {
-	header_upstream X-Forwarded-For {remote}
-	header_upstream X-Forwarded-Proto {scheme}
+	transparent
 	websocket
 }
 ```
