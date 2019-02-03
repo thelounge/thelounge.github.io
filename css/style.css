@@ -210,6 +210,11 @@ img {
 	margin-left: 0;
 	padding-left: 0;
 }
+#search-results-header {
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: 0.67em;
+}
 
 #nav .logo img {
 	height: 100%;
