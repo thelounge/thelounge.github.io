@@ -12,8 +12,7 @@ First, make sure [Node.js](https://nodejs.org/) v6.13.0 or more recent is instal
 with `node --version`. If not, follow the instructions given on the
 [official documentation](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions).
 
-Then download `thelounge.deb` located at the top of
-[the latest release](https://github.com/thelounge/thelounge/releases/latest).
+Then download `thelounge.deb` located at the bottom of [the latest release](https://github.com/thelounge/thelounge/releases/latest).
 
 Finally, open a terminal and install the downloaded package using:
 
