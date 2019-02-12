@@ -149,11 +149,8 @@ The <kbd>&times;</kbd> buttons that appear in the channel list on the currently 
 ### Thinner user list
 
 ```css
-#chat .sidebar {
+#chat .userlist {
 	width: 150px;
-}
-#chat .channel .chat {
-	right: 150px;
 }
 ```
 
