@@ -35,11 +35,14 @@ window.search_data_loaded = function (search_data) {
 		// through results while pressing Enter will click on the link.
 		if (searchTerm) {
 			var results = lunrIndex.search(searchTerm);
-			var resultsContent;
 			var accessibleSummaryContent;
 
+			// Display page title dynamically to avoid confusing bots that search
+			// for metadata
+			var resultsContent = "<h1>Search results</h1>";
+
 			if (results.length) {
-				resultsContent = "<ul>";
+				resultsContent += "<ul>";
 				results.forEach(function (result) {
 					var url = result.ref;
 					var item = search_data[url];
@@ -50,9 +53,10 @@ window.search_data_loaded = function (search_data) {
 				resultsContent += "</ul>";
 				accessibleSummaryContent = results.length + " results found. Focus on the first result with Enter then cycle through them with Tab.";
 			} else {
-				resultsContent = "<p>No results found.</p>";
+				resultsContent += "<p>No results found.</p>";
 				accessibleSummaryContent = "No results found."
 			}
+
 			$("#results-placeholder").html(resultsContent);
 			resultsElement.show();
 			contentElement.hide();
@@ -172,7 +176,7 @@ window.search_data_loaded = function (search_data) {
 
 	function getId() {
 		let id = localStorage.getItem("clientId");
-		
+
 		if (!id) {
 			id = generateId();
 			localStorage.setItem("clientId", id);
