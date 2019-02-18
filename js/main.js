@@ -53,14 +53,22 @@ window.search_data_loaded = function (search_data) {
 				resultsContent = "<p>No results found.</p>";
 				accessibleSummaryContent = "No results found."
 			}
+
 			$("#results-placeholder").html(resultsContent);
-			resultsElement.show();
-			contentElement.hide();
 			accessibleElement.html(accessibleSummaryContent);
+
+			if (resultsElement.is(":hidden")) {
+				// Display page title dynamically to avoid confusing bots that search
+				// for metadata
+				resultsElement.prepend("<h1>Search results</h1>");
+				resultsElement.show();
+				contentElement.hide();
+			}
 		} else {
 			// When the search input is empty, hide the result page and display the
 			// current page. Also clear the accessibility notification area.
 			resultsElement.hide();
+			resultsElement.children("h1").remove();
 			contentElement.show();
 			accessibleElement.empty();
 		}
@@ -172,7 +180,7 @@ window.search_data_loaded = function (search_data) {
 
 	function getId() {
 		let id = localStorage.getItem("clientId");
-		
+
 		if (!id) {
 			id = generateId();
 			localStorage.setItem("clientId", id);
