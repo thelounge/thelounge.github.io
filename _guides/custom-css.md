@@ -197,19 +197,6 @@ Assuming we want to hide some status messages in the `#thelounge` channel:
 }
 ```
 
-### Hide messages coming from a specific user
-
-A temporary way to `/ignore` somebody until it is implemented in The Lounge.
-
-```css
-#chat .msg[data-from="username"] {
-	display: none;
-}
-```
-
-{: .alert.alert-warning role="alert"}
-Note that you will still be notified if this user mentioned your name, and messages from them will still increment the unread message counter.
-
 ### Adjust message spacing/density
 
 This adjusts the vertical gap between messages. `2px` is the default spacing,
