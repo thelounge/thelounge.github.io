@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: API reference
-description: Overview of the public The Lounge API.
+description: Overview of the public The Lounge API
 order: 7
 ---
 

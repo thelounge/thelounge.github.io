@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Identify users with identd or oidentd
-description: Identifying IRC users with identd or oidentd.
+description: Prove that IRC connections are valid with our built-in identd server and/or oidentd
 ---
 
 In general, and in the context of IRC, ident is a method that can be used to prove that connections are valid.
@@ -20,7 +20,7 @@ As such we recommend setting up the built-in server along side `oidentd` and con
 
 To enable `identd` support, set `identd.enable` in [the configuration](/docs/configuration#identd-and-oidentd-support) to `true`.
 
-## Using oidentd to forward requests to built-in server
+## Using oidentd to forward requests to the built-in server
 
 If you have oidentd 2.3.0 or later available, you can use oidentd to forward requests to The Lounge's built-in ident server.
 

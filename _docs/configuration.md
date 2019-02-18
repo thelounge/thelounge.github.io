@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Configuration
-description: Configuring The Lounge.
+description: Configuration of the server
 order: 4
 ---
 

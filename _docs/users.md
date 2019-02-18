@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Users
-description: Controlling user accounts in The Lounge.
+description: User account management on private instances of The Lounge
 order: 5
 ---
 

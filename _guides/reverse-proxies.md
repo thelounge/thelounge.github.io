@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Configure a reverse proxy for The Lounge
-description: Configuring a reverse proxy for The Lounge.
+description: Serve The Lounge through a reverse proxy such as Nginx, Apache, Caddy, HAProxy, Cloudflare, or Redbird
 ---
 
 {% include toc.md %}

@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Protect The Lounge with HTTPS
-description: Protecting The Lounge with HTTPS.
+description: Easily configure The Lounge to be served over HTTPS for better security and privacy
 ---
 
 In this guide, we will see how to easily configure The Lounge to be served over [HTTPS](https://en.wikipedia.org/wiki/HTTPS) for better security and privacy.
