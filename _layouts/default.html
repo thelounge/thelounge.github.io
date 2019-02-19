@@ -5,14 +5,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+	<meta name="description" content="{% if page.description %}{{ page.description }}…{% endif %} {{ site.description }}">
 	<meta name="theme-color" content="#415364">
 	<meta property="twitter:card" content="summary">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="The Lounge">
 	<meta property="og:locale" content="en_US">
-	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}The Lounge{% endif %}">
+	<meta property="og:title" content="{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}">
 	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 	<meta property="og:image" content="https://thelounge.chat/img/meta_image.png">
 

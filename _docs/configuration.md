@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Configuration
+description: Configuration of the server
 order: 4
 ---
 

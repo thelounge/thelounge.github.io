@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Install and upgrade
+description: Install and upgrade The Lounge on Debian, Ubuntu, Arch Linux, from npm releases, using Docker, from source, and more
 order: 2
 ---
 

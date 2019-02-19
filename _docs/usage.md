@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Usage
+description: Available commands and options of thelounge, the CLI of The Lounge
 order: 3
 ---
 

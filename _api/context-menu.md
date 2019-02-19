@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Context Menu
-description: Manage commands that appear in the context menu
+description: The Context Menu API lets you add commands to the context menu, accessible when right-clicking a user or channel, and from the menu button located on the top-right corner of chat windows.
 type: client
 ---
 
