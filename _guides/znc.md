@@ -3,7 +3,7 @@ layout: documentation
 title: Set up ZNC with The Lounge
 ---
 
-## What The Lounge gives you out of the box
+## Why you may not need znc
 The Lounge already gives you most of the features you expect from a bouncer:
 
 - Scroll back is already available from within The Lounge, even across restarts, if logging to sqlite is enabled
