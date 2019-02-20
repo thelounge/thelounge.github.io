@@ -31,12 +31,9 @@ This is a limitation of the IRC protocol and can't be fixed by ZNC.
 In order to connect, you will need to specify the server you want to use in the username field.
 
 In essence from within the The Lounge server settings:
-```
- - Username: zncUser/network
- - Password: zncPassword
-```
+- Username: `zncUser/network`
+- Password: `zncPassword`
+
 Or if you are using the Clientbuffer module:
-```
- - Username: zncUser@clientid/network
- - Password: zncPassword
-```
+- Username: `zncUser@clientid/network`
+- Password: `zncPassword`
