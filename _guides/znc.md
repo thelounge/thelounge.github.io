@@ -23,6 +23,8 @@ There are some benefits of using ZNC in addition to The Lounge.
 
 - Have a centralized block list across different clients
 
+- Detach from channels and auto-attach on activity
+
 - Run multiple The Lounge versions, sharing the data (for example stable and dev in order to test the next The Lounge PR)
 
 ## Setting up ZNC
