@@ -3,20 +3,6 @@ layout: documentation
 title: Set up ZNC with The Lounge
 ---
 
-## What is ZNC?
-ZNC is an advanced IRC bouncer, which inevitably begs the question, what's a bouncer?
-
-Usually an IRC client connects directly to an IRC server. An IRC bouncer sits between the client (for example The Lounge) and the irc server (for example Freenode).
-That allows it to add some additional functionality over a direct connection, some examples listed below
-
-- Attach multiple clients (say a computer, phone, tablet etc.) to the bouncer, all sharing the same nick.
-
-- Messages are saved even when no client is connected, playing back what was said when a client comes back
-
-- As the bouncer (preferably) never disconnects, mode changes, nick names and channels are kept at all times
-
-- Sharing block lists / using additional functionality across different clients, without having to configure each one of them
-
 ## What The Lounge gives you out of the box
 The Lounge already gives you most of the features you expect from a bouncer:
 
@@ -39,24 +25,14 @@ There are some benefits of using ZNC in addition to The Lounge.
 
 - Run multiple The Lounge versions, sharing the data (for example stable and dev in order to test the next The Lounge PR)
 
-
 ## Setting up ZNC
-If you'd like to have the additional benefits ZNC gives you, install ZNC according to the [installation instructions](https://wiki.ZNC.in/Installation) for your system.
-After that, follow the steps outlined below:
+If you still like to have the additional benefits ZNC gives you, install ZNC according to the [installation instructions](https://wiki.ZNC.in/Installation) for your system.
 
-- Generate an initial configuration via znc --makeconf
-
-- Configure your IRC client to connect to your ZNC server.
-
-- [Load modules](https://wiki.ZNC.in/Modules) you'd like to use, for example [webadmin](https://wiki.znc.in/Webadmin) to make the configuration easier
-
-- In order for The Lounge to properly integrate with The Lounge (and other clients) you probably want either one of the following modules:
+In order for The Lounge to properly integrate with The Lounge (and other clients) you probably want either one of the following modules:
 
      - [Clientbuffer](https://wiki.znc.in/Clientbuffer): The client buffer module maintains client specific buffers for identified clients. Works with any client even when they are not znc aware
 
      - [Playback](https://wiki.znc.in/Playback): IRC clients may request the module to send a partial buffer playback starting from and ending to a certain point of time. Only works with clients that respect the znc specific capability. The Lounge supports this functionality out of the box
-
-- Connect to irc networks like freenode and set options like playback buffer size etc.
 
 ## Connect to multiple Networks from The Lounge
 For each IRC server connected from ZNC, you will need a separate irc server connection from within The Lounge.
