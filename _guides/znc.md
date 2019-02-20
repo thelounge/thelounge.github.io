@@ -4,7 +4,7 @@ title: Set up ZNC with The Lounge
 description: How to configure ZNC for use with The Lounge
 ---
 
-## Why you may not need znc
+## Why you may not need ZNC
 The Lounge already gives you most of the features you expect from a bouncer:
 
 - Scrollback is already available from within The Lounge, even across restarts, [if message storage is configured](/docs/configuration#messagestorage).
@@ -31,9 +31,12 @@ This is a limitation of the IRC protocol and can't be fixed by ZNC.
 In order to connect, you will need to specify the server you want to use in the username field.
 
 In essence from within the The Lounge server settings:
+```
  - Username: zncUser/network
  - Password: zncPassword
-
+```
 Or if you are using the Clientbuffer module:
+```
  - Username: zncUser@clientid/network
  - Password: zncPassword
+```
