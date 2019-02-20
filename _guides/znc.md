@@ -6,7 +6,7 @@ title: Set up ZNC with The Lounge
 ## What is ZNC?
 ZNC is an advanced IRC bouncer, which inevitably begs the question, what's a bouncer?
 
-Usually an IRC client connects directly to an IRC server. An IRC bouncer sits between the client (for example thelounge) and the irc server (for example Freenode).
+Usually an IRC client connects directly to an IRC server. An IRC bouncer sits between the client (for example The Lounge) and the irc server (for example Freenode).
 That allows it to add some additional functionality over a direct connection, some examples listed below
 
 - Attach multiple clients (say a computer, phone, tablet etc.) to the bouncer, all sharing the same nick.
@@ -17,27 +17,27 @@ That allows it to add some additional functionality over a direct connection, so
 
 - Sharing block lists / using additional functionality across different clients, without having to configure each one of them
 
-## What thelounge gives you out of the box
-Thelounge already gives you most of the features you expect from a bouncer:
+## What The Lounge gives you out of the box
+The Lounge already gives you most of the features you expect from a bouncer:
 
-- Scroll back is already available from within thelounge, even across restarts, if logging to sqlite is enabled
+- Scroll back is already available from within The Lounge, even across restarts, if logging to sqlite is enabled
 
-- Multiple devices can connect to thelounge at the same time, using thelounge as a client
+- Multiple devices can connect to The Lounge at the same time, using The Lounge as a client
 
-- Nick, mode changes etc. are kept, as thelounge never disconnects from the IRC server
+- Nick, mode changes etc. are kept, as The Lounge never disconnects from the IRC server
 
 - Push notifications are available on Android and on modern browsers
 
 ## Benefits of using ZNC
-There are some benefits of using ZNC in addition to thelounge.
+There are some benefits of using ZNC in addition to The Lounge.
 
-- Use a terminal based IRC client like weechat or irssi on the desktop, but thelounge on mobile and still share the same nickname on both
+- Use a terminal based IRC client like weechat or irssi on the desktop, but The Lounge on mobile and still share the same nickname on both
 
-- Add push notifications if they aren't supported directly via thelounge (for example on iOS via the ZNC-push module)
+- Add push notifications if they aren't supported directly via The Lounge (for example on iOS via the ZNC-push module)
 
 - Have a centralized block list across different clients
 
-- Run multiple thelounge versions, sharing the data (for example stable and dev in order to test the next thelounge PR)
+- Run multiple The Lounge versions, sharing the data (for example stable and dev in order to test the next The Lounge PR)
 
 
 ## Setting up ZNC
@@ -50,20 +50,20 @@ After that, follow the steps outlined below:
 
 - [Load modules](https://wiki.ZNC.in/Modules) you'd like to use, for example [webadmin](https://wiki.znc.in/Webadmin) to make the configuration easier
 
-- In order for thelounge to properly integrate with thelounge (and other clients) you probably want either one of the following modules:
+- In order for The Lounge to properly integrate with The Lounge (and other clients) you probably want either one of the following modules:
 
      - [Clientbuffer](https://wiki.znc.in/Clientbuffer): The client buffer module maintains client specific buffers for identified clients. Works with any client even when they are not znc aware
 
-     - [Playback](https://wiki.znc.in/Playback): IRC clients may request the module to send a partial buffer playback starting from and ending to a certain point of time. Only works with clients that respect the znc specific capability. Thelounge supports this functionality out of the box
+     - [Playback](https://wiki.znc.in/Playback): IRC clients may request the module to send a partial buffer playback starting from and ending to a certain point of time. Only works with clients that respect the znc specific capability. The Lounge supports this functionality out of the box
 
 - Connect to irc networks like freenode and set options like playback buffer size etc.
 
-## Connect to multiple Networks from thelounge
-For each IRC server connected from ZNC, you will need a separate irc server connection from within thelounge.
+## Connect to multiple Networks from The Lounge
+For each IRC server connected from ZNC, you will need a separate irc server connection from within The Lounge.
 This is a limitation of the IRC protocol and can't be fixed by ZNC.
 
 In order to connect, you will need to specify the server you want to use in the username field
-In essence from within the thelounge server settings:
+In essence from within the The Lounge server settings:
  - Username: zncuser@clientid/network
  - Password: znc_password
 
