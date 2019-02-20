@@ -32,9 +32,9 @@ If you still like to have the additional benefits ZNC gives you, install ZNC acc
 
 In order for The Lounge to properly integrate with The Lounge (and other clients) you probably want either one of the following modules:
 
-     - [Clientbuffer](https://wiki.znc.in/Clientbuffer): The client buffer module maintains client specific buffers for identified clients. Works with any client even when they are not znc aware
+ - [Clientbuffer](https://wiki.znc.in/Clientbuffer): The client buffer module maintains client specific buffers for identified clients. Works with any client even when they are not znc aware
 
-     - [Playback](https://wiki.znc.in/Playback): IRC clients may request the module to send a partial buffer playback starting from and ending to a certain point of time. Only works with clients that respect the znc specific capability. The Lounge supports this functionality out of the box
+ - [Playback](https://wiki.znc.in/Playback): IRC clients may request the module to send a partial buffer playback starting from and ending to a certain point of time. Only works with clients that respect the znc specific capability. The Lounge supports this functionality out of the box
 
 ## Connect to multiple Networks from The Lounge
 For each IRC server connected from ZNC, you will need a separate irc server connection from within The Lounge.
