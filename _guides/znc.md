@@ -14,19 +14,6 @@ The Lounge already gives you most of the features you expect from a bouncer:
 
 - Push notifications are available on Android and on modern browsers
 
-## Benefits of using ZNC
-There are some benefits of using ZNC in addition to The Lounge.
-
-- Use a terminal based IRC client like weechat or irssi on the desktop, but The Lounge on mobile and still share the same nickname on both
-
-- Add push notifications if they aren't supported directly via The Lounge (for example on iOS via the ZNC-push module)
-
-- Have a centralized block list across different clients
-
-- Detach from channels and auto-attach on activity
-
-- Run multiple The Lounge versions, sharing the data (for example stable and dev in order to test the next The Lounge PR)
-
 ## Setting up ZNC
 If you still like to have the additional benefits ZNC gives you, install ZNC according to the [installation instructions](https://wiki.ZNC.in/Installation) for your system.
 
@@ -40,9 +27,12 @@ In order for The Lounge to properly integrate with The Lounge (and other clients
 For each IRC server connected from ZNC, you will need a separate irc server connection from within The Lounge.
 This is a limitation of the IRC protocol and can't be fixed by ZNC.
 
-In order to connect, you will need to specify the server you want to use in the username field
-In essence from within the The Lounge server settings:
- - Username: zncuser@clientid/network
- - Password: znc_password
+In order to connect, you will need to specify the server you want to use in the username field.
 
-The `@clientid` part is optional and only needed if the Clientbuffer module is loaded.
+In essence from within the The Lounge server settings:
+ - Username: zncUser/network
+ - Password: zncPassword
+
+Or if you are using the Clientbuffer module:
+ - Username: zncUser@clientid/network
+ - Password: zncPassword
