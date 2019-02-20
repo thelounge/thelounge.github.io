@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Set up ZNC with The Lounge
+description: How to configure ZNC for use with The Lounge
 ---
 
 ## Why you may not need znc
