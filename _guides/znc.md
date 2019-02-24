@@ -24,7 +24,7 @@ In order for ZNC to properly integrate with The Lounge (and other clients), you 
 
 ## Connect to multiple networks
 
-For each IRC server connected in ZNC, you will need a separate IRC server connection in The Lounge.
+For each IRC server connected through ZNC, you will need a separate IRC server connection in The Lounge.
 This is a limitation of the IRC protocol and cannot be solved by ZNC.
 
 In order to connect, you will need to specify the server you want to use in the username field.
