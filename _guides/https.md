@@ -27,4 +27,8 @@ Open your configuration file, located at `${THELOUNGE_HOME}/config.js` and look 
 - Set `key` to the private key path that was generated, `privkey.pem`
 - Set `certificate` to the certificate path, `fullchain.pem`
 
+For the key and certificate files:
+    - On *nix/*bsd - "/path/to/file.pem"
+    - On Windows - "driveletter:/path/to/file.pem"
+
 Let's Encrypt will create its `/etc/letsencrypt` folder as root user, so you might have to change the owner of these files to the user that runs The Lounge.
