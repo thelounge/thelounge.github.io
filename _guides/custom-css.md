@@ -275,4 +275,29 @@ This is useful to silence bots that automatically fetch URL previews, already be
 }
 ```
 
+
+### Make Highlight Badge flash between two colors
+```css
+#sidebar .badge.highlight{
+background:#ff6347;
+color:#fff;
+-webkit-animation: HLBADGEANI 1s infinite;  /* Safari 4+ */
+  -moz-animation: HLBADGEANI 1s infinite;  /* Fx 5+ */
+  -o-animation: HLBADGEANI 1s infinite;  /* Opera 12+ */
+  animation: HLBADGEANI 1s infinite;  /* IE 10+, Fx 29+ */
+}
+@-webkit-keyframes HLBADGEANI {
+  0%, 49% {
+    color:#fff;
+    background-color: #ff6347;
+  }
+  50%, 100% {
+    color:#ff6347;
+    background-color: #fff;
+  }
+}
+```
+
+
 {% include abbreviations.md %}
+
