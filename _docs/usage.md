@@ -41,8 +41,7 @@ thelounge version
 
 Note that all commands **must** be executed as the same user The Lounge will be run as.
 
-### Unix like systems:
-If you installed The Lounge via the package manager of your distro and plan to run it as a system service, the user is called "thelounge". So every command needs to be executed as `sudo -u thelounge thelounge <command>`, where `<command>` should be substituted with a subcommand like `start` or `add`
+If you installed The Lounge via the package manager on a unix like system and plan to run it as a system service, the user is called "thelounge". So every command needs to be executed as `sudo -u thelounge thelounge <command>`, where `<command>` should be substituted with a subcommand like `start` or `add`
 
 ## Starting the server
 
