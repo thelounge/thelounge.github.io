@@ -37,6 +37,13 @@ If you need to check which version of The Lounge is installed, use:
 thelounge version
 ```
 
+## Using the correct system user
+
+Note that all commands **must** be executed as the same user The Lounge will be run as.
+
+### Unix like systems:
+If you installed The Lounge via the package manager of your distro and plan to run it as a system service, the user is called "thelounge". So every command needs to be executed as `sudo -u thelounge thelounge <command>`, where `<command>` should be substituted with a subcommand like `start` or `add`
+
 ## Starting the server
 
 To start the server, run the following command:
