@@ -34,7 +34,7 @@ thelounge start --help
 If you need to check which version of The Lounge is installed, use:
 
 ```
-thelounge version
+thelounge --version
 ```
 
 ## Using the correct system user
