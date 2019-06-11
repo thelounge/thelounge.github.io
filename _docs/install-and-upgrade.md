@@ -29,8 +29,8 @@ control with `systemctl status|start|restart|stop|...`.
 
 The Lounge is now up and running **in private mode** at <http://localhost:9000>.
 
-Its configuration file is located at `/etc/thelounge/config.js`. To configure
-The Lounge, go to [the configuration section](/docs/configuration).
+Its configuration file is located at `/etc/thelounge/config.js`. 
+To learn how to configure The Lounge, go to [the configuration section](/docs/configuration). To learn how to add users, read [the users section](/docs/users). The `thelounge` command needs to be run as the `thelounge` user, e.g. `sudo -u thelounge thelounge --help`.
 
 To upgrade The Lounge, simply follow these steps again after downloading a new
 `thelounge.deb` file, and restart the service.
