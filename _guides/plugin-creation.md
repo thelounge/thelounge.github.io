@@ -64,7 +64,7 @@ Here follows a helpful list of things that might be of use to plugin developers:
 * You can send a message to a channel like this: 
   ```js
   chan.pushMessage(client.client, new Msg({
-          type: Msg.Type.ERROR, //TODO send "normal" message
+          type: Msg.Type.ERROR,
           text: "Hello World",
   }));
   ```
