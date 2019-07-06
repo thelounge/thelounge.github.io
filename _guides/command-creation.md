@@ -38,3 +38,9 @@ const testCommand = {
     allowDisconnected: true
 };
 ```
+
+You can make the client run commands or send messages via the `runAsUser` method like this:
+```js
+client.runAsUser("/whois MiniDigger", target.chan.id);
+client.runAsUser("Hello world!", target.chan.id);
+```
