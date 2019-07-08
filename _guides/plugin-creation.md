@@ -5,7 +5,7 @@ description: Customize The Lounge using built-in plugin support, and share plugi
 ---
 
 Plugins for The Lounge are npm packages hosted on [the npm registry](https://www.npmjs.com).
-The work similarly to themes. A theme is a plugin but not every plugin is a theme.
+This works similarly to themes. A theme is a plugin but not every plugin is a theme.
 
 In a directory named after your new plugin (for example, `thelounge-plugin-foo`), start by creating a new package with the following command:
 
