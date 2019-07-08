@@ -74,7 +74,7 @@ Here follows a helpful list of things that might be of use to plugin developers:
 
 The Lounge currently doesn't allow you to install a plugin from source, thats why we have to do it manually.
 
-For that we have to add our plugin as a new package in the THELOUNGE_HOME/packages dir.
+For that we have to add our plugin as a new package in the `THELOUNGE_HOME/packages` dir.
 For that you need to have a package.json in that packages dir that looks kinda like this:
 ```json
 {
