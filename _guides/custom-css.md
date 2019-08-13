@@ -275,4 +275,14 @@ This is useful to silence bots that automatically fetch URL previews, already be
 }
 ```
 
+### Hide message input bar per channel
+
+Useful for channels that always disable sending messages (news feed channels, for example).
+
+```css
+#chat-container[data-current-channel="#thelounge"] #form {
+    display: none;
+}
+```
+
 {% include abbreviations.md %}
