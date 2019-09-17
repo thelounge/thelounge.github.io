@@ -134,7 +134,7 @@ Before | After
 The <kbd>&times;</kbd> buttons that appear in the channel list on the currently active channel can sometimes be clicked by accident. This snippet removes it, so that the only way to leave a channel is by clicking "Leave" in the context menu.
 
 ```css
-#sidebar button.close {
+#sidebar .chan.active .close {
 	display: none;
 }
 ```
