@@ -127,6 +127,8 @@ The following [page rules](https://support.cloudflare.com/hc/en-us/articles/2184
 - `Rocket Loader` set to `Off`
 - `Disable Apps`
 
+Whenever you update The Lounge, you will have to [purge cache in your Cloudflare dashboard](https://support.cloudflare.com/hc/en-us/articles/200169246-Purging-cached-resources-from-Cloudflare) for your browser to correctly receive updated files.
+
 ## [Redbird](https://www.npmjs.com/package/redbird) with [Let's Encrypt](https://letsencrypt.org/)
 
 First, install Redbird:
