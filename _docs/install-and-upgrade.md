@@ -9,7 +9,7 @@ order: 2
 
 ## Debian and Ubuntu based distributions
 
-First, make sure [Node.js](https://nodejs.org/) v8.10.0 or more recent is installed
+First, make sure latest [Node.js](https://nodejs.org/) <abbr title="Long Term Support">LTS</abbr> version or latest current release is installed
 with `node --version`. If not, follow the instructions given on the
 [official documentation](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions).
 
@@ -84,7 +84,7 @@ Installing the [npm package](https://www.npmjs.com/package/thelounge) directly
 allows you to use stable releases on systems where we do not provide native
 packages.
 
-First, make sure [Node.js](https://nodejs.org/) v8.10.0 (or more recent) and [Yarn](https://yarnpkg.com/) are installed on your system. See [official instructions for Node.js](https://nodejs.org/en/download/package-manager/) and [official instructions for Yarn](https://yarnpkg.com/docs/install).
+First, make sure latest [Node.js](https://nodejs.org/) LTS version (or latest current release) and [Yarn](https://yarnpkg.com/) are installed on your system. See [official instructions for Node.js](https://nodejs.org/en/download/package-manager/) and [official instructions for Yarn](https://yarnpkg.com/docs/install).
 
 Then install The Lounge using:
 
@@ -156,7 +156,7 @@ may be unstable or insecure. This is not production-ready, so use at your own
 risk!<br>
 It is also not recommended to run this as a `root` user.
 
-First, make sure [Node.js](https://nodejs.org/) v8.10.0 (or more recent) and [Yarn](https://yarnpkg.com/) are installed on your system. See [official instructions for Node.js](https://nodejs.org/en/download/package-manager/) and [official instructions for Yarn](https://yarnpkg.com/docs/install).
+First, make sure latest [Node.js](https://nodejs.org/) LTS version (or latest current release) and [Yarn](https://yarnpkg.com/) are installed on your system. See [official instructions for Node.js](https://nodejs.org/en/download/package-manager/) and [official instructions for Yarn](https://yarnpkg.com/docs/install).
 
 The following commands install the development version of The Lounge:
 
