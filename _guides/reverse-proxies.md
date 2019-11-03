@@ -69,6 +69,16 @@ location /folder/ {
 }
 ```
 
+Or if you use caddy, add the corresponding proxy to the example.com server block
+```caddy
+example.com {
+	proxy /folder/ http://127.0.0.1:9000/uploads {
+		without /folder
+		transparent
+	}
+}
+```
+
 ## [Apache](https://httpd.apache.org/)
 
 Enable the necessary modules `a2enmod rewrite`, `a2enmod proxy`, `a2enmod proxy_http`, and `a2enmod proxy_wstunnel`.
