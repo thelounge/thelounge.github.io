@@ -58,6 +58,17 @@ gzip_types application/javascript image/svg+xml text/css text/plain;
 
 If you have [file uploads](/docs/configuration#fileupload) enabled in The Lounge, you may hit an issue when going over nginx's default upload limit, which will result in a 413 (Request Entity Too Large) error. To prevent this from happening, disable or increase [client_max_body_size](https://nginx.org/en/docs/http/ngx_http_core_module.html#client_max_body_size) variable.
 
+If you have set [`baseUrl`](/docs/configuration#fileupload) option, then you will need to add extra configuration to proxy the upload urls.
+
+If you set the `baseURL` to `https://example.com/folder/` then you need to add `location /folder/` to your nginx configuration:
+
+```nginx
+location /folder/ {
+	proxy_pass http://127.0.0.1:9000/uploads/;
+	proxy_set_header X-Forwarded-For $remote_addr;
+}
+```
+
 ## [Apache](https://httpd.apache.org/)
 
 Enable the necessary modules `a2enmod rewrite`, `a2enmod proxy`, `a2enmod proxy_http`, and `a2enmod proxy_wstunnel`.
@@ -103,6 +114,17 @@ ProxyTimeout 86400 # 1 day
 proxy / http://127.0.0.1:9000 {
 	transparent
 	websocket
+}
+```
+
+### File uploads
+
+If you have set [`baseUrl`](/docs/configuration#fileupload) option, then you will need to add extra configuration to proxy the upload urls.
+
+```
+proxy /folder/ http://127.0.0.1:9000/uploads {
+	without /folder
+	transparent
 }
 ```
 
