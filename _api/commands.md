@@ -7,6 +7,36 @@ type: server
 
 The Command API lets you add new commands.
 
+## Methods
+
+### `#add(command: Object)`
+
+Adds a new command.
+
+Attributes of command:
+
+**`input: Function`**
+: The implementation of the command, see the arguments below:
+
+**`allowDisconnected: Boolean`**
+: If `true` this command can be execute when the client isn't connected.
+
+## Arguments of a command:
+
+**`client: PublicClient`**
+: The client API
+
+**`target: Object`**
+: `target.network` is the network this command was run in, `target.chan` the corresponding channel.
+
+**`command: String`**
+: The command name (lowercase).
+
+**`args: Array of String`**
+: The arguments the command was executed with.
+
+## Example
+
 ```js
 const helloWorldCommand = {
     input: function (client, target, command, args) {
@@ -24,17 +54,3 @@ module.exports = {
     },
 };
 ```
-
-Arguments:
-
-**`client: PublicClient`**
-: The client API
-
-**`target: Object`**
-: `target.network` is the network this command was run in, `target.chan` the corresponding channel.
-
-**`command: String`**
-: The command name (lowercase).
-
-**`args: Array of String`**
-: The arguments the command was executed with.
