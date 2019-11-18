@@ -41,19 +41,6 @@ location / {
 
 If you want to access The Lounge in a sub folder, change the first line to `location ^~ /irc/ {`
 
-### Compression
-
-If you do not have GZIP compression already configured in Nginx, you may add this configuration to compress proxied files:
-
-```nginx
-gzip on;
-gzip_vary on;
-gzip_proxied any;
-gzip_comp_level 5;
-gzip_min_length 1000;
-gzip_types application/javascript image/svg+xml text/css text/plain;
-```
-
 ### File uploads
 
 If you have [file uploads](/docs/configuration#fileupload) enabled in The Lounge, you may hit an issue when going over nginx's default upload limit, which will result in a 413 (Request Entity Too Large) error. To prevent this from happening, disable or increase [client_max_body_size](https://nginx.org/en/docs/http/ngx_http_core_module.html#client_max_body_size) variable.
@@ -68,6 +55,10 @@ location /folder/ {
 	proxy_set_header X-Forwarded-For $remote_addr;
 }
 ```
+
+### Compression
+
+If you do not have GZIP compression already configured in Nginx, [we suggest adding this basic configuration](https://github.com/h5bp/server-configs-nginx/blob/master/h5bp/web_performance/compression.conf).
 
 ## [Apache](https://httpd.apache.org/)
 
