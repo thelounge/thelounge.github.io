@@ -104,6 +104,9 @@ img {
 #nav {
 	background: #415364;
 	color: #b7c5d1;
+	position: sticky;
+	top: 0;
+	z-index: 1337;
 }
 #nav ul.nav-links {
 	float: right;
