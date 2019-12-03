@@ -98,6 +98,18 @@ img {
 	max-width: 100%; /* Make sure images never go outside of their container */
 }
 
+:target::before {
+	content: "";
+	display: block;
+	height: 60px;
+	margin-top: -60px;
+	visibility: hidden;
+}
+
+:target {
+	text-decoration: underline;
+}
+
 .container {
 	max-width: 750px;
 }
