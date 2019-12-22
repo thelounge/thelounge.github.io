@@ -84,7 +84,7 @@ This makes the sidebar compact to display more networks/channels on the screen.
 	margin-bottom: 10px;
 }
 
-#sidebar .chan {
+.channel-list-item {
 	padding: 5px 15px;
 }
 ```
@@ -104,9 +104,6 @@ Before | After
 #chat .messages {
 	display: block;
 }
-#chat .msg:last-child {
-	height: auto;
-}
 #chat .time {
 	display: inline;
 }
@@ -116,16 +113,12 @@ Before | After
 	border: 0;
 	display: inline;
 }
-#chat .from::after{
-	display: none;
-}
 #chat .from {
 	width: auto;
 	padding-left: 5px;
 	padding-right: 5px;
-}
-#chat .wrap {
-	display: inline;
+	-webkit-mask-image: none;
+	mask-image: none;
 }
 ```
 
@@ -134,7 +127,7 @@ Before | After
 The <kbd>&times;</kbd> buttons that appear in the channel list on the currently active channel can sometimes be clicked by accident. This snippet removes it, so that the only way to leave a channel is by clicking "Leave" in the context menu.
 
 ```css
-#sidebar .chan.active .close {
+.channel-list-item.active .close-tooltip {
 	display: none;
 }
 ```
@@ -160,7 +153,7 @@ The <kbd>&times;</kbd> buttons that appear in the channel list on the currently 
 This removes all colors, boldness, italics, underline, strikethrough, and monospace font styles that can be embedded in the messages themselves.
 
 ```css
-#chat .text span[class*="irc-"] {
+#chat .content span[class*="irc-"] {
 	color: inherit;
 	background-color: inherit;
 	font-weight: inherit;
@@ -170,18 +163,10 @@ This removes all colors, boldness, italics, underline, strikethrough, and monosp
 }
 ```
 
-### Hide nick in message input
-
-```css
-#nick {
-	display: none;
-}
-```
-
 ### Change self-message color
 
 ```css
-#chat .self .text {
+#chat .self .content {
 	color: rebeccapurple;
 }
 ```
@@ -191,9 +176,9 @@ This removes all colors, boldness, italics, underline, strikethrough, and monosp
 Assuming we want to hide some status messages in the `#thelounge` channel:
 
 ```css
-#chat .chan[data-title="#thelounge"] .msg.quit,
-#chat .chan[data-title="#thelounge"] .msg.part,
-#chat .chan[data-title="#thelounge"] .msg.join {
+#chat-container[data-current-channel="#thelounge"] .msg[data-type="quit"],
+#chat-container[data-current-channel="#thelounge"] .msg[data-type="part"],
+#chat-container[data-current-channel="#thelounge"] .msg[data-type="join"] {
 	display: none;
 }
 ```
@@ -215,7 +200,8 @@ lower values will increase the density, higher values will improve readability.
 ### Hide link previews in a specific channel
 
 ```css
-div .chan[data-title="#thelounge"] div.preview {
+#chat-container[data-current-channel="#thelounge"] .preview,
+#chat-container[data-current-channel="#thelounge"] .toggle-preview,
 	display: none;
 }
 ```
@@ -225,39 +211,9 @@ div .chan[data-title="#thelounge"] div.preview {
 This is useful to silence bots that automatically fetch URL previews, already being fetched by The Lounge's built-in preview mechanism.
 
 ```css
-#chat .msg[data-from="MyBot"] div.preview  {
+#chat .msg[data-from="MyBot"] .preview,
+#chat .msg[data-from="MyBot"] .toggle-preview {
 	display: none;
-}
-```
-
-### Hide link previews for specific URLs
-
-```css
-div.preview[data-url*="github.com"] {
-	display: none;
-}
-```
-
-### Hide link previews by default for a specific user
-
-This does not fully disable previews but hides them by default (even when link/media auto-expand is enabled) while still allowing to show it manually.
-This is useful to silence bots that automatically fetch URL previews, already being fetched by The Lounge's built-in preview mechanism.
-
-```css
-#chat .msg[data-from="Wendy"] .toggle-button {
-	transform: rotate(90deg);
-}
-
-#chat .msg[data-from="Wendy"] .toggle-button.opened {
-	transform: rotate(0deg);
-}
-
-#chat .msg[data-from="Wendy"] .toggle-content {
-	display: inline-flex !important;
-}
-
-#chat .msg[data-from="Wendy"] .toggle-content.show {
-	display: none !important;
 }
 ```
 
