@@ -10,7 +10,7 @@ order: 2
 ## Debian and Ubuntu based distributions
 
 First, make sure latest [Node.js](https://nodejs.org/) <abbr title="Long Term Support">LTS</abbr> version or latest current release is installed
-with `node --version`. If not, follow the instructions given on the
+with `dpkg -s nodejs | grep '^Version'` and `node --version`. If not, follow the instructions given on the
 [official documentation](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions).
 
 Then download `thelounge.deb` located at the bottom of [the latest release](https://github.com/thelounge/thelounge/releases/latest).
