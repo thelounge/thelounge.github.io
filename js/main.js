@@ -160,6 +160,10 @@ window.search_data_loaded = function (search_data) {
 		return;
 	}
 
+	if (location.hostname !== "thelounge.chat") {
+		return;
+	}
+	
 	function generateId() {
 		const ts = Math.round(Date.now() / 1000.0);
 		let rand;
