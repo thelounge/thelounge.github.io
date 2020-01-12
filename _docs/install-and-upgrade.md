@@ -39,7 +39,7 @@ You might want to serve The Lounge behind a reverse proxy such as Nginx. To know
 more about the benefits and steps, follow
 [the guide on reverse proxies](/docs/guides/reverse-proxies).
 
-Automatics install/update and can be manage by apt itself for both stable and beta release, they also install the systemd service on their own.
+Automatic install and update can be manage by apt itself for both stable and beta release, they also install the systemd service on their own.
 For now, there are only unofficial repositories for thelounge :
 - https://packages.azlux.fr
 
