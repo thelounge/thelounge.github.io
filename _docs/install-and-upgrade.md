@@ -41,7 +41,7 @@ more about the benefits and steps, follow
 
 Automatic install and update can be manage by apt itself for both stable and beta release, they also install the systemd service on their own.
 For now, there are only unofficial repositories for thelounge :
-- https://packages.azlux.fr
+- [Azlux's repository](https://packages.azlux.fr)
 
 
 ## Arch Linux
