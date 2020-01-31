@@ -84,7 +84,7 @@ Installing the [npm package](https://www.npmjs.com/package/thelounge) directly
 allows you to use stable releases on systems where we do not provide native
 packages.
 
-First, make sure latest [Node.js](https://nodejs.org/) LTS version (or latest current release) and [Yarn](https://yarnpkg.com/) are installed on your system. See [official instructions for Node.js](https://nodejs.org/en/download/package-manager/) and [official instructions for Yarn](https://yarnpkg.com/docs/install).
+First, make sure latest [Node.js](https://nodejs.org/) LTS version (or latest current release) and [Yarn](https://legacy.yarnpkg.com/) are installed on your system. See [official instructions for Node.js](https://nodejs.org/en/download/package-manager/) and [official instructions for Yarn](https://legacy.yarnpkg.com/docs/install).
 
 Then install The Lounge using:
 
