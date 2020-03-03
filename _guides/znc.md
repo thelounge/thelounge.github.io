@@ -17,10 +17,7 @@ The Lounge already gives you most of the features you expect from a bouncer:
 
 If you still like to have the additional benefits ZNC gives you, install ZNC according to the [installation instructions](https://wiki.ZNC.in/Installation) for your system.
 
-In order for ZNC to properly integrate with The Lounge (and other clients), you may want to use either one of the following modules:
-
- - [Clientbuffer](https://wiki.znc.in/Clientbuffer): The client buffer module maintains client specific buffers for identified clients. This works with any client even when they are not ZNC aware.
- - [Playback](https://wiki.znc.in/Playback): IRC clients may request the module to send a partial buffer playback starting from and ending to a certain point of time. Only works with clients that respect the ZNC specific capability. The Lounge supports this functionality out of the box.
+In order for ZNC to properly integrate with The Lounge (and other clients), you may want to use the [clientbuffer module](https://wiki.znc.in/Clientbuffer). The client buffer module maintains client specific buffers for identified clients. This works with any client even when they are not ZNC aware.
 
 ## Connect to multiple networks
 
