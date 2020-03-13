@@ -11,6 +11,9 @@ An ident server can read the ident file and send this ident back to the IRC serv
 
 On most IRC networks, when the server fails to get an ident response, it falls back to the username given by client, but marks it as "not verified", usually by prefixing with a tilde; e.g. `~josh`.
 
+{: .alert.alert-warning role="alert"}
+If you use a firewall, port 113 using TCP must be open to the public to allow IRC servers to connect to it.
+
 ## Built-in identd server
 
 The identd option is a lightweight server implemented in The Lounge itself.
