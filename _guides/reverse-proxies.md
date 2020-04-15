@@ -75,6 +75,7 @@ RewriteCond %{REQUEST_URI}  ^/socket.io            [NC]
 RewriteCond %{QUERY_STRING} transport=websocket    [NC]
 RewriteRule /(.*)           ws://127.0.0.1:9000/$1 [P,L]
 
+RequestHeader set "X-Forwarded-Proto" expr=%{REQUEST_SCHEME}
 ProxyVia On
 ProxyRequests Off
 ProxyAddHeaders On
@@ -94,6 +95,7 @@ RewriteCond %{REQUEST_URI}  ^/irc/socket.io        [NC]
 RewriteCond %{QUERY_STRING} transport=websocket    [NC]
 RewriteRule /irc/(.*)       ws://127.0.0.1:9000/$1 [P,L]
 
+RequestHeader set "X-Forwarded-Proto" expr=%{REQUEST_SCHEME}
 ProxyVia On
 ProxyRequests Off
 ProxyAddHeaders On
