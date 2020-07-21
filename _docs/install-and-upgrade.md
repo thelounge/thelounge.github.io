@@ -202,6 +202,7 @@ supported (even when hosted on this website), so use them at your own risk:
 - [Ansible role using Supervisor](https://github.com/astorije/ansible-thelounge)
 - [ARMHF Docker images](https://hub.docker.com/r/lsioarmhf/thelounge/)
 - [YunoHost app](https://github.com/YunoHost-Apps/thelounge_ynh)
+- [Cloudron app](https://cloudron.io/store/io.github.thelounge.html)
 
 ## Services packaging The Lounge
 
@@ -211,7 +212,6 @@ configuration to get up and running:
 
 {:.app-stores}
 [![Bytesized Hosting logo](/img/logos/bytesized-hosting.svg)](https://bytesized-hosting.com/ "Bytesized Hosting")
-[![Cloudron logo](/img/logos/cloudron.svg)](https://cloudron.io/button/io.github.thelounge.html "Cloudron")
 [![Franz logo](/img/logos/franz.svg)](https://meetfranz.com/ "Franz")
 [![Rambox logo](/img/logos/rambox.svg)](https://rambox.pro/ "Rambox")
 
