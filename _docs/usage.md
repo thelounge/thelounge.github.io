@@ -19,9 +19,9 @@ This page also checks for The Lounge and package updates, and allows you to read
 
 The Lounge is a progressive web app (PWA), and can be installed from any modern browser for a native-like experience without having a dedicated app.
 
-A "Add The Lounge to home screen" button should show up in settings when you are running The Lounge in private mode.
+An "Add The Lounge to home screen" button should show up in settings when The Lounge is running in [private mode](/docs/configuration#public).
 
-Push notifications are supported on all platforms except for iOS, due to Apple not supporting web push specification and all browsers being reskins of Safari.
+Push notifications are supported on all platforms except for iOS, due to Apple [not supporting web push specification](https://bugs.webkit.org/show_bug.cgi?id=182566) and all browsers being reskins of Safari.
 
 ## Command line help
 
