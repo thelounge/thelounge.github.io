@@ -15,6 +15,14 @@ To view available keybinds, autocompletion options, and commands, press the <svg
 
 This page also checks for The Lounge and package updates, and allows you to read the changelog for the currently installed version.
 
+## Native app
+
+The Lounge is a progressive web app (PWA), and can be installed from any modern browser for a native-like experience without having a dedicated app.
+
+A "Add The Lounge to home screen" button should show up in settings when you are running The Lounge in private mode.
+
+Push notifications are supported on all platforms except for iOS, due to Apple not supporting web push specification and all browsers being reskins of Safari.
+
 ## Command line help
 
 To get general information about the program and an overview of the available
