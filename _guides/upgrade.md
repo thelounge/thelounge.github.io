@@ -4,6 +4,13 @@ title: Upgrade The Lounge
 description: List of all potential breaking changes when upgrading The Lounge from an older version
 ---
 
+{% include toc.md %}
+
+## Upgrading to The Lounge v4.2.0
+
+- `displayNetwork` option was removed. `lockNetwork` now hides the network options.
+- CSS selector `.msg[data-type="motd"]` was changed to `.msg[data-type="monospace_block"]` to apply monospace styling to `HELP` and `INFO` blocks.
+
 ## Upgrading to The Lounge v4
 
 We are marking this release as a major update due to the sheer amount of internal code changes, and it is impossible to predict what could have been broken as a result.
@@ -33,8 +40,6 @@ For a more detailed list of all changes and additions, refer to the [release not
 This guide lists all breaking changes made between the releases of v2.7.1 and v3.0.0 that may require you taking actions before upgrading and running The Lounge.
 
 In addition to the items listed in this guide, you may want to enable or configure new features of The Lounge v3 manually. For a more detailed list of all changes and additions, refer to the [release notes](https://github.com/thelounge/thelounge/releases/tag/v3.0.0) and [all merged pull requests](https://github.com/thelounge/thelounge/pulls?q=milestone%3A3.0.0+is%3Amerged+-label%3A%22Type%3A+Dependencies%22+-label%3A%22Meta%3A+Internal%22) for this release.
-
-{% include toc.md %}
 
 ### TL;DR
 
