@@ -9,9 +9,11 @@ The Command API lets you add new commands.
 
 ## Methods
 
-### `#add(command: Object)`
+### `#add(commandText: string, command: Object)`
 
-Adds a new command.
+Registers a new command for users on the lounge.
+
+`commandText` is what the users will type after `/`, and command is the command object.
 
 Attributes of command:
 
