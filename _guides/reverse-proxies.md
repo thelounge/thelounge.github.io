@@ -108,6 +108,7 @@ ProxyTimeout 86400 # 1 day
 
 ## [Caddy](https://caddyserver.com/)
 
+### Caddy v1
 ```
 proxy / http://127.0.0.1:9000 {
 	transparent
@@ -115,7 +116,7 @@ proxy / http://127.0.0.1:9000 {
 }
 ```
 
-### File uploads
+#### File uploads
 
 If you have set [`baseUrl`](/docs/configuration#fileupload) option, then you will need to add extra configuration to proxy the upload urls.
 
@@ -123,6 +124,19 @@ If you have set [`baseUrl`](/docs/configuration#fileupload) option, then you wil
 proxy /folder/ http://127.0.0.1:9000/uploads {
 	without /folder
 	transparent
+}
+```
+
+### Caddy v2
+```
+reverse_proxy http://127.0.0.1:9000
+```
+
+If you want to access The Lounge in a sub folder, use the following configuration:
+```
+route /irc/* {
+	uri strip_prefix /irc
+	reverse_proxy http://127.0.0.1:9000
 }
 ```
 
