@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Guides
+description: Helpful guides to improve your experience of The Lounge
 order: 6
 ---
 

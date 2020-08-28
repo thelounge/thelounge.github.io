@@ -1,12 +1,27 @@
 ---
 layout: documentation
 title: Usage
+description: Available commands and options of thelounge, the CLI of The Lounge
 order: 3
 ---
 
 Once The Lounge is installed, a program called `thelounge` is now available.
 
 {% include toc.md %}
+
+## Client help
+
+To view available keybinds, autocompletion options, and commands, press the <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16"><path fill="currentColor" d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"></path></svg> help button in the sidebar next to the settings cog.
+
+This page also checks for The Lounge and package updates, and allows you to read the changelog for the currently installed version.
+
+## Native app
+
+The Lounge is a progressive web app (PWA), and can be installed from any modern browser for a native-like experience without having a dedicated app.
+
+An "Add The Lounge to home screen" button should show up in settings when The Lounge is running in [private mode](/docs/configuration#public).
+
+Push notifications are supported on all platforms except for iOS, due to Apple [not supporting web push specification](https://bugs.webkit.org/show_bug.cgi?id=182566) and all browsers being reskins of Safari.
 
 ## Command line help
 
@@ -33,8 +48,14 @@ thelounge start --help
 If you need to check which version of The Lounge is installed, use:
 
 ```
-thelounge version
+thelounge --version
 ```
+
+## Using the correct system user
+
+Note that all commands **must** be executed as the same user The Lounge will be run as.
+
+If you installed The Lounge via the package manager on a unix like system and plan to run it as a system service, the user is called "thelounge". So every command needs to be executed as `sudo -u thelounge thelounge <command>`, where `<command>` should be substituted with a subcommand like `start` or `add`
 
 ## Starting the server
 
@@ -141,13 +162,13 @@ A few rules apply to the `--config` option:
 
 - Nested objects require using a dot-notation. For example:
   ```
-  thelounge -c debug.raw=true
+  thelounge start -c debug.raw=true
   ```
 - Lists of values must be wrapped with `[]`. For example:
   ```
-  thelounge -c transports=[websocket,polling]
+  thelounge start -c transports=[websocket,polling]
   ```
 - If a value has a whitespace, it must be wrapped in quotes. For example:
   ```
-  thelounge -c logs.format="DD MMMM YYYY HH:mm:ss"
+  thelounge start -c defaults.name="Cool Network"
   ```

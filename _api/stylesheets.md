@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Stylesheets
-description: Register CSS files to all clients
+description: The Stylesheets API lets you feed custom CSS files to all clients of an instance of The Lounge.
 type: server
 ---
 

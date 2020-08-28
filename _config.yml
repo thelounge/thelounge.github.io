@@ -1,13 +1,11 @@
-title: The Lounge &mdash; Self-hosted web IRC client
-description: "The official website for The Lounge, the self-hosted web IRC client."
+title: The Lounge
+description: The Lounge is a self-hosted web IRC client for the modern world.
 include:
   - _headers
   - _redirects
 kramdown:
   toc_levels: "2"
 url: https://thelounge.chat # Domain used by jekyll-sitemap in sitemap.xml
-plugins:
-  - jekyll-sitemap
 permalink: /:path
 collections:
   docs:

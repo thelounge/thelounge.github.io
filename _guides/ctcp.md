@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Send CTCP commands with The Lounge
+description: How to use CTCP with The Lounge, and description of CTCP commands
 ---
 
 [CTCP](https://en.wikipedia.org/wiki/Client-to-client_protocol) commands are special messages that can be sent to a channel or other clients. Servers do not interpret their content, as it is the role of the receiving client to do so.
@@ -20,6 +21,6 @@ The Lounge does not support all CTCP commands, such as [DCC](https://en.wikipedi
 {: .alert.alert-info role="alert"}
 When querying other users, know that their clients might inform them that you are requesting information about them, in the form of a notification or sound.
 
-To learn more about CTCP, [this document](https://tools.ietf.org/id/draft-oakley-irc-ctcp-02.html) is a great reference, more technical and in-depth that this high-level guide.
+To learn more about CTCP, [this document](https://tools.ietf.org/id/draft-oakley-irc-ctcp-02.html) is a great reference, more technical and in-depth than this high-level guide.
 
 {% include abbreviations.md %}

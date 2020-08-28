@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Configure a reverse proxy for The Lounge
+description: Serve The Lounge through a reverse proxy such as Nginx, Apache, Caddy, HAProxy, Cloudflare, or Redbird
 ---
 
 {% include toc.md %}
@@ -17,43 +18,75 @@ Serving The Lounge through a reverse proxy instead of the built-in HTTP server c
 
 It however requires more configuration than just relying on the built-in server, so this guide helps going through the extra complexity.
 
+{: .alert.alert-warning role="alert"}
 When using The Lounge behind a reverse proxy, set the `reverseProxy` option to `true` in your configuration file. This will instruct The Lounge to use the `X-Forwarded-For` header passed by your reverse proxy.
 
-This document assumes that your configuration of The Lounge binds to host `127.0.0.1` and port `9000`.
+{: .alert.alert-danger role="alert"}
+We recommend changing `host` to `"127.0.0.1"` in the configuration to disallow direct access to The Lounge without going through the reverse proxy.
+
+This document assumes that your The Lounge is available on host `127.0.0.1` and port `9000`.
 
 ## [Nginx](https://nginx.org/en/)
 
-This makes The Lounge available at `http://example.com/irc/`:
-
 ```nginx
-location ^~ /irc/ {
+location / {
 	proxy_pass http://127.0.0.1:9000/;
 	proxy_http_version 1.1;
 	proxy_set_header Connection "upgrade";
 	proxy_set_header Upgrade $http_upgrade;
 	proxy_set_header X-Forwarded-For $remote_addr;
+	proxy_set_header X-Forwarded-Proto $scheme;
 
 	# by default nginx times out connections in one minute
 	proxy_read_timeout 1d;
 }
 ```
 
-If you do not have GZIP compression already configured in Nginx, you may add this configuration to compress proxied files:
+If you want to access The Lounge in a sub folder, change the first line to `location ^~ /irc/ {`
+
+### File uploads
+
+If you have [file uploads](/docs/configuration#fileupload) enabled in The Lounge, you may hit an issue when going over nginx's default upload limit, which will result in a 413 (Request Entity Too Large) error. To prevent this from happening, disable or increase [client_max_body_size](https://nginx.org/en/docs/http/ngx_http_core_module.html#client_max_body_size) variable.
+
+If you have set [`baseUrl`](/docs/configuration#fileupload) option, then you will need to add extra configuration to proxy the upload urls. For example, if you set `baseURL` to `https://example.com/folder/` then you need to add `location /folder/` to your nginx configuration:
 
 ```nginx
-gzip on;
-gzip_vary on;
-gzip_proxied any;
-gzip_comp_level 5;
-gzip_min_length 1000;
-gzip_types application/javascript image/svg+xml text/css text/plain;
+location /folder/ {
+	proxy_pass http://127.0.0.1:9000/uploads/;
+	proxy_set_header X-Forwarded-For $remote_addr;
+}
 ```
+
+### PageSpeed
+
+If you use the [PageSpeed module](https://www.modpagespeed.com/), then it may break The Lounge, and you should turn it off by adding `pagespeed off;` to your configuration. The Lounge is already optimized, and pagespeed will have no effect on it.
+
+### Compression
+
+If you do not have GZIP compression already configured in Nginx, [we suggest adding this basic configuration](https://github.com/h5bp/server-configs-nginx/blob/master/h5bp/web_performance/compression.conf).
 
 ## [Apache](https://httpd.apache.org/)
 
 Enable the necessary modules `a2enmod rewrite`, `a2enmod proxy`, `a2enmod proxy_http`, and `a2enmod proxy_wstunnel`.
 
-This makes The Lounge available at `https://example.com/irc/`:
+```apache
+RewriteEngine On
+RewriteCond %{REQUEST_URI}  ^/socket.io            [NC]
+RewriteCond %{QUERY_STRING} transport=websocket    [NC]
+RewriteRule /(.*)           ws://127.0.0.1:9000/$1 [P,L]
+
+RequestHeader set "X-Forwarded-Proto" expr=%{REQUEST_SCHEME}
+ProxyVia On
+ProxyRequests Off
+ProxyAddHeaders On
+ProxyPass / http://127.0.0.1:9000/
+ProxyPassReverse / http://127.0.0.1:9000/
+
+# By default Apache times out connections after one minute
+ProxyTimeout 86400 # 1 day
+```
+
+If you want to access The Lounge in a sub folder, use the following configuration:
 
 ```apache
 RewriteEngine On
@@ -62,8 +95,10 @@ RewriteCond %{REQUEST_URI}  ^/irc/socket.io        [NC]
 RewriteCond %{QUERY_STRING} transport=websocket    [NC]
 RewriteRule /irc/(.*)       ws://127.0.0.1:9000/$1 [P,L]
 
+RequestHeader set "X-Forwarded-Proto" expr=%{REQUEST_SCHEME}
 ProxyVia On
 ProxyRequests Off
+ProxyAddHeaders On
 ProxyPass /irc/ http://127.0.0.1:9000/
 ProxyPassReverse /irc/ http://127.0.0.1:9000/
 
@@ -73,23 +108,45 @@ ProxyTimeout 86400 # 1 day
 
 ## [Caddy](https://caddyserver.com/)
 
-This makes The Lounge available at `https://example.com/irc/`:
-
+### Caddy v1
 ```
-proxy /irc/ http://127.0.0.1:9000 {
-	header_upstream X-Forwarded-For {remote}
-	without /irc/
+proxy / http://127.0.0.1:9000 {
+	transparent
 	websocket
 }
 ```
 
-## [HAProxy](http://www.haproxy.org/)
+#### File uploads
 
-This makes The Lounge available at https://thelounge.example.com:
+If you have set [`baseUrl`](/docs/configuration#fileupload) option, then you will need to add extra configuration to proxy the upload urls.
+
+```
+proxy /folder/ http://127.0.0.1:9000/uploads {
+	without /folder
+	transparent
+}
+```
+
+### Caddy v2
+```
+reverse_proxy http://127.0.0.1:9000
+```
+
+If you want to access The Lounge in a sub folder, use the following configuration:
+```
+route /irc/* {
+	uri strip_prefix /irc
+	reverse_proxy http://127.0.0.1:9000
+}
+```
+
+## [HAProxy](https://www.haproxy.org/)
 
 ```
 frontend  main
 	bind *:1000
+	option forwardfor
+	http-request set-header X-Forwarded-Proto https if { ssl_fc }
 	acl thelounge_site   hdr(host)  thelounge.example.com
 	use_backend thelounge       if thelounge_site
 
@@ -104,7 +161,9 @@ The following [page rules](https://support.cloudflare.com/hc/en-us/articles/2184
 - `Rocket Loader` set to `Off`
 - `Disable Apps`
 
-## HTTPS with [Redbird](https://www.npmjs.com/package/redbird) and [Let's Encrypt](https://letsencrypt.org/)
+Whenever you update The Lounge, you will have to [purge cache in your Cloudflare dashboard](https://support.cloudflare.com/hc/en-us/articles/200169246-Purging-cached-resources-from-Cloudflare) for your browser to correctly receive updated files.
+
+## [Redbird](https://www.npmjs.com/package/redbird) with [Let's Encrypt](https://letsencrypt.org/)
 
 First, install Redbird:
 
@@ -135,4 +194,4 @@ redbird.register("example.com", "http://127.0.0.1:9000", {
 });
 ```
 
-You can then run it with `node proxy.js`. The Lounge should then be available at `https://example.com/`.
+You can then run it with `node proxy.js`.

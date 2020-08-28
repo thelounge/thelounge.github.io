@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Override network defaults in the URL
+description: Pre-load the form to connect to a server with custom values based on the URL in public mode
 ---
 
 In **public mode only**, it is possible to pre-load the form to connect to a server with custom values based on the URL.

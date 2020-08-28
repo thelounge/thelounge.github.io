@@ -1,4 +1,7 @@
+---
+---
+
 User-Agent: *
-Allow: /
-Sitemap: https://thelounge.chat/sitemap.xml
+{% if site.netlify.context == "production" %}Allow: /{% else %}Disallow: /{% endif %}
+Sitemap: {{ site.url }}/sitemap.xml
 Host: thelounge.chat

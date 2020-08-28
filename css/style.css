@@ -71,7 +71,6 @@ code {
 	border-radius: 3px;
 	font-size: 0.9em;
 	padding: 2px 4px;
-	word-break: break-all;
 }
 pre {
 	background: #f5f5f5;
@@ -99,12 +98,27 @@ img {
 	max-width: 100%; /* Make sure images never go outside of their container */
 }
 
+:target::before {
+	content: "";
+	display: block;
+	height: 60px;
+	margin-top: -60px;
+	visibility: hidden;
+}
+
+:target {
+	text-decoration: underline;
+}
+
 .container {
 	max-width: 750px;
 }
 #nav {
 	background: #415364;
 	color: #b7c5d1;
+	position: sticky;
+	top: 0;
+	z-index: 1337;
 }
 #nav ul.nav-links {
 	float: right;
@@ -356,7 +370,6 @@ img {
 #share .github-stars {
 	display: inline-block;
 	overflow: hidden;
-	width: 93px;
 }
 #share iframe {
 	border: 0;
@@ -367,35 +380,6 @@ img {
 	overflow: hidden;
 	max-height: 0;
 	transition: max-height 0.35s ease;
-}
-
-@media (max-width: 768px) {
-	body {
-		margin-bottom: 60px;
-	}
-	#splash h1 {
-		font-size: 22px;
-	}
-	#splash h2 {
-		font-size: 16px;
-	}
-	#features .feature {
-		text-align: center;
-		margin: 0 auto;
-		max-width: 320px;
-	}
-	#footer,
-	#share {
-		text-align: center;
-	}
-	#share {
-		padding-top: 10px;
-	}
-}
-@media (max-width: 480px) {
-	#splash .row {
-		padding-top: 0;
-	}
 }
 
 .alert {
@@ -573,4 +557,43 @@ a.link-anchor {
 	max-width: 480px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+@media (max-width: 768px) {
+	body {
+		margin-bottom: 60px;
+	}
+	#splash h1 {
+		font-size: 22px;
+	}
+	#splash h2 {
+		font-size: 16px;
+	}
+	#features .feature {
+		text-align: center;
+		margin: 0 auto;
+		max-width: 320px;
+	}
+	#footer,
+	#share {
+		text-align: center;
+	}
+	#share {
+		padding-top: 10px;
+	}
+	code {
+		word-break: break-all;
+	}
+	a.link-anchor {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		float: right;
+	}
+}
+
+@media (max-width: 480px) {
+	#splash .row {
+		padding-top: 0;
+	}
 }

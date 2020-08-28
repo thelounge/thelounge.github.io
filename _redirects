@@ -1,20 +1,29 @@
 ## Archived redirects during the v2 to v3 documentation transition
 
-/docs/getting_started/install    /docs/install-and-upgrade
-/docs/getting_started/usage      /docs/usage
+/docs/getting_started/install         /docs/install-and-upgrade
+/docs/getting_started/install.html    /docs/install-and-upgrade
+/docs/getting_started/usage           /docs/usage
+/docs/getting_started/usage.html      /docs/usage
 
-/docs/server/configuration       /docs/configuration
-/docs/server/users               /docs/users
+/docs/server/configuration            /docs/configuration
+/docs/server/configuration.html       /docs/configuration
+/docs/server/users                    /docs/users
+/docs/server/users.html               /docs/users
 
 # Client-related documentations have been moved to the Help window of the
 # application itself since v2.2.2.
-/docs/client/commands            https://demo.thelounge.chat/#help  302
-/docs/client/keyboard_shortcuts  https://demo.thelounge.chat/#help  302
+/docs/client/commands                 https://demo.thelounge.chat/#help  302
+/docs/client/commands.html            https://demo.thelounge.chat/#help  302
+/docs/client/keyboard_shortcuts       https://demo.thelounge.chat/#help  302
+/docs/client/keyboard_shortcuts.html  https://demo.thelounge.chat/#help  302
 
-/docs/deployment/docker          /docs/install-and-upgrade#docker
-/docs/deployment/passenger       /docs/guides/reverse-proxies
+/docs/deployment/docker               /docs/install-and-upgrade#docker
+/docs/deployment/docker.html          /docs/install-and-upgrade#docker
+/docs/deployment/passenger            /docs/guides/reverse-proxies
+/docs/deployment/passenger.html       /docs/guides/reverse-proxies
 
-/docs/plugins/themes             /docs/guides/theme-creation
+/docs/plugins/themes                  /docs/guides/theme-creation
+/docs/plugins/themes.html             /docs/guides/theme-creation
 
 ## Netlify URL redirects
 

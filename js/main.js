@@ -35,11 +35,14 @@ window.search_data_loaded = function (search_data) {
 		// through results while pressing Enter will click on the link.
 		if (searchTerm) {
 			var results = lunrIndex.search(searchTerm);
-			var resultsContent;
 			var accessibleSummaryContent;
 
+			// Display page title dynamically to avoid confusing bots that search
+			// for metadata
+			var resultsContent = "<h1>Search results</h1>";
+
 			if (results.length) {
-				resultsContent = "<ul>";
+				resultsContent += "<ul>";
 				results.forEach(function (result) {
 					var url = result.ref;
 					var item = search_data[url];
@@ -50,9 +53,10 @@ window.search_data_loaded = function (search_data) {
 				resultsContent += "</ul>";
 				accessibleSummaryContent = results.length + " results found. Focus on the first result with Enter then cycle through them with Tab.";
 			} else {
-				resultsContent = "<p>No results found.</p>";
+				resultsContent += "<p>No results found.</p>";
 				accessibleSummaryContent = "No results found."
 			}
+
 			$("#results-placeholder").html(resultsContent);
 			resultsElement.show();
 			contentElement.hide();
@@ -148,3 +152,75 @@ window.search_data_loaded = function (search_data) {
 		e.preventDefault();
 	}, false);
 })();
+
+// Very miniminal Google Analytics reporting, which respects do not track, anonymous ip, and
+// basically just sends the page view, without any extra information like screen size, etc.
+(function(trackingId) {
+	if (navigator.doNotTrack === "1") {
+		return;
+	}
+
+	if (location.hostname !== "thelounge.chat") {
+		return;
+	}
+	
+	function generateId() {
+		const ts = Math.round(Date.now() / 1000.0);
+		let rand;
+
+		try {
+			var uu32 = new Uint32Array(1);
+			rand = crypto.getRandomValues(uu32)[0];
+		} catch(e) {
+			rand = Math.round(Math.random() * 2147483647);
+		}
+
+		return [rand, ts].join(".");
+	}
+
+	function getId() {
+		let id = localStorage.getItem("clientId");
+
+		if (!id) {
+			id = generateId();
+			localStorage.setItem("clientId", id);
+		}
+
+		return id;
+	}
+
+	const serialize = (obj) => {
+		const str = [];
+
+		for (const p in obj) {
+			if (obj.hasOwnProperty(p)) {
+				if (obj[p] !== undefined) {
+					str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+				}
+			}
+		}
+
+		return str.join("&");
+	};
+
+	const url = "https://www.google-analytics.com/collect";
+	const data = serialize({
+		v: 1,
+		aip: 1,
+		tid: trackingId,
+		t: "pageview",
+		ds: "web",
+		cid: getId(),
+		dr: document.referrer || undefined,
+		dl: document.location.origin + document.location.pathname + document.location.search,
+		ul: (navigator.language || "").toLowerCase(),
+	});
+
+	if (navigator.sendBeacon) {
+		navigator.sendBeacon(url, data);
+	} else {
+		const xhr = new XMLHttpRequest();
+		xhr.open("POST", url, true);
+		xhr.send(data);
+	}
+})("UA-131399702-1");

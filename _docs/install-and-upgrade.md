@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Install and upgrade
+description: Install and upgrade The Lounge on Debian, Ubuntu, Arch Linux, from npm releases, using Docker, from source, and more
 order: 2
 ---
 
@@ -8,12 +9,11 @@ order: 2
 
 ## Debian and Ubuntu based distributions
 
-First, make sure [Node.js](https://nodejs.org/) v6.13.0 or more recent is installed
-with `node --version`. If not, follow the instructions given on the
+First, make sure latest [Node.js](https://nodejs.org/) <abbr title="Long Term Support">LTS</abbr> version or latest current release is installed
+with `dpkg -s nodejs | grep '^Version'` and `node --version`. If not, follow the instructions given on the
 [official documentation](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions).
 
-Then download `thelounge.deb` located at the bottom of
-[the latest release](https://github.com/thelounge/thelounge/releases/latest).
+Then download `thelounge.deb` located at the bottom of [the latest release](https://github.com/thelounge/thelounge/releases/latest).
 
 Finally, open a terminal and install the downloaded package using:
 
@@ -22,15 +22,15 @@ sudo apt install ./thelounge.deb
 ```
 
 {: .alert.alert-info role="alert"}
-This methods require root access. Install The Lounge using [Yarn from an npm release](#from-npm-releases) if you do cannot use `sudo`.
+This method requires root access. Install The Lounge using [Yarn from an npm release](#from-npm-releases) if you cannot use `sudo`.
 
 This also sets up a `systemd` service, enabled during the install, that you can
 control with `systemctl status|start|restart|stop|...`.
 
 The Lounge is now up and running **in private mode** at <http://localhost:9000>.
 
-Its configuration file is located at `/etc/thelounge/config.js`. To configure
-The Lounge, go to [the configuration section](/docs/configuration).
+Its configuration file is located at `/etc/thelounge/config.js`. 
+To learn how to configure The Lounge, go to [the configuration section](/docs/configuration). To learn how to add users, read [the users section](/docs/users). The `thelounge` command needs to be run as the `thelounge` user, e.g. `sudo -u thelounge thelounge --help`.
 
 To upgrade The Lounge, simply follow these steps again after downloading a new
 `thelounge.deb` file, and restart the service.
@@ -84,7 +84,7 @@ Installing the [npm package](https://www.npmjs.com/package/thelounge) directly
 allows you to use stable releases on systems where we do not provide native
 packages.
 
-First, make sure [Node.js](https://nodejs.org/) v6.13.0 (or more recent) and [Yarn](https://yarnpkg.com/) are installed on your system. See [official instructions for Node.js](https://nodejs.org/en/download/package-manager/) and [official instructions for Yarn](https://yarnpkg.com/docs/install).
+First, make sure latest [Node.js](https://nodejs.org/) LTS version (or latest current release) and [Yarn](https://legacy.yarnpkg.com/) are installed on your system. See [official instructions for Node.js](https://nodejs.org/en/download/package-manager/) and [official instructions for Yarn](https://legacy.yarnpkg.com/docs/install).
 
 Then install The Lounge using:
 
@@ -156,7 +156,7 @@ may be unstable or insecure. This is not production-ready, so use at your own
 risk!<br>
 It is also not recommended to run this as a `root` user.
 
-First, make sure [Node.js](https://nodejs.org/) v6.13.0 (or more recent) and [Yarn](https://yarnpkg.com/) are installed on your system. See [official instructions for Node.js](https://nodejs.org/en/download/package-manager/) and [official instructions for Yarn](https://yarnpkg.com/docs/install).
+First, make sure latest [Node.js](https://nodejs.org/) LTS version (or latest current release) and [Yarn](https://yarnpkg.com/) are installed on your system. See [official instructions for Node.js](https://nodejs.org/en/download/package-manager/) and [official instructions for Yarn](https://yarnpkg.com/docs/install).
 
 The following commands install the development version of The Lounge:
 
@@ -199,9 +199,10 @@ setups and platforms, with different tooling, etc. These are not officially
 supported (even when hosted on this website), so use them at your own risk:
 
 - [OpenShift Online recipe](https://github.com/pacbard/openshift-thelounge)
-- [Ansible role using Supervisor](https://github.com/astorije/ansible-lounge)
+- [Ansible role using Supervisor](https://github.com/astorije/ansible-thelounge)
 - [ARMHF Docker images](https://hub.docker.com/r/lsioarmhf/thelounge/)
 - [YunoHost app](https://github.com/YunoHost-Apps/thelounge_ynh)
+- [Cloudron app](https://cloudron.io/store/io.github.thelounge.html)
 
 ## Services packaging The Lounge
 
@@ -211,7 +212,6 @@ configuration to get up and running:
 
 {:.app-stores}
 [![Bytesized Hosting logo](/img/logos/bytesized-hosting.svg)](https://bytesized-hosting.com/ "Bytesized Hosting")
-[![Cloudron logo](/img/logos/cloudron.svg)](https://cloudron.io/button/io.github.thelounge.html "Cloudron")
 [![Franz logo](/img/logos/franz.svg)](https://meetfranz.com/ "Franz")
 [![Rambox logo](/img/logos/rambox.svg)](https://rambox.pro/ "Rambox")
 
