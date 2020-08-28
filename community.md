@@ -54,6 +54,7 @@ On 16 May 2018, [Al McKinlay](https://alistair.mckinlay.me/) and [Jérémie Asto
 </div>
 
 Some additional articles and tutorials:
+
 - [IRC is Not Dead](https://selfhosted.show/13) - 27 February 2020
 - 🇮🇹 [The Lounge – Self-hosted web IRC client](https://www.andreadraghetti.it/the-lounge-self-hosted-web-irc-client/) by Andrea Draghetti - 21 July 2018
 - [Best Self-Hosted IRC Clients](https://linuxhint.com/best-self-hosted-irc-clients/) by David Morelo - 16 July 2018
