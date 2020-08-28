@@ -55,6 +55,7 @@ On 16 May 2018, [Al McKinlay](https://alistair.mckinlay.me/) and [Jérémie Asto
 
 Some additional articles and tutorials:
 
+- [IRC is Not Dead](https://selfhosted.show/13) - 27 February 2020
 - [Best Self-Hosted IRC Clients](https://linuxhint.com/best-self-hosted-irc-clients/) - 16 July 2018
 - [The Lounge: self-hosted IRC server setup guide](https://computableverse.com/blog/thelounge-self-hosted-irc-server-setup-guide) - 10 January 2018
 - [How to install & configure The Lounge](https://techknight.eu/2017/05/16/install-configure-lounge/) - 16 May 2017
