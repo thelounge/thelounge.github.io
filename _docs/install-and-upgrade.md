@@ -102,7 +102,7 @@ thelounge start
 ```
 
 {: .alert.alert-info role="alert"}
-Note that installing from npm does not daemonize nor autostart The Lounge.
+Note that installing from npm or yarn does not daemonize nor autostart The Lounge.
 
 The Lounge is now up and running **in private mode** at <http://localhost:9000>.
 
