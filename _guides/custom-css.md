@@ -54,6 +54,26 @@ Removes the `(~ident@irc.example.com)` part from join/part/quit actions.
 }
 ```
 
+### Hide account from join messages
+
+Removes the `[ExampleAccount]` part from join messages.
+
+```css
+#chat .account {
+	display: none;
+}
+```
+
+### Hide realname from join messages
+
+Removes the `Example realname -` part from join messages.
+
+```css
+#chat .realname {
+	display: none;
+}
+```
+
 ### Wrap nicks with chevrons
 
 This will add &lt; and &gt; around sender's nicks, in the following format:
