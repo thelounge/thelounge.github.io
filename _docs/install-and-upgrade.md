@@ -198,11 +198,12 @@ Over time, people have come up with recipes to install The Lounge on different
 setups and platforms, with different tooling, etc. These are not officially
 supported (even when hosted on this website), so use them at your own risk:
 
-- [OpenShift Online recipe](https://github.com/pacbard/openshift-thelounge)
 - [Ansible role using Supervisor](https://github.com/astorije/ansible-thelounge)
 - [ARMHF Docker images](https://hub.docker.com/r/lsioarmhf/thelounge/)
-- [YunoHost app](https://github.com/YunoHost-Apps/thelounge_ynh)
 - [Cloudron app](https://cloudron.io/store/io.github.thelounge.html)
+- [OpenShift Online recipe](https://github.com/pacbard/openshift-thelounge)
+- [Swizzin](https://swizzin.ltd/applications/lounge)
+- [YunoHost app](https://github.com/YunoHost-Apps/thelounge_ynh)
 
 ## Services packaging The Lounge
 
