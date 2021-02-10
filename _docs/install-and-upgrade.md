@@ -83,11 +83,11 @@ more about the benefits and steps, follow
 {: .alert.alert-info role="alert"}
 The below has only been tested on x86 Intel-based Macs. This may or may not work on ARM-based M1 Macs.
 
-1. Install [Xcode CLT](https://developer.apple.com/download/more/?=command%20line%20tools)
-2. Install [homebrew](https://brew.sh/)
+1. Install [Xcode Command Line Tools](https://developer.apple.com/download/more/?=command%20line%20tools)
+2. Install [Homebrew](https://brew.sh/)
 3. Open Terminal
 4. Run `brew install gcc node yarn`
-5. Follow the ["From npm releases" section](https://thelounge.chat/docs/install-and-upgrade#from-npm-releases) for remaining steps
+5. Follow the ["From npm releases" section](https://thelounge.chat/docs/install-and-upgrade#from-npm-releases) for the remaining steps
 
 ## From npm releases
 
