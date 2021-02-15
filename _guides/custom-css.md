@@ -31,7 +31,7 @@ Feel free to edit this page to fix existing snippets, or add other useful ones.
 ### Bigger custom CSS field
 
 ```css
-#user-specified-css-input {
+textarea#user-specified-css-input {
 	height: 400px;
 }
 ```
@@ -81,12 +81,10 @@ This will add &lt; and &gt; around sender's nicks, in the following format:
 ![Chevrons are wrapped around nicks](/img/wrap-nicks-with-chevrons.png){:width="80px"}
 
 ```css
-.messages .from .user:before {
-	opacity: 0.5;
+#chat .msg[data-type="message"] .from .user::before {
 	content: "<";
 }
-.messages .from .user:after {
-	opacity: 0.5;
+#chat .msg[data-type="message"] .from .user::after {
 	content: ">";
 }
 ```
@@ -263,16 +261,16 @@ Useful for channels that always disable sending messages (news feed channels, fo
 
 ### Hide unread counters in sidebar, just show a highlight indicator
 
-TheLounge can't be made to just show the number of highlights, but you can hide the unread counter badges and change the text color of highlight badges to the same color as their background:
+TheLounge can't be made to just show the number of highlights, but you can hide the unread counter and replace it with a circular badge with customizable colours.\
+You can use [this website](https://www.w3schools.com/colors/colors_picker.asp) to pick the colors
 
 ```css
-#sidebar .badge:not(.highlight) { 
-    display: none;
-}
-#sidebar .badge.highlight {
-    color: white; /* or whatever background color your highlight badge has, depending on your theme */
-    border-radius: 20px; /* optional, makes the badge circle shaped */
-}
+/* Do not touch this */
+.channel-list-item .badge { text-indent: -9999px; background: 0;  height: 10px; width: 10px; border-radius: 50%; margin: auto; padding: 0;}
+/* Replace the #xxxxxx bit with the color that you want if there are unread messages. */
+.channel-list-item .badge { background-color: #0000ff;}
+/* Replace the #xxxxxx bit with the color that you want if you were mentioned */
+.channel-list-item .badge.highlight { background-color: #ff9900 ;}
 ```
 
 {% include abbreviations.md %}
