@@ -273,4 +273,14 @@ You can use [this website](https://www.w3schools.com/colors/colors_picker.asp) t
 .channel-list-item .badge.highlight { background-color: #ff9900 ;}
 ```
 
+### Display action messages in italics
+```css
+#chat .msg[data-type="action"] .from::before,
+#chat .msg[data-type="action"] .from,
+#chat .msg[data-type="action"] .content,
+#chat .msg[data-type="action"] .user {
+	font-style: italic;
+}
+```
+
 {% include abbreviations.md %}
