@@ -7,7 +7,7 @@ title: Community
 
 ## IRC channels
 
-If you need help, or want to help others by answering questions they might have, `#thelounge` is our official IRC channel on [Freenode](https://freenode.net/) (`chat.freenode.net:6697` on a secure connection).
+If you need help, or want to help others by answering questions they might have, `#thelounge` is our official IRC channel on [Libera](https://libera.chat/) (`irc.libera.chat:6697` on a secure connection).
 
 {:.center}
 [Click here to join it using our demo](https://demo.thelounge.chat/?join=thelounge)
@@ -21,7 +21,7 @@ Additionally, a few community-operated channels let you chat in a language you a
 
 Let us know if you wish to help operating a language-specific channel!
 
-If your question cannot be answered on the IRC channels above, feel free to [browse existing questions on Stack Overflow](https://stackoverflow.com/questions/tagged/thelounge) or [ask a new question](  https://stackoverflow.com/questions/ask?tags=thelounge).
+If your question cannot be answered on the IRC channels above, feel free to [browse existing questions on Stack Overflow](https://stackoverflow.com/questions/tagged/thelounge) or [ask a new question](https://stackoverflow.com/questions/ask?tags=thelounge).
 
 ## Donate to the project
 
