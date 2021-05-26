@@ -19,6 +19,6 @@ The Lounge is entirely free and open source. Its source code lives in a [GitHub 
 
 The Lounge started as a fork of [Shout](https://github.com/erming/shout), authored by **[Mattias Erming](https://github.com/erming)**. We owe him a lot and thank him very much for his work!
 
-Enjoy The Lounge, and make sure to join us on our **official Freenode channel `#thelounge`**!
+Enjoy The Lounge, and make sure to join us on our **official Libera.Chat channel `#thelounge`**!
 
 {% include abbreviations.md %}
