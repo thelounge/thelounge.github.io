@@ -25,7 +25,7 @@ If your question cannot be answered on the IRC channels above, feel free to [bro
 
 ## Donate to the project
 
-You can financially help us by [donating to our collective](https://opencollective.com/thelounge). Every little bit helps, and we appreciate even the smallest contributions.
+Our [OpenCollective](https://opencollective.com/thelounge) was an overwhelming success, and as such we no longer need donations for the foreseeable future! The collective will remain open while funds are still available, but please do not contribute to it.
 
 We thank our existing backers who have contributed various amounts of money in order to help support The Lounge:
 
