@@ -330,7 +330,7 @@ The authentication process works as follows:
 
 The search query takes a couple of parameters in `searchDN`:
 
-- a base DN `searchDN/base`. Only children nodes of this DN will be likely
+- a base DN `searchDN/base`. Only children nodes of this DN will likely
   be returned;
 - a search scope `searchDN/scope` (see LDAP documentation);
 - the query itself, built as `(&(<primaryKey>=<username>) <filter>)`
