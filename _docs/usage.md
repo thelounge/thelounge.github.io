@@ -136,7 +136,7 @@ A list of all available plugins can be found [on the npm registry](https://www.n
 thelounge install thelounge-plugin-closepms
 ```
 
-The plugins are hot reloaded, you do not need to restart the lounge service. They will be available a few moments after installation.
+The plugins are hot-loaded, you do not need to restart the lounge service. They will be available a few moments after installation.
 
 ## Configuring The Lounge
 
