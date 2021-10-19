@@ -124,9 +124,19 @@ A list of all available themes can be found [on the npm registry](https://www.np
 thelounge install thelounge-theme-solarized
 ```
 
-After restarting The Lounge, the theme will now be available in the client settings.
+After installing, moments later the theme will be available to use.  Your choice of theme can be configured in the client settings.
 
 Additionally, any theme can be used as the default one for all clients. See [the `theme` section on the configuration page](/docs/configuration#theme) for more information.
+
+## Installing plugins
+
+A list of all available plugins can be found [on the npm registry](https://www.npmjs.com/search?q=keywords:thelounge-plugin) and installed with `thelounge install`. For example, to install a plugin called `thelounge-plugin-closepms`, run:
+
+```
+thelounge install thelounge-plugin-closepms
+```
+
+The plugins are hot reloaded, you do not need to restart the lounge service. They will be available a few moments after installation.
 
 ## Configuring The Lounge
 
