@@ -130,7 +130,7 @@ Additionally, any theme can be used as the default one for all clients. See [the
 
 ## Installing plugins
 
-A list of all available plugins can be found [on the npm registry](https://www.npmjs.com/search?q=keywords:thelounge-plugin) and installed with `thelounge install`. For example, to install a plugin called `thelounge-plugin-closepms`, run:
+A list of all available plugins can be found [on the npm registry](https://www.npmjs.com/search?q=thelounge-plugin) and installed with `thelounge install`. For example, to install a plugin called `thelounge-plugin-closepms`, run:
 
 ```
 thelounge install thelounge-plugin-closepms
