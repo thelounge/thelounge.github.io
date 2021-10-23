@@ -11,13 +11,15 @@ The Lounge only has basic HTTPS support, and will need to be manually restarted 
 
 First, you need an HTTPS certificate. [Let's Encrypt](https://letsencrypt.org/) is a free, automated, and open Certificate Authority that provides completely free HTTPS certificates.
 
+For Example:
 ```
-Lets encrypt certificate creation utility has now been depreciated and replaced with certbot.
+apt-get install certbot
+certbot certonly --standalone --email email@example.com -d thelounge.example.com
 ```
 
-**Please Visit**: https://certbot.eff.org/ for further instructions on how to generate your free SSL certificates.
+**Please Visit**: https://certbot.eff.org/ on how to correctly generate your free SSL certificate as the above is an example.
 
-Follow the instructions on screen. This should generate a private key, as well as your HTTPS certificate that will expire after 90 days.
+This should generate a private key, as well as your HTTPS certificate that will expire after 90 days.
 
 Open your configuration file, located at `${THELOUNGE_HOME}/config.js` and look for the `https` key, and set the following values:
 
