@@ -34,6 +34,8 @@ This will create a `package.json` file that you must edit as such:
 
 Although it is not required, we strongly recommend you also fill in the `"homepage"`, `"repository"`, and `"bugs"` sections.
 
+## Shipping additional files in the theme
+
 Optionally, you can distribute other files along with the theme stylesheet as follows:
 
 ```json
