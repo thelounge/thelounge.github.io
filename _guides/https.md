@@ -11,13 +11,7 @@ The Lounge only has basic HTTPS support, and will need to be manually restarted 
 
 First, you need an HTTPS certificate. [Let's Encrypt](https://letsencrypt.org/) is a free, automated, and open Certificate Authority that provides completely free HTTPS certificates.
 
-Assuming you have a valid email address at `email@example.com`, and want to serve The Lounge at `https://thelounge.example.com`, run these commands on your server:
-
-```
-git clone https://github.com/letsencrypt/letsencrypt
-cd letsencrypt/
-./letsencrypt-auto certonly --standalone --email email@example.com -d thelounge.example.com
-```
+**Visit**: The [Certbot Guide](https://certbot.eff.org/) website on how to correctly generate your free SSL certificate for each operating system.
 
 Follow the instructions on screen. This should generate a private key, as well as your HTTPS certificate that will expire after 90 days.
 
