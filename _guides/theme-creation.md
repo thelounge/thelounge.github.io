@@ -50,7 +50,7 @@ Optionally, you can distribute other files along with the theme stylesheet as fo
 },
 ```
 
-After installing the theme, these files will be available under `/packages/<your-theme>/<file-name>`.
+After installing the theme, these files will be available under `/packages/<package name>/<file-name>`.
 
 ```css
 @font-face {
