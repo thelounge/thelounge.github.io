@@ -55,7 +55,7 @@ After installing the theme, these files will be available under `/packages/<your
 ```css
 @font-face {
   font-family: "Alternative Font Name";
-  src: url(/packages/thelounge-theme-your-theme/alternative-font.woff2) format("woff2");
+  src: url(/packages/<package name>/alternative-font.woff2) format("woff2");
 }
 ```
 
