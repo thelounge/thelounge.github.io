@@ -34,6 +34,8 @@ This will create a `package.json` file that you must edit as such:
 
 Although it is not required, we strongly recommend you also fill in the `"homepage"`, `"repository"`, and `"bugs"` sections.
 
+For a comprehensive example, refer to the [`package.json` file of `thelounge-theme-solarized`](https://github.com/thelounge/thelounge-theme-solarized/blob/master/package.json).
+
 ## Shipping additional files in the theme
 
 Optionally, you can distribute other files along with the theme stylesheet as follows:
@@ -58,8 +60,6 @@ After installing the theme, these files will be available under `/packages/<pack
   src: url(/packages/<package name>/alternative-font.woff2) format("woff2");
 }
 ```
-
-For a comprehensive example, refer to the [`package.json` file of `thelounge-theme-solarized`](https://github.com/thelounge/thelounge-theme-solarized/blob/master/package.json).
 
 ## Advanced configuration
 
