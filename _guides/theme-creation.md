@@ -36,6 +36,31 @@ Although it is not required, we strongly recommend you also fill in the `"homepa
 
 For a comprehensive example, refer to the [`package.json` file of `thelounge-theme-solarized`](https://github.com/thelounge/thelounge-theme-solarized/blob/master/package.json).
 
+## Shipping additional files in the theme
+
+Optionally, you can distribute other files along with the theme stylesheet as follows:
+
+```json
+"thelounge": {
+  "css": "theme.css",
+  "name": "Theme Name",
+  "type": "theme",
+  "files": [
+    "alternative-font.woff2",
+    "sprites.png"
+  ]
+},
+```
+
+After installing the theme, these files will be available under `/packages/<package name>/<file-name>`.
+
+```css
+@font-face {
+  font-family: "Alternative Font Name";
+  src: url(/packages/<package name>/alternative-font.woff2) format("woff2");
+}
+```
+
 ## Advanced configuration
 
 Alternatively to the `"thelounge"` section in `package.json`, it is possible to point `"main"` to a JavaScript file that exports an object containing the same information as above:
