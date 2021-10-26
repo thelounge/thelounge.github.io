@@ -11,7 +11,7 @@ The Lounge only has basic HTTPS support, and will need to be manually restarted 
 
 First, you need an HTTPS certificate. [Let's Encrypt](https://letsencrypt.org/) is a free, automated, and open Certificate Authority that provides completely free HTTPS certificates.
 
-You can visit the [Certbot website](https://certbot.eff.org/) on how to correctly generate your free SSL certificate for each operating system.
+You can visit the [Certbot website](https://certbot.eff.org/) for *instructions* on how to correctly generate your free SSL certificate for each operating system.
 
 Follow the instructions on screen. This should generate a private key, as well as your HTTPS certificate that will expire after 90 days.
 
