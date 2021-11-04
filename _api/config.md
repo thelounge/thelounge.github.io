@@ -16,6 +16,11 @@ Note, if you change anything in the config object, this will be thrown away on s
 
 Returns the server's current configuration object.
 
+### `#getPersistentStorageDir()`
+
+Returns the pathname a plugin may use to store persistent files (say databases, images or similar things
+which are considered state).
+
 #### Example
 
 ```js
@@ -23,5 +28,9 @@ module.exports = {
   onServerStart(thelounge) {
     const config = thelounge.Config.getConfig();
   }
+
+  const db = {theAnswer: 42}
+  db_path = path.join(thelounge.Config.getPersistentStorageDir(), "db.json");
+  fs.writeFile(db_path, JSON.stringify(db))
 };
 ```
