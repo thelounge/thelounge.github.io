@@ -210,8 +210,8 @@ setups and platforms, with different tooling, etc. These are not officially
 supported (even when hosted on this website), so use them at your own risk:
 
 - [Ansible role using Supervisor](https://github.com/astorije/ansible-thelounge)
-- [ARMHF Docker images](https://hub.docker.com/r/lsioarmhf/thelounge/)
 - [Cloudron app](https://cloudron.io/store/io.github.thelounge.html)
+- [LinuxServer.io Docker images](https://github.com/linuxserver/docker-thelounge)
 - [OpenShift Online recipe](https://github.com/pacbard/openshift-thelounge)
 - [Swizzin](https://swizzin.ltd/applications/lounge)
 - [YunoHost app](https://github.com/YunoHost-Apps/thelounge_ynh)
