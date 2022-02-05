@@ -261,7 +261,7 @@ Useful for channels that always disable sending messages (news feed channels, fo
 
 ### Hide unread counters in sidebar, just show a highlight indicator
 
-TheLounge can't be made to just show the number of highlights, but you can hide the unread counter and replace it with a circular badge with customizable colours.\
+TheLounge can't be made to just show the number of highlights, but you can hide the unread counter and replace it with a circular badge with customizable colours.  
 You can use [this website](https://www.w3schools.com/colors/colors_picker.asp) to pick the colors
 
 ```css
