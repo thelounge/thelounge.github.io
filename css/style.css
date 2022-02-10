@@ -363,17 +363,6 @@ img {
 #footer hr {
 	margin: 0 15px 10px;
 }
-#share {
-	text-align: right;
-	line-height: 0;
-}
-#share .github-stars {
-	display: inline-block;
-	overflow: hidden;
-}
-#share iframe {
-	border: 0;
-}
 
 #mobile-menu {
 	display: block;
@@ -573,13 +562,6 @@ a.link-anchor {
 		text-align: center;
 		margin: 0 auto;
 		max-width: 320px;
-	}
-	#footer,
-	#share {
-		text-align: center;
-	}
-	#share {
-		padding-top: 10px;
 	}
 	code {
 		word-break: break-all;
