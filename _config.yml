@@ -6,6 +6,8 @@ include:
 kramdown:
   toc_levels: "2"
 url: https://thelounge.chat # Domain used by jekyll-sitemap in sitemap.xml
+plugins:
+  - jekyll-sitemap
 permalink: /:path
 collections:
   docs:
