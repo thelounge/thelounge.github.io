@@ -4,7 +4,7 @@ title: Create a theme
 description: Customize The Lounge using built-in theme support, and share themes with others
 ---
 
-Themes for The Lounge are CSS files bundled in packages hosted on [the npm registry](https://www.npmjs.com).
+Themes for The Lounge are CSS files bundled in packages hosted on [the npm registry](https://www.npmjs.com/search?q=keywords:thelounge-theme).
 
 In a directory named after your new theme (for example, `thelounge-theme-foo`), start by creating a new package with the following command:
 
