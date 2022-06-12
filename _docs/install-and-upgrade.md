@@ -176,7 +176,8 @@ git clone https://github.com/thelounge/thelounge
 cd thelounge
 yarn install
 NODE_ENV=production yarn build
-yarn link
+# pick a folder which is in your $PATH env var, ~/.local/bin here
+ln -s $(pwd)/index.js ~/.local/bin/thelounge
 ```
 
 Start the server manually using:
