@@ -128,6 +128,8 @@ The Lounge automatically loads the theme after installation and makes it availab
 
 Additionally, any theme can be used as the default one for all clients. See [the `theme` section on the configuration page](/docs/configuration#theme) for more information.
 
+For local themes, see [Installing local packages](#installing-local-packages)
+
 ## Installing plugins
 
 A list of some plugins can be found [on the npm registry](https://www.npmjs.com/search?q=keywords%3Athelounge-plugin) and installed with `thelounge install`. For example, to install a plugin called `thelounge-plugin-closepms`, run:
@@ -137,6 +139,19 @@ thelounge install thelounge-plugin-closepms
 ```
 
 The Lounge automatically loads the plugin after installation and activates it.
+
+For local plugins, see [Installing local packages](#installing-local-packages)
+
+## Installing local packages
+
+During development of packages or if uploading a package to the npm registry is undesired, packages can be installed from the local file system.
+
+That's done by adding a file: prefix to package name:
+
+```
+thelounge install file:~/path/to/package_dir
+```
+
 
 ## Configuring The Lounge
 
