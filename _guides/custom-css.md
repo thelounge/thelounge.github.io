@@ -259,6 +259,17 @@ Useful for channels that always disable sending messages (news feed channels, fo
 }
 ```
 
+### Hide Insecure Warning
+
+Useful if you want to hide the exclimation mark (Yellow Triangle Icon).
+
+```css
+/* Hide Insecure Warning */
+#sidebar .not-secure-tooltip {
+  display: none;
+}
+```
+
 ### Hide unread counters in sidebar, just show a highlight indicator
 
 TheLounge can't be made to just show the number of highlights, but you can hide the unread counter and replace it with a circular badge with customizable colours.  
@@ -283,6 +294,5 @@ You can use [this website](https://www.w3schools.com/colors/colors_picker.asp) t
 #chat .msg[data-type="action"] .user {
 	font-style: italic;
 }
-```
 
 {% include abbreviations.md %}
