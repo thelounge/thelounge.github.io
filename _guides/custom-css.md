@@ -294,5 +294,6 @@ You can use [this website](https://www.w3schools.com/colors/colors_picker.asp) t
 #chat .msg[data-type="action"] .user {
 	font-style: italic;
 }
+```
 
 {% include abbreviations.md %}
