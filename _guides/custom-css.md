@@ -189,6 +189,18 @@ This removes all colors, boldness, italics, underline, strikethrough, and monosp
 }
 ```
 
+### Custom nick colors
+
+This code will color the target nick in the userlist and in the chat area. The
+`i` is for case-insensitive matching.
+
+```css
+#chat .msg .user[data-name="targetnick" i],
+#chat .userlist .names .user[data-name="targetnick" i] {
+	color: #ff79c6;
+}
+```
+
 ### Hide join/part/quit in specific channel only
 
 Assuming we want to hide some status messages in the `#thelounge` channel:
