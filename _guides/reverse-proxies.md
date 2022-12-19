@@ -82,8 +82,9 @@ ProxyAddHeaders On
 ProxyPass / http://127.0.0.1:9000/
 ProxyPassReverse / http://127.0.0.1:9000/
 
-# By default Apache times out connections after one minute
-ProxyTimeout 86400 # 1 day
+# By default Apache times out connections after one minute,
+# set to 86400 seconds (1 day) instead
+ProxyTimeout 86400
 ```
 
 If you want to access The Lounge in a sub folder, use the following configuration:
