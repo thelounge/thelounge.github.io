@@ -106,9 +106,6 @@ Then install The Lounge using:
 yarn global add thelounge
 ```
 
-{: .alert.alert-info role="alert"}
-If you install The Lounge using the [npm](https://docs.npmjs.com/cli/npm) CLI instead, you will need the `--unsafe-perm` flag: `npm install --global --unsafe-perm thelounge`
-
 Start the server manually using:
 
 ```
