@@ -131,8 +131,8 @@ more about the benefits and steps, follow
 
 ## Docker
 
-Official Docker images of The Lounge are made available for every new release on
-[DockerHub](https://hub.docker.com/r/thelounge/thelounge/).
+Official Docker images of The Lounge are made available for every new release in
+the [GitHub Container Registry](https://ghcr.io/thelounge/thelounge).
 
 To run a container using [Docker Compose](https://docs.docker.com/compose/),
 use [this example `docker-compose.yml`
@@ -151,7 +151,7 @@ docker run --detach \
 	--publish 9000:9000 \
 	--volume ~/.thelounge:/var/opt/thelounge \
 	--restart always \
-	thelounge/thelounge:latest
+	ghcr.io/thelounge/thelounge:latest
 ```
 
 For more details about using The Lounge with Docker, refer to
