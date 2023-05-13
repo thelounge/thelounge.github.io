@@ -13,7 +13,7 @@ First, make sure latest [Node.js](https://nodejs.org/) <abbr title="Long Term Su
 with `dpkg -s nodejs | grep '^Version'` and `node --version`. If not, follow the instructions given on the
 [official documentation](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions).
 
-Then download `thelounge.deb` located at the bottom of [the latest release](https://github.com/thelounge/thelounge/releases/latest).
+Then download `thelounge.deb` located at the bottom of [the latest release](https://github.com/thelounge/thelounge-deb/releases).
 
 Finally, open a terminal and install the downloaded package using:
 
@@ -29,7 +29,7 @@ control with `systemctl status|start|restart|stop|...`.
 
 The Lounge is now up and running **in private mode** at <http://localhost:9000>.
 
-Its configuration file is located at `/etc/thelounge/config.js`. 
+Its configuration file is located at `/etc/thelounge/config.js`.
 To learn how to configure The Lounge, go to [the configuration section](/docs/configuration). To learn how to add users, read [the users section](/docs/users). The `thelounge` command needs to be run as the `thelounge` user, e.g. `sudo -u thelounge thelounge --help`.
 
 To upgrade The Lounge, simply follow these steps again after downloading a new
@@ -224,9 +224,9 @@ control or responsibility over them, but they usually require little
 configuration to get up and running:
 
 {:.app-stores}
-[![Bytesized Hosting logo](/img/logos/bytesized-hosting.svg)](https://bytesized-hosting.com/ "Bytesized Hosting")
-[![Franz logo](/img/logos/franz.svg)](https://meetfranz.com/ "Franz")
-[![Rambox logo](/img/logos/rambox.svg)](https://rambox.pro/ "Rambox")
+[![Bytesized Hosting logo](/img/logos/bytesized-hosting.svg)](https://bytesized-hosting.com/ 'Bytesized Hosting')
+[![Franz logo](/img/logos/franz.svg)](https://meetfranz.com/ 'Franz')
+[![Rambox logo](/img/logos/rambox.svg)](https://rambox.pro/ 'Rambox')
 
 Please contact these service providers directly if you have any questions or
 encounter any issues on these platforms.
