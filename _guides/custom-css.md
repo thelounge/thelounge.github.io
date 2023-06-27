@@ -227,6 +227,14 @@ lower values will increase the density, higher values will improve readability.
 }
 ```
 
+### Hide all chat messages containing a link in a specific channel
+
+```css
+#chat-container[data-current-channel="#thelounge"]  .content a {
+    display: none;
+}
+```
+
 ### Hide link previews in a specific channel
 
 ```css
