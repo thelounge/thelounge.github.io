@@ -14,8 +14,6 @@ With The Lounge, you can send a CTCP command by sending messages starting with `
 - `/ctcp <nick> source` returns `SOURCE git+https://github.com/thelounge/thelounge.git`
 - `/ctcp <nick> ping foo` returns `PING foo`
 
-To know more about internal details of how The Lounge implements CTCP responses, take a look at [the related source code](https://github.com/thelounge/thelounge/blob/master/src/plugins/irc-events/ctcp.js).
-
 The Lounge does not support all CTCP commands, such as [DCC](https://en.wikipedia.org/wiki/Direct_Client-to-Client).
 
 {: .alert.alert-info role="alert"}
