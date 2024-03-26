@@ -17,7 +17,6 @@ Additionally, a few community-operated channels let you chat in a language you a
 - 🇩🇪 German: [`#thelounge-de`](https://demo.thelounge.chat/?join=thelounge-de)
 - 🇫🇷🇨🇦 French: [`#thelounge-fr`](https://demo.thelounge.chat/?join=thelounge-fr)
 - 🇳🇱 Dutch: [`#thelounge-nl`](https://demo.thelounge.chat/?join=thelounge-nl)
-- 🇩🇰🇳🇴🇸🇪 Danish / Norwegian / Swedish: [`#thelounge-scandinavia`](https://demo.thelounge.chat/?join=thelounge-scandinavia)
 
 Let us know if you wish to help operating a language-specific channel!
 
