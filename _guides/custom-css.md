@@ -316,4 +316,12 @@ You can use [this website](https://www.w3schools.com/colors/colors_picker.asp) t
 }
 ```
 
+### Hide unread counters for a channel in the sidebar if it is muted
+
+```css
+.channel-list-item.is-muted .badge {
+    display: none;
+}
+```
+
 {% include abbreviations.md %}
