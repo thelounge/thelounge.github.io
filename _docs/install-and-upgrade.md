@@ -213,6 +213,8 @@ supported (even when hosted on this website), so use them at your own risk:
 - [Ansible role using Supervisor](https://github.com/astorije/ansible-thelounge)
 - [Cloudron app](https://cloudron.io/store/io.github.thelounge.html)
 - [LinuxServer.io Docker images](https://github.com/linuxserver/docker-thelounge)
+- [Gentoo GURU package: net-irc/thelounge](https://wiki.gentoo.org/wiki/Project:GURU/Information_for_End_Users)
+- [Gentoo container image](https://github.com/rahilarious/gentoo-containers/tree/main/gentoo-thelounge)
 - [OpenShift Online recipe](https://github.com/pacbard/openshift-thelounge)
 - [Swizzin](https://swizzin.ltd/applications/lounge)
 - [YunoHost app](https://github.com/YunoHost-Apps/thelounge_ynh)
