@@ -149,7 +149,7 @@ Otherwise, run:
 docker run --detach \
 	--name thelounge \
 	--publish 9000:9000 \
-	--volume ~/.thelounge:/var/opt/thelounge \
+	--volume thelounge:/var/opt/thelounge \
 	--restart always \
 	ghcr.io/thelounge/thelounge:latest
 ```
