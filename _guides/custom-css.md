@@ -315,5 +315,25 @@ You can use [this website](https://www.w3schools.com/colors/colors_picker.asp) t
 	font-style: italic;
 }
 ```
+### Channel Draft State
+The has-draft class is applied to a channel when there is a draft message (a message that has been written but not sent yet). You can use this class to highlight channels that have unsent drafts.
+```css
+/* Style channels with unsent draft messages */
+.has-draft {
+	background-color: #f7f7f7;
+ 	border: 2px dashed #888;
+}
+```
+### Channel Unread State
+The has-unread class is applied to a channel when there are unread messages. This can be useful for highlighting channels with new messages that haven't been read yet.
+```css
+/* Style channels with unread messages */
+.has-unread {
+  font-weight: bold;          /* Bold text for unread channels */
+  color: #ff6347;             /* Red color for unread channels */
+  border-left: 4px solid #ff6347;  /* Red left border for unread channels */
+}
+```
+
 
 {% include abbreviations.md %}
