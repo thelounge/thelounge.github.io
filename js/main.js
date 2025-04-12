@@ -1,3 +1,5 @@
+"use strict";
+
 // Real-time client-side search using https://github.com/olivernn/lunr.js
 // Open search field with the search icon, close it with "Escape" / the close
 // icon, cycle through results with "Up" and "Down" and visit selected result
@@ -25,7 +27,7 @@ window.search_data_loaded = function (search_data) {
 	// actual content change.
 	/** @type {HTMLInputElement} */
 	const searchInput = document.getElementById("search-input");
-	searchInput.addEventListener('input', function(event) {
+	searchInput.addEventListener('input', function() {
 		const searchTerm = this.value;
 		const resultsElement = document.getElementById("search-results");
 		const contentElement = document.getElementById("content");
@@ -76,24 +78,23 @@ window.search_data_loaded = function (search_data) {
 	// emitted on non-printable characters (also differs across browsers) and
 	// `keyup` arrives too late.
 	document.addEventListener('keydown', function(event) {
-		if (e.key === 'Escape') {
+		if (event.key === 'Escape') {
 			// "Escape" key, cancels current search. This cannot be on keyup as inputs
 			// are being cleared by default on Escape keydown.
 			document.getElementById("search-close-btn").click();
-			return false;
 		}
 	});
 
 	searchInput.addEventListener('keydown', function(event) {
-		if (e.key === 'Escape') {
+		if (event.key === 'Escape') {
 			// Do not clear input when pressing "Escape" but let it bubble up to
 			// `document.keydown` handler.
 			event.preventDefault();
-		} else if (e.key === 'Enter') {
+		} else if (event.key === 'Enter') {
 			// "Enter" key to focus on the first available result
 			const firstResult = document.querySelector("#search-results li:first-child a");
 			if (firstResult) firstResult.focus();
-			return false;
+			event.preventDefault();
 		}
 	});
 
