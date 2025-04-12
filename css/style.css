@@ -57,7 +57,7 @@ a,
 a:hover,
 a:focus {
 	font-weight: bold;
-	color: #50a656;
+	color: #00890a;
 }
 h2 {
 	font-size: 32px;
@@ -160,7 +160,6 @@ img {
 }
 #nav .logo {
 	line-height: 1;
-	margin-left: -10px;
 	padding: 5px 0;
 }
 #nav .logo svg {
@@ -267,14 +266,14 @@ img {
 	margin: 60px 0;
 }
 #splash a:not(.btn) {
-	color: #84ce88;
+	color: #8ad78e;
 }
-.btn {
-	border: 2px solid #84ce88;
+#splash .btn {
+	border: 2px solid #8ad78e;
 	border-radius: 3px;
-	color: #84ce88;
+	color: #8ad78e;
 	display: inline-block;
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: bold;
 	letter-spacing: 1px;
 	margin-bottom: 10px;
@@ -285,18 +284,12 @@ img {
 	cursor: pointer; /* This is useful for `<button>` elements */
 }
 
-.btn:disabled,
-.btn:hover,
-.btn:focus {
-	background: #84ce88;
-	color: #fff;
-	opacity: 1;
+#splash .btn:disabled,
+#splash .btn:hover,
+#splash .btn:focus {
+	background: #8ad78e;
+	color: #000;
 	text-decoration: none;
-}
-
-.btn:active {
-	box-shadow: none;
-	opacity: 0.8;
 }
 
 #features {
@@ -355,7 +348,7 @@ img {
 }
 .menu a:hover,
 .menu a.active {
-	color: #50a656;
+	color: #00890a;
 }
 .menu a.active {
 	font-weight: bold;
