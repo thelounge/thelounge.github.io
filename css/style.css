@@ -46,6 +46,10 @@ abbr[title] {
   text-decoration: underline dotted; /* 2 */
 }
 
+html {
+	scrollbar-gutter: stable;
+}
+
 body {
 	background: #fff;
 	color: #415364;
