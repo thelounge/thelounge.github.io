@@ -305,7 +305,7 @@ You can use [this website](https://www.w3schools.com/colors/colors_picker.asp) t
 ```
 
 ### Display action messages in italics
-![italics](https://user-images.githubusercontent.com/25697531/113520077-f4cf7d00-9590-11eb-8eaf-85d476bf4ad7.png)
+![Action message displayed in italics](/img/custom-message-italics.png)
 
 ```css
 #chat .msg[data-type="action"] .from::before,
