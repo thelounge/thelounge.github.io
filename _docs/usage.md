@@ -78,10 +78,10 @@ This will start a server and display something along the lines of:
   Configuration file: <span class="terminal-green">/etc/thelounge/config.js</span><br>
 
   <span class="terminal-log-info"></span>
-  Available at <span class="terminal-green">http://:::9000/</span> in <strong style="color: white">private</strong> mode<br>
+  Available at <span class="terminal-green">http://:::9000/</span> in <span class="terminal-bold">private</span> mode<br>
 
   <span class="terminal-log-info"></span>
-  There are currently no users. Create one with <strong style="color: white">thelounge add &lt;name&gt;</strong>.
+  There are currently no users. Create one with <span class="terminal-bold">thelounge add &lt;name&gt;</span>.
 </div>
 
 This tells us a few things:
