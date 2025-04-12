@@ -157,6 +157,17 @@ img {
 #nav .logo {
 	line-height: 1;
 	margin-left: -10px;
+	padding: 5px 0;
+}
+#nav .logo svg {
+	height: 40px;
+	width: 122px;
+}
+.logo-st0 {
+	fill: #FF9E18;
+}
+.logo-st1 {
+	fill: #FFFFFF;
 }
 #nav .container {
 	position: relative;
@@ -223,11 +234,6 @@ img {
 	list-style: none;
 	margin-left: 0;
 	padding-left: 0;
-}
-
-#nav .logo img {
-	height: 100%;
-	padding: 5px 0;
 }
 
 #splash {
