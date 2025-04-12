@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: block-all-mixed-content; default-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; frame-src https://www.youtube-nocookie.com; object-src 'self' https://opencollective.com;
+  Content-Security-Policy: block-all-mixed-content; default-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; frame-src https://www.youtube-nocookie.com https://opencollective.com/; object-src 'self' https://opencollective.com;
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   Referrer-Policy: no-referrer-when-downgrade
   X-Content-Type-Options: nosniff
