@@ -98,7 +98,7 @@ packages.
 First, make sure you have these installed on your system:
 
 - The latest [Node.js](https://nodejs.org/) LTS version (or latest current release). See the [official installation instructions](https://nodejs.org/en/download/package-manager/).
-- [Yarn 1 (classic)](https://legacy.yarnpkg.com/). See [official installation instructions](https://legacy.yarnpkg.com/docs/install).
+- [Yarn 1 (classic)](https://classic.yarnpkg.com/lang/en/). See [official installation instructions](https://classic.yarnpkg.com/en/docs/install).
 
 Then install The Lounge using:
 
