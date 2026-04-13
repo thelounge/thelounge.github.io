@@ -158,12 +158,9 @@ backend thelounge
 
 ## [Cloudflare](https://www.cloudflare.com/)
 
-The following [page rules](https://support.cloudflare.com/hc/en-us/articles/218411427) need to be set in order to use the Cloudflare DNS with The Lounge:
+If you have [Rocket Loader](https://developers.cloudflare.com/speed/optimization/content/rocket-loader/) enabled, you will need to create a [configuration rule](https://developers.cloudflare.com/rules/configuration-rules/create-dashboard/) to set `Rocket Loader` to `Off` for The Lounge.
 
-- `Rocket Loader` set to `Off`
-- `Disable Apps`
-
-Whenever you update The Lounge, you will have to [purge cache in your Cloudflare dashboard](https://support.cloudflare.com/hc/en-us/articles/200169246-Purging-cached-resources-from-Cloudflare) for your browser to correctly receive updated files.
+Whenever you update The Lounge, you will have to [purge cache in your Cloudflare dashboard](https://developers.cloudflare.com/cache/how-to/purge-cache/) for your browser to correctly receive updated files.
 
 ## [Redbird](https://www.npmjs.com/package/redbird) with [Let's Encrypt](https://letsencrypt.org/)
 
