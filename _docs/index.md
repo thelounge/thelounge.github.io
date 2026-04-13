@@ -6,7 +6,7 @@ order: 1
 permalink: /docs
 ---
 
-Welcome to The Lounge, a web-based [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat) client for the modern world! ❤️
+Welcome to The Lounge, a web-based [IRC](/irc) client for the modern world! ❤️
 
 For an optimal experience, The Lounge must be installed on a server that runs 24/7. Once configured and started, users can access it from their browser or mobile device. Learn more about this in the [install and upgrade section](/docs/install-and-upgrade).
 
