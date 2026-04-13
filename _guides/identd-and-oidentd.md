@@ -55,7 +55,7 @@ If you have oident 2.3.0 or later available, using oidentd along with built-in i
 `oidentd` can be used, as The Lounge also supports writing user ident to a file which can be read by `oidentd`.
 To enable `oidentd` support, set the [`oidentd` configuration option](/docs/configuration#identd-and-oidentd-support) to `"~/.oidentd.conf"`
 
-If you have installed The Lounge as a service (pre-built package), the service has no access to `/home` folder and thus this method will not work. [Refer to using oidentd along with the built-in identd above](#using-oidentd-to-forward-requests-to-built-in-server).
+If you have installed The Lounge as a service (pre-built package), the service has no access to `/home` folder and thus this method will not work. [Refer to using oidentd along with the built-in identd above](#using-oidentd-to-forward-requests-to-the-built-in-server).
 
 After that is done, you will need to configure `oidentd` to allow spoofing.
 

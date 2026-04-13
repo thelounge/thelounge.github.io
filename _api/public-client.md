@@ -11,7 +11,7 @@ The Public Client API lets you interact with the client
 
 ### `#runAsUser(command: String, targetId: String)`
 
-Allows to make the client send a message/run a command.
+Allows you to make the client send a message/run a command.
 
 Arguments:
 
@@ -23,7 +23,7 @@ Arguments:
 
 ### `#createChannel(attributes: Object)`
 
-Allows to create a new channel.
+Allows you to create a new channel.
 
 Attributes:
 
@@ -85,7 +85,7 @@ Arguments:
 ### `#sendMessage(text: String, chan: Chan)`
 
 Sends a message to this client, displayed in the given channel.  
-This message will be displayed as a plugin message, the sender will be the name of your plugin (define in your package.json under thelounge.name) and defaults to the package name.
+This message will be displayed as a plugin message, the sender will be the name of your plugin (defined in your package.json under thelounge.name) and defaults to the package name.
 
 Arguments:
 

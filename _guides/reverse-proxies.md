@@ -48,7 +48,7 @@ If you want to access The Lounge in a sub folder, change the first line to `loca
 
 If you have [file uploads](/docs/configuration#fileupload) enabled in The Lounge, you may hit an issue when going over nginx's default upload limit, which will result in a 413 (Request Entity Too Large) error. To prevent this from happening, disable or increase [client_max_body_size](https://nginx.org/en/docs/http/ngx_http_core_module.html#client_max_body_size) variable.
 
-If you have set [`baseUrl`](/docs/configuration#fileupload) option, then you will need to add extra configuration to proxy the upload urls. For example, if you set `baseURL` to `https://example.com/folder/` then you need to add `location /folder/` to your nginx configuration:
+If you have set [`baseUrl`](/docs/configuration#fileupload) option, then you will need to add extra configuration to proxy the upload urls. For example, if you set `baseUrl` to `https://example.com/folder/` then you need to add `location /folder/` to your nginx configuration:
 
 ```nginx
 location /folder/ {
@@ -63,7 +63,7 @@ If you use the [PageSpeed module](https://www.modpagespeed.com/), then it may br
 
 ### Compression
 
-If you do not have GZIP compression already configured in Nginx, [we suggest adding this basic configuration](https://github.com/h5bp/server-configs-nginx/blob/master/h5bp/web_performance/compression.conf).
+If you do not have GZIP compression already configured in Nginx, [we suggest adding this basic configuration](https://github.com/h5bp/server-configs-nginx/blob/main/h5bp/web_performance/compression.conf).
 
 ## [Apache](https://httpd.apache.org/)
 

@@ -12,19 +12,19 @@ Towards the bottom of the **Settings** page, you will find a **Custom Stylesheet
 
 Simply add your custom CSS, and the modifications will be applied when clicking outside the field.
 
-Note that The Lounge evolves rather quickly, and new versions often change the existing HTML and CSS files. This causes custom CSS snippets to often require changes as new versions get released. Use your [browser's developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools) when your trying to add or edit custom CSS.
+Note that The Lounge evolves rather quickly, and new versions often change the existing HTML and CSS files. This causes custom CSS snippets to often require changes as new versions get released. Use your [browser's developer tools](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/What_are_browser_developer_tools) when you're trying to add or edit custom CSS.
 
 ## Oops, something has gone wrong
 
-It is not impossible to accidentally apply changes that cannot be reverted, for example by hiding the custom CSS field itself. The Lounge fortunately comes with a failsafe should this unlikely situation occurs.
+It is not impossible to accidentally apply changes that cannot be reverted, for example by hiding the custom CSS field itself. The Lounge fortunately comes with a failsafe should this unlikely situation occur.
 
-By loading The Lounge with `?nocss` at the end the URL (but before any `#xyz` fragment), any CSS in the field will be ignored. You can then remove the faulty lines, and reload the page without `?nocss`.
+By loading The Lounge with `?nocss` at the end of the URL (but before any `#xyz` fragment), any CSS in the field will be ignored. You can then remove the faulty lines, and reload the page without `?nocss`.
 
 For example, on the demo, the URL would be <https://demo.thelounge.chat/?nocss>.
 
 ## Registry of CSS tweaks
 
-Over time, users have come up with useful snippets to customize their experience of The Lounge. While they might be too niche to come up with the application by default, they are listed here in case they are useful to others.
+Over time, users have come up with useful snippets to customize their experience of The Lounge. While they might be too niche to be included in the application by default, they are listed here in case they are useful to others.
 
 Feel free to edit this page to fix existing snippets, or add other useful ones.
 
@@ -239,7 +239,7 @@ lower values will increase the density, higher values will improve readability.
 
 ```css
 #chat-container[data-current-channel="#thelounge"] .preview,
-#chat-container[data-current-channel="#thelounge"] .toggle-preview,
+#chat-container[data-current-channel="#thelounge"] .toggle-preview {
 	display: none;
 }
 ```
@@ -281,7 +281,7 @@ Useful for channels that always disable sending messages (news feed channels, fo
 
 ### Hide Insecure Warning
 
-Useful if you want to hide the exclimation mark (Yellow Triangle Icon).
+Useful if you want to hide the exclamation mark (Yellow Triangle Icon).
 
 ```css
 /* Hide Insecure Warning */

@@ -15,7 +15,7 @@ The various logging levels are rendered in different colors, care should be take
 All logging methods automatically add the plugin name as a prefix, meaning there is no need to identify
 where the message is originating from.
 
-All methods take any number of of JavaScript objects to output. The string representations of each of these objects are appended together in the order listed and output.
+All methods take any number of JavaScript objects to output. The string representations of each of these objects are appended together in the order listed and output.
 
 The specific methods are (in descending order of severity):
 

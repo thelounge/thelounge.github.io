@@ -44,7 +44,7 @@ more about the benefits and steps, follow
 The Lounge is [available in the AUR](https://aur.archlinux.org/packages/thelounge/).
 
 Please follow the
-[Arch Linux documentation](https://wiki.archlinux.org/index.php/Arch_User_Repository)
+[Arch Linux documentation](https://wiki.archlinux.org/title/Arch_User_Repository)
 to install this package from the AUR. For example, to install it using an AUR
 helper such as [Yay](https://github.com/Jguer/yay):
 
@@ -64,10 +64,10 @@ The package provides both a system and a user service to allow you to run The
 Lounge as your liking. Simply build and install the AUR package, and start the
 service:
 
-- **[System](https://wiki.archlinux.org/index.php/Systemd):**
+- **[System](https://wiki.archlinux.org/title/Systemd):**
   `systemctl start thelounge.service`. The configuration is stored in
-  `/etc/thelounge/config.js`and runs as `thelounge` user.
-- **[User](https://wiki.archlinux.org/index.php/Systemd/User):**
+  `/etc/thelounge/config.js` and runs as `thelounge` user.
+- **[User](https://wiki.archlinux.org/title/Systemd/User):**
   `systemctl --user start thelounge.service`. The configuration is stored in
   your home directory in `~/.thelounge/config.js`.
 
@@ -97,7 +97,7 @@ packages.
 
 First, make sure you have these installed on your system:
 
-- The latest [Node.js](https://nodejs.org/) LTS version (or latest current release). See the [official installation instructions](https://nodejs.org/en/download/package-manager/).
+- The latest [Node.js](https://nodejs.org/) LTS version (or latest current release). See the [official installation instructions](https://nodejs.org/en/download/).
 - [Yarn 1 (classic)](https://classic.yarnpkg.com/lang/en/). See [official installation instructions](https://classic.yarnpkg.com/en/docs/install).
 
 Then install The Lounge using:
@@ -167,7 +167,7 @@ may be unstable or insecure. This is not production-ready, so use at your own
 risk!<br>
 It is also not recommended to run this as a `root` user.
 
-First, make sure latest [Node.js](https://nodejs.org/) LTS version (or latest current release) and [Yarn](https://yarnpkg.com/) are installed on your system. See [official instructions for Node.js](https://nodejs.org/en/download/package-manager/) and [official instructions for Yarn](https://yarnpkg.com/docs/install).
+First, make sure latest [Node.js](https://nodejs.org/) LTS version (or latest current release) and [Yarn](https://yarnpkg.com/) are installed on your system. See [official instructions for Node.js](https://nodejs.org/en/download/) and [official instructions for Yarn](https://yarnpkg.com/docs/install).
 
 The following commands install the development version of The Lounge:
 

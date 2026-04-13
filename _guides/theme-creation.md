@@ -24,7 +24,7 @@ This will create a `package.json` file that you must edit as such:
     "thelounge-theme"
   ]
   ```
-- Add a `"thelounge"` section with required metadata. `"css"` should be the your CSS file name, and `"name"` the display name to appear in the client settings:
+- Add a `"thelounge"` section with required metadata. `"css"` should be your CSS file name, and `"name"` the display name to appear in the client settings:
   ```json
   "thelounge": {
     "css": "theme.css",

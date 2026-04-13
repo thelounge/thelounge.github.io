@@ -21,7 +21,7 @@ Attributes of command:
 : The implementation of the command, see the arguments below:
 
 **`allowDisconnected: Boolean`**
-: If `true` this command can be execute when the client isn't connected.
+: If `true` this command can be executed when the client isn't connected.
 
 ## Arguments of a command:
 
