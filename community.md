@@ -54,12 +54,10 @@ On 16 May 2018, [Al McKinlay](https://alistair.mckinlay.me/) and [Jérémie Asto
 
 Some additional articles and tutorials:
 
+- [How to Install IRC Client on Your Synology NAS](https://mariushosting.com/how-to-install-irc-client-on-your-synology-nas/) by Marius Bogdan Lixandru - 27 January 2024
 - [IRC is Not Dead](https://selfhosted.show/13) - 27 February 2020
 - 🇮🇹 [The Lounge – Self-hosted web IRC client](https://www.andreadraghetti.it/the-lounge-self-hosted-web-irc-client/) by Andrea Draghetti - 21 July 2018
 - [Best Self-Hosted IRC Clients](https://linuxhint.com/best-self-hosted-irc-clients/) by David Morelo - 16 July 2018
-- [The Lounge: self-hosted IRC server setup guide](https://computableverse.com/blog/thelounge-self-hosted-irc-server-setup-guide) by Mitesh Shah - 10 January 2018
-- [The Lounge, self hosted web IRC client](https://freedif.org/the-lounge-self-hosted-web-irc-client) by Karibu - 25 March 2017
-- [Install The Lounge IRC Client on Ubuntu 18.04](https://samirparikh.com/blog/install-thelounge-ubuntu.html) - 17 February 2020
 
 ## Stickers, T-shirts, mugs, and more
 
