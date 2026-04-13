@@ -110,26 +110,6 @@ ProxyTimeout 86400
 
 ## [Caddy](https://caddyserver.com/)
 
-### Caddy v1
-```
-proxy / http://127.0.0.1:9000 {
-	transparent
-	websocket
-}
-```
-
-#### File uploads
-
-If you have set [`baseUrl`](/docs/configuration#fileupload) option, then you will need to add extra configuration to proxy the upload urls.
-
-```
-proxy /folder/ http://127.0.0.1:9000/uploads {
-	without /folder
-	transparent
-}
-```
-
-### Caddy v2
 ```
 reverse_proxy http://127.0.0.1:9000
 ```
