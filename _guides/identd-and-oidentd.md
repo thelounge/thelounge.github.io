@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Identify users with identd or oidentd
-description: Prove that IRC connections are valid with our built-in identd server and/or oidentd
+description: Prove that IRC connections are valid with our built-in identd server and/or oidentd.
 ---
 
 In general, and in the context of IRC, ident is a method that can be used to prove that connections are valid.

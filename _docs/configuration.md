@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Configuration
-description: Configuration of the server
+description: Configure The Lounge IRC client with server settings, user management, default networks, WEBIRC support, HTTPS, and all available config.js options.
 order: 4
 ---
 

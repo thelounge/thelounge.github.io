@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Guides
-description: Helpful guides to improve your experience of The Lounge
+description: Guides for The Lounge covering reverse proxies, HTTPS setup, custom CSS, themes, ZNC integration, CTCP, and more.
 order: 6
 ---
 

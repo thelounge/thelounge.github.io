@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Upgrade The Lounge
-description: List of all potential breaking changes when upgrading The Lounge from an older version
+description: List of all potential breaking changes when upgrading The Lounge from an older version.
 ---
 
 {% include toc.md %}

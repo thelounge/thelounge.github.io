@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Usage
-description: Available commands and options of thelounge, the CLI of The Lounge
+description: Use the thelounge CLI to start the server, manage users, install themes and packages, and configure your self-hosted IRC client.
 order: 3
 ---
 

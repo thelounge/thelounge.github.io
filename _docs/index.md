@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Getting started
+description: Get started with The Lounge, a self-hosted web IRC client. Learn how to install, configure, and connect to IRC from your browser.
 order: 1
 permalink: /docs
 ---

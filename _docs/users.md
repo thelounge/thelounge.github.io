@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Users
-description: User account management on private instances of The Lounge
+description: Manage user accounts in The Lounge. Add, edit, and remove users on private instances using the CLI or configuration files.
 order: 5
 ---
 

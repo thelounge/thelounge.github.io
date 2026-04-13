@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: API reference
-description: Overview of the public The Lounge API
+description: The Lounge plugin API reference. Create custom commands, themes, stylesheets, and extend your self-hosted IRC client with plugins.
 order: 7
 ---
 

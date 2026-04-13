@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Set up ZNC with The Lounge
-description: Extend the server capabilities of The Lounge using ZNC and its modules
+description: Extend the server capabilities of The Lounge using ZNC and its modules.
 ---
 
 ## Why you may not need ZNC

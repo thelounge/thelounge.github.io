@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Public Client
-description: The Public Client API lets you interact with the client
+description: The Public Client API lets you interact with the client.
 type: server
 ---
 

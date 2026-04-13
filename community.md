@@ -1,6 +1,7 @@
 ---
 layout: fullwidth
 title: Community
+description: Join The Lounge IRC community, contribute to the open-source project, report issues, and find help from other users.
 ---
 
 {% include toc.md %}
