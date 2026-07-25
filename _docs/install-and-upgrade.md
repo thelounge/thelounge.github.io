@@ -229,6 +229,7 @@ configuration to get up and running:
 [![Bytesized Hosting logo](/img/logos/bytesized-hosting.svg)](https://bytesized-hosting.com/ 'Bytesized Hosting')
 [![Franz logo](/img/logos/franz.svg)](https://meetfranz.com/ 'Franz')
 [![Rambox logo](/img/logos/rambox.svg)](https://rambox.pro/ 'Rambox')
+[![PikaPods logo](/img/logos/pikapods.svg)](https://www.pikapods.com/pods?run=thelounge 'PikaPods')
 
 Please contact these service providers directly if you have any questions or
 encounter any issues on these platforms.
