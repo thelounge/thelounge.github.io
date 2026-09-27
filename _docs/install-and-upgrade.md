@@ -211,6 +211,7 @@ setups and platforms, with different tooling, etc. These are not officially
 supported (even when hosted on this website), so use them at your own risk:
 
 - [Ansible role using Supervisor](https://github.com/astorije/ansible-thelounge)
+- [MASH Ansible playbook using Docker](https://github.com/mother-of-all-self-hosting/mash-playbook/blob/main/docs/services/thelounge.md)
 - [Cloudron app](https://cloudron.io/store/io.github.thelounge.html)
 - [LinuxServer.io Docker images](https://github.com/linuxserver/docker-thelounge)
 - [Gentoo GURU package: net-irc/thelounge](https://wiki.gentoo.org/wiki/Project:GURU/Information_for_End_Users)
